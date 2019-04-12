@@ -1,3 +1,4 @@
 *.pyc
 *.o
 *.a
+example/converter-example

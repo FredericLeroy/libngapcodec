@@ -13,6 +13,5 @@ asn1c \
     -D src \
     asn.1/*.asn1
 
-#sed -e 's/libasncodec/libngap/g' \
-#    -i \
-#    src/Makefile.am.libasncodec
+rm -f src/converter-example.mk src/Makefile.am.asn1convert
+mv src/converter-example.c src/pdu_collection.c example
