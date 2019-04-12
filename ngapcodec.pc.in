@@ -1,0 +1,10 @@
+prefix=@PREFIX@
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: @NAME@
+Description: A static library for coding/decoding ngap protocol from 3GPP TS38413
+Version: @VERSION@
+Cflags: -I${includedir}/@NAME@-@VERSION@
+Libs: -L${libdir}/@NAME@/@VERSION@ -lm -l@NAME@
