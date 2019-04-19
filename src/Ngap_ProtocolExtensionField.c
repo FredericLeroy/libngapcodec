@@ -25220,7 +25220,7 @@ static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_368[] = {
 		0,
 		&asn_DEF_OCTET_STRING,
 		0,
-		{ &asn_OER_memb_Ngap_OCTET_STRING_CONTAINING_PDUSessionResourceReleaseResponseTransfer__constr_6, &asn_PER_memb_Ngap_OCTET_STRING_CONTAINING_PDUSessionResourceReleaseResponseTransfer__constr_6,  memb_Ngap_OCTET_STRING_CONTAINING_PDUSessionResourceReleaseResponseTransfer__constraint_368 },
+		{ 0, 0,  memb_Ngap_OCTET_STRING_CONTAINING_PDUSessionResourceReleaseResponseTransfer__constraint_368 },
 		0, 0, /* No default value */
 		"OCTET STRING (CONTAINING PDUSessionResourceReleaseResponseTransfer)"
 		},
