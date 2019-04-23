@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: libngapcodec
+Source: <url://example.com>
+
+Files: *
+Copyright: 2019 Frédéric Leroy <frederic.leroy@b-com.com>
+
+License:
+
+libngapcodec
+
+Copyright 01/04/2019 b<>com. All rights reserved.
+
+This software is the confidential intellectual property of b<>com. You shall not
+disclose it and shall use it only in accordance with the terms of the license
+agreement you entered into with b<>com.

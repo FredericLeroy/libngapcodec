@@ -1,0 +1,15 @@
+Source: libngapcodec
+Priority: optional
+Maintainer: Frédéric Leroy <frederic.leroy@b-com.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Section: libs
+#Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://anonscm.debian.org/collab-maint/libngapcodec.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/libngapcodec.git
+
+Package: libngapcodec-dev
+Section: libdevel
+Architecture: any
+Description: NGAP protocol codec static library
+ C static library to encode decode NGAP message as defined by 3gpp TS 38413

@@ -2,3 +2,9 @@
 *.o
 *.a
 example/converter-example
+debian/debhelper-build-stamp
+debian/files
+debian/libngapcodec-dev.debhelper.log
+debian/libngapcodec-dev.substvars
+debian/libngapcodec-dev/
+
