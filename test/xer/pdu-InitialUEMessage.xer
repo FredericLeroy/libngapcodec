@@ -1,0 +1,15 @@
+<InitialUEMessage>
+    <protocolIEs>
+        <InitialUEMessage-IEs>
+            <id>38</id>
+            <criticality><reject/></criticality>
+            <value>
+                <NAS-PDU>
+                    7E 00 41 07 00 0E 09 02 F8 98 00 00 00 00 10 00
+                    00 00 00 00
+                </NAS-PDU>
+            </value>
+        </InitialUEMessage-IEs>
+    </protocolIEs>
+</InitialUEMessage>
+
