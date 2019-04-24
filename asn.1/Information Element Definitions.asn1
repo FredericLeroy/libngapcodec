@@ -15,28 +15,18 @@ BEGIN
 
 IMPORTS
 
-	id-AdditionalDLForwardingUPTNLInformation,
-	id-AdditionalDLQosFlowPerTNLInformation,
-	id-AdditionalDLUPTNLInformationForHOList,
-	id-AdditionalNGU-UP-TNLInformation,
 	id-AdditionalUL-NGU-UP-TNLInformation,
 	id-Cause,
 	id-DataForwardingNotPossible,
 	id-DL-NGU-UP-TNLInformation,
-	id-LastEUTRAN-PLMNIdentity,
-	id-MaximumIntegrityProtectedDataRate-DL,
 	id-NetworkInstance,
 	id-PDUSessionAggregateMaximumBitRate,
 	id-PDUSessionResourceFailedToSetupListCxtFail,
-	id-PDUSessionResourceReleaseResponseTransfer,
 	id-PDUSessionType,
 	id-QosFlowAddOrModifyRequestList,
 	id-QosFlowSetupRequestList,
 	id-QosFlowToReleaseList,
-	id-SecondaryRATUsageInformation,
 	id-SecurityIndication,
-	id-SecurityResult,
-	id-S-NSSAI,
 	id-UL-NGU-UP-TNLInformation,
 	id-UL-NGU-UP-TNLModifyList,
 	maxnoofAllowedAreas,
@@ -58,8 +48,7 @@ IMPORTS
 	maxnoofE-RABs,
 	maxnoofErrors,
 	maxnoofForbTACs,
-	maxnoofMultiConnectivity,
-	maxnoofMultiConnectivityMinusOne,
+	maxnoofMultiConnectivities,
 	maxnoofNGConnectionsToReset,
 	maxnoofPDUSessions,
 	maxnoofPLMNs,
@@ -76,12 +65,10 @@ IMPORTS
 	maxnoofTAIforRestart,
 	maxnoofTAIforWarning,
 	maxnoofTAIinAoI,
-	maxnoofTimePeriods,
 	maxnoofTNLAssociations,
 	maxnoofXnExtTLAs,
 	maxnoofXnGTP-TLAs,
 	maxnoofXnTLAs
-
 FROM NGAP-Constants
 
 	Criticality,
@@ -98,20 +85,6 @@ FROM NGAP-CommonDataTypes
 FROM NGAP-Containers;
 
 -- A
-
-AdditionalDLUPTNLInformationForHOList ::= SEQUENCE (SIZE(1..maxnoofMultiConnectivityMinusOne)) OF AdditionalDLUPTNLInformationForHOItem
-
-AdditionalDLUPTNLInformationForHOItem ::= SEQUENCE {
-	additionalDL-NGU-UP-TNLInformation				UPTransportLayerInformation,
-	additionalQosFlowSetupResponseList				QosFlowListWithDataForwarding,
-	additionalDLForwardingUPTNLInformation			UPTransportLayerInformation 							OPTIONAL,
-	iE-Extensions		ProtocolExtensionContainer { { AdditionalDLUPTNLInformationForHOItem-ExtIEs} }	OPTIONAL,
-	...
-}
-
-AdditionalDLUPTNLInformationForHOItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	...
-}
 
 AdditionalQosFlowInformation ::= ENUMERATED {
 	more-likely,
@@ -505,9 +478,7 @@ CauseRadioNetwork ::= ENUMERATED {
 	resources-not-available-for-the-slice,
 	ue-max-integrity-protected-data-rate-reason,
 	release-due-to-cn-detected-mobility,
-	...,
-	n26-interface-not-available,
-	release-due-to-pre-emption
+	...
 }
 
 CauseTransport ::= ENUMERATED {
@@ -719,7 +690,7 @@ CriticalityDiagnostics-IE-List ::= SEQUENCE (SIZE(1..maxnoofErrors)) OF Critical
 CriticalityDiagnostics-IE-Item ::= SEQUENCE {
 	iECriticality		Criticality,
 	iE-ID				ProtocolIE-ID,
-	typeOfError			TypeOfError,
+	typeOfError		TypeOfError,
 	iE-Extensions		ProtocolExtensionContainer {{CriticalityDiagnostics-IE-Item-ExtIEs}} OPTIONAL,
 	...
 }
@@ -965,8 +936,6 @@ EmergencyServiceTargetCN ::= ENUMERATED {
 	epc,
 	...
 }
-
-EN-DCSONConfigurationTransfer ::= OCTET STRING
 
 EquivalentPLMNs ::= SEQUENCE (SIZE(1..maxnoofEPLMNs)) OF PLMNIdentity
 
@@ -1223,12 +1192,6 @@ HandoverCommandTransfer ::= SEQUENCE {
 }
 
 HandoverCommandTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-AdditionalDLForwardingUPTNLInformation	CRITICALITY ignore	EXTENSION QosFlowPerTNLInformationList	PRESENCE optional},
-	...
-}
-
-HandoverFlag ::= ENUMERATED {
-	handover-preparation,
 	...
 }
 
@@ -1246,15 +1209,14 @@ HandoverRequestAcknowledgeTransfer ::= SEQUENCE {
 	dL-NGU-UP-TNLInformation			UPTransportLayerInformation,
 	dLForwardingUP-TNLInformation		UPTransportLayerInformation										OPTIONAL,
 	securityResult						SecurityResult													OPTIONAL,
-	qosFlowSetupResponseList			QosFlowListWithDataForwarding,
-	qosFlowFailedToSetupList			QosFlowListWithCause											OPTIONAL,
+	qosFlowSetupResponseList			QosFlowSetupResponseListHOReqAck,
+	qosFlowFailedToSetupList			QosFlowList														OPTIONAL,
 	dataForwardingResponseDRBList		DataForwardingResponseDRBList									OPTIONAL,
 	iE-Extensions		ProtocolExtensionContainer { {HandoverRequestAcknowledgeTransfer-ExtIEs} }	OPTIONAL,
 	...
 }
 
 HandoverRequestAcknowledgeTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-AdditionalDLUPTNLInformationForHOList	CRITICALITY ignore	EXTENSION AdditionalDLUPTNLInformationForHOList	PRESENCE optional	},
 	...
 }
 
@@ -1416,10 +1378,18 @@ MobilityRestrictionList ::= SEQUENCE {
 }
 
 MobilityRestrictionList-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-LastEUTRAN-PLMNIdentity		CRITICALITY ignore	EXTENSION PLMNIdentity		PRESENCE optional		},
 	...
 }
 
+MultipleTNLInformation ::= SEQUENCE {
+	tNLInformationList		TNLInformationList,
+	iE-Extensions		ProtocolExtensionContainer { {MultipleTNLInformation-ExtIEs} }	OPTIONAL,
+	...
+}
+
+MultipleTNLInformation-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
+	...
+}
 
 -- N
 
@@ -1624,7 +1594,6 @@ PathSwitchRequestAcknowledgeTransfer ::= SEQUENCE {
 }
 
 PathSwitchRequestAcknowledgeTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-AdditionalNGU-UP-TNLInformation	CRITICALITY ignore	EXTENSION UPTransportLayerInformationPairList		PRESENCE optional	},
 	...
 }
 
@@ -1648,7 +1617,6 @@ PathSwitchRequestTransfer ::= SEQUENCE {
 }
 
 PathSwitchRequestTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-AdditionalDLQosFlowPerTNLInformation	CRITICALITY ignore	EXTENSION QosFlowPerTNLInformationList	PRESENCE optional	},
 	...
 }
 
@@ -1815,7 +1783,6 @@ PDUSessionResourceItemCxtRelCpl ::= SEQUENCE {
 }
 
 PDUSessionResourceItemCxtRelCpl-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-PDUSessionResourceReleaseResponseTransfer	CRITICALITY ignore	EXTENSION OCTET STRING (CONTAINING PDUSessionResourceReleaseResponseTransfer)	PRESENCE optional	},
 	...
 }
 
@@ -1845,10 +1812,9 @@ PDUSessionResourceItemHORqd-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 }
 
 PDUSessionResourceModifyConfirmTransfer ::= SEQUENCE {
-	qosFlowModifyConfirmList			QosFlowModifyConfirmList,
-	uLNGU-UP-TNLInformation				UPTransportLayerInformation,
-	additionalNG-UUPTNLInformation		UPTransportLayerInformationPairList									OPTIONAL,
-	qosFlowFailedToModifyList			QosFlowListWithCause												OPTIONAL,
+	qosFlowModifyConfirmList		QosFlowModifyConfirmList,
+	tNLMappingList					TNLMappingList															OPTIONAL,
+	qosFlowFailedToModifyList		QosFlowList																OPTIONAL,
 	iE-Extensions		ProtocolExtensionContainer { {PDUSessionResourceModifyConfirmTransfer-ExtIEs} }	OPTIONAL,
 	...
 }
@@ -1877,8 +1843,8 @@ PDUSessionResourceModifyRequestTransferIEs NGAP-PROTOCOL-IES ::= {
 	{ ID id-UL-NGU-UP-TNLModifyList				CRITICALITY reject	TYPE UL-NGU-UP-TNLModifyList					PRESENCE	optional		}|
 	{ ID id-NetworkInstance						CRITICALITY reject	TYPE NetworkInstance							PRESENCE optional		}|
 	{ ID id-QosFlowAddOrModifyRequestList		CRITICALITY reject	TYPE QosFlowAddOrModifyRequestList			PRESENCE optional		}|
-	{ ID id-QosFlowToReleaseList				CRITICALITY reject	TYPE QosFlowListWithCause						PRESENCE optional		}|
-	{ ID id-AdditionalUL-NGU-UP-TNLInformation	CRITICALITY reject	TYPE UPTransportLayerInformationList		PRESENCE optional		},
+	{ ID id-QosFlowToReleaseList				CRITICALITY reject	TYPE QosFlowList								PRESENCE optional		}|
+	{ ID id-AdditionalUL-NGU-UP-TNLInformation	CRITICALITY reject	TYPE UPTransportLayerInformation				PRESENCE optional		},
 	...
 }	
 
@@ -1886,27 +1852,23 @@ PDUSessionResourceModifyResponseTransfer ::= SEQUENCE {
 	dL-NGU-UP-TNLInformation				UPTransportLayerInformation											OPTIONAL,
 	uL-NGU-UP-TNLInformation				UPTransportLayerInformation											OPTIONAL,
 	qosFlowAddOrModifyResponseList			QosFlowAddOrModifyResponseList										OPTIONAL,
-	additionalDLQosFlowPerTNLInformation	QosFlowPerTNLInformationList										OPTIONAL,
-	qosFlowFailedToAddOrModifyList			QosFlowListWithCause												OPTIONAL,
+	additionalQosFlowPerTNLInformation		QosFlowPerTNLInformation											OPTIONAL,
+	qosFlowFailedToAddOrModifyList		QosFlowList																OPTIONAL,
 	iE-Extensions		ProtocolExtensionContainer { {PDUSessionResourceModifyResponseTransfer-ExtIEs} }	OPTIONAL,
 	...
 }
 
 PDUSessionResourceModifyResponseTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-AdditionalNGU-UP-TNLInformation	CRITICALITY ignore	EXTENSION UPTransportLayerInformationPairList	PRESENCE optional	},
 	...
 }
 
 PDUSessionResourceModifyIndicationTransfer ::= SEQUENCE {
-	dLQosFlowPerTNLInformation					QosFlowPerTNLInformation,
-	additionalDLQosFlowPerTNLInformation		QosFlowPerTNLInformationList 									OPTIONAL,
+	dL-UP-TNLInformation		UP-TNLInformation																OPTIONAL,
 	iE-Extensions		ProtocolExtensionContainer { {PDUSessionResourceModifyIndicationTransfer-ExtIEs} }	OPTIONAL,
 	...
 }
 
 PDUSessionResourceModifyIndicationTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-SecondaryRATUsageInformation		CRITICALITY ignore	EXTENSION SecondaryRATUsageInformation		PRESENCE optional	}|
-	{ ID id-SecurityResult						CRITICALITY ignore	EXTENSION SecurityResult						PRESENCE optional	},
 	...
 }
 
@@ -1947,7 +1909,6 @@ PDUSessionResourceModifyItemModReq ::= SEQUENCE {
 }
 
 PDUSessionResourceModifyItemModReq-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ID id-S-NSSAI		CRITICALITY reject	EXTENSION S-NSSAI		PRESENCE optional	},
 	...
 }
 
@@ -1955,7 +1916,7 @@ PDUSessionResourceModifyListModRes ::= SEQUENCE (SIZE(1..maxnoofPDUSessions)) OF
 
 PDUSessionResourceModifyItemModRes ::= SEQUENCE {
 	pDUSessionID									PDUSessionID,
-	pDUSessionResourceModifyResponseTransfer		OCTET STRING (CONTAINING PDUSessionResourceModifyResponseTransfer),
+	pDUSessionResourceModifyResponseTransfer		OCTET STRING (CONTAINING PDUSessionResourceModifyResponseTransfer)		OPTIONAL,
 	iE-Extensions		ProtocolExtensionContainer { {PDUSessionResourceModifyItemModRes-ExtIEs} }	OPTIONAL,
 	...
 }
@@ -1994,20 +1955,18 @@ PDUSessionResourceNotifyReleasedTransfer ::= SEQUENCE {
 	...
 }
 
-PDUSessionResourceNotifyReleasedTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {	
-	{ ID id-SecondaryRATUsageInformation		CRITICALITY ignore	EXTENSION SecondaryRATUsageInformation		PRESENCE optional	},
+PDUSessionResourceNotifyReleasedTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
 PDUSessionResourceNotifyTransfer ::= SEQUENCE {
 	qosFlowNotifyList		QosFlowNotifyList														OPTIONAL,
-	qosFlowReleasedList		QosFlowListWithCause													OPTIONAL,
+	qosFlowReleasedList		QosFlowList																OPTIONAL,
 	iE-Extensions		ProtocolExtensionContainer { {PDUSessionResourceNotifyTransfer-ExtIEs} }	OPTIONAL,
 	...
 }
 
 PDUSessionResourceNotifyTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-SecondaryRATUsageInformation		CRITICALITY ignore	EXTENSION SecondaryRATUsageInformation		PRESENCE optional	},
 	...
 }
 
@@ -2079,20 +2038,6 @@ PDUSessionResourceReleaseResponseTransfer ::= SEQUENCE {
 }
 
 PDUSessionResourceReleaseResponseTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-SecondaryRATUsageInformation		CRITICALITY ignore	EXTENSION SecondaryRATUsageInformation		PRESENCE optional	},
-	...
-}
-
-PDUSessionResourceSecondaryRATUsageList ::= SEQUENCE (SIZE(1..maxnoofPDUSessions)) OF PDUSessionResourceSecondaryRATUsageItem
-
-PDUSessionResourceSecondaryRATUsageItem ::= SEQUENCE {
-	pDUSessionID							PDUSessionID,
-	secondaryRATDataUsageReportTransfer		OCTET STRING (CONTAINING SecondaryRATDataUsageReportTransfer),
-	iE-Extensions		ProtocolExtensionContainer { {PDUSessionResourceSecondaryRATUsageItem-ExtIEs} }	OPTIONAL,
-	...
-}
-
-PDUSessionResourceSecondaryRATUsageItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
@@ -2174,7 +2119,7 @@ PDUSessionResourceSetupRequestTransfer ::= SEQUENCE {
 PDUSessionResourceSetupRequestTransferIEs NGAP-PROTOCOL-IES ::= {
 	{ ID id-PDUSessionAggregateMaximumBitRate	CRITICALITY reject	TYPE PDUSessionAggregateMaximumBitRate		PRESENCE optional		}|
 	{ ID id-UL-NGU-UP-TNLInformation			CRITICALITY reject	TYPE UPTransportLayerInformation				PRESENCE mandatory	}|
-	{ ID id-AdditionalUL-NGU-UP-TNLInformation	CRITICALITY reject	TYPE UPTransportLayerInformationList		PRESENCE optional		}|
+	{ ID id-AdditionalUL-NGU-UP-TNLInformation	CRITICALITY reject	TYPE UPTransportLayerInformation				PRESENCE optional		}|
 	{ ID id-DataForwardingNotPossible			CRITICALITY reject	TYPE DataForwardingNotPossible				PRESENCE optional		}|
 	{ ID id-PDUSessionType						CRITICALITY reject	TYPE PDUSessionType								PRESENCE mandatory	}|
 	{ ID id-SecurityIndication					CRITICALITY reject	TYPE SecurityIndication							PRESENCE optional		}|
@@ -2184,10 +2129,10 @@ PDUSessionResourceSetupRequestTransferIEs NGAP-PROTOCOL-IES ::= {
 }
 
 PDUSessionResourceSetupResponseTransfer ::= SEQUENCE {
-	dLQosFlowPerTNLInformation				QosFlowPerTNLInformation,
-	additionalDLQosFlowPerTNLInformation	QosFlowPerTNLInformationList										OPTIONAL,
+	qosFlowPerTNLInformation				QosFlowPerTNLInformation,
+	additionalQosFlowPerTNLInformation		QosFlowPerTNLInformation											OPTIONAL,
 	securityResult							SecurityResult														OPTIONAL,
-	qosFlowFailedToSetupList				QosFlowListWithCause												OPTIONAL,
+	qosFlowFailedToSetupList				QosFlowList															OPTIONAL,
 	iE-Extensions		ProtocolExtensionContainer { {PDUSessionResourceSetupResponseTransfer-ExtIEs} }		OPTIONAL,
 	...
 }
@@ -2264,17 +2209,6 @@ PDUSessionType ::= ENUMERATED {
 	ipv4v6,
 	ethernet,
 	unstructured,
-	...
-}
-
-PDUSessionUsageReport ::= SEQUENCE {
-	rATType								ENUMERATED {nr, eutra, ...},
-	pDUSessionTimedReportList			VolumeTimedReportList,
-	iE-Extensions		ProtocolExtensionContainer { {PDUSessionUsageReport-ExtIEs} } OPTIONAL,
-...
-}
-
-PDUSessionUsageReport-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
@@ -2402,16 +2336,16 @@ QosFlowLevelQosParameters-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
-QosFlowListWithCause ::= SEQUENCE (SIZE(1..maxnoofQosFlows)) OF QosFlowWithCauseItem
+QosFlowList ::= SEQUENCE (SIZE(1..maxnoofQosFlows)) OF QosFlowItem
 
-QosFlowWithCauseItem ::= SEQUENCE {
+QosFlowItem ::= SEQUENCE {
 	qosFlowIdentifier		QosFlowIdentifier,
 	cause					Cause,
-	iE-Extensions		ProtocolExtensionContainer { {QosFlowWithCauseItem-ExtIEs} } OPTIONAL,
+	iE-Extensions		ProtocolExtensionContainer { {QosFlowItem-ExtIEs} } OPTIONAL,
 	...
 }
 
-QosFlowWithCauseItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
+QosFlowItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
@@ -2451,18 +2385,6 @@ QosFlowPerTNLInformation-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
-QosFlowPerTNLInformationList ::= SEQUENCE (SIZE(1..maxnoofMultiConnectivityMinusOne)) OF QosFlowPerTNLInformationItem
-
-QosFlowPerTNLInformationItem ::= SEQUENCE {
-	qosFlowPerTNLInformation				QosFlowPerTNLInformation,
-	iE-Extensions		ProtocolExtensionContainer { { QosFlowPerTNLInformationItem-ExtIEs} }	OPTIONAL,
-	...
-}
-
-QosFlowPerTNLInformationItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	...
-}
-
 QosFlowSetupRequestList ::= SEQUENCE (SIZE(1..maxnoofQosFlows)) OF QosFlowSetupRequestItem
 
 QosFlowSetupRequestItem ::= SEQUENCE {
@@ -2477,16 +2399,16 @@ QosFlowSetupRequestItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
-QosFlowListWithDataForwarding ::= SEQUENCE (SIZE(1..maxnoofQosFlows)) OF QosFlowItemWithDataForwarding
+QosFlowSetupResponseListHOReqAck ::= SEQUENCE (SIZE(1..maxnoofQosFlows)) OF QosFlowSetupResponseItemHOReqAck
 
-QosFlowItemWithDataForwarding ::= SEQUENCE {
+QosFlowSetupResponseItemHOReqAck ::= SEQUENCE {
 	qosFlowIdentifier			QosFlowIdentifier,
-	dataForwardingAccepted		DataForwardingAccepted											OPTIONAL,
-	iE-Extensions		ProtocolExtensionContainer { {QosFlowItemWithDataForwarding-ExtIEs} }	OPTIONAL,
+	dataForwardingAccepted		DataForwardingAccepted												OPTIONAL,
+	iE-Extensions		ProtocolExtensionContainer { {QosFlowSetupResponseItemHOReqAck-ExtIEs} }	OPTIONAL,
 	...
 }
 
-QosFlowItemWithDataForwarding-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
+QosFlowSetupResponseItemHOReqAck-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
@@ -2514,20 +2436,6 @@ QosFlowToBeForwardedItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
-QoSFlowsUsageReportList ::= SEQUENCE (SIZE(1..maxnoofQosFlows)) OF QoSFlowsUsageReport-Item
-
-QoSFlowsUsageReport-Item ::= SEQUENCE {
-	qosFlowIdentifier					QosFlowIdentifier,
-	rATType								ENUMERATED {nr, eutra, ...},
-	qoSFlowsTimedReportList				VolumeTimedReportList,
-	iE-Extensions		ProtocolExtensionContainer { {QoSFlowsUsageReport-Item-ExtIEs} } OPTIONAL,
-...
-}
-
-QoSFlowsUsageReport-Item-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	...
-}
-
 -- R
 
 RANNodeName ::= PrintableString (SIZE(1..150, ...))
@@ -2546,7 +2454,7 @@ RANStatusTransfer-TransparentContainer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 
 RAN-UE-NGAP-ID ::= INTEGER (0..4294967295)
 
-RATRestrictions ::= SEQUENCE (SIZE(1..maxnoofEPLMNsPlusOne)) OF RATRestrictions-Item
+RATRestrictions ::= SEQUENCE (SIZE(0..maxnoofEPLMNsPlusOne)) OF RATRestrictions-Item
 
 RATRestrictions-Item ::= SEQUENCE {
 	pLMNIdentity					PLMNIdentity,
@@ -2606,12 +2514,6 @@ RecommendedRANNodeItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
-RedirectionVoiceFallback ::= ENUMERATED {
-	possible,
-	not-possible,
-	...
-}
-
 ReflectiveQosAttribute ::= ENUMERATED {
 	subject-to,
 	...
@@ -2658,8 +2560,7 @@ RRCEstablishmentCause ::= ENUMERATED {
 	mo-SMS,
 	mps-PriorityAccess,
 	mcs-PriorityAccess,
-	...,
-	notAvailable
+	...
 }
 
 RRCInactiveTransitionReportRequest ::= ENUMERATED {
@@ -2679,27 +2580,6 @@ RRCState ::= ENUMERATED {
 
 SD ::= OCTET STRING (SIZE(3))
 
-SecondaryRATUsageInformation ::= SEQUENCE {
-	pDUSessionUsageReport		PDUSessionUsageReport											OPTIONAL,
-	qosFlowsUsageReportList		QoSFlowsUsageReportList											OPTIONAL,
-	iE-Extension		ProtocolExtensionContainer { {SecondaryRATUsageInformation-ExtIEs} }	OPTIONAL,
-	...
-}
-
-SecondaryRATUsageInformation-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	...
-}
-
-SecondaryRATDataUsageReportTransfer ::= SEQUENCE {
-	secondaryRATUsageInformation		SecondaryRATUsageInformation									OPTIONAL,
-	iE-Extensions		ProtocolExtensionContainer { {SecondaryRATDataUsageReportTransfer-ExtIEs} }	OPTIONAL,
-	...
-}
-
-SecondaryRATDataUsageReportTransfer-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	...
-}
-
 SecurityContext ::= SEQUENCE {
 	nextHopChainingCount		NextHopChainingCount,
 	nextHopNH					SecurityKey,
@@ -2714,13 +2594,12 @@ SecurityContext-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 SecurityIndication ::= SEQUENCE {
 	integrityProtectionIndication			IntegrityProtectionIndication,
 	confidentialityProtectionIndication		ConfidentialityProtectionIndication,
-	maximumIntegrityProtectedDataRate-UL	MaximumIntegrityProtectedDataRate		OPTIONAL,
+	maximumIntegrityProtectedDataRate		MaximumIntegrityProtectedDataRate		OPTIONAL,
 	iE-Extensions		ProtocolExtensionContainer { {SecurityIndication-ExtIEs} }	OPTIONAL,
 	...
 }
 
 SecurityIndication-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	{ ID id-MaximumIntegrityProtectedDataRate-DL	CRITICALITY ignore	EXTENSION MaximumIntegrityProtectedDataRate	PRESENCE optional	},
 	...
 }
 
@@ -2766,6 +2645,15 @@ ServiceAreaInformation-Item-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
+SingleTNLInformation ::= SEQUENCE {
+	uPTransportLayerInformation		UPTransportLayerInformation,
+	iE-Extensions		ProtocolExtensionContainer { {SingleTNLInformation-ExtIEs} }	OPTIONAL,
+	...
+}
+
+SingleTNLInformation-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
+	...
+}
 
 SliceOverloadList ::= SEQUENCE (SIZE(1..maxnoofSliceItems)) OF SliceOverloadItem
 
@@ -2806,7 +2694,7 @@ SONConfigurationTransfer ::= SEQUENCE {
 	targetRANNodeID				TargetRANNodeID,
 	sourceRANNodeID				SourceRANNodeID,
 	sONInformation				SONInformation,
-	xnTNLConfigurationInfo		XnTNLConfigurationInfo										OPTIONAL,
+	xnTNLConfigurationInfo		XnTNLConfigurationInfo,
 	iE-Extensions		ProtocolExtensionContainer { {SONConfigurationTransfer-ExtIEs} }	OPTIONAL,
 	...
 }
@@ -3067,6 +2955,31 @@ TNLAssociationUsage ::= ENUMERATED {
 	...
 }
 
+TNLInformationList ::= SEQUENCE (SIZE(1..maxnoofMultiConnectivities)) OF TNLInformationItem
+
+TNLInformationItem ::= SEQUENCE {
+	qosFlowPerTNLInformation		QosFlowPerTNLInformation,
+	iE-Extensions		ProtocolExtensionContainer { {TNLInformationItem-ExtIEs} }	OPTIONAL,
+	...
+}
+
+TNLInformationItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
+	...
+}
+
+TNLMappingList ::= SEQUENCE (SIZE(1..maxnoofMultiConnectivities)) OF TNLMappingItem
+
+TNLMappingItem ::= SEQUENCE {
+	dL-NGU-UP-TNLInformation		UPTransportLayerInformation,
+	uL-NGU-UP-TNLInformation		UPTransportLayerInformation,
+	iE-Extensions		ProtocolExtensionContainer { {TNLMappingItem-ExtIEs} }	OPTIONAL,
+	...
+}
+
+TNLMappingItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
+	...
+}
+
 TraceActivation ::= SEQUENCE {
 	nGRANTraceID						NGRANTraceID,
 	interfacesToTrace					InterfacesToTrace,
@@ -3200,11 +3113,6 @@ UERadioCapabilityForPagingOfNR ::= OCTET STRING
 
 UERadioCapabilityForPagingOfEUTRA ::= OCTET STRING
 
-UERetentionInformation ::= ENUMERATED {
-	ues-retained,
-	...
-}
-
 UESecurityCapabilities ::= SEQUENCE {
 	nRencryptionAlgorithms					NRencryptionAlgorithms,
 	nRintegrityProtectionAlgorithms			NRintegrityProtectionAlgorithms,
@@ -3219,7 +3127,7 @@ UESecurityCapabilities-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
-UL-NGU-UP-TNLModifyList ::= SEQUENCE (SIZE(1..maxnoofMultiConnectivity)) OF UL-NGU-UP-TNLModifyItem
+UL-NGU-UP-TNLModifyList ::= SEQUENCE (SIZE(0..maxnoofMultiConnectivities)) OF UL-NGU-UP-TNLModifyItem
 
 UL-NGU-UP-TNLModifyItem ::= SEQUENCE {
 	uL-NGU-UP-TNLInformation		UPTransportLayerInformation,
@@ -3246,6 +3154,15 @@ UnavailableGUAMIItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
+UP-TNLInformation ::= CHOICE {
+	singleTNLInformation		SingleTNLInformation,
+	multipleTNLInformation		MultipleTNLInformation,
+	choice-Extensions		ProtocolIE-SingleContainer { {UP-TNLInformation-ExtIEs} }
+}
+
+UP-TNLInformation-ExtIEs NGAP-PROTOCOL-IES ::= {
+	...
+}
 
 UPTransportLayerInformation ::= CHOICE {
 	gTPTunnel				GTPTunnel,
@@ -3253,32 +3170,6 @@ UPTransportLayerInformation ::= CHOICE {
 }
 
 UPTransportLayerInformation-ExtIEs NGAP-PROTOCOL-IES ::= {
-	...
-}
-
-UPTransportLayerInformationList ::= SEQUENCE (SIZE(1..maxnoofMultiConnectivityMinusOne)) OF UPTransportLayerInformationItem
-
-UPTransportLayerInformationItem ::= SEQUENCE {
-	nGU-UP-TNLInformation		UPTransportLayerInformation,
-	iE-Extensions		ProtocolExtensionContainer { {UPTransportLayerInformationItem-ExtIEs} } OPTIONAL,
-	...
-}
-
-UPTransportLayerInformationItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	...
-}
-
-
-UPTransportLayerInformationPairList ::= SEQUENCE (SIZE(1..maxnoofMultiConnectivityMinusOne)) OF UPTransportLayerInformationPairItem
-
-UPTransportLayerInformationPairItem ::= SEQUENCE {
-	uL-NGU-UP-TNLInformation		UPTransportLayerInformation,
-	dL-NGU-UP-TNLInformation		UPTransportLayerInformation,
-	iE-Extensions		ProtocolExtensionContainer { {UPTransportLayerInformationPairItem-ExtIEs} } OPTIONAL,
-	...
-}
-
-UPTransportLayerInformationPairItem-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 	...
 }
 
@@ -3340,22 +3231,6 @@ UserPlaneSecurityInformation-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
 }
 
 -- V
-
-VolumeTimedReportList ::= SEQUENCE (SIZE(1..maxnoofTimePeriods)) OF VolumeTimedReport-Item
-
-VolumeTimedReport-Item ::= SEQUENCE {
-	startTimeStamp				OCTET STRING (SIZE(4)),
-	endTimeStamp				OCTET STRING (SIZE(4)),
-	usageCountUL				INTEGER (0..18446744073709551615),
-	usageCountDL				INTEGER (0..18446744073709551615),
-	iE-Extensions		ProtocolExtensionContainer { {VolumeTimedReport-Item-ExtIEs} } OPTIONAL,
-...
-}
-
-VolumeTimedReport-Item-ExtIEs NGAP-PROTOCOL-EXTENSION ::= {
-	...
-}
-
 -- W
 
 WarningAreaCoordinates ::= OCTET STRING (SIZE(1..1024))
