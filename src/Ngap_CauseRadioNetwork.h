@@ -64,12 +64,10 @@ typedef enum Ngap_CauseRadioNetwork {
 	Ngap_CauseRadioNetwork_redirection	= 41,
 	Ngap_CauseRadioNetwork_resources_not_available_for_the_slice	= 42,
 	Ngap_CauseRadioNetwork_ue_max_integrity_protected_data_rate_reason	= 43,
-	Ngap_CauseRadioNetwork_release_due_to_cn_detected_mobility	= 44,
+	Ngap_CauseRadioNetwork_release_due_to_cn_detected_mobility	= 44
 	/*
 	 * Enumeration is extensible
 	 */
-	Ngap_CauseRadioNetwork_n26_interface_not_available	= 45,
-	Ngap_CauseRadioNetwork_release_due_to_pre_emption	= 46
 } e_Ngap_CauseRadioNetwork;
 
 /* Ngap_CauseRadioNetwork */

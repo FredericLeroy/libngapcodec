@@ -15,6 +15,7 @@
 #include "Ngap_TargetRANNodeID.h"
 #include "Ngap_SourceRANNodeID.h"
 #include "Ngap_SONInformation.h"
+#include "Ngap_XnTNLConfigurationInfo.h"
 #include <constr_SEQUENCE.h>
 
 #ifdef __cplusplus
@@ -22,7 +23,6 @@ extern "C" {
 #endif
 
 /* Forward declarations */
-struct Ngap_XnTNLConfigurationInfo;
 struct Ngap_ProtocolExtensionContainer;
 
 /* Ngap_SONConfigurationTransfer */
@@ -30,7 +30,7 @@ typedef struct Ngap_SONConfigurationTransfer {
 	Ngap_TargetRANNodeID_t	 targetRANNodeID;
 	Ngap_SourceRANNodeID_t	 sourceRANNodeID;
 	Ngap_SONInformation_t	 sONInformation;
-	struct Ngap_XnTNLConfigurationInfo	*xnTNLConfigurationInfo;	/* OPTIONAL */
+	Ngap_XnTNLConfigurationInfo_t	 xnTNLConfigurationInfo;
 	struct Ngap_ProtocolExtensionContainer	*iE_Extensions;	/* OPTIONAL */
 	/*
 	 * This type is extensible,

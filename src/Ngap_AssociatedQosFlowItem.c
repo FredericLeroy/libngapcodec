@@ -81,7 +81,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AssociatedQosFlowItem_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct Ngap_AssociatedQosFlowItem, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_ProtocolExtensionContainer_175P14,
+		&asn_DEF_Ngap_ProtocolExtensionContainer_175P13,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

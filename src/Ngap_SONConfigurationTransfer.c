@@ -7,7 +7,6 @@
 
 #include "Ngap_SONConfigurationTransfer.h"
 
-#include "Ngap_XnTNLConfigurationInfo.h"
 #include "Ngap_ProtocolExtensionContainer.h"
 asn_TYPE_member_t asn_MBR_Ngap_SONConfigurationTransfer_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SONConfigurationTransfer, targetRANNodeID),
@@ -37,7 +36,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SONConfigurationTransfer_1[] = {
 		0, 0, /* No default value */
 		"sONInformation"
 		},
-	{ ATF_POINTER, 2, offsetof(struct Ngap_SONConfigurationTransfer, xnTNLConfigurationInfo),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SONConfigurationTransfer, xnTNLConfigurationInfo),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_Ngap_XnTNLConfigurationInfo,
@@ -49,14 +48,14 @@ asn_TYPE_member_t asn_MBR_Ngap_SONConfigurationTransfer_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct Ngap_SONConfigurationTransfer, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_ProtocolExtensionContainer_175P157,
+		&asn_DEF_Ngap_ProtocolExtensionContainer_175P152,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"iE-Extensions"
 		},
 };
-static const int asn_MAP_Ngap_SONConfigurationTransfer_oms_1[] = { 3, 4 };
+static const int asn_MAP_Ngap_SONConfigurationTransfer_oms_1[] = { 4 };
 static const ber_tlv_tag_t asn_DEF_Ngap_SONConfigurationTransfer_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
@@ -73,7 +72,7 @@ asn_SEQUENCE_specifics_t asn_SPC_Ngap_SONConfigurationTransfer_specs_1 = {
 	asn_MAP_Ngap_SONConfigurationTransfer_tag2el_1,
 	5,	/* Count of tags in the map */
 	asn_MAP_Ngap_SONConfigurationTransfer_oms_1,	/* Optional members */
-	2, 0,	/* Root/Additions */
+	1, 0,	/* Root/Additions */
 	5,	/* First extension addition */
 };
 asn_TYPE_descriptor_t asn_DEF_Ngap_SONConfigurationTransfer = {

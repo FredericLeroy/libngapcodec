@@ -7,8 +7,8 @@
 
 #include "Ngap_PDUSessionResourceModifyConfirmTransfer.h"
 
-#include "Ngap_UPTransportLayerInformationPairList.h"
-#include "Ngap_QosFlowListWithCause.h"
+#include "Ngap_TNLMappingList.h"
+#include "Ngap_QosFlowList.h"
 #include "Ngap_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceModifyConfirmTransfer_1[] = {
 	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceModifyConfirmTransfer, qosFlowModifyConfirmList),
@@ -20,35 +20,26 @@ static asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceModifyConfirmTransfer_1[
 		0, 0, /* No default value */
 		"qosFlowModifyConfirmList"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceModifyConfirmTransfer, uLNGU_UP_TNLInformation),
+	{ ATF_POINTER, 3, offsetof(struct Ngap_PDUSessionResourceModifyConfirmTransfer, tNLMappingList),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
-		+1,	/* EXPLICIT tag at current level */
-		&asn_DEF_Ngap_UPTransportLayerInformation,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"uLNGU-UP-TNLInformation"
-		},
-	{ ATF_POINTER, 3, offsetof(struct Ngap_PDUSessionResourceModifyConfirmTransfer, additionalNG_UUPTNLInformation),
-		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_UPTransportLayerInformationPairList,
+		&asn_DEF_Ngap_TNLMappingList,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
-		"additionalNG-UUPTNLInformation"
+		"tNLMappingList"
 		},
 	{ ATF_POINTER, 2, offsetof(struct Ngap_PDUSessionResourceModifyConfirmTransfer, qosFlowFailedToModifyList),
-		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
+		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_QosFlowListWithCause,
+		&asn_DEF_Ngap_QosFlowList,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */
 		"qosFlowFailedToModifyList"
 		},
 	{ ATF_POINTER, 1, offsetof(struct Ngap_PDUSessionResourceModifyConfirmTransfer, iE_Extensions),
-		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
+		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
 		&asn_DEF_Ngap_ProtocolExtensionContainer_175P94,
 		0,
@@ -57,25 +48,24 @@ static asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceModifyConfirmTransfer_1[
 		"iE-Extensions"
 		},
 };
-static const int asn_MAP_Ngap_PDUSessionResourceModifyConfirmTransfer_oms_1[] = { 2, 3, 4 };
+static const int asn_MAP_Ngap_PDUSessionResourceModifyConfirmTransfer_oms_1[] = { 1, 2, 3 };
 static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceModifyConfirmTransfer_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
 static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceModifyConfirmTransfer_tag2el_1[] = {
     { (ASN_TAG_CLASS_CONTEXT | (0 << 2)), 0, 0, 0 }, /* qosFlowModifyConfirmList */
-    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* uLNGU-UP-TNLInformation */
-    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* additionalNG-UUPTNLInformation */
-    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 }, /* qosFlowFailedToModifyList */
-    { (ASN_TAG_CLASS_CONTEXT | (4 << 2)), 4, 0, 0 } /* iE-Extensions */
+    { (ASN_TAG_CLASS_CONTEXT | (1 << 2)), 1, 0, 0 }, /* tNLMappingList */
+    { (ASN_TAG_CLASS_CONTEXT | (2 << 2)), 2, 0, 0 }, /* qosFlowFailedToModifyList */
+    { (ASN_TAG_CLASS_CONTEXT | (3 << 2)), 3, 0, 0 } /* iE-Extensions */
 };
 static asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceModifyConfirmTransfer_specs_1 = {
 	sizeof(struct Ngap_PDUSessionResourceModifyConfirmTransfer),
 	offsetof(struct Ngap_PDUSessionResourceModifyConfirmTransfer, _asn_ctx),
 	asn_MAP_Ngap_PDUSessionResourceModifyConfirmTransfer_tag2el_1,
-	5,	/* Count of tags in the map */
+	4,	/* Count of tags in the map */
 	asn_MAP_Ngap_PDUSessionResourceModifyConfirmTransfer_oms_1,	/* Optional members */
 	3, 0,	/* Root/Additions */
-	5,	/* First extension addition */
+	4,	/* First extension addition */
 };
 asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceModifyConfirmTransfer = {
 	"PDUSessionResourceModifyConfirmTransfer",
@@ -89,7 +79,7 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceModifyConfirmTransfer = {
 		/sizeof(asn_DEF_Ngap_PDUSessionResourceModifyConfirmTransfer_tags_1[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
 	asn_MBR_Ngap_PDUSessionResourceModifyConfirmTransfer_1,
-	5,	/* Elements count */
+	4,	/* Elements count */
 	&asn_SPC_Ngap_PDUSessionResourceModifyConfirmTransfer_specs_1	/* Additional specs */
 };
 

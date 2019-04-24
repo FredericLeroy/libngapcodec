@@ -640,14 +640,6 @@ asn_per_constraints_t asn_PER_type_Ngap_ProtocolIE_Container_124P78_constr_157 C
 	{ APC_CONSTRAINED,	 16,  16,  0,  65535 }	/* (SIZE(0..65535)) */,
 	0, 0	/* No PER value map */
 };
-static asn_oer_constraints_t asn_OER_type_Ngap_ProtocolIE_Container_124P79_constr_159 CC_NOTUSED = {
-	{ 0, 0 },
-	-1	/* (SIZE(0..65535)) */};
-asn_per_constraints_t asn_PER_type_Ngap_ProtocolIE_Container_124P79_constr_159 CC_NOTUSED = {
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	{ APC_CONSTRAINED,	 16,  16,  0,  65535 }	/* (SIZE(0..65535)) */,
-	0, 0	/* No PER value map */
-};
 asn_TYPE_member_t asn_MBR_Ngap_ProtocolIE_Container_124P0_1[] = {
 	{ ATF_POINTER, 0, 0,
 		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
@@ -3411,40 +3403,5 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_ProtocolIE_Container_124P78 = {
 	asn_MBR_Ngap_ProtocolIE_Container_124P78_157,
 	1,	/* Single element */
 	&asn_SPC_Ngap_ProtocolIE_Container_124P78_specs_157	/* Additional specs */
-};
-
-asn_TYPE_member_t asn_MBR_Ngap_ProtocolIE_Container_124P79_159[] = {
-	{ ATF_POINTER, 0, 0,
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_SecondaryRATDataUsageReportIEs,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		""
-		},
-};
-static const ber_tlv_tag_t asn_DEF_Ngap_ProtocolIE_Container_124P79_tags_159[] = {
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-asn_SET_OF_specifics_t asn_SPC_Ngap_ProtocolIE_Container_124P79_specs_159 = {
-	sizeof(struct Ngap_ProtocolIE_Container_124P79),
-	offsetof(struct Ngap_ProtocolIE_Container_124P79, _asn_ctx),
-	0,	/* XER encoding is XMLDelimitedItemList */
-};
-asn_TYPE_descriptor_t asn_DEF_Ngap_ProtocolIE_Container_124P79 = {
-	"ProtocolIE-Container",
-	"ProtocolIE-Container",
-	&asn_OP_SEQUENCE_OF,
-	asn_DEF_Ngap_ProtocolIE_Container_124P79_tags_159,
-	sizeof(asn_DEF_Ngap_ProtocolIE_Container_124P79_tags_159)
-		/sizeof(asn_DEF_Ngap_ProtocolIE_Container_124P79_tags_159[0]), /* 1 */
-	asn_DEF_Ngap_ProtocolIE_Container_124P79_tags_159,	/* Same as above */
-	sizeof(asn_DEF_Ngap_ProtocolIE_Container_124P79_tags_159)
-		/sizeof(asn_DEF_Ngap_ProtocolIE_Container_124P79_tags_159[0]), /* 1 */
-	{ &asn_OER_type_Ngap_ProtocolIE_Container_124P79_constr_159, &asn_PER_type_Ngap_ProtocolIE_Container_124P79_constr_159, SEQUENCE_OF_constraint },
-	asn_MBR_Ngap_ProtocolIE_Container_124P79_159,
-	1,	/* Single element */
-	&asn_SPC_Ngap_ProtocolIE_Container_124P79_specs_159	/* Additional specs */
 };
 

@@ -8,7 +8,7 @@
 #include "Ngap_PDUSessionResourceNotifyTransfer.h"
 
 #include "Ngap_QosFlowNotifyList.h"
-#include "Ngap_QosFlowListWithCause.h"
+#include "Ngap_QosFlowList.h"
 #include "Ngap_ProtocolExtensionContainer.h"
 static asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceNotifyTransfer_1[] = {
 	{ ATF_POINTER, 3, offsetof(struct Ngap_PDUSessionResourceNotifyTransfer, qosFlowNotifyList),
@@ -23,7 +23,7 @@ static asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceNotifyTransfer_1[] = {
 	{ ATF_POINTER, 2, offsetof(struct Ngap_PDUSessionResourceNotifyTransfer, qosFlowReleasedList),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_QosFlowListWithCause,
+		&asn_DEF_Ngap_QosFlowList,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

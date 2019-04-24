@@ -77,7 +77,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSUReq_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (4 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_ProtocolExtensionContainer_175P116,
+		&asn_DEF_Ngap_ProtocolExtensionContainer_175P115,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

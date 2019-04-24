@@ -21,8 +21,6 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_InitiatingMessage.c	\
 	src/Ngap_SuccessfulOutcome.c	\
 	src/Ngap_UnsuccessfulOutcome.c	\
-	src/Ngap_AdditionalDLUPTNLInformationForHOList.c	\
-	src/Ngap_AdditionalDLUPTNLInformationForHOItem.c	\
 	src/Ngap_AdditionalQosFlowInformation.c	\
 	src/Ngap_AllocationAndRetentionPriority.c	\
 	src/Ngap_AllowedNSSAI.c	\
@@ -140,7 +138,6 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_EmergencyFallbackIndicator.c	\
 	src/Ngap_EmergencyFallbackRequestIndicator.c	\
 	src/Ngap_EmergencyServiceTargetCN.c	\
-	src/Ngap_EN-DCSONConfigurationTransfer.c	\
 	src/Ngap_EquivalentPLMNs.c	\
 	src/Ngap_EPS-TAC.c	\
 	src/Ngap_EPS-TAI.c	\
@@ -178,7 +175,6 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_GTPTunnel.c	\
 	src/Ngap_GUAMI.c	\
 	src/Ngap_HandoverCommandTransfer.c	\
-	src/Ngap_HandoverFlag.c	\
 	src/Ngap_HandoverPreparationUnsuccessfulTransfer.c	\
 	src/Ngap_HandoverRequestAcknowledgeTransfer.c	\
 	src/Ngap_HandoverRequiredTransfer.c	\
@@ -205,6 +201,7 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_MaximumIntegrityProtectedDataRate.c	\
 	src/Ngap_MICOModeIndication.c	\
 	src/Ngap_MobilityRestrictionList.c	\
+	src/Ngap_MultipleTNLInformation.c	\
 	src/Ngap_N3IWF-ID.c	\
 	src/Ngap_NAS-PDU.c	\
 	src/Ngap_NASSecurityParametersFromNGRAN.c	\
@@ -300,8 +297,6 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_PDUSessionResourceReleasedListRelRes.c	\
 	src/Ngap_PDUSessionResourceReleasedItemRelRes.c	\
 	src/Ngap_PDUSessionResourceReleaseResponseTransfer.c	\
-	src/Ngap_PDUSessionResourceSecondaryRATUsageList.c	\
-	src/Ngap_PDUSessionResourceSecondaryRATUsageItem.c	\
 	src/Ngap_PDUSessionResourceSetupListCxtReq.c	\
 	src/Ngap_PDUSessionResourceSetupItemCxtReq.c	\
 	src/Ngap_PDUSessionResourceSetupListCxtRes.c	\
@@ -324,7 +319,6 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_PDUSessionResourceToReleaseListRelCmd.c	\
 	src/Ngap_PDUSessionResourceToReleaseItemRelCmd.c	\
 	src/Ngap_PDUSessionType.c	\
-	src/Ngap_PDUSessionUsageReport.c	\
 	src/Ngap_PeriodicRegistrationUpdateTimer.c	\
 	src/Ngap_PLMNIdentity.c	\
 	src/Ngap_PLMNSupportList.c	\
@@ -346,25 +340,21 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_QosFlowInformationList.c	\
 	src/Ngap_QosFlowInformationItem.c	\
 	src/Ngap_QosFlowLevelQosParameters.c	\
-	src/Ngap_QosFlowListWithCause.c	\
-	src/Ngap_QosFlowWithCauseItem.c	\
+	src/Ngap_QosFlowList.c	\
+	src/Ngap_QosFlowItem.c	\
 	src/Ngap_QosFlowModifyConfirmList.c	\
 	src/Ngap_QosFlowModifyConfirmItem.c	\
 	src/Ngap_QosFlowNotifyList.c	\
 	src/Ngap_QosFlowNotifyItem.c	\
 	src/Ngap_QosFlowPerTNLInformation.c	\
-	src/Ngap_QosFlowPerTNLInformationList.c	\
-	src/Ngap_QosFlowPerTNLInformationItem.c	\
 	src/Ngap_QosFlowSetupRequestList.c	\
 	src/Ngap_QosFlowSetupRequestItem.c	\
-	src/Ngap_QosFlowListWithDataForwarding.c	\
-	src/Ngap_QosFlowItemWithDataForwarding.c	\
+	src/Ngap_QosFlowSetupResponseListHOReqAck.c	\
+	src/Ngap_QosFlowSetupResponseItemHOReqAck.c	\
 	src/Ngap_QosFlowSetupResponseListSURes.c	\
 	src/Ngap_QosFlowSetupResponseItemSURes.c	\
 	src/Ngap_QosFlowToBeForwardedList.c	\
 	src/Ngap_QosFlowToBeForwardedItem.c	\
-	src/Ngap_QoSFlowsUsageReportList.c	\
-	src/Ngap_QoSFlowsUsageReport-Item.c	\
 	src/Ngap_RANNodeName.c	\
 	src/Ngap_RANPagingPriority.c	\
 	src/Ngap_RANStatusTransfer-TransparentContainer.c	\
@@ -378,7 +368,6 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_RecommendedRANNodesForPaging.c	\
 	src/Ngap_RecommendedRANNodeList.c	\
 	src/Ngap_RecommendedRANNodeItem.c	\
-	src/Ngap_RedirectionVoiceFallback.c	\
 	src/Ngap_ReflectiveQosAttribute.c	\
 	src/Ngap_ReferenceID.c	\
 	src/Ngap_RelativeAMFCapacity.c	\
@@ -392,8 +381,6 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_RRCInactiveTransitionReportRequest.c	\
 	src/Ngap_RRCState.c	\
 	src/Ngap_SD.c	\
-	src/Ngap_SecondaryRATUsageInformation.c	\
-	src/Ngap_SecondaryRATDataUsageReportTransfer.c	\
 	src/Ngap_SecurityContext.c	\
 	src/Ngap_SecurityIndication.c	\
 	src/Ngap_SecurityKey.c	\
@@ -403,6 +390,7 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_ServedGUAMIItem.c	\
 	src/Ngap_ServiceAreaInformation.c	\
 	src/Ngap_ServiceAreaInformation-Item.c	\
+	src/Ngap_SingleTNLInformation.c	\
 	src/Ngap_SliceOverloadList.c	\
 	src/Ngap_SliceOverloadItem.c	\
 	src/Ngap_SliceSupportList.c	\
@@ -449,6 +437,10 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_TNLAssociationList.c	\
 	src/Ngap_TNLAssociationItem.c	\
 	src/Ngap_TNLAssociationUsage.c	\
+	src/Ngap_TNLInformationList.c	\
+	src/Ngap_TNLInformationItem.c	\
+	src/Ngap_TNLMappingList.c	\
+	src/Ngap_TNLMappingItem.c	\
 	src/Ngap_TraceActivation.c	\
 	src/Ngap_TraceDepth.c	\
 	src/Ngap_TrafficLoadReductionIndication.c	\
@@ -470,24 +462,18 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_UERadioCapabilityForPaging.c	\
 	src/Ngap_UERadioCapabilityForPagingOfNR.c	\
 	src/Ngap_UERadioCapabilityForPagingOfEUTRA.c	\
-	src/Ngap_UERetentionInformation.c	\
 	src/Ngap_UESecurityCapabilities.c	\
 	src/Ngap_UL-NGU-UP-TNLModifyList.c	\
 	src/Ngap_UL-NGU-UP-TNLModifyItem.c	\
 	src/Ngap_UnavailableGUAMIList.c	\
 	src/Ngap_UnavailableGUAMIItem.c	\
+	src/Ngap_UP-TNLInformation.c	\
 	src/Ngap_UPTransportLayerInformation.c	\
-	src/Ngap_UPTransportLayerInformationList.c	\
-	src/Ngap_UPTransportLayerInformationItem.c	\
-	src/Ngap_UPTransportLayerInformationPairList.c	\
-	src/Ngap_UPTransportLayerInformationPairItem.c	\
 	src/Ngap_UserLocationInformation.c	\
 	src/Ngap_UserLocationInformationEUTRA.c	\
 	src/Ngap_UserLocationInformationN3IWF.c	\
 	src/Ngap_UserLocationInformationNR.c	\
 	src/Ngap_UserPlaneSecurityInformation.c	\
-	src/Ngap_VolumeTimedReportList.c	\
-	src/Ngap_VolumeTimedReport-Item.c	\
 	src/Ngap_WarningAreaCoordinates.c	\
 	src/Ngap_WarningAreaList.c	\
 	src/Ngap_WarningMessageContents.c	\
@@ -575,8 +561,7 @@ ASN_MODULE_SRCS=	\
 	src/Ngap_UERadioCapabilityInfoIndication.c	\
 	src/Ngap_UERadioCapabilityCheckRequest.c	\
 	src/Ngap_UERadioCapabilityCheckResponse.c	\
-	src/Ngap_PrivateMessage.c	\
-	src/Ngap_SecondaryRATDataUsageReport.c
+	src/Ngap_PrivateMessage.c
 
 ASN_MODULE_HDRS=	\
 	src/Ngap_Criticality.h	\
@@ -601,8 +586,6 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_InitiatingMessage.h	\
 	src/Ngap_SuccessfulOutcome.h	\
 	src/Ngap_UnsuccessfulOutcome.h	\
-	src/Ngap_AdditionalDLUPTNLInformationForHOList.h	\
-	src/Ngap_AdditionalDLUPTNLInformationForHOItem.h	\
 	src/Ngap_AdditionalQosFlowInformation.h	\
 	src/Ngap_AllocationAndRetentionPriority.h	\
 	src/Ngap_AllowedNSSAI.h	\
@@ -720,7 +703,6 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_EmergencyFallbackIndicator.h	\
 	src/Ngap_EmergencyFallbackRequestIndicator.h	\
 	src/Ngap_EmergencyServiceTargetCN.h	\
-	src/Ngap_EN-DCSONConfigurationTransfer.h	\
 	src/Ngap_EquivalentPLMNs.h	\
 	src/Ngap_EPS-TAC.h	\
 	src/Ngap_EPS-TAI.h	\
@@ -758,7 +740,6 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_GTPTunnel.h	\
 	src/Ngap_GUAMI.h	\
 	src/Ngap_HandoverCommandTransfer.h	\
-	src/Ngap_HandoverFlag.h	\
 	src/Ngap_HandoverPreparationUnsuccessfulTransfer.h	\
 	src/Ngap_HandoverRequestAcknowledgeTransfer.h	\
 	src/Ngap_HandoverRequiredTransfer.h	\
@@ -785,6 +766,7 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_MaximumIntegrityProtectedDataRate.h	\
 	src/Ngap_MICOModeIndication.h	\
 	src/Ngap_MobilityRestrictionList.h	\
+	src/Ngap_MultipleTNLInformation.h	\
 	src/Ngap_N3IWF-ID.h	\
 	src/Ngap_NAS-PDU.h	\
 	src/Ngap_NASSecurityParametersFromNGRAN.h	\
@@ -880,8 +862,6 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_PDUSessionResourceReleasedListRelRes.h	\
 	src/Ngap_PDUSessionResourceReleasedItemRelRes.h	\
 	src/Ngap_PDUSessionResourceReleaseResponseTransfer.h	\
-	src/Ngap_PDUSessionResourceSecondaryRATUsageList.h	\
-	src/Ngap_PDUSessionResourceSecondaryRATUsageItem.h	\
 	src/Ngap_PDUSessionResourceSetupListCxtReq.h	\
 	src/Ngap_PDUSessionResourceSetupItemCxtReq.h	\
 	src/Ngap_PDUSessionResourceSetupListCxtRes.h	\
@@ -904,7 +884,6 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_PDUSessionResourceToReleaseListRelCmd.h	\
 	src/Ngap_PDUSessionResourceToReleaseItemRelCmd.h	\
 	src/Ngap_PDUSessionType.h	\
-	src/Ngap_PDUSessionUsageReport.h	\
 	src/Ngap_PeriodicRegistrationUpdateTimer.h	\
 	src/Ngap_PLMNIdentity.h	\
 	src/Ngap_PLMNSupportList.h	\
@@ -926,25 +905,21 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_QosFlowInformationList.h	\
 	src/Ngap_QosFlowInformationItem.h	\
 	src/Ngap_QosFlowLevelQosParameters.h	\
-	src/Ngap_QosFlowListWithCause.h	\
-	src/Ngap_QosFlowWithCauseItem.h	\
+	src/Ngap_QosFlowList.h	\
+	src/Ngap_QosFlowItem.h	\
 	src/Ngap_QosFlowModifyConfirmList.h	\
 	src/Ngap_QosFlowModifyConfirmItem.h	\
 	src/Ngap_QosFlowNotifyList.h	\
 	src/Ngap_QosFlowNotifyItem.h	\
 	src/Ngap_QosFlowPerTNLInformation.h	\
-	src/Ngap_QosFlowPerTNLInformationList.h	\
-	src/Ngap_QosFlowPerTNLInformationItem.h	\
 	src/Ngap_QosFlowSetupRequestList.h	\
 	src/Ngap_QosFlowSetupRequestItem.h	\
-	src/Ngap_QosFlowListWithDataForwarding.h	\
-	src/Ngap_QosFlowItemWithDataForwarding.h	\
+	src/Ngap_QosFlowSetupResponseListHOReqAck.h	\
+	src/Ngap_QosFlowSetupResponseItemHOReqAck.h	\
 	src/Ngap_QosFlowSetupResponseListSURes.h	\
 	src/Ngap_QosFlowSetupResponseItemSURes.h	\
 	src/Ngap_QosFlowToBeForwardedList.h	\
 	src/Ngap_QosFlowToBeForwardedItem.h	\
-	src/Ngap_QoSFlowsUsageReportList.h	\
-	src/Ngap_QoSFlowsUsageReport-Item.h	\
 	src/Ngap_RANNodeName.h	\
 	src/Ngap_RANPagingPriority.h	\
 	src/Ngap_RANStatusTransfer-TransparentContainer.h	\
@@ -958,7 +933,6 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_RecommendedRANNodesForPaging.h	\
 	src/Ngap_RecommendedRANNodeList.h	\
 	src/Ngap_RecommendedRANNodeItem.h	\
-	src/Ngap_RedirectionVoiceFallback.h	\
 	src/Ngap_ReflectiveQosAttribute.h	\
 	src/Ngap_ReferenceID.h	\
 	src/Ngap_RelativeAMFCapacity.h	\
@@ -972,8 +946,6 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_RRCInactiveTransitionReportRequest.h	\
 	src/Ngap_RRCState.h	\
 	src/Ngap_SD.h	\
-	src/Ngap_SecondaryRATUsageInformation.h	\
-	src/Ngap_SecondaryRATDataUsageReportTransfer.h	\
 	src/Ngap_SecurityContext.h	\
 	src/Ngap_SecurityIndication.h	\
 	src/Ngap_SecurityKey.h	\
@@ -983,6 +955,7 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_ServedGUAMIItem.h	\
 	src/Ngap_ServiceAreaInformation.h	\
 	src/Ngap_ServiceAreaInformation-Item.h	\
+	src/Ngap_SingleTNLInformation.h	\
 	src/Ngap_SliceOverloadList.h	\
 	src/Ngap_SliceOverloadItem.h	\
 	src/Ngap_SliceSupportList.h	\
@@ -1029,6 +1002,10 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_TNLAssociationList.h	\
 	src/Ngap_TNLAssociationItem.h	\
 	src/Ngap_TNLAssociationUsage.h	\
+	src/Ngap_TNLInformationList.h	\
+	src/Ngap_TNLInformationItem.h	\
+	src/Ngap_TNLMappingList.h	\
+	src/Ngap_TNLMappingItem.h	\
 	src/Ngap_TraceActivation.h	\
 	src/Ngap_TraceDepth.h	\
 	src/Ngap_TrafficLoadReductionIndication.h	\
@@ -1050,24 +1027,18 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_UERadioCapabilityForPaging.h	\
 	src/Ngap_UERadioCapabilityForPagingOfNR.h	\
 	src/Ngap_UERadioCapabilityForPagingOfEUTRA.h	\
-	src/Ngap_UERetentionInformation.h	\
 	src/Ngap_UESecurityCapabilities.h	\
 	src/Ngap_UL-NGU-UP-TNLModifyList.h	\
 	src/Ngap_UL-NGU-UP-TNLModifyItem.h	\
 	src/Ngap_UnavailableGUAMIList.h	\
 	src/Ngap_UnavailableGUAMIItem.h	\
+	src/Ngap_UP-TNLInformation.h	\
 	src/Ngap_UPTransportLayerInformation.h	\
-	src/Ngap_UPTransportLayerInformationList.h	\
-	src/Ngap_UPTransportLayerInformationItem.h	\
-	src/Ngap_UPTransportLayerInformationPairList.h	\
-	src/Ngap_UPTransportLayerInformationPairItem.h	\
 	src/Ngap_UserLocationInformation.h	\
 	src/Ngap_UserLocationInformationEUTRA.h	\
 	src/Ngap_UserLocationInformationN3IWF.h	\
 	src/Ngap_UserLocationInformationNR.h	\
 	src/Ngap_UserPlaneSecurityInformation.h	\
-	src/Ngap_VolumeTimedReportList.h	\
-	src/Ngap_VolumeTimedReport-Item.h	\
 	src/Ngap_WarningAreaCoordinates.h	\
 	src/Ngap_WarningAreaList.h	\
 	src/Ngap_WarningMessageContents.h	\
@@ -1155,8 +1126,7 @@ ASN_MODULE_HDRS=	\
 	src/Ngap_UERadioCapabilityInfoIndication.h	\
 	src/Ngap_UERadioCapabilityCheckRequest.h	\
 	src/Ngap_UERadioCapabilityCheckResponse.h	\
-	src/Ngap_PrivateMessage.h	\
-	src/Ngap_SecondaryRATDataUsageReport.h
+	src/Ngap_PrivateMessage.h
 
 ASN_MODULE_HDRS+=src/ANY.h
 ASN_MODULE_SRCS+=src/ANY.c

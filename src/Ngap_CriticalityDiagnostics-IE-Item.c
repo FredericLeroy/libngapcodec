@@ -39,7 +39,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_IE_Item_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct Ngap_CriticalityDiagnostics_IE_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_ProtocolExtensionContainer_175P33,
+		&asn_DEF_Ngap_ProtocolExtensionContainer_175P32,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

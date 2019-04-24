@@ -30,7 +30,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GlobalNgENB_ID_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct Ngap_GlobalNgENB_ID, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (2 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_ProtocolExtensionContainer_175P58,
+		&asn_DEF_Ngap_ProtocolExtensionContainer_175P57,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

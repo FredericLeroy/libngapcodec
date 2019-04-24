@@ -178,23 +178,6 @@ per_type_encoder_f Ngap_ProtocolIE_ID_encode_aper;
 #define Ngap_ProtocolIE_ID_id_UL_NGU_UP_TNLInformation	((Ngap_ProtocolIE_ID_t)139)
 #define Ngap_ProtocolIE_ID_id_UL_NGU_UP_TNLModifyList	((Ngap_ProtocolIE_ID_t)140)
 #define Ngap_ProtocolIE_ID_id_WarningAreaCoordinates	((Ngap_ProtocolIE_ID_t)141)
-#define Ngap_ProtocolIE_ID_id_PDUSessionResourceSecondaryRATUsageList	((Ngap_ProtocolIE_ID_t)142)
-#define Ngap_ProtocolIE_ID_id_HandoverFlag	((Ngap_ProtocolIE_ID_t)143)
-#define Ngap_ProtocolIE_ID_id_SecondaryRATUsageInformation	((Ngap_ProtocolIE_ID_t)144)
-#define Ngap_ProtocolIE_ID_id_PDUSessionResourceReleaseResponseTransfer	((Ngap_ProtocolIE_ID_t)145)
-#define Ngap_ProtocolIE_ID_id_RedirectionVoiceFallback	((Ngap_ProtocolIE_ID_t)146)
-#define Ngap_ProtocolIE_ID_id_UERetentionInformation	((Ngap_ProtocolIE_ID_t)147)
-#define Ngap_ProtocolIE_ID_id_S_NSSAI	((Ngap_ProtocolIE_ID_t)148)
-#define Ngap_ProtocolIE_ID_id_PSCellInformation	((Ngap_ProtocolIE_ID_t)149)
-#define Ngap_ProtocolIE_ID_id_LastEUTRAN_PLMNIdentity	((Ngap_ProtocolIE_ID_t)150)
-#define Ngap_ProtocolIE_ID_id_MaximumIntegrityProtectedDataRate_DL	((Ngap_ProtocolIE_ID_t)151)
-#define Ngap_ProtocolIE_ID_id_AdditionalDLForwardingUPTNLInformation	((Ngap_ProtocolIE_ID_t)152)
-#define Ngap_ProtocolIE_ID_id_AdditionalDLUPTNLInformationForHOList	((Ngap_ProtocolIE_ID_t)153)
-#define Ngap_ProtocolIE_ID_id_AdditionalNGU_UP_TNLInformation	((Ngap_ProtocolIE_ID_t)154)
-#define Ngap_ProtocolIE_ID_id_AdditionalDLQosFlowPerTNLInformation	((Ngap_ProtocolIE_ID_t)155)
-#define Ngap_ProtocolIE_ID_id_SecurityResult	((Ngap_ProtocolIE_ID_t)156)
-#define Ngap_ProtocolIE_ID_id_ENDC_SONConfigurationTransferDL	((Ngap_ProtocolIE_ID_t)157)
-#define Ngap_ProtocolIE_ID_id_ENDC_SONConfigurationTransferUL	((Ngap_ProtocolIE_ID_t)158)
 
 #ifdef __cplusplus
 }

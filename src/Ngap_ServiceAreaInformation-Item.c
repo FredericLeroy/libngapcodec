@@ -41,7 +41,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ServiceAreaInformation_Item_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct Ngap_ServiceAreaInformation_Item, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_ProtocolExtensionContainer_175P153,
+		&asn_DEF_Ngap_ProtocolExtensionContainer_175P147,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

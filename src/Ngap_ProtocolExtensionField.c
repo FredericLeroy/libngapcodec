@@ -7,169 +7,6 @@
 
 #include "Ngap_ProtocolExtensionField.h"
 
-static const long asn_VAL_1_Ngap_id_AdditionalDLForwardingUPTNLInformation = 152;
-static const long asn_VAL_1_Ngap_ignore = 1;
-static const long asn_VAL_1_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_HandoverCommandTransfer_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_1_Ngap_id_AdditionalDLForwardingUPTNLInformation },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_1_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_QosFlowPerTNLInformationList },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_1_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_HandoverCommandTransfer_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_HandoverCommandTransfer_ExtIEs_1_rows }
-};
-static const long asn_VAL_2_Ngap_id_AdditionalDLUPTNLInformationForHOList = 153;
-static const long asn_VAL_2_Ngap_ignore = 1;
-static const long asn_VAL_2_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_2_Ngap_id_AdditionalDLUPTNLInformationForHOList },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_2_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOList },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_2_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_1_rows }
-};
-static const long asn_VAL_3_Ngap_id_LastEUTRAN_PLMNIdentity = 150;
-static const long asn_VAL_3_Ngap_ignore = 1;
-static const long asn_VAL_3_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_MobilityRestrictionList_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_3_Ngap_id_LastEUTRAN_PLMNIdentity },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_3_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_PLMNIdentity },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_3_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_MobilityRestrictionList_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_MobilityRestrictionList_ExtIEs_1_rows }
-};
-static const long asn_VAL_4_Ngap_id_AdditionalNGU_UP_TNLInformation = 154;
-static const long asn_VAL_4_Ngap_ignore = 1;
-static const long asn_VAL_4_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_4_Ngap_id_AdditionalNGU_UP_TNLInformation },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_4_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_UPTransportLayerInformationPairList },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_4_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs_1_rows }
-};
-static const long asn_VAL_5_Ngap_id_AdditionalDLQosFlowPerTNLInformation = 155;
-static const long asn_VAL_5_Ngap_ignore = 1;
-static const long asn_VAL_5_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_PathSwitchRequestTransfer_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_5_Ngap_id_AdditionalDLQosFlowPerTNLInformation },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_5_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_QosFlowPerTNLInformationList },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_5_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_PathSwitchRequestTransfer_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_PathSwitchRequestTransfer_ExtIEs_1_rows }
-};
-static const long asn_VAL_6_Ngap_id_PDUSessionResourceReleaseResponseTransfer = 145;
-static const long asn_VAL_6_Ngap_ignore = 1;
-static const long asn_VAL_6_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_6_Ngap_id_PDUSessionResourceReleaseResponseTransfer },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_6_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_OCTET_STRING },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_6_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs_1_rows }
-};
-static const long asn_VAL_7_Ngap_id_AdditionalNGU_UP_TNLInformation = 154;
-static const long asn_VAL_7_Ngap_ignore = 1;
-static const long asn_VAL_7_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_7_Ngap_id_AdditionalNGU_UP_TNLInformation },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_7_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_UPTransportLayerInformationPairList },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_7_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs_1_rows }
-};
-static const long asn_VAL_8_Ngap_id_SecondaryRATUsageInformation = 144;
-static const long asn_VAL_8_Ngap_ignore = 1;
-static const long asn_VAL_8_Ngap_optional = 0;
-static const long asn_VAL_9_Ngap_id_SecurityResult = 156;
-static const long asn_VAL_9_Ngap_ignore = 1;
-static const long asn_VAL_9_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_8_Ngap_id_SecondaryRATUsageInformation },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_8_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_SecondaryRATUsageInformation },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_8_Ngap_optional },
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_9_Ngap_id_SecurityResult },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_9_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_SecurityResult },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_9_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs_1[] = {
-	{ 2, 4, asn_IOS_Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs_1_rows }
-};
-static const long asn_VAL_10_Ngap_id_S_NSSAI = 148;
-static const long asn_VAL_10_Ngap_reject = 0;
-static const long asn_VAL_10_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_PDUSessionResourceModifyItemModReq_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_10_Ngap_id_S_NSSAI },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_10_Ngap_reject },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_S_NSSAI },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_10_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_PDUSessionResourceModifyItemModReq_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_PDUSessionResourceModifyItemModReq_ExtIEs_1_rows }
-};
-static const long asn_VAL_11_Ngap_id_SecondaryRATUsageInformation = 144;
-static const long asn_VAL_11_Ngap_ignore = 1;
-static const long asn_VAL_11_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_11_Ngap_id_SecondaryRATUsageInformation },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_11_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_SecondaryRATUsageInformation },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_11_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_1_rows }
-};
-static const long asn_VAL_12_Ngap_id_SecondaryRATUsageInformation = 144;
-static const long asn_VAL_12_Ngap_ignore = 1;
-static const long asn_VAL_12_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_PDUSessionResourceNotifyTransfer_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_12_Ngap_id_SecondaryRATUsageInformation },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_12_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_SecondaryRATUsageInformation },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_12_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_PDUSessionResourceNotifyTransfer_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_PDUSessionResourceNotifyTransfer_ExtIEs_1_rows }
-};
-static const long asn_VAL_13_Ngap_id_SecondaryRATUsageInformation = 144;
-static const long asn_VAL_13_Ngap_ignore = 1;
-static const long asn_VAL_13_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_13_Ngap_id_SecondaryRATUsageInformation },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_13_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_SecondaryRATUsageInformation },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_13_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs_1_rows }
-};
-static const long asn_VAL_14_Ngap_id_MaximumIntegrityProtectedDataRate_DL = 151;
-static const long asn_VAL_14_Ngap_ignore = 1;
-static const long asn_VAL_14_Ngap_optional = 0;
-static const asn_ioc_cell_t asn_IOS_Ngap_SecurityIndication_ExtIEs_1_rows[] = {
-	{ "&id", aioc__value, &asn_DEF_Ngap_ProtocolExtensionID, &asn_VAL_14_Ngap_id_MaximumIntegrityProtectedDataRate_DL },
-	{ "&criticality", aioc__value, &asn_DEF_Ngap_Criticality, &asn_VAL_14_Ngap_ignore },
-	{ "&Extension", aioc__type, &asn_DEF_Ngap_MaximumIntegrityProtectedDataRate },
-	{ "&presence", aioc__value, &asn_DEF_Ngap_Presence, &asn_VAL_14_Ngap_optional }
-};
-static const asn_ioc_set_t asn_IOS_Ngap_SecurityIndication_ExtIEs_1[] = {
-	{ 1, 4, asn_IOS_Ngap_SecurityIndication_ExtIEs_1_rows }
-};
 static int
 memb_Ngap_id_constraint_1(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -4038,33 +3875,6 @@ memb_Ngap_id_constraint_245(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_HandoverCommandTransfer_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_HandoverCommandTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_245(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -4082,33 +3892,6 @@ memb_Ngap_criticality_constraint_245(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_HandoverCommandTransfer_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_HandoverCommandTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -4218,33 +4001,6 @@ memb_Ngap_id_constraint_253(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_HandoverRequestAcknowledgeTransfer_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_253(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -4262,33 +4018,6 @@ memb_Ngap_criticality_constraint_253(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_HandoverRequestAcknowledgeTransfer_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -4713,33 +4442,6 @@ memb_Ngap_id_constraint_281(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_MobilityRestrictionList_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_MobilityRestrictionList_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_MobilityRestrictionList_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_281(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -4757,33 +4459,6 @@ memb_Ngap_criticality_constraint_281(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_MobilityRestrictionList_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_MobilityRestrictionList_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_MobilityRestrictionList_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -5145,33 +4820,6 @@ memb_Ngap_id_constraint_305(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_PathSwitchRequestAcknowledgeTransfer_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_305(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -5189,33 +4837,6 @@ memb_Ngap_criticality_constraint_305(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_PathSwitchRequestAcknowledgeTransfer_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -5325,33 +4946,6 @@ memb_Ngap_id_constraint_313(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_PathSwitchRequestTransfer_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PathSwitchRequestTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PathSwitchRequestTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_313(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -5369,33 +4963,6 @@ memb_Ngap_criticality_constraint_313(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_PathSwitchRequestTransfer_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PathSwitchRequestTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PathSwitchRequestTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -6174,12 +5741,6 @@ memb_Ngap_extensionValue_constraint_361(const asn_TYPE_descriptor_t *td, const v
 }
 
 static int
-memb_Ngap_OCTET_STRING_CONTAINING_PDUSessionResourceReleaseResponseTransfer__constraint_368(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
 memb_Ngap_id_constraint_365(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	long value;
@@ -6204,33 +5765,6 @@ memb_Ngap_id_constraint_365(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_PDUSessionResourceItemCxtRelCpl_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_365(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -6248,33 +5782,6 @@ memb_Ngap_criticality_constraint_365(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_PDUSessionResourceItemCxtRelCpl_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -6573,33 +6080,6 @@ memb_Ngap_id_constraint_385(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_PDUSessionResourceModifyResponseTransfer_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_385(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -6617,33 +6097,6 @@ memb_Ngap_criticality_constraint_385(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_PDUSessionResourceModifyResponseTransfer_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -6690,33 +6143,6 @@ memb_Ngap_id_constraint_389(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_PDUSessionResourceModifyIndicationTransfer_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_389(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -6734,33 +6160,6 @@ memb_Ngap_criticality_constraint_389(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_PDUSessionResourceModifyIndicationTransfer_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -6933,33 +6332,6 @@ memb_Ngap_id_constraint_401(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_PDUSessionResourceModifyItemModReq_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceModifyItemModReq_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceModifyItemModReq_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_401(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -6977,33 +6349,6 @@ memb_Ngap_criticality_constraint_401(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_PDUSessionResourceModifyItemModReq_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceModifyItemModReq_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceModifyItemModReq_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -7239,33 +6584,6 @@ memb_Ngap_id_constraint_417(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_417(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -7283,33 +6601,6 @@ memb_Ngap_criticality_constraint_417(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -7356,33 +6647,6 @@ memb_Ngap_id_constraint_421(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_PDUSessionResourceNotifyTransfer_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceNotifyTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceNotifyTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_421(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -7400,33 +6664,6 @@ memb_Ngap_criticality_constraint_421(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_PDUSessionResourceNotifyTransfer_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceNotifyTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceNotifyTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -7788,33 +7025,6 @@ memb_Ngap_id_constraint_445(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_PDUSessionResourceReleaseResponseTransfer_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_445(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -7832,33 +7042,6 @@ memb_Ngap_criticality_constraint_445(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_PDUSessionResourceReleaseResponseTransfer_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -10299,33 +9482,6 @@ memb_Ngap_id_constraint_601(const asn_TYPE_descriptor_t *td, const void *sptr,
 	}
 }
 
-static asn_type_selector_result_t
-select_SecurityIndication_ExtIEs_Ngap_criticality_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_SecurityIndication_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 1; /* &criticality */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_SecurityIndication_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
-}
-
 static int
 memb_Ngap_criticality_constraint_601(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
@@ -10343,33 +9499,6 @@ memb_Ngap_criticality_constraint_601(const asn_TYPE_descriptor_t *td, const void
 	}
 	
 	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static asn_type_selector_result_t
-select_SecurityIndication_ExtIEs_Ngap_extensionValue_type(const asn_TYPE_descriptor_t *parent_type, const void *parent_sptr) {
-	asn_type_selector_result_t result = {0, 0};
-	const asn_ioc_set_t *itable = asn_IOS_Ngap_SecurityIndication_ExtIEs_1;
-	size_t constraining_column = 0; /* &id */
-	size_t for_column = 2; /* &Extension */
-	size_t row, presence_index = 0;
-	const long *constraining_value = (const long *)((const char *)parent_sptr + offsetof(struct Ngap_SecurityIndication_ExtIEs, id));
-	
-	for(row=0; row < itable->rows_count; row++) {
-	    const asn_ioc_cell_t *constraining_cell = &itable->rows[row * itable->columns_count + constraining_column];
-	    const asn_ioc_cell_t *type_cell = &itable->rows[row * itable->columns_count + for_column];
-	
-	    if(type_cell->cell_kind == aioc__undefined)
-	        continue;
-	
-	    presence_index++;
-	    if(constraining_cell->type_descriptor->op->compare_struct(constraining_cell->type_descriptor, constraining_value, constraining_cell->value_sptr) == 0) {
-	        result.type_descriptor = type_cell->type_descriptor;
-	        result.presence_index = presence_index;
-	        break;
-	    }
-	}
-	
-	return result;
 }
 
 static int
@@ -12516,384 +11645,6 @@ memb_Ngap_criticality_constraint_737(const asn_TYPE_descriptor_t *td, const void
 
 static int
 memb_Ngap_extensionValue_constraint_737(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_id_constraint_741(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 65535)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_Ngap_criticality_constraint_741(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_extensionValue_constraint_741(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_id_constraint_745(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 65535)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_Ngap_criticality_constraint_745(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_extensionValue_constraint_745(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_id_constraint_749(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 65535)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_Ngap_criticality_constraint_749(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_extensionValue_constraint_749(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_id_constraint_753(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 65535)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_Ngap_criticality_constraint_753(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_extensionValue_constraint_753(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_id_constraint_757(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 65535)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_Ngap_criticality_constraint_757(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_extensionValue_constraint_757(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_id_constraint_761(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	long value;
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	value = *(const long *)sptr;
-	
-	if((value >= 0 && value <= 65535)) {
-		/* Constraint check succeeded */
-		return 0;
-	} else {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: constraint failed (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-}
-
-static int
-memb_Ngap_criticality_constraint_761(const asn_TYPE_descriptor_t *td, const void *sptr,
-			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
-	
-	if(!sptr) {
-		ASN__CTFAIL(app_key, td, sptr,
-			"%s: value not given (%s:%d)",
-			td->name, __FILE__, __LINE__);
-		return -1;
-	}
-	
-	
-	if(1 /* No applicable constraints whatsoever */) {
-		/* Nothing is here. See below */
-	}
-	
-	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
-}
-
-static int
-memb_Ngap_extensionValue_constraint_761(const asn_TYPE_descriptor_t *td, const void *sptr,
 			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
 	
 	if(!sptr) {
@@ -17351,155 +16102,11 @@ static asn_per_constraints_t asn_PER_memb_Ngap_extensionValue_constr_740 CC_NOTU
 	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
 	0, 0	/* No PER value map */
 };
-static asn_oer_constraints_t asn_OER_memb_Ngap_id_constr_742 CC_NOTUSED = {
-	{ 2, 1 }	/* (0..65535) */,
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_id_constr_742 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 16,  16,  0,  65535 }	/* (0..65535) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_criticality_constr_743 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_criticality_constr_743 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_extensionValue_constr_744 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_extensionValue_constr_744 CC_NOTUSED = {
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_id_constr_746 CC_NOTUSED = {
-	{ 2, 1 }	/* (0..65535) */,
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_id_constr_746 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 16,  16,  0,  65535 }	/* (0..65535) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_criticality_constr_747 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_criticality_constr_747 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_extensionValue_constr_748 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_extensionValue_constr_748 CC_NOTUSED = {
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_id_constr_750 CC_NOTUSED = {
-	{ 2, 1 }	/* (0..65535) */,
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_id_constr_750 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 16,  16,  0,  65535 }	/* (0..65535) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_criticality_constr_751 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_criticality_constr_751 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_extensionValue_constr_752 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_extensionValue_constr_752 CC_NOTUSED = {
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_id_constr_754 CC_NOTUSED = {
-	{ 2, 1 }	/* (0..65535) */,
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_id_constr_754 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 16,  16,  0,  65535 }	/* (0..65535) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_criticality_constr_755 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_criticality_constr_755 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_extensionValue_constr_756 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_extensionValue_constr_756 CC_NOTUSED = {
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_id_constr_758 CC_NOTUSED = {
-	{ 2, 1 }	/* (0..65535) */,
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_id_constr_758 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 16,  16,  0,  65535 }	/* (0..65535) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_criticality_constr_759 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_criticality_constr_759 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_extensionValue_constr_760 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_extensionValue_constr_760 CC_NOTUSED = {
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_id_constr_762 CC_NOTUSED = {
-	{ 2, 1 }	/* (0..65535) */,
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_id_constr_762 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 16,  16,  0,  65535 }	/* (0..65535) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_criticality_constr_763 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_criticality_constr_763 CC_NOTUSED = {
-	{ APC_CONSTRAINED,	 2,  2,  0,  2 }	/* (0..2) */,
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
-static asn_oer_constraints_t asn_OER_memb_Ngap_extensionValue_constr_764 CC_NOTUSED = {
-	{ 0, 0 },
-	-1};
-static asn_per_constraints_t asn_PER_memb_Ngap_extensionValue_constr_764 CC_NOTUSED = {
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	{ APC_UNCONSTRAINED,	-1, -1,  0,  0 },
-	0, 0	/* No PER value map */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_4 = {
-	sizeof(struct Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AllocationAndRetentionPriority_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AllocationAndRetentionPriority_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -17519,8 +16126,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_4 = {
 	&asn_SPC_Ngap_extensionValue_specs_4	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_1[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AllocationAndRetentionPriority_ExtIEs_1[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -17529,7 +16136,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_1[] 
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -17538,7 +16145,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_1[] 
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_4,
@@ -17548,42 +16155,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_1[] 
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_tags_1[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_1[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_tag2el_1[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AllocationAndRetentionPriority_ExtIEs_tag2el_1[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_specs_1 = {
-	sizeof(struct Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs),
-	offsetof(struct Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_tag2el_1,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AllocationAndRetentionPriority_ExtIEs_specs_1 = {
+	sizeof(struct Ngap_AllocationAndRetentionPriority_ExtIEs),
+	offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AllocationAndRetentionPriority_ExtIEs_tag2el_1,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs = {
-	"AdditionalDLUPTNLInformationForHOItem-ExtIEs",
-	"AdditionalDLUPTNLInformationForHOItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs = {
+	"AllocationAndRetentionPriority-ExtIEs",
+	"AllocationAndRetentionPriority-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_tags_1,
-	sizeof(asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_tags_1)
-		/sizeof(asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_tags_1[0]), /* 1 */
-	asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_tags_1,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_tags_1)
-		/sizeof(asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_tags_1[0]), /* 1 */
+	asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_1,
+	sizeof(asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_1)
+		/sizeof(asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_1[0]), /* 1 */
+	asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_1,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_1)
+		/sizeof(asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_1[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_1,
+	asn_MBR_Ngap_AllocationAndRetentionPriority_ExtIEs_1,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AdditionalDLUPTNLInformationForHOItem_ExtIEs_specs_1	/* Additional specs */
+	&asn_SPC_Ngap_AllocationAndRetentionPriority_ExtIEs_specs_1	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_8 = {
-	sizeof(struct Ngap_AllocationAndRetentionPriority_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AllocationAndRetentionPriority_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AllowedNSSAI_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AllowedNSSAI_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -17603,8 +16210,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_8 = {
 	&asn_SPC_Ngap_extensionValue_specs_8	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AllocationAndRetentionPriority_ExtIEs_5[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AllowedNSSAI_Item_ExtIEs_5[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -17613,7 +16220,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AllocationAndRetentionPriority_ExtIEs_5[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -17622,7 +16229,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AllocationAndRetentionPriority_ExtIEs_5[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_8,
@@ -17632,42 +16239,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AllocationAndRetentionPriority_ExtIEs_5[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_5[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_5[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AllocationAndRetentionPriority_ExtIEs_tag2el_5[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AllowedNSSAI_Item_ExtIEs_tag2el_5[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AllocationAndRetentionPriority_ExtIEs_specs_5 = {
-	sizeof(struct Ngap_AllocationAndRetentionPriority_ExtIEs),
-	offsetof(struct Ngap_AllocationAndRetentionPriority_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AllocationAndRetentionPriority_ExtIEs_tag2el_5,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AllowedNSSAI_Item_ExtIEs_specs_5 = {
+	sizeof(struct Ngap_AllowedNSSAI_Item_ExtIEs),
+	offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AllowedNSSAI_Item_ExtIEs_tag2el_5,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs = {
-	"AllocationAndRetentionPriority-ExtIEs",
-	"AllocationAndRetentionPriority-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs = {
+	"AllowedNSSAI-Item-ExtIEs",
+	"AllowedNSSAI-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_5,
-	sizeof(asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_5)
-		/sizeof(asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_5[0]), /* 1 */
-	asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_5,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_5)
-		/sizeof(asn_DEF_Ngap_AllocationAndRetentionPriority_ExtIEs_tags_5[0]), /* 1 */
+	asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_5,
+	sizeof(asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_5)
+		/sizeof(asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_5[0]), /* 1 */
+	asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_5,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_5)
+		/sizeof(asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_5[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AllocationAndRetentionPriority_ExtIEs_5,
+	asn_MBR_Ngap_AllowedNSSAI_Item_ExtIEs_5,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AllocationAndRetentionPriority_ExtIEs_specs_5	/* Additional specs */
+	&asn_SPC_Ngap_AllowedNSSAI_Item_ExtIEs_specs_5	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_12 = {
-	sizeof(struct Ngap_AllowedNSSAI_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AllowedNSSAI_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -17687,8 +16294,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_12 = {
 	&asn_SPC_Ngap_extensionValue_specs_12	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AllowedNSSAI_Item_ExtIEs_9[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_9[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -17697,7 +16304,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AllowedNSSAI_Item_ExtIEs_9[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -17706,7 +16313,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AllowedNSSAI_Item_ExtIEs_9[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_12,
@@ -17716,42 +16323,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AllowedNSSAI_Item_ExtIEs_9[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_9[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_9[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AllowedNSSAI_Item_ExtIEs_tag2el_9[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tag2el_9[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AllowedNSSAI_Item_ExtIEs_specs_9 = {
-	sizeof(struct Ngap_AllowedNSSAI_Item_ExtIEs),
-	offsetof(struct Ngap_AllowedNSSAI_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AllowedNSSAI_Item_ExtIEs_tag2el_9,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_specs_9 = {
+	sizeof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs),
+	offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tag2el_9,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs = {
-	"AllowedNSSAI-Item-ExtIEs",
-	"AllowedNSSAI-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs = {
+	"AMF-TNLAssociationSetupItem-ExtIEs",
+	"AMF-TNLAssociationSetupItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_9,
-	sizeof(asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_9)
-		/sizeof(asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_9[0]), /* 1 */
-	asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_9,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_9)
-		/sizeof(asn_DEF_Ngap_AllowedNSSAI_Item_ExtIEs_tags_9[0]), /* 1 */
+	asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_9,
+	sizeof(asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_9)
+		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_9[0]), /* 1 */
+	asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_9,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_9)
+		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_9[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AllowedNSSAI_Item_ExtIEs_9,
+	asn_MBR_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_9,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AllowedNSSAI_Item_ExtIEs_specs_9	/* Additional specs */
+	&asn_SPC_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_specs_9	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_16 = {
-	sizeof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -17771,8 +16378,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_16 = {
 	&asn_SPC_Ngap_extensionValue_specs_16	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_13[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_13[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -17781,7 +16388,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_13[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -17790,7 +16397,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_13[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_16,
@@ -17800,42 +16407,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_13[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_13[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_13[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tag2el_13[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tag2el_13[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_specs_13 = {
-	sizeof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs),
-	offsetof(struct Ngap_AMF_TNLAssociationSetupItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tag2el_13,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_specs_13 = {
+	sizeof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs),
+	offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tag2el_13,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs = {
-	"AMF-TNLAssociationSetupItem-ExtIEs",
-	"AMF-TNLAssociationSetupItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs = {
+	"AMF-TNLAssociationToAddItem-ExtIEs",
+	"AMF-TNLAssociationToAddItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_13,
-	sizeof(asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_13)
-		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_13[0]), /* 1 */
-	asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_13,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_13)
-		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_tags_13[0]), /* 1 */
+	asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_13,
+	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_13)
+		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_13[0]), /* 1 */
+	asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_13,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_13)
+		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_13[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_13,
+	asn_MBR_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_13,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AMF_TNLAssociationSetupItem_ExtIEs_specs_13	/* Additional specs */
+	&asn_SPC_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_specs_13	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_20 = {
-	sizeof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -17855,8 +16462,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_20 = {
 	&asn_SPC_Ngap_extensionValue_specs_20	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_17[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_17[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -17865,7 +16472,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_17[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -17874,7 +16481,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_17[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_20,
@@ -17884,42 +16491,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_17[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_17[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_17[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tag2el_17[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tag2el_17[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_specs_17 = {
-	sizeof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs),
-	offsetof(struct Ngap_AMF_TNLAssociationToAddItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tag2el_17,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_specs_17 = {
+	sizeof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs),
+	offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tag2el_17,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs = {
-	"AMF-TNLAssociationToAddItem-ExtIEs",
-	"AMF-TNLAssociationToAddItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs = {
+	"AMF-TNLAssociationToRemoveItem-ExtIEs",
+	"AMF-TNLAssociationToRemoveItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_17,
-	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_17)
-		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_17[0]), /* 1 */
-	asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_17,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_17)
-		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_tags_17[0]), /* 1 */
+	asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_17,
+	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_17)
+		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_17[0]), /* 1 */
+	asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_17,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_17)
+		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_17[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_17,
+	asn_MBR_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_17,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AMF_TNLAssociationToAddItem_ExtIEs_specs_17	/* Additional specs */
+	&asn_SPC_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_specs_17	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_24 = {
-	sizeof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -17939,8 +16546,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_24 = {
 	&asn_SPC_Ngap_extensionValue_specs_24	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_21[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_21[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -17949,7 +16556,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_21[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -17958,7 +16565,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_21[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_24,
@@ -17968,42 +16575,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_21[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_21[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_21[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tag2el_21[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tag2el_21[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_specs_21 = {
-	sizeof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs),
-	offsetof(struct Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tag2el_21,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_specs_21 = {
+	sizeof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs),
+	offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tag2el_21,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs = {
-	"AMF-TNLAssociationToRemoveItem-ExtIEs",
-	"AMF-TNLAssociationToRemoveItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs = {
+	"AMF-TNLAssociationToUpdateItem-ExtIEs",
+	"AMF-TNLAssociationToUpdateItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_21,
-	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_21)
-		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_21[0]), /* 1 */
-	asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_21,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_21)
-		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_tags_21[0]), /* 1 */
+	asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_21,
+	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_21)
+		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_21[0]), /* 1 */
+	asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_21,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_21)
+		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_21[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_21,
+	asn_MBR_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_21,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AMF_TNLAssociationToRemoveItem_ExtIEs_specs_21	/* Additional specs */
+	&asn_SPC_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_specs_21	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_28 = {
-	sizeof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AreaOfInterest_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AreaOfInterest_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AreaOfInterest_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AreaOfInterest_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18023,8 +16630,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_28 = {
 	&asn_SPC_Ngap_extensionValue_specs_28	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_25[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterest_ExtIEs_25[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterest_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18033,7 +16640,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_25[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterest_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18042,7 +16649,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_25[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterest_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_28,
@@ -18052,42 +16659,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_25[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_25[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_25[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tag2el_25[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AreaOfInterest_ExtIEs_tag2el_25[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_specs_25 = {
-	sizeof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs),
-	offsetof(struct Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tag2el_25,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AreaOfInterest_ExtIEs_specs_25 = {
+	sizeof(struct Ngap_AreaOfInterest_ExtIEs),
+	offsetof(struct Ngap_AreaOfInterest_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AreaOfInterest_ExtIEs_tag2el_25,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs = {
-	"AMF-TNLAssociationToUpdateItem-ExtIEs",
-	"AMF-TNLAssociationToUpdateItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AreaOfInterest_ExtIEs = {
+	"AreaOfInterest-ExtIEs",
+	"AreaOfInterest-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_25,
-	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_25)
-		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_25[0]), /* 1 */
-	asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_25,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_25)
-		/sizeof(asn_DEF_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_tags_25[0]), /* 1 */
+	asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_25,
+	sizeof(asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_25)
+		/sizeof(asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_25[0]), /* 1 */
+	asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_25,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_25)
+		/sizeof(asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_25[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_25,
+	asn_MBR_Ngap_AreaOfInterest_ExtIEs_25,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AMF_TNLAssociationToUpdateItem_ExtIEs_specs_25	/* Additional specs */
+	&asn_SPC_Ngap_AreaOfInterest_ExtIEs_specs_25	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_32 = {
-	sizeof(struct Ngap_AreaOfInterest_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AreaOfInterest_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AreaOfInterest_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AreaOfInterest_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AreaOfInterestCellItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AreaOfInterestCellItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18107,8 +16714,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_32 = {
 	&asn_SPC_Ngap_extensionValue_specs_32	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterest_ExtIEs_29[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterest_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestCellItem_ExtIEs_29[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18117,7 +16724,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterest_ExtIEs_29[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterest_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18126,7 +16733,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterest_ExtIEs_29[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterest_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_32,
@@ -18136,42 +16743,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterest_ExtIEs_29[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_29[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_29[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AreaOfInterest_ExtIEs_tag2el_29[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AreaOfInterestCellItem_ExtIEs_tag2el_29[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AreaOfInterest_ExtIEs_specs_29 = {
-	sizeof(struct Ngap_AreaOfInterest_ExtIEs),
-	offsetof(struct Ngap_AreaOfInterest_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AreaOfInterest_ExtIEs_tag2el_29,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AreaOfInterestCellItem_ExtIEs_specs_29 = {
+	sizeof(struct Ngap_AreaOfInterestCellItem_ExtIEs),
+	offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AreaOfInterestCellItem_ExtIEs_tag2el_29,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AreaOfInterest_ExtIEs = {
-	"AreaOfInterest-ExtIEs",
-	"AreaOfInterest-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs = {
+	"AreaOfInterestCellItem-ExtIEs",
+	"AreaOfInterestCellItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_29,
-	sizeof(asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_29)
-		/sizeof(asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_29[0]), /* 1 */
-	asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_29,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_29)
-		/sizeof(asn_DEF_Ngap_AreaOfInterest_ExtIEs_tags_29[0]), /* 1 */
+	asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_29,
+	sizeof(asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_29)
+		/sizeof(asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_29[0]), /* 1 */
+	asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_29,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_29)
+		/sizeof(asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_29[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AreaOfInterest_ExtIEs_29,
+	asn_MBR_Ngap_AreaOfInterestCellItem_ExtIEs_29,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AreaOfInterest_ExtIEs_specs_29	/* Additional specs */
+	&asn_SPC_Ngap_AreaOfInterestCellItem_ExtIEs_specs_29	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_36 = {
-	sizeof(struct Ngap_AreaOfInterestCellItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AreaOfInterestCellItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AreaOfInterestItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AreaOfInterestItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AreaOfInterestItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AreaOfInterestItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18191,8 +16798,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_36 = {
 	&asn_SPC_Ngap_extensionValue_specs_36	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestCellItem_ExtIEs_33[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestItem_ExtIEs_33[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18201,7 +16808,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestCellItem_ExtIEs_33[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18210,7 +16817,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestCellItem_ExtIEs_33[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_36,
@@ -18220,42 +16827,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestCellItem_ExtIEs_33[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_33[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_33[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AreaOfInterestCellItem_ExtIEs_tag2el_33[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AreaOfInterestItem_ExtIEs_tag2el_33[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AreaOfInterestCellItem_ExtIEs_specs_33 = {
-	sizeof(struct Ngap_AreaOfInterestCellItem_ExtIEs),
-	offsetof(struct Ngap_AreaOfInterestCellItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AreaOfInterestCellItem_ExtIEs_tag2el_33,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AreaOfInterestItem_ExtIEs_specs_33 = {
+	sizeof(struct Ngap_AreaOfInterestItem_ExtIEs),
+	offsetof(struct Ngap_AreaOfInterestItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AreaOfInterestItem_ExtIEs_tag2el_33,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs = {
-	"AreaOfInterestCellItem-ExtIEs",
-	"AreaOfInterestCellItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AreaOfInterestItem_ExtIEs = {
+	"AreaOfInterestItem-ExtIEs",
+	"AreaOfInterestItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_33,
-	sizeof(asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_33)
-		/sizeof(asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_33[0]), /* 1 */
-	asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_33,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_33)
-		/sizeof(asn_DEF_Ngap_AreaOfInterestCellItem_ExtIEs_tags_33[0]), /* 1 */
+	asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_33,
+	sizeof(asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_33)
+		/sizeof(asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_33[0]), /* 1 */
+	asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_33,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_33)
+		/sizeof(asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_33[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AreaOfInterestCellItem_ExtIEs_33,
+	asn_MBR_Ngap_AreaOfInterestItem_ExtIEs_33,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AreaOfInterestCellItem_ExtIEs_specs_33	/* Additional specs */
+	&asn_SPC_Ngap_AreaOfInterestItem_ExtIEs_specs_33	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_40 = {
-	sizeof(struct Ngap_AreaOfInterestItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AreaOfInterestItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AreaOfInterestItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AreaOfInterestItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AreaOfInterestRANNodeItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18275,8 +16882,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_40 = {
 	&asn_SPC_Ngap_extensionValue_specs_40	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestItem_ExtIEs_37[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestRANNodeItem_ExtIEs_37[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18285,7 +16892,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestItem_ExtIEs_37[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18294,7 +16901,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestItem_ExtIEs_37[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_40,
@@ -18304,42 +16911,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestItem_ExtIEs_37[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_37[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_37[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AreaOfInterestItem_ExtIEs_tag2el_37[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tag2el_37[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AreaOfInterestItem_ExtIEs_specs_37 = {
-	sizeof(struct Ngap_AreaOfInterestItem_ExtIEs),
-	offsetof(struct Ngap_AreaOfInterestItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AreaOfInterestItem_ExtIEs_tag2el_37,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AreaOfInterestRANNodeItem_ExtIEs_specs_37 = {
+	sizeof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs),
+	offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tag2el_37,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AreaOfInterestItem_ExtIEs = {
-	"AreaOfInterestItem-ExtIEs",
-	"AreaOfInterestItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs = {
+	"AreaOfInterestRANNodeItem-ExtIEs",
+	"AreaOfInterestRANNodeItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_37,
-	sizeof(asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_37)
-		/sizeof(asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_37[0]), /* 1 */
-	asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_37,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_37)
-		/sizeof(asn_DEF_Ngap_AreaOfInterestItem_ExtIEs_tags_37[0]), /* 1 */
+	asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_37,
+	sizeof(asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_37)
+		/sizeof(asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_37[0]), /* 1 */
+	asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_37,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_37)
+		/sizeof(asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_37[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AreaOfInterestItem_ExtIEs_37,
+	asn_MBR_Ngap_AreaOfInterestRANNodeItem_ExtIEs_37,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AreaOfInterestItem_ExtIEs_specs_37	/* Additional specs */
+	&asn_SPC_Ngap_AreaOfInterestRANNodeItem_ExtIEs_specs_37	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_44 = {
-	sizeof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AreaOfInterestRANNodeItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AreaOfInterestTAIItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AreaOfInterestTAIItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18359,8 +16966,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_44 = {
 	&asn_SPC_Ngap_extensionValue_specs_44	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestRANNodeItem_ExtIEs_41[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestTAIItem_ExtIEs_41[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18369,7 +16976,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestRANNodeItem_ExtIEs_41[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18378,7 +16985,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestRANNodeItem_ExtIEs_41[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_44,
@@ -18388,42 +16995,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestRANNodeItem_ExtIEs_41[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_41[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_41[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tag2el_41[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AreaOfInterestTAIItem_ExtIEs_tag2el_41[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AreaOfInterestRANNodeItem_ExtIEs_specs_41 = {
-	sizeof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs),
-	offsetof(struct Ngap_AreaOfInterestRANNodeItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tag2el_41,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AreaOfInterestTAIItem_ExtIEs_specs_41 = {
+	sizeof(struct Ngap_AreaOfInterestTAIItem_ExtIEs),
+	offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AreaOfInterestTAIItem_ExtIEs_tag2el_41,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs = {
-	"AreaOfInterestRANNodeItem-ExtIEs",
-	"AreaOfInterestRANNodeItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs = {
+	"AreaOfInterestTAIItem-ExtIEs",
+	"AreaOfInterestTAIItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_41,
-	sizeof(asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_41)
-		/sizeof(asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_41[0]), /* 1 */
-	asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_41,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_41)
-		/sizeof(asn_DEF_Ngap_AreaOfInterestRANNodeItem_ExtIEs_tags_41[0]), /* 1 */
+	asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_41,
+	sizeof(asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_41)
+		/sizeof(asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_41[0]), /* 1 */
+	asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_41,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_41)
+		/sizeof(asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_41[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AreaOfInterestRANNodeItem_ExtIEs_41,
+	asn_MBR_Ngap_AreaOfInterestTAIItem_ExtIEs_41,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AreaOfInterestRANNodeItem_ExtIEs_specs_41	/* Additional specs */
+	&asn_SPC_Ngap_AreaOfInterestTAIItem_ExtIEs_specs_41	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_48 = {
-	sizeof(struct Ngap_AreaOfInterestTAIItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AreaOfInterestTAIItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AssistanceDataForPaging_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AssistanceDataForPaging_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18443,8 +17050,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_48 = {
 	&asn_SPC_Ngap_extensionValue_specs_48	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestTAIItem_ExtIEs_45[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AssistanceDataForPaging_ExtIEs_45[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18453,7 +17060,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestTAIItem_ExtIEs_45[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18462,7 +17069,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestTAIItem_ExtIEs_45[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_48,
@@ -18472,42 +17079,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AreaOfInterestTAIItem_ExtIEs_45[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_45[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_45[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AreaOfInterestTAIItem_ExtIEs_tag2el_45[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AssistanceDataForPaging_ExtIEs_tag2el_45[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AreaOfInterestTAIItem_ExtIEs_specs_45 = {
-	sizeof(struct Ngap_AreaOfInterestTAIItem_ExtIEs),
-	offsetof(struct Ngap_AreaOfInterestTAIItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AreaOfInterestTAIItem_ExtIEs_tag2el_45,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AssistanceDataForPaging_ExtIEs_specs_45 = {
+	sizeof(struct Ngap_AssistanceDataForPaging_ExtIEs),
+	offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AssistanceDataForPaging_ExtIEs_tag2el_45,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs = {
-	"AreaOfInterestTAIItem-ExtIEs",
-	"AreaOfInterestTAIItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs = {
+	"AssistanceDataForPaging-ExtIEs",
+	"AssistanceDataForPaging-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_45,
-	sizeof(asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_45)
-		/sizeof(asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_45[0]), /* 1 */
-	asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_45,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_45)
-		/sizeof(asn_DEF_Ngap_AreaOfInterestTAIItem_ExtIEs_tags_45[0]), /* 1 */
+	asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_45,
+	sizeof(asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_45)
+		/sizeof(asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_45[0]), /* 1 */
+	asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_45,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_45)
+		/sizeof(asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_45[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AreaOfInterestTAIItem_ExtIEs_45,
+	asn_MBR_Ngap_AssistanceDataForPaging_ExtIEs_45,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AreaOfInterestTAIItem_ExtIEs_specs_45	/* Additional specs */
+	&asn_SPC_Ngap_AssistanceDataForPaging_ExtIEs_specs_45	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_52 = {
-	sizeof(struct Ngap_AssistanceDataForPaging_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AssistanceDataForPaging_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AssistanceDataForRecommendedCells_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18527,8 +17134,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_52 = {
 	&asn_SPC_Ngap_extensionValue_specs_52	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AssistanceDataForPaging_ExtIEs_49[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AssistanceDataForRecommendedCells_ExtIEs_49[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18537,7 +17144,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AssistanceDataForPaging_ExtIEs_49[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18546,7 +17153,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AssistanceDataForPaging_ExtIEs_49[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_52,
@@ -18556,42 +17163,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AssistanceDataForPaging_ExtIEs_49[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_49[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_49[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AssistanceDataForPaging_ExtIEs_tag2el_49[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tag2el_49[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AssistanceDataForPaging_ExtIEs_specs_49 = {
-	sizeof(struct Ngap_AssistanceDataForPaging_ExtIEs),
-	offsetof(struct Ngap_AssistanceDataForPaging_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AssistanceDataForPaging_ExtIEs_tag2el_49,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AssistanceDataForRecommendedCells_ExtIEs_specs_49 = {
+	sizeof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs),
+	offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tag2el_49,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs = {
-	"AssistanceDataForPaging-ExtIEs",
-	"AssistanceDataForPaging-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs = {
+	"AssistanceDataForRecommendedCells-ExtIEs",
+	"AssistanceDataForRecommendedCells-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_49,
-	sizeof(asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_49)
-		/sizeof(asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_49[0]), /* 1 */
-	asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_49,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_49)
-		/sizeof(asn_DEF_Ngap_AssistanceDataForPaging_ExtIEs_tags_49[0]), /* 1 */
+	asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_49,
+	sizeof(asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_49)
+		/sizeof(asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_49[0]), /* 1 */
+	asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_49,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_49)
+		/sizeof(asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_49[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AssistanceDataForPaging_ExtIEs_49,
+	asn_MBR_Ngap_AssistanceDataForRecommendedCells_ExtIEs_49,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AssistanceDataForPaging_ExtIEs_specs_49	/* Additional specs */
+	&asn_SPC_Ngap_AssistanceDataForRecommendedCells_ExtIEs_specs_49	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_56 = {
-	sizeof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AssistanceDataForRecommendedCells_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_AssociatedQosFlowItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_AssociatedQosFlowItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18611,8 +17218,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_56 = {
 	&asn_SPC_Ngap_extensionValue_specs_56	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AssistanceDataForRecommendedCells_ExtIEs_53[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_AssociatedQosFlowItem_ExtIEs_53[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18621,7 +17228,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AssistanceDataForRecommendedCells_ExtIEs_53[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18630,7 +17237,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AssistanceDataForRecommendedCells_ExtIEs_53[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_56,
@@ -18640,42 +17247,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AssistanceDataForRecommendedCells_ExtIEs_53[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_53[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_53[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tag2el_53[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_AssociatedQosFlowItem_ExtIEs_tag2el_53[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AssistanceDataForRecommendedCells_ExtIEs_specs_53 = {
-	sizeof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs),
-	offsetof(struct Ngap_AssistanceDataForRecommendedCells_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tag2el_53,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_AssociatedQosFlowItem_ExtIEs_specs_53 = {
+	sizeof(struct Ngap_AssociatedQosFlowItem_ExtIEs),
+	offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_AssociatedQosFlowItem_ExtIEs_tag2el_53,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs = {
-	"AssistanceDataForRecommendedCells-ExtIEs",
-	"AssistanceDataForRecommendedCells-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs = {
+	"AssociatedQosFlowItem-ExtIEs",
+	"AssociatedQosFlowItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_53,
-	sizeof(asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_53)
-		/sizeof(asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_53[0]), /* 1 */
-	asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_53,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_53)
-		/sizeof(asn_DEF_Ngap_AssistanceDataForRecommendedCells_ExtIEs_tags_53[0]), /* 1 */
+	asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_53,
+	sizeof(asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_53)
+		/sizeof(asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_53[0]), /* 1 */
+	asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_53,	/* Same as above */
+	sizeof(asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_53)
+		/sizeof(asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_53[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AssistanceDataForRecommendedCells_ExtIEs_53,
+	asn_MBR_Ngap_AssociatedQosFlowItem_ExtIEs_53,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AssistanceDataForRecommendedCells_ExtIEs_specs_53	/* Additional specs */
+	&asn_SPC_Ngap_AssociatedQosFlowItem_ExtIEs_specs_53	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_60 = {
-	sizeof(struct Ngap_AssociatedQosFlowItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_AssociatedQosFlowItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_BroadcastPLMNItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_BroadcastPLMNItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18695,8 +17302,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_60 = {
 	&asn_SPC_Ngap_extensionValue_specs_60	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_AssociatedQosFlowItem_ExtIEs_57[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_BroadcastPLMNItem_ExtIEs_57[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18705,7 +17312,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AssociatedQosFlowItem_ExtIEs_57[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18714,7 +17321,7 @@ asn_TYPE_member_t asn_MBR_Ngap_AssociatedQosFlowItem_ExtIEs_57[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_60,
@@ -18724,42 +17331,42 @@ asn_TYPE_member_t asn_MBR_Ngap_AssociatedQosFlowItem_ExtIEs_57[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_57[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_57[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_AssociatedQosFlowItem_ExtIEs_tag2el_57[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_BroadcastPLMNItem_ExtIEs_tag2el_57[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_AssociatedQosFlowItem_ExtIEs_specs_57 = {
-	sizeof(struct Ngap_AssociatedQosFlowItem_ExtIEs),
-	offsetof(struct Ngap_AssociatedQosFlowItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_AssociatedQosFlowItem_ExtIEs_tag2el_57,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_BroadcastPLMNItem_ExtIEs_specs_57 = {
+	sizeof(struct Ngap_BroadcastPLMNItem_ExtIEs),
+	offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_BroadcastPLMNItem_ExtIEs_tag2el_57,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs = {
-	"AssociatedQosFlowItem-ExtIEs",
-	"AssociatedQosFlowItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs = {
+	"BroadcastPLMNItem-ExtIEs",
+	"BroadcastPLMNItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_57,
-	sizeof(asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_57)
-		/sizeof(asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_57[0]), /* 1 */
-	asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_57,	/* Same as above */
-	sizeof(asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_57)
-		/sizeof(asn_DEF_Ngap_AssociatedQosFlowItem_ExtIEs_tags_57[0]), /* 1 */
+	asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_57,
+	sizeof(asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_57)
+		/sizeof(asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_57[0]), /* 1 */
+	asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_57,	/* Same as above */
+	sizeof(asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_57)
+		/sizeof(asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_57[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_AssociatedQosFlowItem_ExtIEs_57,
+	asn_MBR_Ngap_BroadcastPLMNItem_ExtIEs_57,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_AssociatedQosFlowItem_ExtIEs_specs_57	/* Additional specs */
+	&asn_SPC_Ngap_BroadcastPLMNItem_ExtIEs_specs_57	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_64 = {
-	sizeof(struct Ngap_BroadcastPLMNItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_BroadcastPLMNItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18779,8 +17386,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_64 = {
 	&asn_SPC_Ngap_extensionValue_specs_64	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_BroadcastPLMNItem_ExtIEs_61[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_61[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18789,7 +17396,7 @@ asn_TYPE_member_t asn_MBR_Ngap_BroadcastPLMNItem_ExtIEs_61[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18798,7 +17405,7 @@ asn_TYPE_member_t asn_MBR_Ngap_BroadcastPLMNItem_ExtIEs_61[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_64,
@@ -18808,42 +17415,42 @@ asn_TYPE_member_t asn_MBR_Ngap_BroadcastPLMNItem_ExtIEs_61[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_61[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_61[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_BroadcastPLMNItem_ExtIEs_tag2el_61[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tag2el_61[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_BroadcastPLMNItem_ExtIEs_specs_61 = {
-	sizeof(struct Ngap_BroadcastPLMNItem_ExtIEs),
-	offsetof(struct Ngap_BroadcastPLMNItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_BroadcastPLMNItem_ExtIEs_tag2el_61,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_specs_61 = {
+	sizeof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs),
+	offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tag2el_61,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs = {
-	"BroadcastPLMNItem-ExtIEs",
-	"BroadcastPLMNItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs = {
+	"CancelledCellsInEAI-EUTRA-Item-ExtIEs",
+	"CancelledCellsInEAI-EUTRA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_61,
-	sizeof(asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_61)
-		/sizeof(asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_61[0]), /* 1 */
-	asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_61,	/* Same as above */
-	sizeof(asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_61)
-		/sizeof(asn_DEF_Ngap_BroadcastPLMNItem_ExtIEs_tags_61[0]), /* 1 */
+	asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_61,
+	sizeof(asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_61)
+		/sizeof(asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_61[0]), /* 1 */
+	asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_61,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_61)
+		/sizeof(asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_61[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_BroadcastPLMNItem_ExtIEs_61,
+	asn_MBR_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_61,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_BroadcastPLMNItem_ExtIEs_specs_61	/* Additional specs */
+	&asn_SPC_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_specs_61	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_68 = {
-	sizeof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18863,8 +17470,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_68 = {
 	&asn_SPC_Ngap_extensionValue_specs_68	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_65[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_65[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18873,7 +17480,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_65[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18882,7 +17489,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_65[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_68,
@@ -18892,42 +17499,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_65[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_65[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_65[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tag2el_65[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tag2el_65[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_specs_65 = {
-	sizeof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs),
-	offsetof(struct Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tag2el_65,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_specs_65 = {
+	sizeof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs),
+	offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tag2el_65,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs = {
-	"CancelledCellsInEAI-EUTRA-Item-ExtIEs",
-	"CancelledCellsInEAI-EUTRA-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs = {
+	"CancelledCellsInEAI-NR-Item-ExtIEs",
+	"CancelledCellsInEAI-NR-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_65,
-	sizeof(asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_65)
-		/sizeof(asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_65[0]), /* 1 */
-	asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_65,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_65)
-		/sizeof(asn_DEF_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_tags_65[0]), /* 1 */
+	asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_65,
+	sizeof(asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_65)
+		/sizeof(asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_65[0]), /* 1 */
+	asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_65,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_65)
+		/sizeof(asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_65[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_65,
+	asn_MBR_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_65,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CancelledCellsInEAI_EUTRA_Item_ExtIEs_specs_65	/* Additional specs */
+	&asn_SPC_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_specs_65	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_72 = {
-	sizeof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -18947,8 +17554,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_72 = {
 	&asn_SPC_Ngap_extensionValue_specs_72	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_69[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_69[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -18957,7 +17564,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_69[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -18966,7 +17573,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_69[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_72,
@@ -18976,42 +17583,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_69[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_69[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_69[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tag2el_69[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tag2el_69[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_specs_69 = {
-	sizeof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs),
-	offsetof(struct Ngap_CancelledCellsInEAI_NR_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tag2el_69,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_specs_69 = {
+	sizeof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs),
+	offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tag2el_69,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs = {
-	"CancelledCellsInEAI-NR-Item-ExtIEs",
-	"CancelledCellsInEAI-NR-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs = {
+	"CancelledCellsInTAI-EUTRA-Item-ExtIEs",
+	"CancelledCellsInTAI-EUTRA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_69,
-	sizeof(asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_69)
-		/sizeof(asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_69[0]), /* 1 */
-	asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_69,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_69)
-		/sizeof(asn_DEF_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_tags_69[0]), /* 1 */
+	asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_69,
+	sizeof(asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_69)
+		/sizeof(asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_69[0]), /* 1 */
+	asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_69,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_69)
+		/sizeof(asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_69[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_69,
+	asn_MBR_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_69,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CancelledCellsInEAI_NR_Item_ExtIEs_specs_69	/* Additional specs */
+	&asn_SPC_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_specs_69	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_76 = {
-	sizeof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19031,8 +17638,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_76 = {
 	&asn_SPC_Ngap_extensionValue_specs_76	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_73[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_73[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19041,7 +17648,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_73[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19050,7 +17657,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_73[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_76,
@@ -19060,42 +17667,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_73[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_73[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_73[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tag2el_73[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tag2el_73[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_specs_73 = {
-	sizeof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs),
-	offsetof(struct Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tag2el_73,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_specs_73 = {
+	sizeof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs),
+	offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tag2el_73,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs = {
-	"CancelledCellsInTAI-EUTRA-Item-ExtIEs",
-	"CancelledCellsInTAI-EUTRA-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs = {
+	"CancelledCellsInTAI-NR-Item-ExtIEs",
+	"CancelledCellsInTAI-NR-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_73,
-	sizeof(asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_73)
-		/sizeof(asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_73[0]), /* 1 */
-	asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_73,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_73)
-		/sizeof(asn_DEF_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_tags_73[0]), /* 1 */
+	asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_73,
+	sizeof(asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_73)
+		/sizeof(asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_73[0]), /* 1 */
+	asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_73,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_73)
+		/sizeof(asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_73[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_73,
+	asn_MBR_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_73,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CancelledCellsInTAI_EUTRA_Item_ExtIEs_specs_73	/* Additional specs */
+	&asn_SPC_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_specs_73	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_80 = {
-	sizeof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19115,8 +17722,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_80 = {
 	&asn_SPC_Ngap_extensionValue_specs_80	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_77[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_77[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19125,7 +17732,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_77[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19134,7 +17741,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_77[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_80,
@@ -19144,42 +17751,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_77[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_77[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_77[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tag2el_77[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tag2el_77[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_specs_77 = {
-	sizeof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs),
-	offsetof(struct Ngap_CancelledCellsInTAI_NR_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tag2el_77,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_specs_77 = {
+	sizeof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs),
+	offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tag2el_77,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs = {
-	"CancelledCellsInTAI-NR-Item-ExtIEs",
-	"CancelledCellsInTAI-NR-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs = {
+	"CellIDBroadcastEUTRA-Item-ExtIEs",
+	"CellIDBroadcastEUTRA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_77,
-	sizeof(asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_77)
-		/sizeof(asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_77[0]), /* 1 */
-	asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_77,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_77)
-		/sizeof(asn_DEF_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_tags_77[0]), /* 1 */
+	asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_77,
+	sizeof(asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_77)
+		/sizeof(asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_77[0]), /* 1 */
+	asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_77,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_77)
+		/sizeof(asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_77[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_77,
+	asn_MBR_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_77,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CancelledCellsInTAI_NR_Item_ExtIEs_specs_77	/* Additional specs */
+	&asn_SPC_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_specs_77	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_84 = {
-	sizeof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CellIDBroadcastNR_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19199,8 +17806,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_84 = {
 	&asn_SPC_Ngap_extensionValue_specs_84	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_81[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CellIDBroadcastNR_Item_ExtIEs_81[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19209,7 +17816,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_81[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19218,7 +17825,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_81[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_84,
@@ -19228,42 +17835,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_81[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_81[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_81[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tag2el_81[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CellIDBroadcastNR_Item_ExtIEs_tag2el_81[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_specs_81 = {
-	sizeof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs),
-	offsetof(struct Ngap_CellIDBroadcastEUTRA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tag2el_81,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CellIDBroadcastNR_Item_ExtIEs_specs_81 = {
+	sizeof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs),
+	offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CellIDBroadcastNR_Item_ExtIEs_tag2el_81,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs = {
-	"CellIDBroadcastEUTRA-Item-ExtIEs",
-	"CellIDBroadcastEUTRA-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs = {
+	"CellIDBroadcastNR-Item-ExtIEs",
+	"CellIDBroadcastNR-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_81,
-	sizeof(asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_81)
-		/sizeof(asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_81[0]), /* 1 */
-	asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_81,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_81)
-		/sizeof(asn_DEF_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_tags_81[0]), /* 1 */
+	asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_81,
+	sizeof(asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_81)
+		/sizeof(asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_81[0]), /* 1 */
+	asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_81,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_81)
+		/sizeof(asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_81[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_81,
+	asn_MBR_Ngap_CellIDBroadcastNR_Item_ExtIEs_81,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CellIDBroadcastEUTRA_Item_ExtIEs_specs_81	/* Additional specs */
+	&asn_SPC_Ngap_CellIDBroadcastNR_Item_ExtIEs_specs_81	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_88 = {
-	sizeof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CellIDBroadcastNR_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19283,8 +17890,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_88 = {
 	&asn_SPC_Ngap_extensionValue_specs_88	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CellIDBroadcastNR_Item_ExtIEs_85[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_85[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19293,7 +17900,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDBroadcastNR_Item_ExtIEs_85[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19302,7 +17909,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDBroadcastNR_Item_ExtIEs_85[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_88,
@@ -19312,42 +17919,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDBroadcastNR_Item_ExtIEs_85[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_85[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_85[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CellIDBroadcastNR_Item_ExtIEs_tag2el_85[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tag2el_85[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CellIDBroadcastNR_Item_ExtIEs_specs_85 = {
-	sizeof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs),
-	offsetof(struct Ngap_CellIDBroadcastNR_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CellIDBroadcastNR_Item_ExtIEs_tag2el_85,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_specs_85 = {
+	sizeof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs),
+	offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tag2el_85,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs = {
-	"CellIDBroadcastNR-Item-ExtIEs",
-	"CellIDBroadcastNR-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs = {
+	"CellIDCancelledEUTRA-Item-ExtIEs",
+	"CellIDCancelledEUTRA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_85,
-	sizeof(asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_85)
-		/sizeof(asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_85[0]), /* 1 */
-	asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_85,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_85)
-		/sizeof(asn_DEF_Ngap_CellIDBroadcastNR_Item_ExtIEs_tags_85[0]), /* 1 */
+	asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_85,
+	sizeof(asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_85)
+		/sizeof(asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_85[0]), /* 1 */
+	asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_85,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_85)
+		/sizeof(asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_85[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CellIDBroadcastNR_Item_ExtIEs_85,
+	asn_MBR_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_85,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CellIDBroadcastNR_Item_ExtIEs_specs_85	/* Additional specs */
+	&asn_SPC_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_specs_85	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_92 = {
-	sizeof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CellIDCancelledNR_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CellIDCancelledNR_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19367,8 +17974,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_92 = {
 	&asn_SPC_Ngap_extensionValue_specs_92	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_89[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CellIDCancelledNR_Item_ExtIEs_89[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19377,7 +17984,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_89[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19386,7 +17993,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_89[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_92,
@@ -19396,42 +18003,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_89[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_89[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_89[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tag2el_89[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CellIDCancelledNR_Item_ExtIEs_tag2el_89[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_specs_89 = {
-	sizeof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs),
-	offsetof(struct Ngap_CellIDCancelledEUTRA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tag2el_89,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CellIDCancelledNR_Item_ExtIEs_specs_89 = {
+	sizeof(struct Ngap_CellIDCancelledNR_Item_ExtIEs),
+	offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CellIDCancelledNR_Item_ExtIEs_tag2el_89,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs = {
-	"CellIDCancelledEUTRA-Item-ExtIEs",
-	"CellIDCancelledEUTRA-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs = {
+	"CellIDCancelledNR-Item-ExtIEs",
+	"CellIDCancelledNR-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_89,
-	sizeof(asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_89)
-		/sizeof(asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_89[0]), /* 1 */
-	asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_89,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_89)
-		/sizeof(asn_DEF_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_tags_89[0]), /* 1 */
+	asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_89,
+	sizeof(asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_89)
+		/sizeof(asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_89[0]), /* 1 */
+	asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_89,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_89)
+		/sizeof(asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_89[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_89,
+	asn_MBR_Ngap_CellIDCancelledNR_Item_ExtIEs_89,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CellIDCancelledEUTRA_Item_ExtIEs_specs_89	/* Additional specs */
+	&asn_SPC_Ngap_CellIDCancelledNR_Item_ExtIEs_specs_89	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_96 = {
-	sizeof(struct Ngap_CellIDCancelledNR_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CellIDCancelledNR_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CellType_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CellType_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CellType_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CellType_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19451,8 +18058,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_96 = {
 	&asn_SPC_Ngap_extensionValue_specs_96	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CellIDCancelledNR_Item_ExtIEs_93[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CellType_ExtIEs_93[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellType_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19461,7 +18068,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDCancelledNR_Item_ExtIEs_93[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellType_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19470,7 +18077,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDCancelledNR_Item_ExtIEs_93[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CellType_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_96,
@@ -19480,42 +18087,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CellIDCancelledNR_Item_ExtIEs_93[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_93[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CellType_ExtIEs_tags_93[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CellIDCancelledNR_Item_ExtIEs_tag2el_93[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CellType_ExtIEs_tag2el_93[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CellIDCancelledNR_Item_ExtIEs_specs_93 = {
-	sizeof(struct Ngap_CellIDCancelledNR_Item_ExtIEs),
-	offsetof(struct Ngap_CellIDCancelledNR_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CellIDCancelledNR_Item_ExtIEs_tag2el_93,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CellType_ExtIEs_specs_93 = {
+	sizeof(struct Ngap_CellType_ExtIEs),
+	offsetof(struct Ngap_CellType_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CellType_ExtIEs_tag2el_93,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs = {
-	"CellIDCancelledNR-Item-ExtIEs",
-	"CellIDCancelledNR-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CellType_ExtIEs = {
+	"CellType-ExtIEs",
+	"CellType-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_93,
-	sizeof(asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_93)
-		/sizeof(asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_93[0]), /* 1 */
-	asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_93,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_93)
-		/sizeof(asn_DEF_Ngap_CellIDCancelledNR_Item_ExtIEs_tags_93[0]), /* 1 */
+	asn_DEF_Ngap_CellType_ExtIEs_tags_93,
+	sizeof(asn_DEF_Ngap_CellType_ExtIEs_tags_93)
+		/sizeof(asn_DEF_Ngap_CellType_ExtIEs_tags_93[0]), /* 1 */
+	asn_DEF_Ngap_CellType_ExtIEs_tags_93,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CellType_ExtIEs_tags_93)
+		/sizeof(asn_DEF_Ngap_CellType_ExtIEs_tags_93[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CellIDCancelledNR_Item_ExtIEs_93,
+	asn_MBR_Ngap_CellType_ExtIEs_93,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CellIDCancelledNR_Item_ExtIEs_specs_93	/* Additional specs */
+	&asn_SPC_Ngap_CellType_ExtIEs_specs_93	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_100 = {
-	sizeof(struct Ngap_CellType_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CellType_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CellType_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CellType_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19535,8 +18142,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_100 = {
 	&asn_SPC_Ngap_extensionValue_specs_100	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CellType_ExtIEs_97[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellType_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_97[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19545,7 +18152,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CellType_ExtIEs_97[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CellType_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19554,7 +18161,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CellType_ExtIEs_97[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CellType_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_100,
@@ -19564,42 +18171,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CellType_ExtIEs_97[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CellType_ExtIEs_tags_97[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_97[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CellType_ExtIEs_tag2el_97[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tag2el_97[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CellType_ExtIEs_specs_97 = {
-	sizeof(struct Ngap_CellType_ExtIEs),
-	offsetof(struct Ngap_CellType_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CellType_ExtIEs_tag2el_97,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_specs_97 = {
+	sizeof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs),
+	offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tag2el_97,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CellType_ExtIEs = {
-	"CellType-ExtIEs",
-	"CellType-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs = {
+	"CompletedCellsInEAI-EUTRA-Item-ExtIEs",
+	"CompletedCellsInEAI-EUTRA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CellType_ExtIEs_tags_97,
-	sizeof(asn_DEF_Ngap_CellType_ExtIEs_tags_97)
-		/sizeof(asn_DEF_Ngap_CellType_ExtIEs_tags_97[0]), /* 1 */
-	asn_DEF_Ngap_CellType_ExtIEs_tags_97,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CellType_ExtIEs_tags_97)
-		/sizeof(asn_DEF_Ngap_CellType_ExtIEs_tags_97[0]), /* 1 */
+	asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_97,
+	sizeof(asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_97)
+		/sizeof(asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_97[0]), /* 1 */
+	asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_97,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_97)
+		/sizeof(asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_97[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CellType_ExtIEs_97,
+	asn_MBR_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_97,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CellType_ExtIEs_specs_97	/* Additional specs */
+	&asn_SPC_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_specs_97	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_104 = {
-	sizeof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19619,8 +18226,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_104 = {
 	&asn_SPC_Ngap_extensionValue_specs_104	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_101[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_101[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19629,7 +18236,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_101[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19638,7 +18245,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_101[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_104,
@@ -19648,42 +18255,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_101[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_101[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_101[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tag2el_101[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tag2el_101[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_specs_101 = {
-	sizeof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs),
-	offsetof(struct Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tag2el_101,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_specs_101 = {
+	sizeof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs),
+	offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tag2el_101,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs = {
-	"CompletedCellsInEAI-EUTRA-Item-ExtIEs",
-	"CompletedCellsInEAI-EUTRA-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs = {
+	"CompletedCellsInEAI-NR-Item-ExtIEs",
+	"CompletedCellsInEAI-NR-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_101,
-	sizeof(asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_101)
-		/sizeof(asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_101[0]), /* 1 */
-	asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_101,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_101)
-		/sizeof(asn_DEF_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_tags_101[0]), /* 1 */
+	asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_101,
+	sizeof(asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_101)
+		/sizeof(asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_101[0]), /* 1 */
+	asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_101,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_101)
+		/sizeof(asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_101[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_101,
+	asn_MBR_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_101,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CompletedCellsInEAI_EUTRA_Item_ExtIEs_specs_101	/* Additional specs */
+	&asn_SPC_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_specs_101	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_108 = {
-	sizeof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19703,8 +18310,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_108 = {
 	&asn_SPC_Ngap_extensionValue_specs_108	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_105[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_105[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19713,7 +18320,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_105[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19722,7 +18329,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_105[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_108,
@@ -19732,42 +18339,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_105[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_105[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_105[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tag2el_105[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tag2el_105[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_specs_105 = {
-	sizeof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs),
-	offsetof(struct Ngap_CompletedCellsInEAI_NR_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tag2el_105,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_specs_105 = {
+	sizeof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs),
+	offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tag2el_105,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs = {
-	"CompletedCellsInEAI-NR-Item-ExtIEs",
-	"CompletedCellsInEAI-NR-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs = {
+	"CompletedCellsInTAI-EUTRA-Item-ExtIEs",
+	"CompletedCellsInTAI-EUTRA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_105,
-	sizeof(asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_105)
-		/sizeof(asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_105[0]), /* 1 */
-	asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_105,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_105)
-		/sizeof(asn_DEF_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_tags_105[0]), /* 1 */
+	asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_105,
+	sizeof(asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_105)
+		/sizeof(asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_105[0]), /* 1 */
+	asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_105,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_105)
+		/sizeof(asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_105[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_105,
+	asn_MBR_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_105,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CompletedCellsInEAI_NR_Item_ExtIEs_specs_105	/* Additional specs */
+	&asn_SPC_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_specs_105	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_112 = {
-	sizeof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19787,8 +18394,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_112 = {
 	&asn_SPC_Ngap_extensionValue_specs_112	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_109[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_109[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19797,7 +18404,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_109[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19806,7 +18413,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_109[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_112,
@@ -19816,42 +18423,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_109[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_109[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_109[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tag2el_109[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tag2el_109[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_specs_109 = {
-	sizeof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs),
-	offsetof(struct Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tag2el_109,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_specs_109 = {
+	sizeof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs),
+	offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tag2el_109,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs = {
-	"CompletedCellsInTAI-EUTRA-Item-ExtIEs",
-	"CompletedCellsInTAI-EUTRA-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs = {
+	"CompletedCellsInTAI-NR-Item-ExtIEs",
+	"CompletedCellsInTAI-NR-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_109,
-	sizeof(asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_109)
-		/sizeof(asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_109[0]), /* 1 */
-	asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_109,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_109)
-		/sizeof(asn_DEF_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_tags_109[0]), /* 1 */
+	asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_109,
+	sizeof(asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_109)
+		/sizeof(asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_109[0]), /* 1 */
+	asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_109,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_109)
+		/sizeof(asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_109[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_109,
+	asn_MBR_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_109,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CompletedCellsInTAI_EUTRA_Item_ExtIEs_specs_109	/* Additional specs */
+	&asn_SPC_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_specs_109	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_116 = {
-	sizeof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CoreNetworkAssistanceInformation_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19871,8 +18478,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_116 = {
 	&asn_SPC_Ngap_extensionValue_specs_116	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_113[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CoreNetworkAssistanceInformation_ExtIEs_113[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19881,7 +18488,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_113[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19890,7 +18497,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_113[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_116,
@@ -19900,42 +18507,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_113[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_113[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_113[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tag2el_113[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tag2el_113[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_specs_113 = {
-	sizeof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs),
-	offsetof(struct Ngap_CompletedCellsInTAI_NR_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tag2el_113,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CoreNetworkAssistanceInformation_ExtIEs_specs_113 = {
+	sizeof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs),
+	offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tag2el_113,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs = {
-	"CompletedCellsInTAI-NR-Item-ExtIEs",
-	"CompletedCellsInTAI-NR-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs = {
+	"CoreNetworkAssistanceInformation-ExtIEs",
+	"CoreNetworkAssistanceInformation-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_113,
-	sizeof(asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_113)
-		/sizeof(asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_113[0]), /* 1 */
-	asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_113,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_113)
-		/sizeof(asn_DEF_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_tags_113[0]), /* 1 */
+	asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_113,
+	sizeof(asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_113)
+		/sizeof(asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_113[0]), /* 1 */
+	asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_113,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_113)
+		/sizeof(asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_113[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_113,
+	asn_MBR_Ngap_CoreNetworkAssistanceInformation_ExtIEs_113,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CompletedCellsInTAI_NR_Item_ExtIEs_specs_113	/* Additional specs */
+	&asn_SPC_Ngap_CoreNetworkAssistanceInformation_ExtIEs_specs_113	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_120 = {
-	sizeof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CoreNetworkAssistanceInformation_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs__extensionValue),
+	offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_COUNTValueForPDCP_SN12_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -19955,8 +18562,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_120 = {
 	&asn_SPC_Ngap_extensionValue_specs_120	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CoreNetworkAssistanceInformation_ExtIEs_117[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_COUNTValueForPDCP_SN12_ExtIEs_117[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -19965,7 +18572,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CoreNetworkAssistanceInformation_ExtIEs_117[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -19974,7 +18581,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CoreNetworkAssistanceInformation_ExtIEs_117[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_120,
@@ -19984,42 +18591,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CoreNetworkAssistanceInformation_ExtIEs_117[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_117[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_117[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tag2el_117[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tag2el_117[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CoreNetworkAssistanceInformation_ExtIEs_specs_117 = {
-	sizeof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs),
-	offsetof(struct Ngap_CoreNetworkAssistanceInformation_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tag2el_117,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_COUNTValueForPDCP_SN12_ExtIEs_specs_117 = {
+	sizeof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs),
+	offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tag2el_117,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs = {
-	"CoreNetworkAssistanceInformation-ExtIEs",
-	"CoreNetworkAssistanceInformation-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs = {
+	"COUNTValueForPDCP-SN12-ExtIEs",
+	"COUNTValueForPDCP-SN12-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_117,
-	sizeof(asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_117)
-		/sizeof(asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_117[0]), /* 1 */
-	asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_117,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_117)
-		/sizeof(asn_DEF_Ngap_CoreNetworkAssistanceInformation_ExtIEs_tags_117[0]), /* 1 */
+	asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_117,
+	sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_117)
+		/sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_117[0]), /* 1 */
+	asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_117,	/* Same as above */
+	sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_117)
+		/sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_117[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CoreNetworkAssistanceInformation_ExtIEs_117,
+	asn_MBR_Ngap_COUNTValueForPDCP_SN12_ExtIEs_117,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CoreNetworkAssistanceInformation_ExtIEs_specs_117	/* Additional specs */
+	&asn_SPC_Ngap_COUNTValueForPDCP_SN12_ExtIEs_specs_117	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_124 = {
-	sizeof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs__extensionValue),
-	offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_COUNTValueForPDCP_SN12_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs__extensionValue),
+	offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_COUNTValueForPDCP_SN18_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20039,8 +18646,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_124 = {
 	&asn_SPC_Ngap_extensionValue_specs_124	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_COUNTValueForPDCP_SN12_ExtIEs_121[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_COUNTValueForPDCP_SN18_ExtIEs_121[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20049,7 +18656,7 @@ asn_TYPE_member_t asn_MBR_Ngap_COUNTValueForPDCP_SN12_ExtIEs_121[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20058,7 +18665,7 @@ asn_TYPE_member_t asn_MBR_Ngap_COUNTValueForPDCP_SN12_ExtIEs_121[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_124,
@@ -20068,42 +18675,42 @@ asn_TYPE_member_t asn_MBR_Ngap_COUNTValueForPDCP_SN12_ExtIEs_121[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_121[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_121[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tag2el_121[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tag2el_121[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_COUNTValueForPDCP_SN12_ExtIEs_specs_121 = {
-	sizeof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs),
-	offsetof(struct Ngap_COUNTValueForPDCP_SN12_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tag2el_121,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_COUNTValueForPDCP_SN18_ExtIEs_specs_121 = {
+	sizeof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs),
+	offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tag2el_121,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs = {
-	"COUNTValueForPDCP-SN12-ExtIEs",
-	"COUNTValueForPDCP-SN12-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs = {
+	"COUNTValueForPDCP-SN18-ExtIEs",
+	"COUNTValueForPDCP-SN18-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_121,
-	sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_121)
-		/sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_121[0]), /* 1 */
-	asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_121,	/* Same as above */
-	sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_121)
-		/sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN12_ExtIEs_tags_121[0]), /* 1 */
+	asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_121,
+	sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_121)
+		/sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_121[0]), /* 1 */
+	asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_121,	/* Same as above */
+	sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_121)
+		/sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_121[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_COUNTValueForPDCP_SN12_ExtIEs_121,
+	asn_MBR_Ngap_COUNTValueForPDCP_SN18_ExtIEs_121,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_COUNTValueForPDCP_SN12_ExtIEs_specs_121	/* Additional specs */
+	&asn_SPC_Ngap_COUNTValueForPDCP_SN18_ExtIEs_specs_121	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_128 = {
-	sizeof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs__extensionValue),
-	offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_COUNTValueForPDCP_SN18_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CriticalityDiagnostics_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CriticalityDiagnostics_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20123,8 +18730,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_128 = {
 	&asn_SPC_Ngap_extensionValue_specs_128	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_COUNTValueForPDCP_SN18_ExtIEs_125[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_ExtIEs_125[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20133,7 +18740,7 @@ asn_TYPE_member_t asn_MBR_Ngap_COUNTValueForPDCP_SN18_ExtIEs_125[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20142,7 +18749,7 @@ asn_TYPE_member_t asn_MBR_Ngap_COUNTValueForPDCP_SN18_ExtIEs_125[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_128,
@@ -20152,42 +18759,42 @@ asn_TYPE_member_t asn_MBR_Ngap_COUNTValueForPDCP_SN18_ExtIEs_125[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_125[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_125[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tag2el_125[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CriticalityDiagnostics_ExtIEs_tag2el_125[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_COUNTValueForPDCP_SN18_ExtIEs_specs_125 = {
-	sizeof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs),
-	offsetof(struct Ngap_COUNTValueForPDCP_SN18_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tag2el_125,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CriticalityDiagnostics_ExtIEs_specs_125 = {
+	sizeof(struct Ngap_CriticalityDiagnostics_ExtIEs),
+	offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CriticalityDiagnostics_ExtIEs_tag2el_125,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs = {
-	"COUNTValueForPDCP-SN18-ExtIEs",
-	"COUNTValueForPDCP-SN18-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs = {
+	"CriticalityDiagnostics-ExtIEs",
+	"CriticalityDiagnostics-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_125,
-	sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_125)
-		/sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_125[0]), /* 1 */
-	asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_125,	/* Same as above */
-	sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_125)
-		/sizeof(asn_DEF_Ngap_COUNTValueForPDCP_SN18_ExtIEs_tags_125[0]), /* 1 */
+	asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_125,
+	sizeof(asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_125)
+		/sizeof(asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_125[0]), /* 1 */
+	asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_125,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_125)
+		/sizeof(asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_125[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_COUNTValueForPDCP_SN18_ExtIEs_125,
+	asn_MBR_Ngap_CriticalityDiagnostics_ExtIEs_125,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_COUNTValueForPDCP_SN18_ExtIEs_specs_125	/* Additional specs */
+	&asn_SPC_Ngap_CriticalityDiagnostics_ExtIEs_specs_125	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_132 = {
-	sizeof(struct Ngap_CriticalityDiagnostics_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CriticalityDiagnostics_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20207,8 +18814,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_132 = {
 	&asn_SPC_Ngap_extensionValue_specs_132	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_ExtIEs_129[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_129[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20217,7 +18824,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_ExtIEs_129[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20226,7 +18833,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_ExtIEs_129[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_132,
@@ -20236,42 +18843,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_ExtIEs_129[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_129[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_129[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CriticalityDiagnostics_ExtIEs_tag2el_129[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tag2el_129[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CriticalityDiagnostics_ExtIEs_specs_129 = {
-	sizeof(struct Ngap_CriticalityDiagnostics_ExtIEs),
-	offsetof(struct Ngap_CriticalityDiagnostics_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CriticalityDiagnostics_ExtIEs_tag2el_129,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_specs_129 = {
+	sizeof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs),
+	offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tag2el_129,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs = {
-	"CriticalityDiagnostics-ExtIEs",
-	"CriticalityDiagnostics-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs = {
+	"CriticalityDiagnostics-IE-Item-ExtIEs",
+	"CriticalityDiagnostics-IE-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_129,
-	sizeof(asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_129)
-		/sizeof(asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_129[0]), /* 1 */
-	asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_129,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_129)
-		/sizeof(asn_DEF_Ngap_CriticalityDiagnostics_ExtIEs_tags_129[0]), /* 1 */
+	asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_129,
+	sizeof(asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_129)
+		/sizeof(asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_129[0]), /* 1 */
+	asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_129,	/* Same as above */
+	sizeof(asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_129)
+		/sizeof(asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_129[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CriticalityDiagnostics_ExtIEs_129,
+	asn_MBR_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_129,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CriticalityDiagnostics_ExtIEs_specs_129	/* Additional specs */
+	&asn_SPC_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_specs_129	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_136 = {
-	sizeof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_DataForwardingResponseDRBItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20291,8 +18898,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_136 = {
 	&asn_SPC_Ngap_extensionValue_specs_136	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_133[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_DataForwardingResponseDRBItem_ExtIEs_133[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20301,7 +18908,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_133[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20310,7 +18917,7 @@ asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_133[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_136,
@@ -20320,42 +18927,42 @@ asn_TYPE_member_t asn_MBR_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_133[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_133[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_133[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tag2el_133[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_DataForwardingResponseDRBItem_ExtIEs_tag2el_133[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_specs_133 = {
-	sizeof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs),
-	offsetof(struct Ngap_CriticalityDiagnostics_IE_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tag2el_133,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_DataForwardingResponseDRBItem_ExtIEs_specs_133 = {
+	sizeof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs),
+	offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_DataForwardingResponseDRBItem_ExtIEs_tag2el_133,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs = {
-	"CriticalityDiagnostics-IE-Item-ExtIEs",
-	"CriticalityDiagnostics-IE-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs = {
+	"DataForwardingResponseDRBItem-ExtIEs",
+	"DataForwardingResponseDRBItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_133,
-	sizeof(asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_133)
-		/sizeof(asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_133[0]), /* 1 */
-	asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_133,	/* Same as above */
-	sizeof(asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_133)
-		/sizeof(asn_DEF_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_tags_133[0]), /* 1 */
+	asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_133,
+	sizeof(asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_133)
+		/sizeof(asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_133[0]), /* 1 */
+	asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_133,	/* Same as above */
+	sizeof(asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_133)
+		/sizeof(asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_133[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_133,
+	asn_MBR_Ngap_DataForwardingResponseDRBItem_ExtIEs_133,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_CriticalityDiagnostics_IE_Item_ExtIEs_specs_133	/* Additional specs */
+	&asn_SPC_Ngap_DataForwardingResponseDRBItem_ExtIEs_specs_133	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_140 = {
-	sizeof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_DataForwardingResponseDRBItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20375,8 +18982,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_140 = {
 	&asn_SPC_Ngap_extensionValue_specs_140	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_DataForwardingResponseDRBItem_ExtIEs_137[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_137[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20385,7 +18992,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DataForwardingResponseDRBItem_ExtIEs_137[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20394,7 +19001,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DataForwardingResponseDRBItem_ExtIEs_137[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_140,
@@ -20404,42 +19011,42 @@ asn_TYPE_member_t asn_MBR_Ngap_DataForwardingResponseDRBItem_ExtIEs_137[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_137[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_137[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_DataForwardingResponseDRBItem_ExtIEs_tag2el_137[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tag2el_137[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_DataForwardingResponseDRBItem_ExtIEs_specs_137 = {
-	sizeof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs),
-	offsetof(struct Ngap_DataForwardingResponseDRBItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_DataForwardingResponseDRBItem_ExtIEs_tag2el_137,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_specs_137 = {
+	sizeof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs),
+	offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tag2el_137,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs = {
-	"DataForwardingResponseDRBItem-ExtIEs",
-	"DataForwardingResponseDRBItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs = {
+	"DRBsSubjectToStatusTransferItem-ExtIEs",
+	"DRBsSubjectToStatusTransferItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_137,
-	sizeof(asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_137)
-		/sizeof(asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_137[0]), /* 1 */
-	asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_137,	/* Same as above */
-	sizeof(asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_137)
-		/sizeof(asn_DEF_Ngap_DataForwardingResponseDRBItem_ExtIEs_tags_137[0]), /* 1 */
+	asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_137,
+	sizeof(asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_137)
+		/sizeof(asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_137[0]), /* 1 */
+	asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_137,	/* Same as above */
+	sizeof(asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_137)
+		/sizeof(asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_137[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_DataForwardingResponseDRBItem_ExtIEs_137,
+	asn_MBR_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_137,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_DataForwardingResponseDRBItem_ExtIEs_specs_137	/* Additional specs */
+	&asn_SPC_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_specs_137	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_144 = {
-	sizeof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_DRBStatusDL12_ExtIEs__extensionValue),
+	offsetof(struct Ngap_DRBStatusDL12_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_DRBStatusDL12_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_DRBStatusDL12_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20459,8 +19066,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_144 = {
 	&asn_SPC_Ngap_extensionValue_specs_144	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_141[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_DRBStatusDL12_ExtIEs_141[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL12_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20469,7 +19076,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_141[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL12_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20478,7 +19085,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_141[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL12_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_144,
@@ -20488,42 +19095,42 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_141[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_141[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_141[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tag2el_141[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBStatusDL12_ExtIEs_tag2el_141[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_specs_141 = {
-	sizeof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs),
-	offsetof(struct Ngap_DRBsSubjectToStatusTransferItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tag2el_141,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBStatusDL12_ExtIEs_specs_141 = {
+	sizeof(struct Ngap_DRBStatusDL12_ExtIEs),
+	offsetof(struct Ngap_DRBStatusDL12_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_DRBStatusDL12_ExtIEs_tag2el_141,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs = {
-	"DRBsSubjectToStatusTransferItem-ExtIEs",
-	"DRBsSubjectToStatusTransferItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_DRBStatusDL12_ExtIEs = {
+	"DRBStatusDL12-ExtIEs",
+	"DRBStatusDL12-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_141,
-	sizeof(asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_141)
-		/sizeof(asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_141[0]), /* 1 */
-	asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_141,	/* Same as above */
-	sizeof(asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_141)
-		/sizeof(asn_DEF_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_tags_141[0]), /* 1 */
+	asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_141,
+	sizeof(asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_141)
+		/sizeof(asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_141[0]), /* 1 */
+	asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_141,	/* Same as above */
+	sizeof(asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_141)
+		/sizeof(asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_141[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_141,
+	asn_MBR_Ngap_DRBStatusDL12_ExtIEs_141,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_DRBsSubjectToStatusTransferItem_ExtIEs_specs_141	/* Additional specs */
+	&asn_SPC_Ngap_DRBStatusDL12_ExtIEs_specs_141	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_148 = {
-	sizeof(struct Ngap_DRBStatusDL12_ExtIEs__extensionValue),
-	offsetof(struct Ngap_DRBStatusDL12_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_DRBStatusDL12_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_DRBStatusDL12_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_DRBStatusDL18_ExtIEs__extensionValue),
+	offsetof(struct Ngap_DRBStatusDL18_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_DRBStatusDL18_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_DRBStatusDL18_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20543,8 +19150,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_148 = {
 	&asn_SPC_Ngap_extensionValue_specs_148	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_DRBStatusDL12_ExtIEs_145[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL12_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_DRBStatusDL18_ExtIEs_145[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL18_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20553,7 +19160,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusDL12_ExtIEs_145[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL12_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL18_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20562,7 +19169,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusDL12_ExtIEs_145[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL12_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL18_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_148,
@@ -20572,42 +19179,42 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusDL12_ExtIEs_145[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_145[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_145[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBStatusDL12_ExtIEs_tag2el_145[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBStatusDL18_ExtIEs_tag2el_145[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBStatusDL12_ExtIEs_specs_145 = {
-	sizeof(struct Ngap_DRBStatusDL12_ExtIEs),
-	offsetof(struct Ngap_DRBStatusDL12_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_DRBStatusDL12_ExtIEs_tag2el_145,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBStatusDL18_ExtIEs_specs_145 = {
+	sizeof(struct Ngap_DRBStatusDL18_ExtIEs),
+	offsetof(struct Ngap_DRBStatusDL18_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_DRBStatusDL18_ExtIEs_tag2el_145,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_DRBStatusDL12_ExtIEs = {
-	"DRBStatusDL12-ExtIEs",
-	"DRBStatusDL12-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_DRBStatusDL18_ExtIEs = {
+	"DRBStatusDL18-ExtIEs",
+	"DRBStatusDL18-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_145,
-	sizeof(asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_145)
-		/sizeof(asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_145[0]), /* 1 */
-	asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_145,	/* Same as above */
-	sizeof(asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_145)
-		/sizeof(asn_DEF_Ngap_DRBStatusDL12_ExtIEs_tags_145[0]), /* 1 */
+	asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_145,
+	sizeof(asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_145)
+		/sizeof(asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_145[0]), /* 1 */
+	asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_145,	/* Same as above */
+	sizeof(asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_145)
+		/sizeof(asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_145[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_DRBStatusDL12_ExtIEs_145,
+	asn_MBR_Ngap_DRBStatusDL18_ExtIEs_145,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_DRBStatusDL12_ExtIEs_specs_145	/* Additional specs */
+	&asn_SPC_Ngap_DRBStatusDL18_ExtIEs_specs_145	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_152 = {
-	sizeof(struct Ngap_DRBStatusDL18_ExtIEs__extensionValue),
-	offsetof(struct Ngap_DRBStatusDL18_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_DRBStatusDL18_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_DRBStatusDL18_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_DRBStatusUL12_ExtIEs__extensionValue),
+	offsetof(struct Ngap_DRBStatusUL12_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_DRBStatusUL12_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_DRBStatusUL12_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20627,8 +19234,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_152 = {
 	&asn_SPC_Ngap_extensionValue_specs_152	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_DRBStatusDL18_ExtIEs_149[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL18_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_DRBStatusUL12_ExtIEs_149[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL12_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20637,7 +19244,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusDL18_ExtIEs_149[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL18_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL12_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20646,7 +19253,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusDL18_ExtIEs_149[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusDL18_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL12_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_152,
@@ -20656,42 +19263,42 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusDL18_ExtIEs_149[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_149[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_149[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBStatusDL18_ExtIEs_tag2el_149[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBStatusUL12_ExtIEs_tag2el_149[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBStatusDL18_ExtIEs_specs_149 = {
-	sizeof(struct Ngap_DRBStatusDL18_ExtIEs),
-	offsetof(struct Ngap_DRBStatusDL18_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_DRBStatusDL18_ExtIEs_tag2el_149,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBStatusUL12_ExtIEs_specs_149 = {
+	sizeof(struct Ngap_DRBStatusUL12_ExtIEs),
+	offsetof(struct Ngap_DRBStatusUL12_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_DRBStatusUL12_ExtIEs_tag2el_149,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_DRBStatusDL18_ExtIEs = {
-	"DRBStatusDL18-ExtIEs",
-	"DRBStatusDL18-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_DRBStatusUL12_ExtIEs = {
+	"DRBStatusUL12-ExtIEs",
+	"DRBStatusUL12-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_149,
-	sizeof(asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_149)
-		/sizeof(asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_149[0]), /* 1 */
-	asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_149,	/* Same as above */
-	sizeof(asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_149)
-		/sizeof(asn_DEF_Ngap_DRBStatusDL18_ExtIEs_tags_149[0]), /* 1 */
+	asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_149,
+	sizeof(asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_149)
+		/sizeof(asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_149[0]), /* 1 */
+	asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_149,	/* Same as above */
+	sizeof(asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_149)
+		/sizeof(asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_149[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_DRBStatusDL18_ExtIEs_149,
+	asn_MBR_Ngap_DRBStatusUL12_ExtIEs_149,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_DRBStatusDL18_ExtIEs_specs_149	/* Additional specs */
+	&asn_SPC_Ngap_DRBStatusUL12_ExtIEs_specs_149	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_156 = {
-	sizeof(struct Ngap_DRBStatusUL12_ExtIEs__extensionValue),
-	offsetof(struct Ngap_DRBStatusUL12_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_DRBStatusUL12_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_DRBStatusUL12_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_DRBStatusUL18_ExtIEs__extensionValue),
+	offsetof(struct Ngap_DRBStatusUL18_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_DRBStatusUL18_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_DRBStatusUL18_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20711,8 +19318,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_156 = {
 	&asn_SPC_Ngap_extensionValue_specs_156	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_DRBStatusUL12_ExtIEs_153[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL12_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_DRBStatusUL18_ExtIEs_153[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL18_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20721,7 +19328,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusUL12_ExtIEs_153[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL12_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL18_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20730,7 +19337,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusUL12_ExtIEs_153[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL12_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL18_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_156,
@@ -20740,42 +19347,42 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusUL12_ExtIEs_153[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_153[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_153[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBStatusUL12_ExtIEs_tag2el_153[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBStatusUL18_ExtIEs_tag2el_153[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBStatusUL12_ExtIEs_specs_153 = {
-	sizeof(struct Ngap_DRBStatusUL12_ExtIEs),
-	offsetof(struct Ngap_DRBStatusUL12_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_DRBStatusUL12_ExtIEs_tag2el_153,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBStatusUL18_ExtIEs_specs_153 = {
+	sizeof(struct Ngap_DRBStatusUL18_ExtIEs),
+	offsetof(struct Ngap_DRBStatusUL18_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_DRBStatusUL18_ExtIEs_tag2el_153,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_DRBStatusUL12_ExtIEs = {
-	"DRBStatusUL12-ExtIEs",
-	"DRBStatusUL12-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_DRBStatusUL18_ExtIEs = {
+	"DRBStatusUL18-ExtIEs",
+	"DRBStatusUL18-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_153,
-	sizeof(asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_153)
-		/sizeof(asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_153[0]), /* 1 */
-	asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_153,	/* Same as above */
-	sizeof(asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_153)
-		/sizeof(asn_DEF_Ngap_DRBStatusUL12_ExtIEs_tags_153[0]), /* 1 */
+	asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_153,
+	sizeof(asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_153)
+		/sizeof(asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_153[0]), /* 1 */
+	asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_153,	/* Same as above */
+	sizeof(asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_153)
+		/sizeof(asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_153[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_DRBStatusUL12_ExtIEs_153,
+	asn_MBR_Ngap_DRBStatusUL18_ExtIEs_153,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_DRBStatusUL12_ExtIEs_specs_153	/* Additional specs */
+	&asn_SPC_Ngap_DRBStatusUL18_ExtIEs_specs_153	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_160 = {
-	sizeof(struct Ngap_DRBStatusUL18_ExtIEs__extensionValue),
-	offsetof(struct Ngap_DRBStatusUL18_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_DRBStatusUL18_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_DRBStatusUL18_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20795,8 +19402,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_160 = {
 	&asn_SPC_Ngap_extensionValue_specs_160	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_DRBStatusUL18_ExtIEs_157[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL18_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_157[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20805,7 +19412,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusUL18_ExtIEs_157[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL18_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20814,7 +19421,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusUL18_ExtIEs_157[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBStatusUL18_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_160,
@@ -20824,42 +19431,42 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBStatusUL18_ExtIEs_157[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_157[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_157[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBStatusUL18_ExtIEs_tag2el_157[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tag2el_157[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBStatusUL18_ExtIEs_specs_157 = {
-	sizeof(struct Ngap_DRBStatusUL18_ExtIEs),
-	offsetof(struct Ngap_DRBStatusUL18_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_DRBStatusUL18_ExtIEs_tag2el_157,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_specs_157 = {
+	sizeof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs),
+	offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tag2el_157,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_DRBStatusUL18_ExtIEs = {
-	"DRBStatusUL18-ExtIEs",
-	"DRBStatusUL18-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs = {
+	"DRBsToQosFlowsMappingItem-ExtIEs",
+	"DRBsToQosFlowsMappingItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_157,
-	sizeof(asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_157)
-		/sizeof(asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_157[0]), /* 1 */
-	asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_157,	/* Same as above */
-	sizeof(asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_157)
-		/sizeof(asn_DEF_Ngap_DRBStatusUL18_ExtIEs_tags_157[0]), /* 1 */
+	asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_157,
+	sizeof(asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_157)
+		/sizeof(asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_157[0]), /* 1 */
+	asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_157,	/* Same as above */
+	sizeof(asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_157)
+		/sizeof(asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_157[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_DRBStatusUL18_ExtIEs_157,
+	asn_MBR_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_157,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_DRBStatusUL18_ExtIEs_specs_157	/* Additional specs */
+	&asn_SPC_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_specs_157	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_164 = {
-	sizeof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_Dynamic5QIDescriptor_ExtIEs__extensionValue),
+	offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_Dynamic5QIDescriptor_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20879,8 +19486,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_164 = {
 	&asn_SPC_Ngap_extensionValue_specs_164	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_161[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_Dynamic5QIDescriptor_ExtIEs_161[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20889,7 +19496,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_161[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20898,7 +19505,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_161[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_164,
@@ -20908,42 +19515,42 @@ asn_TYPE_member_t asn_MBR_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_161[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_161[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_161[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tag2el_161[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_Dynamic5QIDescriptor_ExtIEs_tag2el_161[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_specs_161 = {
-	sizeof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs),
-	offsetof(struct Ngap_DRBsToQosFlowsMappingItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tag2el_161,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_Dynamic5QIDescriptor_ExtIEs_specs_161 = {
+	sizeof(struct Ngap_Dynamic5QIDescriptor_ExtIEs),
+	offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_Dynamic5QIDescriptor_ExtIEs_tag2el_161,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs = {
-	"DRBsToQosFlowsMappingItem-ExtIEs",
-	"DRBsToQosFlowsMappingItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs = {
+	"Dynamic5QIDescriptor-ExtIEs",
+	"Dynamic5QIDescriptor-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_161,
-	sizeof(asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_161)
-		/sizeof(asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_161[0]), /* 1 */
-	asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_161,	/* Same as above */
-	sizeof(asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_161)
-		/sizeof(asn_DEF_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_tags_161[0]), /* 1 */
+	asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_161,
+	sizeof(asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_161)
+		/sizeof(asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_161[0]), /* 1 */
+	asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_161,	/* Same as above */
+	sizeof(asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_161)
+		/sizeof(asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_161[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_161,
+	asn_MBR_Ngap_Dynamic5QIDescriptor_ExtIEs_161,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_DRBsToQosFlowsMappingItem_ExtIEs_specs_161	/* Additional specs */
+	&asn_SPC_Ngap_Dynamic5QIDescriptor_ExtIEs_specs_161	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_168 = {
-	sizeof(struct Ngap_Dynamic5QIDescriptor_ExtIEs__extensionValue),
-	offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_Dynamic5QIDescriptor_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -20963,8 +19570,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_168 = {
 	&asn_SPC_Ngap_extensionValue_specs_168	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_Dynamic5QIDescriptor_ExtIEs_165[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_165[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -20973,7 +19580,7 @@ asn_TYPE_member_t asn_MBR_Ngap_Dynamic5QIDescriptor_ExtIEs_165[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -20982,7 +19589,7 @@ asn_TYPE_member_t asn_MBR_Ngap_Dynamic5QIDescriptor_ExtIEs_165[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_168,
@@ -20992,42 +19599,42 @@ asn_TYPE_member_t asn_MBR_Ngap_Dynamic5QIDescriptor_ExtIEs_165[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_165[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_165[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_Dynamic5QIDescriptor_ExtIEs_tag2el_165[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tag2el_165[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_Dynamic5QIDescriptor_ExtIEs_specs_165 = {
-	sizeof(struct Ngap_Dynamic5QIDescriptor_ExtIEs),
-	offsetof(struct Ngap_Dynamic5QIDescriptor_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_Dynamic5QIDescriptor_ExtIEs_tag2el_165,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_specs_165 = {
+	sizeof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs),
+	offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tag2el_165,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs = {
-	"Dynamic5QIDescriptor-ExtIEs",
-	"Dynamic5QIDescriptor-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs = {
+	"EmergencyAreaIDBroadcastEUTRA-Item-ExtIEs",
+	"EmergencyAreaIDBroadcastEUTRA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_165,
-	sizeof(asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_165)
-		/sizeof(asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_165[0]), /* 1 */
-	asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_165,	/* Same as above */
-	sizeof(asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_165)
-		/sizeof(asn_DEF_Ngap_Dynamic5QIDescriptor_ExtIEs_tags_165[0]), /* 1 */
+	asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_165,
+	sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_165)
+		/sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_165[0]), /* 1 */
+	asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_165,	/* Same as above */
+	sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_165)
+		/sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_165[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_Dynamic5QIDescriptor_ExtIEs_165,
+	asn_MBR_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_165,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_Dynamic5QIDescriptor_ExtIEs_specs_165	/* Additional specs */
+	&asn_SPC_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_specs_165	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_172 = {
-	sizeof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21047,8 +19654,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_172 = {
 	&asn_SPC_Ngap_extensionValue_specs_172	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_169[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_169[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21057,7 +19664,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_169[] =
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21066,7 +19673,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_169[] =
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_172,
@@ -21076,42 +19683,42 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_169[] =
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_169[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_169[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tag2el_169[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tag2el_169[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_specs_169 = {
-	sizeof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs),
-	offsetof(struct Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tag2el_169,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_specs_169 = {
+	sizeof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs),
+	offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tag2el_169,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs = {
-	"EmergencyAreaIDBroadcastEUTRA-Item-ExtIEs",
-	"EmergencyAreaIDBroadcastEUTRA-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs = {
+	"EmergencyAreaIDBroadcastNR-Item-ExtIEs",
+	"EmergencyAreaIDBroadcastNR-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_169,
-	sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_169)
-		/sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_169[0]), /* 1 */
-	asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_169,	/* Same as above */
-	sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_169)
-		/sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_tags_169[0]), /* 1 */
+	asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_169,
+	sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_169)
+		/sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_169[0]), /* 1 */
+	asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_169,	/* Same as above */
+	sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_169)
+		/sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_169[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_169,
+	asn_MBR_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_169,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs_specs_169	/* Additional specs */
+	&asn_SPC_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_specs_169	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_176 = {
-	sizeof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21131,8 +19738,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_176 = {
 	&asn_SPC_Ngap_extensionValue_specs_176	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_173[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_173[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21141,7 +19748,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_173[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21150,7 +19757,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_173[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_176,
@@ -21160,42 +19767,42 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_173[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_173[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_173[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tag2el_173[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tag2el_173[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_specs_173 = {
-	sizeof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs),
-	offsetof(struct Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tag2el_173,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_specs_173 = {
+	sizeof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs),
+	offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tag2el_173,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs = {
-	"EmergencyAreaIDBroadcastNR-Item-ExtIEs",
-	"EmergencyAreaIDBroadcastNR-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs = {
+	"EmergencyAreaIDCancelledEUTRA-Item-ExtIEs",
+	"EmergencyAreaIDCancelledEUTRA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_173,
-	sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_173)
-		/sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_173[0]), /* 1 */
-	asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_173,	/* Same as above */
-	sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_173)
-		/sizeof(asn_DEF_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_tags_173[0]), /* 1 */
+	asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_173,
+	sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_173)
+		/sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_173[0]), /* 1 */
+	asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_173,	/* Same as above */
+	sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_173)
+		/sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_173[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_173,
+	asn_MBR_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_173,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_EmergencyAreaIDBroadcastNR_Item_ExtIEs_specs_173	/* Additional specs */
+	&asn_SPC_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_specs_173	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_180 = {
-	sizeof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21215,8 +19822,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_180 = {
 	&asn_SPC_Ngap_extensionValue_specs_180	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_177[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_177[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21225,7 +19832,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_177[] =
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21234,7 +19841,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_177[] =
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_180,
@@ -21244,42 +19851,42 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_177[] =
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_177[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_177[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tag2el_177[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tag2el_177[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_specs_177 = {
-	sizeof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs),
-	offsetof(struct Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tag2el_177,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_specs_177 = {
+	sizeof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs),
+	offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tag2el_177,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs = {
-	"EmergencyAreaIDCancelledEUTRA-Item-ExtIEs",
-	"EmergencyAreaIDCancelledEUTRA-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs = {
+	"EmergencyAreaIDCancelledNR-Item-ExtIEs",
+	"EmergencyAreaIDCancelledNR-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_177,
-	sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_177)
-		/sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_177[0]), /* 1 */
-	asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_177,	/* Same as above */
-	sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_177)
-		/sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_tags_177[0]), /* 1 */
+	asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_177,
+	sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_177)
+		/sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_177[0]), /* 1 */
+	asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_177,	/* Same as above */
+	sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_177)
+		/sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_177[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_177,
+	asn_MBR_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_177,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs_specs_177	/* Additional specs */
+	&asn_SPC_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_specs_177	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_184 = {
-	sizeof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_EmergencyFallbackIndicator_ExtIEs__extensionValue),
+	offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_EmergencyFallbackIndicator_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21299,8 +19906,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_184 = {
 	&asn_SPC_Ngap_extensionValue_specs_184	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_181[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_EmergencyFallbackIndicator_ExtIEs_181[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21309,7 +19916,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_181[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21318,7 +19925,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_181[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_184,
@@ -21328,42 +19935,42 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_181[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_181[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_181[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tag2el_181[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_EmergencyFallbackIndicator_ExtIEs_tag2el_181[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_specs_181 = {
-	sizeof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs),
-	offsetof(struct Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tag2el_181,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_EmergencyFallbackIndicator_ExtIEs_specs_181 = {
+	sizeof(struct Ngap_EmergencyFallbackIndicator_ExtIEs),
+	offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_EmergencyFallbackIndicator_ExtIEs_tag2el_181,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs = {
-	"EmergencyAreaIDCancelledNR-Item-ExtIEs",
-	"EmergencyAreaIDCancelledNR-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs = {
+	"EmergencyFallbackIndicator-ExtIEs",
+	"EmergencyFallbackIndicator-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_181,
-	sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_181)
-		/sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_181[0]), /* 1 */
-	asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_181,	/* Same as above */
-	sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_181)
-		/sizeof(asn_DEF_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_tags_181[0]), /* 1 */
+	asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_181,
+	sizeof(asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_181)
+		/sizeof(asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_181[0]), /* 1 */
+	asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_181,	/* Same as above */
+	sizeof(asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_181)
+		/sizeof(asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_181[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_181,
+	asn_MBR_Ngap_EmergencyFallbackIndicator_ExtIEs_181,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_EmergencyAreaIDCancelledNR_Item_ExtIEs_specs_181	/* Additional specs */
+	&asn_SPC_Ngap_EmergencyFallbackIndicator_ExtIEs_specs_181	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_188 = {
-	sizeof(struct Ngap_EmergencyFallbackIndicator_ExtIEs__extensionValue),
-	offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_EmergencyFallbackIndicator_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_EPS_TAI_ExtIEs__extensionValue),
+	offsetof(struct Ngap_EPS_TAI_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_EPS_TAI_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_EPS_TAI_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21383,8 +19990,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_188 = {
 	&asn_SPC_Ngap_extensionValue_specs_188	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_EmergencyFallbackIndicator_ExtIEs_185[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_EPS_TAI_ExtIEs_185[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EPS_TAI_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21393,7 +20000,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyFallbackIndicator_ExtIEs_185[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EPS_TAI_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21402,7 +20009,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyFallbackIndicator_ExtIEs_185[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EPS_TAI_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_188,
@@ -21412,42 +20019,42 @@ asn_TYPE_member_t asn_MBR_Ngap_EmergencyFallbackIndicator_ExtIEs_185[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_185[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_185[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_EmergencyFallbackIndicator_ExtIEs_tag2el_185[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_EPS_TAI_ExtIEs_tag2el_185[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_EmergencyFallbackIndicator_ExtIEs_specs_185 = {
-	sizeof(struct Ngap_EmergencyFallbackIndicator_ExtIEs),
-	offsetof(struct Ngap_EmergencyFallbackIndicator_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_EmergencyFallbackIndicator_ExtIEs_tag2el_185,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_EPS_TAI_ExtIEs_specs_185 = {
+	sizeof(struct Ngap_EPS_TAI_ExtIEs),
+	offsetof(struct Ngap_EPS_TAI_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_EPS_TAI_ExtIEs_tag2el_185,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs = {
-	"EmergencyFallbackIndicator-ExtIEs",
-	"EmergencyFallbackIndicator-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_EPS_TAI_ExtIEs = {
+	"EPS-TAI-ExtIEs",
+	"EPS-TAI-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_185,
-	sizeof(asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_185)
-		/sizeof(asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_185[0]), /* 1 */
-	asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_185,	/* Same as above */
-	sizeof(asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_185)
-		/sizeof(asn_DEF_Ngap_EmergencyFallbackIndicator_ExtIEs_tags_185[0]), /* 1 */
+	asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_185,
+	sizeof(asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_185)
+		/sizeof(asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_185[0]), /* 1 */
+	asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_185,	/* Same as above */
+	sizeof(asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_185)
+		/sizeof(asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_185[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_EmergencyFallbackIndicator_ExtIEs_185,
+	asn_MBR_Ngap_EPS_TAI_ExtIEs_185,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_EmergencyFallbackIndicator_ExtIEs_specs_185	/* Additional specs */
+	&asn_SPC_Ngap_EPS_TAI_ExtIEs_specs_185	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_192 = {
-	sizeof(struct Ngap_EPS_TAI_ExtIEs__extensionValue),
-	offsetof(struct Ngap_EPS_TAI_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_EPS_TAI_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_EPS_TAI_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_E_RABInformationItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_E_RABInformationItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_E_RABInformationItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_E_RABInformationItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21467,8 +20074,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_192 = {
 	&asn_SPC_Ngap_extensionValue_specs_192	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_EPS_TAI_ExtIEs_189[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EPS_TAI_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_E_RABInformationItem_ExtIEs_189[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_E_RABInformationItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21477,7 +20084,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EPS_TAI_ExtIEs_189[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EPS_TAI_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_E_RABInformationItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21486,7 +20093,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EPS_TAI_ExtIEs_189[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EPS_TAI_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_E_RABInformationItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_192,
@@ -21496,42 +20103,42 @@ asn_TYPE_member_t asn_MBR_Ngap_EPS_TAI_ExtIEs_189[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_189[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_189[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_EPS_TAI_ExtIEs_tag2el_189[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_E_RABInformationItem_ExtIEs_tag2el_189[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_EPS_TAI_ExtIEs_specs_189 = {
-	sizeof(struct Ngap_EPS_TAI_ExtIEs),
-	offsetof(struct Ngap_EPS_TAI_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_EPS_TAI_ExtIEs_tag2el_189,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_E_RABInformationItem_ExtIEs_specs_189 = {
+	sizeof(struct Ngap_E_RABInformationItem_ExtIEs),
+	offsetof(struct Ngap_E_RABInformationItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_E_RABInformationItem_ExtIEs_tag2el_189,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_EPS_TAI_ExtIEs = {
-	"EPS-TAI-ExtIEs",
-	"EPS-TAI-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_E_RABInformationItem_ExtIEs = {
+	"E-RABInformationItem-ExtIEs",
+	"E-RABInformationItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_189,
-	sizeof(asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_189)
-		/sizeof(asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_189[0]), /* 1 */
-	asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_189,	/* Same as above */
-	sizeof(asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_189)
-		/sizeof(asn_DEF_Ngap_EPS_TAI_ExtIEs_tags_189[0]), /* 1 */
+	asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_189,
+	sizeof(asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_189)
+		/sizeof(asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_189[0]), /* 1 */
+	asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_189,	/* Same as above */
+	sizeof(asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_189)
+		/sizeof(asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_189[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_EPS_TAI_ExtIEs_189,
+	asn_MBR_Ngap_E_RABInformationItem_ExtIEs_189,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_EPS_TAI_ExtIEs_specs_189	/* Additional specs */
+	&asn_SPC_Ngap_E_RABInformationItem_ExtIEs_specs_189	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_196 = {
-	sizeof(struct Ngap_E_RABInformationItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_E_RABInformationItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_E_RABInformationItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_E_RABInformationItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_EUTRA_CGI_ExtIEs__extensionValue),
+	offsetof(struct Ngap_EUTRA_CGI_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_EUTRA_CGI_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_EUTRA_CGI_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21551,8 +20158,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_196 = {
 	&asn_SPC_Ngap_extensionValue_specs_196	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_E_RABInformationItem_ExtIEs_193[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_E_RABInformationItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_EUTRA_CGI_ExtIEs_193[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EUTRA_CGI_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21561,7 +20168,7 @@ asn_TYPE_member_t asn_MBR_Ngap_E_RABInformationItem_ExtIEs_193[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_E_RABInformationItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EUTRA_CGI_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21570,7 +20177,7 @@ asn_TYPE_member_t asn_MBR_Ngap_E_RABInformationItem_ExtIEs_193[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_E_RABInformationItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EUTRA_CGI_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_196,
@@ -21580,42 +20187,42 @@ asn_TYPE_member_t asn_MBR_Ngap_E_RABInformationItem_ExtIEs_193[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_193[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_193[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_E_RABInformationItem_ExtIEs_tag2el_193[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_EUTRA_CGI_ExtIEs_tag2el_193[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_E_RABInformationItem_ExtIEs_specs_193 = {
-	sizeof(struct Ngap_E_RABInformationItem_ExtIEs),
-	offsetof(struct Ngap_E_RABInformationItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_E_RABInformationItem_ExtIEs_tag2el_193,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_EUTRA_CGI_ExtIEs_specs_193 = {
+	sizeof(struct Ngap_EUTRA_CGI_ExtIEs),
+	offsetof(struct Ngap_EUTRA_CGI_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_EUTRA_CGI_ExtIEs_tag2el_193,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_E_RABInformationItem_ExtIEs = {
-	"E-RABInformationItem-ExtIEs",
-	"E-RABInformationItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_EUTRA_CGI_ExtIEs = {
+	"EUTRA-CGI-ExtIEs",
+	"EUTRA-CGI-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_193,
-	sizeof(asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_193)
-		/sizeof(asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_193[0]), /* 1 */
-	asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_193,	/* Same as above */
-	sizeof(asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_193)
-		/sizeof(asn_DEF_Ngap_E_RABInformationItem_ExtIEs_tags_193[0]), /* 1 */
+	asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_193,
+	sizeof(asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_193)
+		/sizeof(asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_193[0]), /* 1 */
+	asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_193,	/* Same as above */
+	sizeof(asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_193)
+		/sizeof(asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_193[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_E_RABInformationItem_ExtIEs_193,
+	asn_MBR_Ngap_EUTRA_CGI_ExtIEs_193,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_E_RABInformationItem_ExtIEs_specs_193	/* Additional specs */
+	&asn_SPC_Ngap_EUTRA_CGI_ExtIEs_specs_193	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_200 = {
-	sizeof(struct Ngap_EUTRA_CGI_ExtIEs__extensionValue),
-	offsetof(struct Ngap_EUTRA_CGI_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_EUTRA_CGI_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_EUTRA_CGI_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs__extensionValue),
+	offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_ExpectedUEActivityBehaviour_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21635,8 +20242,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_200 = {
 	&asn_SPC_Ngap_extensionValue_specs_200	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_EUTRA_CGI_ExtIEs_197[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EUTRA_CGI_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEActivityBehaviour_ExtIEs_197[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21645,7 +20252,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EUTRA_CGI_ExtIEs_197[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_EUTRA_CGI_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21654,7 +20261,7 @@ asn_TYPE_member_t asn_MBR_Ngap_EUTRA_CGI_ExtIEs_197[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_EUTRA_CGI_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_200,
@@ -21664,42 +20271,42 @@ asn_TYPE_member_t asn_MBR_Ngap_EUTRA_CGI_ExtIEs_197[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_197[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_197[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_EUTRA_CGI_ExtIEs_tag2el_197[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tag2el_197[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_EUTRA_CGI_ExtIEs_specs_197 = {
-	sizeof(struct Ngap_EUTRA_CGI_ExtIEs),
-	offsetof(struct Ngap_EUTRA_CGI_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_EUTRA_CGI_ExtIEs_tag2el_197,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_ExpectedUEActivityBehaviour_ExtIEs_specs_197 = {
+	sizeof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs),
+	offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tag2el_197,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_EUTRA_CGI_ExtIEs = {
-	"EUTRA-CGI-ExtIEs",
-	"EUTRA-CGI-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs = {
+	"ExpectedUEActivityBehaviour-ExtIEs",
+	"ExpectedUEActivityBehaviour-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_197,
-	sizeof(asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_197)
-		/sizeof(asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_197[0]), /* 1 */
-	asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_197,	/* Same as above */
-	sizeof(asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_197)
-		/sizeof(asn_DEF_Ngap_EUTRA_CGI_ExtIEs_tags_197[0]), /* 1 */
+	asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_197,
+	sizeof(asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_197)
+		/sizeof(asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_197[0]), /* 1 */
+	asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_197,	/* Same as above */
+	sizeof(asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_197)
+		/sizeof(asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_197[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_EUTRA_CGI_ExtIEs_197,
+	asn_MBR_Ngap_ExpectedUEActivityBehaviour_ExtIEs_197,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_EUTRA_CGI_ExtIEs_specs_197	/* Additional specs */
+	&asn_SPC_Ngap_ExpectedUEActivityBehaviour_ExtIEs_specs_197	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_204 = {
-	sizeof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs__extensionValue),
-	offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_ExpectedUEActivityBehaviour_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_ExpectedUEBehaviour_ExtIEs__extensionValue),
+	offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_ExpectedUEBehaviour_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21719,8 +20326,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_204 = {
 	&asn_SPC_Ngap_extensionValue_specs_204	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEActivityBehaviour_ExtIEs_201[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEBehaviour_ExtIEs_201[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21729,7 +20336,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEActivityBehaviour_ExtIEs_201[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21738,7 +20345,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEActivityBehaviour_ExtIEs_201[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_204,
@@ -21748,42 +20355,42 @@ asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEActivityBehaviour_ExtIEs_201[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_201[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_201[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tag2el_201[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_ExpectedUEBehaviour_ExtIEs_tag2el_201[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_ExpectedUEActivityBehaviour_ExtIEs_specs_201 = {
-	sizeof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs),
-	offsetof(struct Ngap_ExpectedUEActivityBehaviour_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tag2el_201,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_ExpectedUEBehaviour_ExtIEs_specs_201 = {
+	sizeof(struct Ngap_ExpectedUEBehaviour_ExtIEs),
+	offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_ExpectedUEBehaviour_ExtIEs_tag2el_201,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs = {
-	"ExpectedUEActivityBehaviour-ExtIEs",
-	"ExpectedUEActivityBehaviour-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs = {
+	"ExpectedUEBehaviour-ExtIEs",
+	"ExpectedUEBehaviour-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_201,
-	sizeof(asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_201)
-		/sizeof(asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_201[0]), /* 1 */
-	asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_201,	/* Same as above */
-	sizeof(asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_201)
-		/sizeof(asn_DEF_Ngap_ExpectedUEActivityBehaviour_ExtIEs_tags_201[0]), /* 1 */
+	asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_201,
+	sizeof(asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_201)
+		/sizeof(asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_201[0]), /* 1 */
+	asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_201,	/* Same as above */
+	sizeof(asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_201)
+		/sizeof(asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_201[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_ExpectedUEActivityBehaviour_ExtIEs_201,
+	asn_MBR_Ngap_ExpectedUEBehaviour_ExtIEs_201,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_ExpectedUEActivityBehaviour_ExtIEs_specs_201	/* Additional specs */
+	&asn_SPC_Ngap_ExpectedUEBehaviour_ExtIEs_specs_201	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_208 = {
-	sizeof(struct Ngap_ExpectedUEBehaviour_ExtIEs__extensionValue),
-	offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_ExpectedUEBehaviour_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21803,8 +20410,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_208 = {
 	&asn_SPC_Ngap_extensionValue_specs_208	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEBehaviour_ExtIEs_205[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_205[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21813,7 +20420,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEBehaviour_ExtIEs_205[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21822,7 +20429,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEBehaviour_ExtIEs_205[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_208,
@@ -21832,42 +20439,42 @@ asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEBehaviour_ExtIEs_205[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_205[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_205[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_ExpectedUEBehaviour_ExtIEs_tag2el_205[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tag2el_205[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_ExpectedUEBehaviour_ExtIEs_specs_205 = {
-	sizeof(struct Ngap_ExpectedUEBehaviour_ExtIEs),
-	offsetof(struct Ngap_ExpectedUEBehaviour_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_ExpectedUEBehaviour_ExtIEs_tag2el_205,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_specs_205 = {
+	sizeof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs),
+	offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tag2el_205,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs = {
-	"ExpectedUEBehaviour-ExtIEs",
-	"ExpectedUEBehaviour-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs = {
+	"ExpectedUEMovingTrajectoryItem-ExtIEs",
+	"ExpectedUEMovingTrajectoryItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_205,
-	sizeof(asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_205)
-		/sizeof(asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_205[0]), /* 1 */
-	asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_205,	/* Same as above */
-	sizeof(asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_205)
-		/sizeof(asn_DEF_Ngap_ExpectedUEBehaviour_ExtIEs_tags_205[0]), /* 1 */
+	asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_205,
+	sizeof(asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_205)
+		/sizeof(asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_205[0]), /* 1 */
+	asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_205,	/* Same as above */
+	sizeof(asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_205)
+		/sizeof(asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_205[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_ExpectedUEBehaviour_ExtIEs_205,
+	asn_MBR_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_205,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_ExpectedUEBehaviour_ExtIEs_specs_205	/* Additional specs */
+	&asn_SPC_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_specs_205	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_212 = {
-	sizeof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_FiveG_S_TMSI_ExtIEs__extensionValue),
+	offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_FiveG_S_TMSI_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21887,8 +20494,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_212 = {
 	&asn_SPC_Ngap_extensionValue_specs_212	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_209[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_FiveG_S_TMSI_ExtIEs_209[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21897,7 +20504,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_209[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21906,7 +20513,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_209[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_212,
@@ -21916,42 +20523,42 @@ asn_TYPE_member_t asn_MBR_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_209[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_209[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_209[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tag2el_209[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_FiveG_S_TMSI_ExtIEs_tag2el_209[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_specs_209 = {
-	sizeof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs),
-	offsetof(struct Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tag2el_209,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_FiveG_S_TMSI_ExtIEs_specs_209 = {
+	sizeof(struct Ngap_FiveG_S_TMSI_ExtIEs),
+	offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_FiveG_S_TMSI_ExtIEs_tag2el_209,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs = {
-	"ExpectedUEMovingTrajectoryItem-ExtIEs",
-	"ExpectedUEMovingTrajectoryItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs = {
+	"FiveG-S-TMSI-ExtIEs",
+	"FiveG-S-TMSI-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_209,
-	sizeof(asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_209)
-		/sizeof(asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_209[0]), /* 1 */
-	asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_209,	/* Same as above */
-	sizeof(asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_209)
-		/sizeof(asn_DEF_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_tags_209[0]), /* 1 */
+	asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_209,
+	sizeof(asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_209)
+		/sizeof(asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_209[0]), /* 1 */
+	asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_209,	/* Same as above */
+	sizeof(asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_209)
+		/sizeof(asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_209[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_209,
+	asn_MBR_Ngap_FiveG_S_TMSI_ExtIEs_209,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_ExpectedUEMovingTrajectoryItem_ExtIEs_specs_209	/* Additional specs */
+	&asn_SPC_Ngap_FiveG_S_TMSI_ExtIEs_specs_209	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_216 = {
-	sizeof(struct Ngap_FiveG_S_TMSI_ExtIEs__extensionValue),
-	offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_FiveG_S_TMSI_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_ForbiddenAreaInformation_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -21971,8 +20578,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_216 = {
 	&asn_SPC_Ngap_extensionValue_specs_216	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_FiveG_S_TMSI_ExtIEs_213[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_ForbiddenAreaInformation_Item_ExtIEs_213[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -21981,7 +20588,7 @@ asn_TYPE_member_t asn_MBR_Ngap_FiveG_S_TMSI_ExtIEs_213[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -21990,7 +20597,7 @@ asn_TYPE_member_t asn_MBR_Ngap_FiveG_S_TMSI_ExtIEs_213[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_216,
@@ -22000,42 +20607,42 @@ asn_TYPE_member_t asn_MBR_Ngap_FiveG_S_TMSI_ExtIEs_213[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_213[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_213[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_FiveG_S_TMSI_ExtIEs_tag2el_213[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tag2el_213[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_FiveG_S_TMSI_ExtIEs_specs_213 = {
-	sizeof(struct Ngap_FiveG_S_TMSI_ExtIEs),
-	offsetof(struct Ngap_FiveG_S_TMSI_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_FiveG_S_TMSI_ExtIEs_tag2el_213,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_ForbiddenAreaInformation_Item_ExtIEs_specs_213 = {
+	sizeof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs),
+	offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tag2el_213,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs = {
-	"FiveG-S-TMSI-ExtIEs",
-	"FiveG-S-TMSI-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs = {
+	"ForbiddenAreaInformation-Item-ExtIEs",
+	"ForbiddenAreaInformation-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_213,
-	sizeof(asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_213)
-		/sizeof(asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_213[0]), /* 1 */
-	asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_213,	/* Same as above */
-	sizeof(asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_213)
-		/sizeof(asn_DEF_Ngap_FiveG_S_TMSI_ExtIEs_tags_213[0]), /* 1 */
+	asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_213,
+	sizeof(asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_213)
+		/sizeof(asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_213[0]), /* 1 */
+	asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_213,	/* Same as above */
+	sizeof(asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_213)
+		/sizeof(asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_213[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_FiveG_S_TMSI_ExtIEs_213,
+	asn_MBR_Ngap_ForbiddenAreaInformation_Item_ExtIEs_213,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_FiveG_S_TMSI_ExtIEs_specs_213	/* Additional specs */
+	&asn_SPC_Ngap_ForbiddenAreaInformation_Item_ExtIEs_specs_213	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_220 = {
-	sizeof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_ForbiddenAreaInformation_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_GBR_QosInformation_ExtIEs__extensionValue),
+	offsetof(struct Ngap_GBR_QosInformation_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_GBR_QosInformation_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_GBR_QosInformation_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -22055,8 +20662,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_220 = {
 	&asn_SPC_Ngap_extensionValue_specs_220	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_ForbiddenAreaInformation_Item_ExtIEs_217[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_GBR_QosInformation_ExtIEs_217[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GBR_QosInformation_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22065,7 +20672,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ForbiddenAreaInformation_Item_ExtIEs_217[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GBR_QosInformation_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -22074,7 +20681,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ForbiddenAreaInformation_Item_ExtIEs_217[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GBR_QosInformation_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_220,
@@ -22084,42 +20691,42 @@ asn_TYPE_member_t asn_MBR_Ngap_ForbiddenAreaInformation_Item_ExtIEs_217[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_217[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_217[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tag2el_217[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_GBR_QosInformation_ExtIEs_tag2el_217[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_ForbiddenAreaInformation_Item_ExtIEs_specs_217 = {
-	sizeof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs),
-	offsetof(struct Ngap_ForbiddenAreaInformation_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tag2el_217,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_GBR_QosInformation_ExtIEs_specs_217 = {
+	sizeof(struct Ngap_GBR_QosInformation_ExtIEs),
+	offsetof(struct Ngap_GBR_QosInformation_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_GBR_QosInformation_ExtIEs_tag2el_217,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs = {
-	"ForbiddenAreaInformation-Item-ExtIEs",
-	"ForbiddenAreaInformation-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_GBR_QosInformation_ExtIEs = {
+	"GBR-QosInformation-ExtIEs",
+	"GBR-QosInformation-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_217,
-	sizeof(asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_217)
-		/sizeof(asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_217[0]), /* 1 */
-	asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_217,	/* Same as above */
-	sizeof(asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_217)
-		/sizeof(asn_DEF_Ngap_ForbiddenAreaInformation_Item_ExtIEs_tags_217[0]), /* 1 */
+	asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_217,
+	sizeof(asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_217)
+		/sizeof(asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_217[0]), /* 1 */
+	asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_217,	/* Same as above */
+	sizeof(asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_217)
+		/sizeof(asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_217[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_ForbiddenAreaInformation_Item_ExtIEs_217,
+	asn_MBR_Ngap_GBR_QosInformation_ExtIEs_217,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_ForbiddenAreaInformation_Item_ExtIEs_specs_217	/* Additional specs */
+	&asn_SPC_Ngap_GBR_QosInformation_ExtIEs_specs_217	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_224 = {
-	sizeof(struct Ngap_GBR_QosInformation_ExtIEs__extensionValue),
-	offsetof(struct Ngap_GBR_QosInformation_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_GBR_QosInformation_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_GBR_QosInformation_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_GlobalGNB_ID_ExtIEs__extensionValue),
+	offsetof(struct Ngap_GlobalGNB_ID_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_GlobalGNB_ID_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_GlobalGNB_ID_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -22139,8 +20746,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_224 = {
 	&asn_SPC_Ngap_extensionValue_specs_224	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_GBR_QosInformation_ExtIEs_221[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GBR_QosInformation_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_GlobalGNB_ID_ExtIEs_221[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalGNB_ID_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22149,7 +20756,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GBR_QosInformation_ExtIEs_221[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GBR_QosInformation_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalGNB_ID_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -22158,7 +20765,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GBR_QosInformation_ExtIEs_221[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GBR_QosInformation_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalGNB_ID_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_224,
@@ -22168,42 +20775,42 @@ asn_TYPE_member_t asn_MBR_Ngap_GBR_QosInformation_ExtIEs_221[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_221[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_221[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_GBR_QosInformation_ExtIEs_tag2el_221[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_GlobalGNB_ID_ExtIEs_tag2el_221[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_GBR_QosInformation_ExtIEs_specs_221 = {
-	sizeof(struct Ngap_GBR_QosInformation_ExtIEs),
-	offsetof(struct Ngap_GBR_QosInformation_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_GBR_QosInformation_ExtIEs_tag2el_221,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_GlobalGNB_ID_ExtIEs_specs_221 = {
+	sizeof(struct Ngap_GlobalGNB_ID_ExtIEs),
+	offsetof(struct Ngap_GlobalGNB_ID_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_GlobalGNB_ID_ExtIEs_tag2el_221,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_GBR_QosInformation_ExtIEs = {
-	"GBR-QosInformation-ExtIEs",
-	"GBR-QosInformation-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_GlobalGNB_ID_ExtIEs = {
+	"GlobalGNB-ID-ExtIEs",
+	"GlobalGNB-ID-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_221,
-	sizeof(asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_221)
-		/sizeof(asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_221[0]), /* 1 */
-	asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_221,	/* Same as above */
-	sizeof(asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_221)
-		/sizeof(asn_DEF_Ngap_GBR_QosInformation_ExtIEs_tags_221[0]), /* 1 */
+	asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_221,
+	sizeof(asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_221)
+		/sizeof(asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_221[0]), /* 1 */
+	asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_221,	/* Same as above */
+	sizeof(asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_221)
+		/sizeof(asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_221[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_GBR_QosInformation_ExtIEs_221,
+	asn_MBR_Ngap_GlobalGNB_ID_ExtIEs_221,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_GBR_QosInformation_ExtIEs_specs_221	/* Additional specs */
+	&asn_SPC_Ngap_GlobalGNB_ID_ExtIEs_specs_221	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_228 = {
-	sizeof(struct Ngap_GlobalGNB_ID_ExtIEs__extensionValue),
-	offsetof(struct Ngap_GlobalGNB_ID_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_GlobalGNB_ID_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_GlobalGNB_ID_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_GlobalN3IWF_ID_ExtIEs__extensionValue),
+	offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_GlobalN3IWF_ID_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -22223,8 +20830,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_228 = {
 	&asn_SPC_Ngap_extensionValue_specs_228	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_GlobalGNB_ID_ExtIEs_225[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalGNB_ID_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_GlobalN3IWF_ID_ExtIEs_225[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22233,7 +20840,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GlobalGNB_ID_ExtIEs_225[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalGNB_ID_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -22242,7 +20849,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GlobalGNB_ID_ExtIEs_225[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalGNB_ID_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_228,
@@ -22252,42 +20859,42 @@ asn_TYPE_member_t asn_MBR_Ngap_GlobalGNB_ID_ExtIEs_225[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_225[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_225[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_GlobalGNB_ID_ExtIEs_tag2el_225[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_GlobalN3IWF_ID_ExtIEs_tag2el_225[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_GlobalGNB_ID_ExtIEs_specs_225 = {
-	sizeof(struct Ngap_GlobalGNB_ID_ExtIEs),
-	offsetof(struct Ngap_GlobalGNB_ID_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_GlobalGNB_ID_ExtIEs_tag2el_225,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_GlobalN3IWF_ID_ExtIEs_specs_225 = {
+	sizeof(struct Ngap_GlobalN3IWF_ID_ExtIEs),
+	offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_GlobalN3IWF_ID_ExtIEs_tag2el_225,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_GlobalGNB_ID_ExtIEs = {
-	"GlobalGNB-ID-ExtIEs",
-	"GlobalGNB-ID-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs = {
+	"GlobalN3IWF-ID-ExtIEs",
+	"GlobalN3IWF-ID-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_225,
-	sizeof(asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_225)
-		/sizeof(asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_225[0]), /* 1 */
-	asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_225,	/* Same as above */
-	sizeof(asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_225)
-		/sizeof(asn_DEF_Ngap_GlobalGNB_ID_ExtIEs_tags_225[0]), /* 1 */
+	asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_225,
+	sizeof(asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_225)
+		/sizeof(asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_225[0]), /* 1 */
+	asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_225,	/* Same as above */
+	sizeof(asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_225)
+		/sizeof(asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_225[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_GlobalGNB_ID_ExtIEs_225,
+	asn_MBR_Ngap_GlobalN3IWF_ID_ExtIEs_225,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_GlobalGNB_ID_ExtIEs_specs_225	/* Additional specs */
+	&asn_SPC_Ngap_GlobalN3IWF_ID_ExtIEs_specs_225	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_232 = {
-	sizeof(struct Ngap_GlobalN3IWF_ID_ExtIEs__extensionValue),
-	offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_GlobalN3IWF_ID_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_GlobalNgENB_ID_ExtIEs__extensionValue),
+	offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_GlobalNgENB_ID_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -22307,8 +20914,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_232 = {
 	&asn_SPC_Ngap_extensionValue_specs_232	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_GlobalN3IWF_ID_ExtIEs_229[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_GlobalNgENB_ID_ExtIEs_229[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22317,7 +20924,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GlobalN3IWF_ID_ExtIEs_229[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -22326,7 +20933,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GlobalN3IWF_ID_ExtIEs_229[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_232,
@@ -22336,42 +20943,42 @@ asn_TYPE_member_t asn_MBR_Ngap_GlobalN3IWF_ID_ExtIEs_229[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_229[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_229[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_GlobalN3IWF_ID_ExtIEs_tag2el_229[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_GlobalNgENB_ID_ExtIEs_tag2el_229[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_GlobalN3IWF_ID_ExtIEs_specs_229 = {
-	sizeof(struct Ngap_GlobalN3IWF_ID_ExtIEs),
-	offsetof(struct Ngap_GlobalN3IWF_ID_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_GlobalN3IWF_ID_ExtIEs_tag2el_229,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_GlobalNgENB_ID_ExtIEs_specs_229 = {
+	sizeof(struct Ngap_GlobalNgENB_ID_ExtIEs),
+	offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_GlobalNgENB_ID_ExtIEs_tag2el_229,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs = {
-	"GlobalN3IWF-ID-ExtIEs",
-	"GlobalN3IWF-ID-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs = {
+	"GlobalNgENB-ID-ExtIEs",
+	"GlobalNgENB-ID-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_229,
-	sizeof(asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_229)
-		/sizeof(asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_229[0]), /* 1 */
-	asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_229,	/* Same as above */
-	sizeof(asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_229)
-		/sizeof(asn_DEF_Ngap_GlobalN3IWF_ID_ExtIEs_tags_229[0]), /* 1 */
+	asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_229,
+	sizeof(asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_229)
+		/sizeof(asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_229[0]), /* 1 */
+	asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_229,	/* Same as above */
+	sizeof(asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_229)
+		/sizeof(asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_229[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_GlobalN3IWF_ID_ExtIEs_229,
+	asn_MBR_Ngap_GlobalNgENB_ID_ExtIEs_229,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_GlobalN3IWF_ID_ExtIEs_specs_229	/* Additional specs */
+	&asn_SPC_Ngap_GlobalNgENB_ID_ExtIEs_specs_229	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_236 = {
-	sizeof(struct Ngap_GlobalNgENB_ID_ExtIEs__extensionValue),
-	offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_GlobalNgENB_ID_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_GTPTunnel_ExtIEs__extensionValue),
+	offsetof(struct Ngap_GTPTunnel_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_GTPTunnel_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_GTPTunnel_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -22391,8 +20998,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_236 = {
 	&asn_SPC_Ngap_extensionValue_specs_236	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_GlobalNgENB_ID_ExtIEs_233[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_GTPTunnel_ExtIEs_233[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GTPTunnel_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22401,7 +21008,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GlobalNgENB_ID_ExtIEs_233[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GTPTunnel_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -22410,7 +21017,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GlobalNgENB_ID_ExtIEs_233[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GTPTunnel_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_236,
@@ -22420,42 +21027,42 @@ asn_TYPE_member_t asn_MBR_Ngap_GlobalNgENB_ID_ExtIEs_233[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_233[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_233[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_GlobalNgENB_ID_ExtIEs_tag2el_233[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_GTPTunnel_ExtIEs_tag2el_233[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_GlobalNgENB_ID_ExtIEs_specs_233 = {
-	sizeof(struct Ngap_GlobalNgENB_ID_ExtIEs),
-	offsetof(struct Ngap_GlobalNgENB_ID_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_GlobalNgENB_ID_ExtIEs_tag2el_233,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_GTPTunnel_ExtIEs_specs_233 = {
+	sizeof(struct Ngap_GTPTunnel_ExtIEs),
+	offsetof(struct Ngap_GTPTunnel_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_GTPTunnel_ExtIEs_tag2el_233,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs = {
-	"GlobalNgENB-ID-ExtIEs",
-	"GlobalNgENB-ID-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_GTPTunnel_ExtIEs = {
+	"GTPTunnel-ExtIEs",
+	"GTPTunnel-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_233,
-	sizeof(asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_233)
-		/sizeof(asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_233[0]), /* 1 */
-	asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_233,	/* Same as above */
-	sizeof(asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_233)
-		/sizeof(asn_DEF_Ngap_GlobalNgENB_ID_ExtIEs_tags_233[0]), /* 1 */
+	asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_233,
+	sizeof(asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_233)
+		/sizeof(asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_233[0]), /* 1 */
+	asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_233,	/* Same as above */
+	sizeof(asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_233)
+		/sizeof(asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_233[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_GlobalNgENB_ID_ExtIEs_233,
+	asn_MBR_Ngap_GTPTunnel_ExtIEs_233,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_GlobalNgENB_ID_ExtIEs_specs_233	/* Additional specs */
+	&asn_SPC_Ngap_GTPTunnel_ExtIEs_specs_233	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_240 = {
-	sizeof(struct Ngap_GTPTunnel_ExtIEs__extensionValue),
-	offsetof(struct Ngap_GTPTunnel_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_GTPTunnel_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_GTPTunnel_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_GUAMI_ExtIEs__extensionValue),
+	offsetof(struct Ngap_GUAMI_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_GUAMI_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_GUAMI_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -22475,8 +21082,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_240 = {
 	&asn_SPC_Ngap_extensionValue_specs_240	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_GTPTunnel_ExtIEs_237[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GTPTunnel_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_GUAMI_ExtIEs_237[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GUAMI_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22485,7 +21092,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GTPTunnel_ExtIEs_237[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GTPTunnel_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GUAMI_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -22494,7 +21101,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GTPTunnel_ExtIEs_237[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GTPTunnel_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GUAMI_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_240,
@@ -22504,42 +21111,42 @@ asn_TYPE_member_t asn_MBR_Ngap_GTPTunnel_ExtIEs_237[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_237[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_GUAMI_ExtIEs_tags_237[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_GTPTunnel_ExtIEs_tag2el_237[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_GUAMI_ExtIEs_tag2el_237[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_GTPTunnel_ExtIEs_specs_237 = {
-	sizeof(struct Ngap_GTPTunnel_ExtIEs),
-	offsetof(struct Ngap_GTPTunnel_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_GTPTunnel_ExtIEs_tag2el_237,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_GUAMI_ExtIEs_specs_237 = {
+	sizeof(struct Ngap_GUAMI_ExtIEs),
+	offsetof(struct Ngap_GUAMI_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_GUAMI_ExtIEs_tag2el_237,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_GTPTunnel_ExtIEs = {
-	"GTPTunnel-ExtIEs",
-	"GTPTunnel-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_GUAMI_ExtIEs = {
+	"GUAMI-ExtIEs",
+	"GUAMI-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_237,
-	sizeof(asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_237)
-		/sizeof(asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_237[0]), /* 1 */
-	asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_237,	/* Same as above */
-	sizeof(asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_237)
-		/sizeof(asn_DEF_Ngap_GTPTunnel_ExtIEs_tags_237[0]), /* 1 */
+	asn_DEF_Ngap_GUAMI_ExtIEs_tags_237,
+	sizeof(asn_DEF_Ngap_GUAMI_ExtIEs_tags_237)
+		/sizeof(asn_DEF_Ngap_GUAMI_ExtIEs_tags_237[0]), /* 1 */
+	asn_DEF_Ngap_GUAMI_ExtIEs_tags_237,	/* Same as above */
+	sizeof(asn_DEF_Ngap_GUAMI_ExtIEs_tags_237)
+		/sizeof(asn_DEF_Ngap_GUAMI_ExtIEs_tags_237[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_GTPTunnel_ExtIEs_237,
+	asn_MBR_Ngap_GUAMI_ExtIEs_237,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_GTPTunnel_ExtIEs_specs_237	/* Additional specs */
+	&asn_SPC_Ngap_GUAMI_ExtIEs_specs_237	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_244 = {
-	sizeof(struct Ngap_GUAMI_ExtIEs__extensionValue),
-	offsetof(struct Ngap_GUAMI_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_GUAMI_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_GUAMI_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_HandoverCommandTransfer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_HandoverCommandTransfer_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -22559,8 +21166,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_244 = {
 	&asn_SPC_Ngap_extensionValue_specs_244	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_GUAMI_ExtIEs_241[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GUAMI_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_HandoverCommandTransfer_ExtIEs_241[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22569,7 +21176,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GUAMI_ExtIEs_241[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_GUAMI_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -22578,7 +21185,7 @@ asn_TYPE_member_t asn_MBR_Ngap_GUAMI_ExtIEs_241[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_GUAMI_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_244,
@@ -22588,58 +21195,44 @@ asn_TYPE_member_t asn_MBR_Ngap_GUAMI_ExtIEs_241[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_GUAMI_ExtIEs_tags_241[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_241[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_GUAMI_ExtIEs_tag2el_241[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_HandoverCommandTransfer_ExtIEs_tag2el_241[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_GUAMI_ExtIEs_specs_241 = {
-	sizeof(struct Ngap_GUAMI_ExtIEs),
-	offsetof(struct Ngap_GUAMI_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_GUAMI_ExtIEs_tag2el_241,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_HandoverCommandTransfer_ExtIEs_specs_241 = {
+	sizeof(struct Ngap_HandoverCommandTransfer_ExtIEs),
+	offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_HandoverCommandTransfer_ExtIEs_tag2el_241,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_GUAMI_ExtIEs = {
-	"GUAMI-ExtIEs",
-	"GUAMI-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs = {
+	"HandoverCommandTransfer-ExtIEs",
+	"HandoverCommandTransfer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_GUAMI_ExtIEs_tags_241,
-	sizeof(asn_DEF_Ngap_GUAMI_ExtIEs_tags_241)
-		/sizeof(asn_DEF_Ngap_GUAMI_ExtIEs_tags_241[0]), /* 1 */
-	asn_DEF_Ngap_GUAMI_ExtIEs_tags_241,	/* Same as above */
-	sizeof(asn_DEF_Ngap_GUAMI_ExtIEs_tags_241)
-		/sizeof(asn_DEF_Ngap_GUAMI_ExtIEs_tags_241[0]), /* 1 */
+	asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_241,
+	sizeof(asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_241)
+		/sizeof(asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_241[0]), /* 1 */
+	asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_241,	/* Same as above */
+	sizeof(asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_241)
+		/sizeof(asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_241[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_GUAMI_ExtIEs_241,
+	asn_MBR_Ngap_HandoverCommandTransfer_ExtIEs_241,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_GUAMI_ExtIEs_specs_241	/* Additional specs */
+	&asn_SPC_Ngap_HandoverCommandTransfer_ExtIEs_specs_241	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_248[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs__extensionValue, choice.QosFlowPerTNLInformationList),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_QosFlowPerTNLInformationList,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"QosFlowPerTNLInformationList"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_248[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 0, 0, 0 } /* QosFlowPerTNLInformationList */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_248 = {
-	sizeof(struct Ngap_HandoverCommandTransfer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_HandoverCommandTransfer_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_248,
-	1,	/* Count of tags in the map */
+	sizeof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs__extensionValue *)0)->present),
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -22653,13 +21246,12 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_248 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_248,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_248	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_HandoverCommandTransfer_ExtIEs_245[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_245[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22668,61 +21260,61 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverCommandTransfer_ExtIEs_245[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_HandoverCommandTransfer_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_247, &asn_PER_memb_Ngap_criticality_constr_247,  memb_Ngap_criticality_constraint_245 },
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_248,
-		select_HandoverCommandTransfer_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_248, &asn_PER_memb_Ngap_extensionValue_constr_248,  memb_Ngap_extensionValue_constraint_245 },
 		0, 0, /* No default value */
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_245[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_245[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_HandoverCommandTransfer_ExtIEs_tag2el_245[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tag2el_245[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_HandoverCommandTransfer_ExtIEs_specs_245 = {
-	sizeof(struct Ngap_HandoverCommandTransfer_ExtIEs),
-	offsetof(struct Ngap_HandoverCommandTransfer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_HandoverCommandTransfer_ExtIEs_tag2el_245,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_specs_245 = {
+	sizeof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs),
+	offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tag2el_245,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs = {
-	"HandoverCommandTransfer-ExtIEs",
-	"HandoverCommandTransfer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs = {
+	"HandoverPreparationUnsuccessfulTransfer-ExtIEs",
+	"HandoverPreparationUnsuccessfulTransfer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_245,
-	sizeof(asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_245)
-		/sizeof(asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_245[0]), /* 1 */
-	asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_245,	/* Same as above */
-	sizeof(asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_245)
-		/sizeof(asn_DEF_Ngap_HandoverCommandTransfer_ExtIEs_tags_245[0]), /* 1 */
+	asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_245,
+	sizeof(asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_245)
+		/sizeof(asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_245[0]), /* 1 */
+	asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_245,	/* Same as above */
+	sizeof(asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_245)
+		/sizeof(asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_245[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_HandoverCommandTransfer_ExtIEs_245,
+	asn_MBR_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_245,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_HandoverCommandTransfer_ExtIEs_specs_245	/* Additional specs */
+	&asn_SPC_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_specs_245	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_252 = {
-	sizeof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -22742,8 +21334,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_252 = {
 	&asn_SPC_Ngap_extensionValue_specs_252	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_249[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_249[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22752,7 +21344,7 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_24
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -22761,7 +21353,7 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_24
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_252,
@@ -22771,58 +21363,44 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_24
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_249[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_249[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tag2el_249[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tag2el_249[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_specs_249 = {
-	sizeof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs),
-	offsetof(struct Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tag2el_249,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_specs_249 = {
+	sizeof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs),
+	offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tag2el_249,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs = {
-	"HandoverPreparationUnsuccessfulTransfer-ExtIEs",
-	"HandoverPreparationUnsuccessfulTransfer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs = {
+	"HandoverRequestAcknowledgeTransfer-ExtIEs",
+	"HandoverRequestAcknowledgeTransfer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_249,
-	sizeof(asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_249)
-		/sizeof(asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_249[0]), /* 1 */
-	asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_249,	/* Same as above */
-	sizeof(asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_249)
-		/sizeof(asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_tags_249[0]), /* 1 */
+	asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_249,
+	sizeof(asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_249)
+		/sizeof(asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_249[0]), /* 1 */
+	asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_249,	/* Same as above */
+	sizeof(asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_249)
+		/sizeof(asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_249[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_249,
+	asn_MBR_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_249,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_HandoverPreparationUnsuccessfulTransfer_ExtIEs_specs_249	/* Additional specs */
+	&asn_SPC_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_specs_249	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_256[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs__extensionValue, choice.AdditionalDLUPTNLInformationForHOList),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOList,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"AdditionalDLUPTNLInformationForHOList"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_256[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 0, 0, 0 } /* AdditionalDLUPTNLInformationForHOList */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_256 = {
-	sizeof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_256,
-	1,	/* Count of tags in the map */
+	sizeof(struct Ngap_HandoverRequiredTransfer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_HandoverRequiredTransfer_ExtIEs__extensionValue *)0)->present),
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -22836,13 +21414,12 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_256 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_256,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_256	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_253[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_HandoverRequiredTransfer_ExtIEs_253[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22851,61 +21428,61 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_253[] =
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_HandoverRequestAcknowledgeTransfer_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_255, &asn_PER_memb_Ngap_criticality_constr_255,  memb_Ngap_criticality_constraint_253 },
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_256,
-		select_HandoverRequestAcknowledgeTransfer_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_256, &asn_PER_memb_Ngap_extensionValue_constr_256,  memb_Ngap_extensionValue_constraint_253 },
 		0, 0, /* No default value */
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_253[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_253[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tag2el_253[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_HandoverRequiredTransfer_ExtIEs_tag2el_253[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_specs_253 = {
-	sizeof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs),
-	offsetof(struct Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tag2el_253,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_HandoverRequiredTransfer_ExtIEs_specs_253 = {
+	sizeof(struct Ngap_HandoverRequiredTransfer_ExtIEs),
+	offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_HandoverRequiredTransfer_ExtIEs_tag2el_253,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs = {
-	"HandoverRequestAcknowledgeTransfer-ExtIEs",
-	"HandoverRequestAcknowledgeTransfer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs = {
+	"HandoverRequiredTransfer-ExtIEs",
+	"HandoverRequiredTransfer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_253,
-	sizeof(asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_253)
-		/sizeof(asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_253[0]), /* 1 */
-	asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_253,	/* Same as above */
-	sizeof(asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_253)
-		/sizeof(asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_tags_253[0]), /* 1 */
+	asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_253,
+	sizeof(asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_253)
+		/sizeof(asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_253[0]), /* 1 */
+	asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_253,	/* Same as above */
+	sizeof(asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_253)
+		/sizeof(asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_253[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_253,
+	asn_MBR_Ngap_HandoverRequiredTransfer_ExtIEs_253,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_HandoverRequestAcknowledgeTransfer_ExtIEs_specs_253	/* Additional specs */
+	&asn_SPC_Ngap_HandoverRequiredTransfer_ExtIEs_specs_253	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_260 = {
-	sizeof(struct Ngap_HandoverRequiredTransfer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_HandoverRequiredTransfer_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -22925,8 +21502,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_260 = {
 	&asn_SPC_Ngap_extensionValue_specs_260	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_HandoverRequiredTransfer_ExtIEs_257[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_257[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -22935,7 +21512,7 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverRequiredTransfer_ExtIEs_257[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -22944,7 +21521,7 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverRequiredTransfer_ExtIEs_257[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_260,
@@ -22954,42 +21531,42 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverRequiredTransfer_ExtIEs_257[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_257[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_257[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_HandoverRequiredTransfer_ExtIEs_tag2el_257[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tag2el_257[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_HandoverRequiredTransfer_ExtIEs_specs_257 = {
-	sizeof(struct Ngap_HandoverRequiredTransfer_ExtIEs),
-	offsetof(struct Ngap_HandoverRequiredTransfer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_HandoverRequiredTransfer_ExtIEs_tag2el_257,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_specs_257 = {
+	sizeof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs),
+	offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tag2el_257,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs = {
-	"HandoverRequiredTransfer-ExtIEs",
-	"HandoverRequiredTransfer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs = {
+	"HandoverResourceAllocationUnsuccessfulTransfer-ExtIEs",
+	"HandoverResourceAllocationUnsuccessfulTransfer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_257,
-	sizeof(asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_257)
-		/sizeof(asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_257[0]), /* 1 */
-	asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_257,	/* Same as above */
-	sizeof(asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_257)
-		/sizeof(asn_DEF_Ngap_HandoverRequiredTransfer_ExtIEs_tags_257[0]), /* 1 */
+	asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_257,
+	sizeof(asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_257)
+		/sizeof(asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_257[0]), /* 1 */
+	asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_257,	/* Same as above */
+	sizeof(asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_257)
+		/sizeof(asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_257[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_HandoverRequiredTransfer_ExtIEs_257,
+	asn_MBR_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_257,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_HandoverRequiredTransfer_ExtIEs_specs_257	/* Additional specs */
+	&asn_SPC_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_specs_257	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_264 = {
-	sizeof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs__extensionValue),
+	offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -23009,8 +21586,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_264 = {
 	&asn_SPC_Ngap_extensionValue_specs_264	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_261[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_261[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -23019,7 +21596,7 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_Ex
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -23028,7 +21605,7 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_Ex
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_264,
@@ -23038,42 +21615,42 @@ asn_TYPE_member_t asn_MBR_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_Ex
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_261[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_261[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tag2el_261[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tag2el_261[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_specs_261 = {
-	sizeof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs),
-	offsetof(struct Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tag2el_261,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_specs_261 = {
+	sizeof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs),
+	offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tag2el_261,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs = {
-	"HandoverResourceAllocationUnsuccessfulTransfer-ExtIEs",
-	"HandoverResourceAllocationUnsuccessfulTransfer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs = {
+	"InfoOnRecommendedCellsAndRANNodesForPaging-ExtIEs",
+	"InfoOnRecommendedCellsAndRANNodesForPaging-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_261,
-	sizeof(asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_261)
-		/sizeof(asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_261[0]), /* 1 */
-	asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_261,	/* Same as above */
-	sizeof(asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_261)
-		/sizeof(asn_DEF_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_tags_261[0]), /* 1 */
+	asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_261,
+	sizeof(asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_261)
+		/sizeof(asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_261[0]), /* 1 */
+	asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_261,	/* Same as above */
+	sizeof(asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_261)
+		/sizeof(asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_261[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_261,
+	asn_MBR_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_261,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs_specs_261	/* Additional specs */
+	&asn_SPC_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_specs_261	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_268 = {
-	sizeof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs__extensionValue),
-	offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_LastVisitedCellItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_LastVisitedCellItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_LastVisitedCellItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_LastVisitedCellItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -23093,8 +21670,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_268 = {
 	&asn_SPC_Ngap_extensionValue_specs_268	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_265[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_LastVisitedCellItem_ExtIEs_265[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedCellItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -23103,7 +21680,7 @@ asn_TYPE_member_t asn_MBR_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedCellItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -23112,7 +21689,7 @@ asn_TYPE_member_t asn_MBR_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedCellItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_268,
@@ -23122,42 +21699,42 @@ asn_TYPE_member_t asn_MBR_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_265[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_265[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tag2el_265[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_LastVisitedCellItem_ExtIEs_tag2el_265[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_specs_265 = {
-	sizeof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs),
-	offsetof(struct Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tag2el_265,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_LastVisitedCellItem_ExtIEs_specs_265 = {
+	sizeof(struct Ngap_LastVisitedCellItem_ExtIEs),
+	offsetof(struct Ngap_LastVisitedCellItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_LastVisitedCellItem_ExtIEs_tag2el_265,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs = {
-	"InfoOnRecommendedCellsAndRANNodesForPaging-ExtIEs",
-	"InfoOnRecommendedCellsAndRANNodesForPaging-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_LastVisitedCellItem_ExtIEs = {
+	"LastVisitedCellItem-ExtIEs",
+	"LastVisitedCellItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_265,
-	sizeof(asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_265)
-		/sizeof(asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_265[0]), /* 1 */
-	asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_265,	/* Same as above */
-	sizeof(asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_265)
-		/sizeof(asn_DEF_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_tags_265[0]), /* 1 */
+	asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_265,
+	sizeof(asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_265)
+		/sizeof(asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_265[0]), /* 1 */
+	asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_265,	/* Same as above */
+	sizeof(asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_265)
+		/sizeof(asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_265[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_265,
+	asn_MBR_Ngap_LastVisitedCellItem_ExtIEs_265,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs_specs_265	/* Additional specs */
+	&asn_SPC_Ngap_LastVisitedCellItem_ExtIEs_specs_265	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_272 = {
-	sizeof(struct Ngap_LastVisitedCellItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_LastVisitedCellItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_LastVisitedCellItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_LastVisitedCellItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs__extensionValue),
+	offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_LastVisitedNGRANCellInformation_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -23177,8 +21754,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_272 = {
 	&asn_SPC_Ngap_extensionValue_specs_272	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_LastVisitedCellItem_ExtIEs_269[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedCellItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_LastVisitedNGRANCellInformation_ExtIEs_269[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -23187,7 +21764,7 @@ asn_TYPE_member_t asn_MBR_Ngap_LastVisitedCellItem_ExtIEs_269[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedCellItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -23196,7 +21773,7 @@ asn_TYPE_member_t asn_MBR_Ngap_LastVisitedCellItem_ExtIEs_269[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedCellItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_272,
@@ -23206,42 +21783,42 @@ asn_TYPE_member_t asn_MBR_Ngap_LastVisitedCellItem_ExtIEs_269[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_269[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_269[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_LastVisitedCellItem_ExtIEs_tag2el_269[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tag2el_269[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_LastVisitedCellItem_ExtIEs_specs_269 = {
-	sizeof(struct Ngap_LastVisitedCellItem_ExtIEs),
-	offsetof(struct Ngap_LastVisitedCellItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_LastVisitedCellItem_ExtIEs_tag2el_269,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_LastVisitedNGRANCellInformation_ExtIEs_specs_269 = {
+	sizeof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs),
+	offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tag2el_269,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_LastVisitedCellItem_ExtIEs = {
-	"LastVisitedCellItem-ExtIEs",
-	"LastVisitedCellItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs = {
+	"LastVisitedNGRANCellInformation-ExtIEs",
+	"LastVisitedNGRANCellInformation-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_269,
-	sizeof(asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_269)
-		/sizeof(asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_269[0]), /* 1 */
-	asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_269,	/* Same as above */
-	sizeof(asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_269)
-		/sizeof(asn_DEF_Ngap_LastVisitedCellItem_ExtIEs_tags_269[0]), /* 1 */
+	asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_269,
+	sizeof(asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_269)
+		/sizeof(asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_269[0]), /* 1 */
+	asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_269,	/* Same as above */
+	sizeof(asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_269)
+		/sizeof(asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_269[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_LastVisitedCellItem_ExtIEs_269,
+	asn_MBR_Ngap_LastVisitedNGRANCellInformation_ExtIEs_269,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_LastVisitedCellItem_ExtIEs_specs_269	/* Additional specs */
+	&asn_SPC_Ngap_LastVisitedNGRANCellInformation_ExtIEs_specs_269	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_276 = {
-	sizeof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs__extensionValue),
-	offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_LastVisitedNGRANCellInformation_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_LocationReportingRequestType_ExtIEs__extensionValue),
+	offsetof(struct Ngap_LocationReportingRequestType_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_LocationReportingRequestType_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_LocationReportingRequestType_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -23261,8 +21838,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_276 = {
 	&asn_SPC_Ngap_extensionValue_specs_276	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_LastVisitedNGRANCellInformation_ExtIEs_273[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_LocationReportingRequestType_ExtIEs_273[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LocationReportingRequestType_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -23271,7 +21848,7 @@ asn_TYPE_member_t asn_MBR_Ngap_LastVisitedNGRANCellInformation_ExtIEs_273[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LocationReportingRequestType_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -23280,7 +21857,7 @@ asn_TYPE_member_t asn_MBR_Ngap_LastVisitedNGRANCellInformation_ExtIEs_273[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_LocationReportingRequestType_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_276,
@@ -23290,42 +21867,42 @@ asn_TYPE_member_t asn_MBR_Ngap_LastVisitedNGRANCellInformation_ExtIEs_273[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_273[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_273[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tag2el_273[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_LocationReportingRequestType_ExtIEs_tag2el_273[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_LastVisitedNGRANCellInformation_ExtIEs_specs_273 = {
-	sizeof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs),
-	offsetof(struct Ngap_LastVisitedNGRANCellInformation_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tag2el_273,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_LocationReportingRequestType_ExtIEs_specs_273 = {
+	sizeof(struct Ngap_LocationReportingRequestType_ExtIEs),
+	offsetof(struct Ngap_LocationReportingRequestType_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_LocationReportingRequestType_ExtIEs_tag2el_273,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs = {
-	"LastVisitedNGRANCellInformation-ExtIEs",
-	"LastVisitedNGRANCellInformation-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_LocationReportingRequestType_ExtIEs = {
+	"LocationReportingRequestType-ExtIEs",
+	"LocationReportingRequestType-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_273,
-	sizeof(asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_273)
-		/sizeof(asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_273[0]), /* 1 */
-	asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_273,	/* Same as above */
-	sizeof(asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_273)
-		/sizeof(asn_DEF_Ngap_LastVisitedNGRANCellInformation_ExtIEs_tags_273[0]), /* 1 */
+	asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_273,
+	sizeof(asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_273)
+		/sizeof(asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_273[0]), /* 1 */
+	asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_273,	/* Same as above */
+	sizeof(asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_273)
+		/sizeof(asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_273[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_LastVisitedNGRANCellInformation_ExtIEs_273,
+	asn_MBR_Ngap_LocationReportingRequestType_ExtIEs_273,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_LastVisitedNGRANCellInformation_ExtIEs_specs_273	/* Additional specs */
+	&asn_SPC_Ngap_LocationReportingRequestType_ExtIEs_specs_273	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_280 = {
-	sizeof(struct Ngap_LocationReportingRequestType_ExtIEs__extensionValue),
-	offsetof(struct Ngap_LocationReportingRequestType_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_LocationReportingRequestType_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_LocationReportingRequestType_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_MobilityRestrictionList_ExtIEs__extensionValue),
+	offsetof(struct Ngap_MobilityRestrictionList_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_MobilityRestrictionList_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_MobilityRestrictionList_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -23345,8 +21922,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_280 = {
 	&asn_SPC_Ngap_extensionValue_specs_280	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_LocationReportingRequestType_ExtIEs_277[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LocationReportingRequestType_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_MobilityRestrictionList_ExtIEs_277[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_MobilityRestrictionList_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -23355,7 +21932,7 @@ asn_TYPE_member_t asn_MBR_Ngap_LocationReportingRequestType_ExtIEs_277[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_LocationReportingRequestType_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_MobilityRestrictionList_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -23364,7 +21941,7 @@ asn_TYPE_member_t asn_MBR_Ngap_LocationReportingRequestType_ExtIEs_277[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_LocationReportingRequestType_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_MobilityRestrictionList_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_280,
@@ -23374,58 +21951,44 @@ asn_TYPE_member_t asn_MBR_Ngap_LocationReportingRequestType_ExtIEs_277[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_277[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_277[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_LocationReportingRequestType_ExtIEs_tag2el_277[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_MobilityRestrictionList_ExtIEs_tag2el_277[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_LocationReportingRequestType_ExtIEs_specs_277 = {
-	sizeof(struct Ngap_LocationReportingRequestType_ExtIEs),
-	offsetof(struct Ngap_LocationReportingRequestType_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_LocationReportingRequestType_ExtIEs_tag2el_277,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_MobilityRestrictionList_ExtIEs_specs_277 = {
+	sizeof(struct Ngap_MobilityRestrictionList_ExtIEs),
+	offsetof(struct Ngap_MobilityRestrictionList_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_MobilityRestrictionList_ExtIEs_tag2el_277,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_LocationReportingRequestType_ExtIEs = {
-	"LocationReportingRequestType-ExtIEs",
-	"LocationReportingRequestType-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_MobilityRestrictionList_ExtIEs = {
+	"MobilityRestrictionList-ExtIEs",
+	"MobilityRestrictionList-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_277,
-	sizeof(asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_277)
-		/sizeof(asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_277[0]), /* 1 */
-	asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_277,	/* Same as above */
-	sizeof(asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_277)
-		/sizeof(asn_DEF_Ngap_LocationReportingRequestType_ExtIEs_tags_277[0]), /* 1 */
+	asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_277,
+	sizeof(asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_277)
+		/sizeof(asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_277[0]), /* 1 */
+	asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_277,	/* Same as above */
+	sizeof(asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_277)
+		/sizeof(asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_277[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_LocationReportingRequestType_ExtIEs_277,
+	asn_MBR_Ngap_MobilityRestrictionList_ExtIEs_277,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_LocationReportingRequestType_ExtIEs_specs_277	/* Additional specs */
+	&asn_SPC_Ngap_MobilityRestrictionList_ExtIEs_specs_277	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_284[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_MobilityRestrictionList_ExtIEs__extensionValue, choice.PLMNIdentity),
-		(ASN_TAG_CLASS_UNIVERSAL | (4 << 2)),
-		0,
-		&asn_DEF_Ngap_PLMNIdentity,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"PLMNIdentity"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_284[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (4 << 2)), 0, 0, 0 } /* PLMNIdentity */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_284 = {
-	sizeof(struct Ngap_MobilityRestrictionList_ExtIEs__extensionValue),
-	offsetof(struct Ngap_MobilityRestrictionList_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_MobilityRestrictionList_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_MobilityRestrictionList_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_284,
-	1,	/* Count of tags in the map */
+	sizeof(struct Ngap_MultipleTNLInformation_ExtIEs__extensionValue),
+	offsetof(struct Ngap_MultipleTNLInformation_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_MultipleTNLInformation_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_MultipleTNLInformation_ExtIEs__extensionValue *)0)->present),
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -23439,13 +22002,12 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_284 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_284,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_284	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_MobilityRestrictionList_ExtIEs_281[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_MobilityRestrictionList_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_MultipleTNLInformation_ExtIEs_281[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_MultipleTNLInformation_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -23454,54 +22016,54 @@ asn_TYPE_member_t asn_MBR_Ngap_MobilityRestrictionList_ExtIEs_281[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_MobilityRestrictionList_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_MultipleTNLInformation_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_MobilityRestrictionList_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_283, &asn_PER_memb_Ngap_criticality_constr_283,  memb_Ngap_criticality_constraint_281 },
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_MobilityRestrictionList_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_MultipleTNLInformation_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_284,
-		select_MobilityRestrictionList_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_284, &asn_PER_memb_Ngap_extensionValue_constr_284,  memb_Ngap_extensionValue_constraint_281 },
 		0, 0, /* No default value */
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_281[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_MultipleTNLInformation_ExtIEs_tags_281[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_MobilityRestrictionList_ExtIEs_tag2el_281[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_MultipleTNLInformation_ExtIEs_tag2el_281[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_MobilityRestrictionList_ExtIEs_specs_281 = {
-	sizeof(struct Ngap_MobilityRestrictionList_ExtIEs),
-	offsetof(struct Ngap_MobilityRestrictionList_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_MobilityRestrictionList_ExtIEs_tag2el_281,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_MultipleTNLInformation_ExtIEs_specs_281 = {
+	sizeof(struct Ngap_MultipleTNLInformation_ExtIEs),
+	offsetof(struct Ngap_MultipleTNLInformation_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_MultipleTNLInformation_ExtIEs_tag2el_281,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_MobilityRestrictionList_ExtIEs = {
-	"MobilityRestrictionList-ExtIEs",
-	"MobilityRestrictionList-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_MultipleTNLInformation_ExtIEs = {
+	"MultipleTNLInformation-ExtIEs",
+	"MultipleTNLInformation-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_281,
-	sizeof(asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_281)
-		/sizeof(asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_281[0]), /* 1 */
-	asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_281,	/* Same as above */
-	sizeof(asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_281)
-		/sizeof(asn_DEF_Ngap_MobilityRestrictionList_ExtIEs_tags_281[0]), /* 1 */
+	asn_DEF_Ngap_MultipleTNLInformation_ExtIEs_tags_281,
+	sizeof(asn_DEF_Ngap_MultipleTNLInformation_ExtIEs_tags_281)
+		/sizeof(asn_DEF_Ngap_MultipleTNLInformation_ExtIEs_tags_281[0]), /* 1 */
+	asn_DEF_Ngap_MultipleTNLInformation_ExtIEs_tags_281,	/* Same as above */
+	sizeof(asn_DEF_Ngap_MultipleTNLInformation_ExtIEs_tags_281)
+		/sizeof(asn_DEF_Ngap_MultipleTNLInformation_ExtIEs_tags_281[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_MobilityRestrictionList_ExtIEs_281,
+	asn_MBR_Ngap_MultipleTNLInformation_ExtIEs_281,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_MobilityRestrictionList_ExtIEs_specs_281	/* Additional specs */
+	&asn_SPC_Ngap_MultipleTNLInformation_ExtIEs_specs_281	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_288 = {
@@ -23924,27 +22486,13 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PagingAttemptInformation_ExtIEs = {
 	&asn_SPC_Ngap_PagingAttemptInformation_ExtIEs_specs_301	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_308[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs__extensionValue, choice.UPTransportLayerInformationPairList),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_UPTransportLayerInformationPairList,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"UPTransportLayerInformationPairList"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_308[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 0, 0, 0 } /* UPTransportLayerInformationPairList */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_308 = {
 	sizeof(struct Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs__extensionValue),
 	offsetof(struct Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs__extensionValue, _asn_ctx),
 	offsetof(struct Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs__extensionValue, present),
 	sizeof(((struct Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_308,
-	1,	/* Count of tags in the map */
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -23958,8 +22506,7 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_308 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_308,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_308	/* Additional specs */
 };
 
@@ -23977,7 +22524,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs_305[]
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_PathSwitchRequestAcknowledgeTransfer_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_307, &asn_PER_memb_Ngap_criticality_constr_307,  memb_Ngap_criticality_constraint_305 },
 		0, 0, /* No default value */
 		"criticality"
@@ -23986,7 +22533,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PathSwitchRequestAcknowledgeTransfer_ExtIEs_305[]
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_308,
-		select_PathSwitchRequestAcknowledgeTransfer_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_308, &asn_PER_memb_Ngap_extensionValue_constr_308,  memb_Ngap_extensionValue_constraint_305 },
 		0, 0, /* No default value */
 		"extensionValue"
@@ -24107,27 +22654,13 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PathSwitchRequestSetupFailedTransfer_ExtIEs =
 	&asn_SPC_Ngap_PathSwitchRequestSetupFailedTransfer_ExtIEs_specs_309	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_316[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PathSwitchRequestTransfer_ExtIEs__extensionValue, choice.QosFlowPerTNLInformationList),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_QosFlowPerTNLInformationList,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"QosFlowPerTNLInformationList"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_316[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 0, 0, 0 } /* QosFlowPerTNLInformationList */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_316 = {
 	sizeof(struct Ngap_PathSwitchRequestTransfer_ExtIEs__extensionValue),
 	offsetof(struct Ngap_PathSwitchRequestTransfer_ExtIEs__extensionValue, _asn_ctx),
 	offsetof(struct Ngap_PathSwitchRequestTransfer_ExtIEs__extensionValue, present),
 	sizeof(((struct Ngap_PathSwitchRequestTransfer_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_316,
-	1,	/* Count of tags in the map */
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -24141,8 +22674,7 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_316 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_316,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_316	/* Additional specs */
 };
 
@@ -24160,7 +22692,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PathSwitchRequestTransfer_ExtIEs_313[] = {
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_PathSwitchRequestTransfer_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_315, &asn_PER_memb_Ngap_criticality_constr_315,  memb_Ngap_criticality_constraint_313 },
 		0, 0, /* No default value */
 		"criticality"
@@ -24169,7 +22701,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PathSwitchRequestTransfer_ExtIEs_313[] = {
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_316,
-		select_PathSwitchRequestTransfer_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_316, &asn_PER_memb_Ngap_extensionValue_constr_316,  memb_Ngap_extensionValue_constraint_313 },
 		0, 0, /* No default value */
 		"extensionValue"
@@ -25214,27 +23746,13 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceInformationItem_ExtIEs = {
 	&asn_SPC_Ngap_PDUSessionResourceInformationItem_ExtIEs_specs_361	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_368[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs__extensionValue, choice.OCTET_STRING_CONTAINING_PDUSessionResourceReleaseResponseTransfer_),
-		(ASN_TAG_CLASS_UNIVERSAL | (4 << 2)),
-		0,
-		&asn_DEF_OCTET_STRING,
-		0,
-		{ 0, 0,  memb_Ngap_OCTET_STRING_CONTAINING_PDUSessionResourceReleaseResponseTransfer__constraint_368 },
-		0, 0, /* No default value */
-		"OCTET STRING (CONTAINING PDUSessionResourceReleaseResponseTransfer)"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_368[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (4 << 2)), 0, 0, 0 } /* OCTET STRING (CONTAINING PDUSessionResourceReleaseResponseTransfer) */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_368 = {
 	sizeof(struct Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs__extensionValue),
 	offsetof(struct Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs__extensionValue, _asn_ctx),
 	offsetof(struct Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs__extensionValue, present),
 	sizeof(((struct Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_368,
-	1,	/* Count of tags in the map */
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -25248,8 +23766,7 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_368 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_368,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_368	/* Additional specs */
 };
 
@@ -25267,7 +23784,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs_365[] = {
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_PDUSessionResourceItemCxtRelCpl_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_367, &asn_PER_memb_Ngap_criticality_constr_367,  memb_Ngap_criticality_constraint_365 },
 		0, 0, /* No default value */
 		"criticality"
@@ -25276,7 +23793,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceItemCxtRelCpl_ExtIEs_365[] = {
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_368,
-		select_PDUSessionResourceItemCxtRelCpl_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_368, &asn_PER_memb_Ngap_extensionValue_constr_368,  memb_Ngap_extensionValue_constraint_365 },
 		0, 0, /* No default value */
 		"extensionValue"
@@ -25649,27 +24166,13 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceModifyIndicationUnsuccessfu
 	&asn_SPC_Ngap_PDUSessionResourceModifyIndicationUnsuccessfulTransfer_ExtIEs_specs_381	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_388[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs__extensionValue, choice.UPTransportLayerInformationPairList),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_UPTransportLayerInformationPairList,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"UPTransportLayerInformationPairList"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_388[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 0, 0, 0 } /* UPTransportLayerInformationPairList */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_388 = {
 	sizeof(struct Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs__extensionValue),
 	offsetof(struct Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs__extensionValue, _asn_ctx),
 	offsetof(struct Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs__extensionValue, present),
 	sizeof(((struct Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_388,
-	1,	/* Count of tags in the map */
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -25683,8 +24186,7 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_388 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_388,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_388	/* Additional specs */
 };
 
@@ -25702,7 +24204,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs_3
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_PDUSessionResourceModifyResponseTransfer_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_387, &asn_PER_memb_Ngap_criticality_constr_387,  memb_Ngap_criticality_constraint_385 },
 		0, 0, /* No default value */
 		"criticality"
@@ -25711,7 +24213,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs_3
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_388,
-		select_PDUSessionResourceModifyResponseTransfer_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_388, &asn_PER_memb_Ngap_extensionValue_constr_388,  memb_Ngap_extensionValue_constraint_385 },
 		0, 0, /* No default value */
 		"extensionValue"
@@ -25748,37 +24250,13 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceModifyResponseTransfer_ExtI
 	&asn_SPC_Ngap_PDUSessionResourceModifyResponseTransfer_ExtIEs_specs_385	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_392[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs__extensionValue, choice.SecondaryRATUsageInformation),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_SecondaryRATUsageInformation,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"SecondaryRATUsageInformation"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs__extensionValue, choice.SecurityResult),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_SecurityResult,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"SecurityResult"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_392[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 0, 0, 1 }, /* SecondaryRATUsageInformation */
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 1, -1, 0 } /* SecurityResult */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_392 = {
 	sizeof(struct Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs__extensionValue),
 	offsetof(struct Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs__extensionValue, _asn_ctx),
 	offsetof(struct Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs__extensionValue, present),
 	sizeof(((struct Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_392,
-	2,	/* Count of tags in the map */
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -25792,8 +24270,7 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_392 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_392,
-	2,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_392	/* Additional specs */
 };
 
@@ -25811,7 +24288,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_PDUSessionResourceModifyIndicationTransfer_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_391, &asn_PER_memb_Ngap_criticality_constr_391,  memb_Ngap_criticality_constraint_389 },
 		0, 0, /* No default value */
 		"criticality"
@@ -25820,7 +24297,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceModifyIndicationTransfer_ExtIEs
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_392,
-		select_PDUSessionResourceModifyIndicationTransfer_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_392, &asn_PER_memb_Ngap_extensionValue_constr_392,  memb_Ngap_extensionValue_constraint_389 },
 		0, 0, /* No default value */
 		"extensionValue"
@@ -26025,27 +24502,13 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceModifyItemModInd_ExtIEs = {
 	&asn_SPC_Ngap_PDUSessionResourceModifyItemModInd_ExtIEs_specs_397	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_404[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceModifyItemModReq_ExtIEs__extensionValue, choice.S_NSSAI),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_S_NSSAI,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"S-NSSAI"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_404[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 0, 0, 0 } /* S-NSSAI */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_404 = {
 	sizeof(struct Ngap_PDUSessionResourceModifyItemModReq_ExtIEs__extensionValue),
 	offsetof(struct Ngap_PDUSessionResourceModifyItemModReq_ExtIEs__extensionValue, _asn_ctx),
 	offsetof(struct Ngap_PDUSessionResourceModifyItemModReq_ExtIEs__extensionValue, present),
 	sizeof(((struct Ngap_PDUSessionResourceModifyItemModReq_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_404,
-	1,	/* Count of tags in the map */
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -26059,8 +24522,7 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_404 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_404,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_404	/* Additional specs */
 };
 
@@ -26078,7 +24540,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceModifyItemModReq_ExtIEs_401[] =
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_PDUSessionResourceModifyItemModReq_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_403, &asn_PER_memb_Ngap_criticality_constr_403,  memb_Ngap_criticality_constraint_401 },
 		0, 0, /* No default value */
 		"criticality"
@@ -26087,7 +24549,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceModifyItemModReq_ExtIEs_401[] =
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_404,
-		select_PDUSessionResourceModifyItemModReq_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_404, &asn_PER_memb_Ngap_extensionValue_constr_404,  memb_Ngap_extensionValue_constraint_401 },
 		0, 0, /* No default value */
 		"extensionValue"
@@ -26376,27 +24838,13 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceNotifyItem_ExtIEs = {
 	&asn_SPC_Ngap_PDUSessionResourceNotifyItem_ExtIEs_specs_413	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_420[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs__extensionValue, choice.SecondaryRATUsageInformation),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_SecondaryRATUsageInformation,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"SecondaryRATUsageInformation"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_420[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 0, 0, 0 } /* SecondaryRATUsageInformation */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_420 = {
 	sizeof(struct Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs__extensionValue),
 	offsetof(struct Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs__extensionValue, _asn_ctx),
 	offsetof(struct Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs__extensionValue, present),
 	sizeof(((struct Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_420,
-	1,	/* Count of tags in the map */
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -26410,8 +24858,7 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_420 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_420,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_420	/* Additional specs */
 };
 
@@ -26429,7 +24876,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_4
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_419, &asn_PER_memb_Ngap_criticality_constr_419,  memb_Ngap_criticality_constraint_417 },
 		0, 0, /* No default value */
 		"criticality"
@@ -26438,7 +24885,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_4
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_420,
-		select_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_420, &asn_PER_memb_Ngap_extensionValue_constr_420,  memb_Ngap_extensionValue_constraint_417 },
 		0, 0, /* No default value */
 		"extensionValue"
@@ -26475,27 +24922,13 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtI
 	&asn_SPC_Ngap_PDUSessionResourceNotifyReleasedTransfer_ExtIEs_specs_417	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_424[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceNotifyTransfer_ExtIEs__extensionValue, choice.SecondaryRATUsageInformation),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_SecondaryRATUsageInformation,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"SecondaryRATUsageInformation"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_424[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 0, 0, 0 } /* SecondaryRATUsageInformation */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_424 = {
 	sizeof(struct Ngap_PDUSessionResourceNotifyTransfer_ExtIEs__extensionValue),
 	offsetof(struct Ngap_PDUSessionResourceNotifyTransfer_ExtIEs__extensionValue, _asn_ctx),
 	offsetof(struct Ngap_PDUSessionResourceNotifyTransfer_ExtIEs__extensionValue, present),
 	sizeof(((struct Ngap_PDUSessionResourceNotifyTransfer_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_424,
-	1,	/* Count of tags in the map */
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -26509,8 +24942,7 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_424 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_424,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_424	/* Additional specs */
 };
 
@@ -26528,7 +24960,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceNotifyTransfer_ExtIEs_421[] = {
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_PDUSessionResourceNotifyTransfer_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_423, &asn_PER_memb_Ngap_criticality_constr_423,  memb_Ngap_criticality_constraint_421 },
 		0, 0, /* No default value */
 		"criticality"
@@ -26537,7 +24969,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceNotifyTransfer_ExtIEs_421[] = {
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_424,
-		select_PDUSessionResourceNotifyTransfer_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_424, &asn_PER_memb_Ngap_extensionValue_constr_424,  memb_Ngap_extensionValue_constraint_421 },
 		0, 0, /* No default value */
 		"extensionValue"
@@ -26994,27 +25426,13 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceReleasedItemRelRes_ExtIEs =
 	&asn_SPC_Ngap_PDUSessionResourceReleasedItemRelRes_ExtIEs_specs_441	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_448[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs__extensionValue, choice.SecondaryRATUsageInformation),
-		(ASN_TAG_CLASS_UNIVERSAL | (16 << 2)),
-		0,
-		&asn_DEF_Ngap_SecondaryRATUsageInformation,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"SecondaryRATUsageInformation"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_448[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (16 << 2)), 0, 0, 0 } /* SecondaryRATUsageInformation */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_448 = {
 	sizeof(struct Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs__extensionValue),
 	offsetof(struct Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs__extensionValue, _asn_ctx),
 	offsetof(struct Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs__extensionValue, present),
 	sizeof(((struct Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_448,
-	1,	/* Count of tags in the map */
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -27028,8 +25446,7 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_448 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_448,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_448	/* Additional specs */
 };
 
@@ -27047,7 +25464,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs_
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_PDUSessionResourceReleaseResponseTransfer_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_447, &asn_PER_memb_Ngap_criticality_constr_447,  memb_Ngap_criticality_constraint_445 },
 		0, 0, /* No default value */
 		"criticality"
@@ -27056,7 +25473,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceReleaseResponseTransfer_ExtIEs_
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_448,
-		select_PDUSessionResourceReleaseResponseTransfer_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_448, &asn_PER_memb_Ngap_extensionValue_constr_448,  memb_Ngap_extensionValue_constraint_445 },
 		0, 0, /* No default value */
 		"extensionValue"
@@ -27094,10 +25511,10 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceReleaseResponseTransfer_Ext
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_452 = {
-	sizeof(struct Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27117,8 +25534,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_452 = {
 	&asn_SPC_Ngap_extensionValue_specs_452	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_449[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_449[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27127,7 +25544,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_44
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27136,7 +25553,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_44
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_452,
@@ -27146,42 +25563,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_44
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_tags_449[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_449[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_tag2el_449[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tag2el_449[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_specs_449 = {
-	sizeof(struct Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_tag2el_449,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_specs_449 = {
+	sizeof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tag2el_449,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs = {
-	"PDUSessionResourceSecondaryRATUsageItem-ExtIEs",
-	"PDUSessionResourceSecondaryRATUsageItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs = {
+	"PDUSessionResourceSetupItemCxtReq-ExtIEs",
+	"PDUSessionResourceSetupItemCxtReq-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_tags_449,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_tags_449)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_tags_449[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_tags_449,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_tags_449)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_tags_449[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_449,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_449)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_449[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_449,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_449)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_449[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_449,
+	asn_MBR_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_449,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceSecondaryRATUsageItem_ExtIEs_specs_449	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_specs_449	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_456 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27201,8 +25618,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_456 = {
 	&asn_SPC_Ngap_extensionValue_specs_456	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_453[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_453[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27211,7 +25628,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_453[] = 
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27220,7 +25637,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_453[] = 
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_456,
@@ -27230,42 +25647,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_453[] = 
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_453[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_453[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tag2el_453[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tag2el_453[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_specs_453 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tag2el_453,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_specs_453 = {
+	sizeof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tag2el_453,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs = {
-	"PDUSessionResourceSetupItemCxtReq-ExtIEs",
-	"PDUSessionResourceSetupItemCxtReq-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs = {
+	"PDUSessionResourceSetupItemCxtRes-ExtIEs",
+	"PDUSessionResourceSetupItemCxtRes-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_453,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_453)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_453[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_453,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_453)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_tags_453[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_453,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_453)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_453[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_453,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_453)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_453[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_453,
+	asn_MBR_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_453,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceSetupItemCxtReq_ExtIEs_specs_453	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_specs_453	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_460 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27285,8 +25702,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_460 = {
 	&asn_SPC_Ngap_extensionValue_specs_460	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_457[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_457[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27295,7 +25712,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_457[] = 
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27304,7 +25721,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_457[] = 
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_460,
@@ -27314,42 +25731,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_457[] = 
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_457[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_457[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tag2el_457[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tag2el_457[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_specs_457 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tag2el_457,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_specs_457 = {
+	sizeof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tag2el_457,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs = {
-	"PDUSessionResourceSetupItemCxtRes-ExtIEs",
-	"PDUSessionResourceSetupItemCxtRes-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs = {
+	"PDUSessionResourceSetupItemHOReq-ExtIEs",
+	"PDUSessionResourceSetupItemHOReq-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_457,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_457)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_457[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_457,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_457)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_tags_457[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_457,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_457)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_457[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_457,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_457)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_457[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_457,
+	asn_MBR_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_457,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceSetupItemCxtRes_ExtIEs_specs_457	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_specs_457	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_464 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27369,8 +25786,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_464 = {
 	&asn_SPC_Ngap_extensionValue_specs_464	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_461[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_461[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27379,7 +25796,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_461[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27388,7 +25805,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_461[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_464,
@@ -27398,42 +25815,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_461[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_461[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_461[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tag2el_461[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tag2el_461[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_specs_461 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tag2el_461,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_specs_461 = {
+	sizeof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tag2el_461,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs = {
-	"PDUSessionResourceSetupItemHOReq-ExtIEs",
-	"PDUSessionResourceSetupItemHOReq-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs = {
+	"PDUSessionResourceSetupItemSUReq-ExtIEs",
+	"PDUSessionResourceSetupItemSUReq-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_461,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_461)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_461[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_461,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_461)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_tags_461[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_461,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_461)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_461[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_461,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_461)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_461[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_461,
+	asn_MBR_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_461,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceSetupItemHOReq_ExtIEs_specs_461	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_specs_461	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_468 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27453,8 +25870,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_468 = {
 	&asn_SPC_Ngap_extensionValue_specs_468	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_465[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_465[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27463,7 +25880,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_465[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27472,7 +25889,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_465[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_468,
@@ -27482,42 +25899,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_465[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_465[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_465[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tag2el_465[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tag2el_465[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_specs_465 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tag2el_465,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_specs_465 = {
+	sizeof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tag2el_465,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs = {
-	"PDUSessionResourceSetupItemSUReq-ExtIEs",
-	"PDUSessionResourceSetupItemSUReq-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs = {
+	"PDUSessionResourceSetupItemSURes-ExtIEs",
+	"PDUSessionResourceSetupItemSURes-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_465,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_465)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_465[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_465,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_465)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_tags_465[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_465,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_465)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_465[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_465,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_465)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_465[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_465,
+	asn_MBR_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_465,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceSetupItemSUReq_ExtIEs_specs_465	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_specs_465	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_472 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27537,8 +25954,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_472 = {
 	&asn_SPC_Ngap_extensionValue_specs_472	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_469[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_469[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27547,7 +25964,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_469[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27556,7 +25973,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_469[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_472,
@@ -27566,42 +25983,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_469[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_469[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_469[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tag2el_469[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tag2el_469[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_specs_469 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceSetupItemSURes_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tag2el_469,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_specs_469 = {
+	sizeof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tag2el_469,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs = {
-	"PDUSessionResourceSetupItemSURes-ExtIEs",
-	"PDUSessionResourceSetupItemSURes-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs = {
+	"PDUSessionResourceSetupResponseTransfer-ExtIEs",
+	"PDUSessionResourceSetupResponseTransfer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_469,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_469)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_469[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_469,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_469)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_tags_469[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_469,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_469)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_469[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_469,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_469)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_469[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_469,
+	asn_MBR_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_469,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceSetupItemSURes_ExtIEs_specs_469	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_specs_469	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_476 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27621,8 +26038,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_476 = {
 	&asn_SPC_Ngap_extensionValue_specs_476	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_473[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_473[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27631,7 +26048,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_47
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27640,7 +26057,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_47
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_476,
@@ -27650,42 +26067,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_47
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_473[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_473[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tag2el_473[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tag2el_473[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_specs_473 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tag2el_473,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_specs_473 = {
+	sizeof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tag2el_473,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs = {
-	"PDUSessionResourceSetupResponseTransfer-ExtIEs",
-	"PDUSessionResourceSetupResponseTransfer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs = {
+	"PDUSessionResourceSetupUnsuccessfulTransfer-ExtIEs",
+	"PDUSessionResourceSetupUnsuccessfulTransfer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_473,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_473)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_473[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_473,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_473)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_tags_473[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_473,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_473)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_473[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_473,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_473)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_473[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_473,
+	asn_MBR_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_473,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceSetupResponseTransfer_ExtIEs_specs_473	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_specs_473	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_480 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27705,8 +26122,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_480 = {
 	&asn_SPC_Ngap_extensionValue_specs_480	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_477[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_477[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27715,7 +26132,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIE
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27724,7 +26141,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIE
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_480,
@@ -27734,42 +26151,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIE
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_477[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_477[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tag2el_477[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tag2el_477[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_specs_477 = {
-	sizeof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tag2el_477,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_specs_477 = {
+	sizeof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tag2el_477,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs = {
-	"PDUSessionResourceSetupUnsuccessfulTransfer-ExtIEs",
-	"PDUSessionResourceSetupUnsuccessfulTransfer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs = {
+	"PDUSessionResourceSwitchedItem-ExtIEs",
+	"PDUSessionResourceSwitchedItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_477,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_477)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_477[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_477,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_477)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_tags_477[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_477,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_477)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_477[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_477,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_477)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_477[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_477,
+	asn_MBR_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_477,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs_specs_477	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_specs_477	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_484 = {
-	sizeof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27789,8 +26206,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_484 = {
 	&asn_SPC_Ngap_extensionValue_specs_484	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_481[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_481[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27799,7 +26216,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_481[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27808,7 +26225,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_481[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_484,
@@ -27818,42 +26235,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_481[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_481[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_481[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tag2el_481[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tag2el_481[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_specs_481 = {
-	sizeof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceSwitchedItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tag2el_481,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_specs_481 = {
+	sizeof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tag2el_481,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs = {
-	"PDUSessionResourceSwitchedItem-ExtIEs",
-	"PDUSessionResourceSwitchedItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs = {
+	"PDUSessionResourceToBeSwitchedDLItem-ExtIEs",
+	"PDUSessionResourceToBeSwitchedDLItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_481,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_481)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_481[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_481,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_481)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_tags_481[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_481,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_481)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_481[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_481,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_481)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_481[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_481,
+	asn_MBR_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_481,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceSwitchedItem_ExtIEs_specs_481	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_specs_481	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_488 = {
-	sizeof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27873,8 +26290,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_488 = {
 	&asn_SPC_Ngap_extensionValue_specs_488	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_485[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_485[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27883,7 +26300,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_485[]
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27892,7 +26309,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_485[]
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_488,
@@ -27902,42 +26319,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_485[]
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_485[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_485[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tag2el_485[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tag2el_485[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_specs_485 = {
-	sizeof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tag2el_485,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_specs_485 = {
+	sizeof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tag2el_485,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs = {
-	"PDUSessionResourceToBeSwitchedDLItem-ExtIEs",
-	"PDUSessionResourceToBeSwitchedDLItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs = {
+	"PDUSessionResourceToReleaseItemHOCmd-ExtIEs",
+	"PDUSessionResourceToReleaseItemHOCmd-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_485,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_485)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_485[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_485,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_485)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_tags_485[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_485,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_485)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_485[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_485,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_485)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_485[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_485,
+	asn_MBR_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_485,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceToBeSwitchedDLItem_ExtIEs_specs_485	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_specs_485	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_492 = {
-	sizeof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -27957,8 +26374,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_492 = {
 	&asn_SPC_Ngap_extensionValue_specs_492	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_489[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_489[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -27967,7 +26384,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_489[]
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -27976,7 +26393,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_489[]
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_492,
@@ -27986,42 +26403,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_489[]
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_489[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_489[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tag2el_489[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tag2el_489[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_specs_489 = {
-	sizeof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tag2el_489,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_specs_489 = {
+	sizeof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs),
+	offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tag2el_489,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs = {
-	"PDUSessionResourceToReleaseItemHOCmd-ExtIEs",
-	"PDUSessionResourceToReleaseItemHOCmd-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs = {
+	"PDUSessionResourceToReleaseItemRelCmd-ExtIEs",
+	"PDUSessionResourceToReleaseItemRelCmd-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_489,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_489)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_489[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_489,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_489)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_tags_489[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_489,
+	sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_489)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_489[0]), /* 1 */
+	asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_489,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_489)
+		/sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_489[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_489,
+	asn_MBR_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_489,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceToReleaseItemHOCmd_ExtIEs_specs_489	/* Additional specs */
+	&asn_SPC_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_specs_489	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_496 = {
-	sizeof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_PLMNSupportItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_PLMNSupportItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_PLMNSupportItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_PLMNSupportItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28041,8 +26458,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_496 = {
 	&asn_SPC_Ngap_extensionValue_specs_496	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_493[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_PLMNSupportItem_ExtIEs_493[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PLMNSupportItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28051,7 +26468,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_493[
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PLMNSupportItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28060,7 +26477,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_493[
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PLMNSupportItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_496,
@@ -28070,42 +26487,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_493[
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_493[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_493[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tag2el_493[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_PLMNSupportItem_ExtIEs_tag2el_493[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_specs_493 = {
-	sizeof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs),
-	offsetof(struct Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tag2el_493,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_PLMNSupportItem_ExtIEs_specs_493 = {
+	sizeof(struct Ngap_PLMNSupportItem_ExtIEs),
+	offsetof(struct Ngap_PLMNSupportItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_PLMNSupportItem_ExtIEs_tag2el_493,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs = {
-	"PDUSessionResourceToReleaseItemRelCmd-ExtIEs",
-	"PDUSessionResourceToReleaseItemRelCmd-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_PLMNSupportItem_ExtIEs = {
+	"PLMNSupportItem-ExtIEs",
+	"PLMNSupportItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_493,
-	sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_493)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_493[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_493,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_493)
-		/sizeof(asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_tags_493[0]), /* 1 */
+	asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_493,
+	sizeof(asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_493)
+		/sizeof(asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_493[0]), /* 1 */
+	asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_493,	/* Same as above */
+	sizeof(asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_493)
+		/sizeof(asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_493[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_493,
+	asn_MBR_Ngap_PLMNSupportItem_ExtIEs_493,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionResourceToReleaseItemRelCmd_ExtIEs_specs_493	/* Additional specs */
+	&asn_SPC_Ngap_PLMNSupportItem_ExtIEs_specs_493	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_500 = {
-	sizeof(struct Ngap_PDUSessionUsageReport_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PDUSessionUsageReport_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PDUSessionUsageReport_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PDUSessionUsageReport_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowAcceptedItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowAcceptedItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28125,8 +26542,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_500 = {
 	&asn_SPC_Ngap_extensionValue_specs_500	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PDUSessionUsageReport_ExtIEs_497[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionUsageReport_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowAcceptedItem_ExtIEs_497[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28135,7 +26552,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionUsageReport_ExtIEs_497[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionUsageReport_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28144,7 +26561,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionUsageReport_ExtIEs_497[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PDUSessionUsageReport_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_500,
@@ -28154,42 +26571,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PDUSessionUsageReport_ExtIEs_497[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PDUSessionUsageReport_ExtIEs_tags_497[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_497[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PDUSessionUsageReport_ExtIEs_tag2el_497[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowAcceptedItem_ExtIEs_tag2el_497[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PDUSessionUsageReport_ExtIEs_specs_497 = {
-	sizeof(struct Ngap_PDUSessionUsageReport_ExtIEs),
-	offsetof(struct Ngap_PDUSessionUsageReport_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PDUSessionUsageReport_ExtIEs_tag2el_497,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowAcceptedItem_ExtIEs_specs_497 = {
+	sizeof(struct Ngap_QosFlowAcceptedItem_ExtIEs),
+	offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowAcceptedItem_ExtIEs_tag2el_497,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PDUSessionUsageReport_ExtIEs = {
-	"PDUSessionUsageReport-ExtIEs",
-	"PDUSessionUsageReport-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs = {
+	"QosFlowAcceptedItem-ExtIEs",
+	"QosFlowAcceptedItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PDUSessionUsageReport_ExtIEs_tags_497,
-	sizeof(asn_DEF_Ngap_PDUSessionUsageReport_ExtIEs_tags_497)
-		/sizeof(asn_DEF_Ngap_PDUSessionUsageReport_ExtIEs_tags_497[0]), /* 1 */
-	asn_DEF_Ngap_PDUSessionUsageReport_ExtIEs_tags_497,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PDUSessionUsageReport_ExtIEs_tags_497)
-		/sizeof(asn_DEF_Ngap_PDUSessionUsageReport_ExtIEs_tags_497[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_497,
+	sizeof(asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_497)
+		/sizeof(asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_497[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_497,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_497)
+		/sizeof(asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_497[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PDUSessionUsageReport_ExtIEs_497,
+	asn_MBR_Ngap_QosFlowAcceptedItem_ExtIEs_497,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PDUSessionUsageReport_ExtIEs_specs_497	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowAcceptedItem_ExtIEs_specs_497	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_504 = {
-	sizeof(struct Ngap_PLMNSupportItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_PLMNSupportItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_PLMNSupportItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_PLMNSupportItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28209,8 +26626,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_504 = {
 	&asn_SPC_Ngap_extensionValue_specs_504	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_PLMNSupportItem_ExtIEs_501[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PLMNSupportItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_501[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28219,7 +26636,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PLMNSupportItem_ExtIEs_501[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_PLMNSupportItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28228,7 +26645,7 @@ asn_TYPE_member_t asn_MBR_Ngap_PLMNSupportItem_ExtIEs_501[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_PLMNSupportItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_504,
@@ -28238,42 +26655,42 @@ asn_TYPE_member_t asn_MBR_Ngap_PLMNSupportItem_ExtIEs_501[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_501[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_501[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_PLMNSupportItem_ExtIEs_tag2el_501[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tag2el_501[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_PLMNSupportItem_ExtIEs_specs_501 = {
-	sizeof(struct Ngap_PLMNSupportItem_ExtIEs),
-	offsetof(struct Ngap_PLMNSupportItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_PLMNSupportItem_ExtIEs_tag2el_501,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_specs_501 = {
+	sizeof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs),
+	offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tag2el_501,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_PLMNSupportItem_ExtIEs = {
-	"PLMNSupportItem-ExtIEs",
-	"PLMNSupportItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs = {
+	"QosFlowAddOrModifyRequestItem-ExtIEs",
+	"QosFlowAddOrModifyRequestItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_501,
-	sizeof(asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_501)
-		/sizeof(asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_501[0]), /* 1 */
-	asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_501,	/* Same as above */
-	sizeof(asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_501)
-		/sizeof(asn_DEF_Ngap_PLMNSupportItem_ExtIEs_tags_501[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_501,
+	sizeof(asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_501)
+		/sizeof(asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_501[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_501,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_501)
+		/sizeof(asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_501[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_PLMNSupportItem_ExtIEs_501,
+	asn_MBR_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_501,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_PLMNSupportItem_ExtIEs_specs_501	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_specs_501	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_508 = {
-	sizeof(struct Ngap_QosFlowAcceptedItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowAcceptedItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28293,8 +26710,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_508 = {
 	&asn_SPC_Ngap_extensionValue_specs_508	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowAcceptedItem_ExtIEs_505[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_505[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28303,7 +26720,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowAcceptedItem_ExtIEs_505[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28312,7 +26729,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowAcceptedItem_ExtIEs_505[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_508,
@@ -28322,42 +26739,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowAcceptedItem_ExtIEs_505[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_505[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_505[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowAcceptedItem_ExtIEs_tag2el_505[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tag2el_505[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowAcceptedItem_ExtIEs_specs_505 = {
-	sizeof(struct Ngap_QosFlowAcceptedItem_ExtIEs),
-	offsetof(struct Ngap_QosFlowAcceptedItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowAcceptedItem_ExtIEs_tag2el_505,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_specs_505 = {
+	sizeof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs),
+	offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tag2el_505,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs = {
-	"QosFlowAcceptedItem-ExtIEs",
-	"QosFlowAcceptedItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs = {
+	"QosFlowAddOrModifyResponseItem-ExtIEs",
+	"QosFlowAddOrModifyResponseItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_505,
-	sizeof(asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_505)
-		/sizeof(asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_505[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_505,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_505)
-		/sizeof(asn_DEF_Ngap_QosFlowAcceptedItem_ExtIEs_tags_505[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_505,
+	sizeof(asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_505)
+		/sizeof(asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_505[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_505,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_505)
+		/sizeof(asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_505[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowAcceptedItem_ExtIEs_505,
+	asn_MBR_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_505,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowAcceptedItem_ExtIEs_specs_505	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_specs_505	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_512 = {
-	sizeof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowInformationItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowInformationItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowInformationItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowInformationItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28377,8 +26794,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_512 = {
 	&asn_SPC_Ngap_extensionValue_specs_512	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_509[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowInformationItem_ExtIEs_509[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowInformationItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28387,7 +26804,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_509[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowInformationItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28396,7 +26813,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_509[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowInformationItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_512,
@@ -28406,42 +26823,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_509[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_509[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_509[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tag2el_509[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowInformationItem_ExtIEs_tag2el_509[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_specs_509 = {
-	sizeof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs),
-	offsetof(struct Ngap_QosFlowAddOrModifyRequestItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tag2el_509,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowInformationItem_ExtIEs_specs_509 = {
+	sizeof(struct Ngap_QosFlowInformationItem_ExtIEs),
+	offsetof(struct Ngap_QosFlowInformationItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowInformationItem_ExtIEs_tag2el_509,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs = {
-	"QosFlowAddOrModifyRequestItem-ExtIEs",
-	"QosFlowAddOrModifyRequestItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowInformationItem_ExtIEs = {
+	"QosFlowInformationItem-ExtIEs",
+	"QosFlowInformationItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_509,
-	sizeof(asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_509)
-		/sizeof(asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_509[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_509,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_509)
-		/sizeof(asn_DEF_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_tags_509[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_509,
+	sizeof(asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_509)
+		/sizeof(asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_509[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_509,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_509)
+		/sizeof(asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_509[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_509,
+	asn_MBR_Ngap_QosFlowInformationItem_ExtIEs_509,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowAddOrModifyRequestItem_ExtIEs_specs_509	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowInformationItem_ExtIEs_specs_509	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_516 = {
-	sizeof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowLevelQosParameters_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowLevelQosParameters_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28461,8 +26878,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_516 = {
 	&asn_SPC_Ngap_extensionValue_specs_516	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_513[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowLevelQosParameters_ExtIEs_513[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28471,7 +26888,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_513[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28480,7 +26897,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_513[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_516,
@@ -28490,42 +26907,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_513[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_513[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_513[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tag2el_513[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowLevelQosParameters_ExtIEs_tag2el_513[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_specs_513 = {
-	sizeof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs),
-	offsetof(struct Ngap_QosFlowAddOrModifyResponseItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tag2el_513,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowLevelQosParameters_ExtIEs_specs_513 = {
+	sizeof(struct Ngap_QosFlowLevelQosParameters_ExtIEs),
+	offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowLevelQosParameters_ExtIEs_tag2el_513,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs = {
-	"QosFlowAddOrModifyResponseItem-ExtIEs",
-	"QosFlowAddOrModifyResponseItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs = {
+	"QosFlowLevelQosParameters-ExtIEs",
+	"QosFlowLevelQosParameters-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_513,
-	sizeof(asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_513)
-		/sizeof(asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_513[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_513,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_513)
-		/sizeof(asn_DEF_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_tags_513[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_513,
+	sizeof(asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_513)
+		/sizeof(asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_513[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_513,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_513)
+		/sizeof(asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_513[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_513,
+	asn_MBR_Ngap_QosFlowLevelQosParameters_ExtIEs_513,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowAddOrModifyResponseItem_ExtIEs_specs_513	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowLevelQosParameters_ExtIEs_specs_513	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_520 = {
-	sizeof(struct Ngap_QosFlowInformationItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowInformationItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowInformationItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowInformationItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28545,8 +26962,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_520 = {
 	&asn_SPC_Ngap_extensionValue_specs_520	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowInformationItem_ExtIEs_517[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowInformationItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowItem_ExtIEs_517[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28555,7 +26972,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowInformationItem_ExtIEs_517[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowInformationItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28564,7 +26981,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowInformationItem_ExtIEs_517[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowInformationItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_520,
@@ -28574,42 +26991,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowInformationItem_ExtIEs_517[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_517[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowItem_ExtIEs_tags_517[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowInformationItem_ExtIEs_tag2el_517[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowItem_ExtIEs_tag2el_517[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowInformationItem_ExtIEs_specs_517 = {
-	sizeof(struct Ngap_QosFlowInformationItem_ExtIEs),
-	offsetof(struct Ngap_QosFlowInformationItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowInformationItem_ExtIEs_tag2el_517,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowItem_ExtIEs_specs_517 = {
+	sizeof(struct Ngap_QosFlowItem_ExtIEs),
+	offsetof(struct Ngap_QosFlowItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowItem_ExtIEs_tag2el_517,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowInformationItem_ExtIEs = {
-	"QosFlowInformationItem-ExtIEs",
-	"QosFlowInformationItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowItem_ExtIEs = {
+	"QosFlowItem-ExtIEs",
+	"QosFlowItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_517,
-	sizeof(asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_517)
-		/sizeof(asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_517[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_517,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_517)
-		/sizeof(asn_DEF_Ngap_QosFlowInformationItem_ExtIEs_tags_517[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowItem_ExtIEs_tags_517,
+	sizeof(asn_DEF_Ngap_QosFlowItem_ExtIEs_tags_517)
+		/sizeof(asn_DEF_Ngap_QosFlowItem_ExtIEs_tags_517[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowItem_ExtIEs_tags_517,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowItem_ExtIEs_tags_517)
+		/sizeof(asn_DEF_Ngap_QosFlowItem_ExtIEs_tags_517[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowInformationItem_ExtIEs_517,
+	asn_MBR_Ngap_QosFlowItem_ExtIEs_517,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowInformationItem_ExtIEs_specs_517	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowItem_ExtIEs_specs_517	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_524 = {
-	sizeof(struct Ngap_QosFlowLevelQosParameters_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowLevelQosParameters_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowModifyConfirmItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28629,8 +27046,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_524 = {
 	&asn_SPC_Ngap_extensionValue_specs_524	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowLevelQosParameters_ExtIEs_521[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowModifyConfirmItem_ExtIEs_521[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28639,7 +27056,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowLevelQosParameters_ExtIEs_521[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28648,7 +27065,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowLevelQosParameters_ExtIEs_521[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_524,
@@ -28658,42 +27075,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowLevelQosParameters_ExtIEs_521[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_521[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_521[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowLevelQosParameters_ExtIEs_tag2el_521[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowModifyConfirmItem_ExtIEs_tag2el_521[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowLevelQosParameters_ExtIEs_specs_521 = {
-	sizeof(struct Ngap_QosFlowLevelQosParameters_ExtIEs),
-	offsetof(struct Ngap_QosFlowLevelQosParameters_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowLevelQosParameters_ExtIEs_tag2el_521,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowModifyConfirmItem_ExtIEs_specs_521 = {
+	sizeof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs),
+	offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowModifyConfirmItem_ExtIEs_tag2el_521,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs = {
-	"QosFlowLevelQosParameters-ExtIEs",
-	"QosFlowLevelQosParameters-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs = {
+	"QosFlowModifyConfirmItem-ExtIEs",
+	"QosFlowModifyConfirmItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_521,
-	sizeof(asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_521)
-		/sizeof(asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_521[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_521,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_521)
-		/sizeof(asn_DEF_Ngap_QosFlowLevelQosParameters_ExtIEs_tags_521[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_521,
+	sizeof(asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_521)
+		/sizeof(asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_521[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_521,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_521)
+		/sizeof(asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_521[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowLevelQosParameters_ExtIEs_521,
+	asn_MBR_Ngap_QosFlowModifyConfirmItem_ExtIEs_521,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowLevelQosParameters_ExtIEs_specs_521	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowModifyConfirmItem_ExtIEs_specs_521	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_528 = {
-	sizeof(struct Ngap_QosFlowWithCauseItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowWithCauseItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowWithCauseItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowWithCauseItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowNotifyItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowNotifyItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28713,8 +27130,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_528 = {
 	&asn_SPC_Ngap_extensionValue_specs_528	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowWithCauseItem_ExtIEs_525[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowWithCauseItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowNotifyItem_ExtIEs_525[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28723,7 +27140,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowWithCauseItem_ExtIEs_525[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowWithCauseItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28732,7 +27149,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowWithCauseItem_ExtIEs_525[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowWithCauseItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_528,
@@ -28742,42 +27159,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowWithCauseItem_ExtIEs_525[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowWithCauseItem_ExtIEs_tags_525[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_525[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowWithCauseItem_ExtIEs_tag2el_525[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowNotifyItem_ExtIEs_tag2el_525[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowWithCauseItem_ExtIEs_specs_525 = {
-	sizeof(struct Ngap_QosFlowWithCauseItem_ExtIEs),
-	offsetof(struct Ngap_QosFlowWithCauseItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowWithCauseItem_ExtIEs_tag2el_525,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowNotifyItem_ExtIEs_specs_525 = {
+	sizeof(struct Ngap_QosFlowNotifyItem_ExtIEs),
+	offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowNotifyItem_ExtIEs_tag2el_525,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowWithCauseItem_ExtIEs = {
-	"QosFlowWithCauseItem-ExtIEs",
-	"QosFlowWithCauseItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs = {
+	"QosFlowNotifyItem-ExtIEs",
+	"QosFlowNotifyItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowWithCauseItem_ExtIEs_tags_525,
-	sizeof(asn_DEF_Ngap_QosFlowWithCauseItem_ExtIEs_tags_525)
-		/sizeof(asn_DEF_Ngap_QosFlowWithCauseItem_ExtIEs_tags_525[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowWithCauseItem_ExtIEs_tags_525,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowWithCauseItem_ExtIEs_tags_525)
-		/sizeof(asn_DEF_Ngap_QosFlowWithCauseItem_ExtIEs_tags_525[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_525,
+	sizeof(asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_525)
+		/sizeof(asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_525[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_525,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_525)
+		/sizeof(asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_525[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowWithCauseItem_ExtIEs_525,
+	asn_MBR_Ngap_QosFlowNotifyItem_ExtIEs_525,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowWithCauseItem_ExtIEs_specs_525	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowNotifyItem_ExtIEs_specs_525	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_532 = {
-	sizeof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowModifyConfirmItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowPerTNLInformation_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowPerTNLInformation_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28797,8 +27214,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_532 = {
 	&asn_SPC_Ngap_extensionValue_specs_532	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowModifyConfirmItem_ExtIEs_529[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowPerTNLInformation_ExtIEs_529[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28807,7 +27224,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowModifyConfirmItem_ExtIEs_529[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28816,7 +27233,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowModifyConfirmItem_ExtIEs_529[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_532,
@@ -28826,42 +27243,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowModifyConfirmItem_ExtIEs_529[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_529[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_529[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowModifyConfirmItem_ExtIEs_tag2el_529[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowPerTNLInformation_ExtIEs_tag2el_529[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowModifyConfirmItem_ExtIEs_specs_529 = {
-	sizeof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs),
-	offsetof(struct Ngap_QosFlowModifyConfirmItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowModifyConfirmItem_ExtIEs_tag2el_529,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowPerTNLInformation_ExtIEs_specs_529 = {
+	sizeof(struct Ngap_QosFlowPerTNLInformation_ExtIEs),
+	offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowPerTNLInformation_ExtIEs_tag2el_529,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs = {
-	"QosFlowModifyConfirmItem-ExtIEs",
-	"QosFlowModifyConfirmItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs = {
+	"QosFlowPerTNLInformation-ExtIEs",
+	"QosFlowPerTNLInformation-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_529,
-	sizeof(asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_529)
-		/sizeof(asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_529[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_529,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_529)
-		/sizeof(asn_DEF_Ngap_QosFlowModifyConfirmItem_ExtIEs_tags_529[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_529,
+	sizeof(asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_529)
+		/sizeof(asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_529[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_529,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_529)
+		/sizeof(asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_529[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowModifyConfirmItem_ExtIEs_529,
+	asn_MBR_Ngap_QosFlowPerTNLInformation_ExtIEs_529,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowModifyConfirmItem_ExtIEs_specs_529	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowPerTNLInformation_ExtIEs_specs_529	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_536 = {
-	sizeof(struct Ngap_QosFlowNotifyItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowNotifyItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowSetupRequestItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowSetupRequestItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28881,8 +27298,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_536 = {
 	&asn_SPC_Ngap_extensionValue_specs_536	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowNotifyItem_ExtIEs_533[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupRequestItem_ExtIEs_533[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28891,7 +27308,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowNotifyItem_ExtIEs_533[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28900,7 +27317,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowNotifyItem_ExtIEs_533[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_536,
@@ -28910,42 +27327,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowNotifyItem_ExtIEs_533[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_533[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_533[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowNotifyItem_ExtIEs_tag2el_533[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowSetupRequestItem_ExtIEs_tag2el_533[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowNotifyItem_ExtIEs_specs_533 = {
-	sizeof(struct Ngap_QosFlowNotifyItem_ExtIEs),
-	offsetof(struct Ngap_QosFlowNotifyItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowNotifyItem_ExtIEs_tag2el_533,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowSetupRequestItem_ExtIEs_specs_533 = {
+	sizeof(struct Ngap_QosFlowSetupRequestItem_ExtIEs),
+	offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowSetupRequestItem_ExtIEs_tag2el_533,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs = {
-	"QosFlowNotifyItem-ExtIEs",
-	"QosFlowNotifyItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs = {
+	"QosFlowSetupRequestItem-ExtIEs",
+	"QosFlowSetupRequestItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_533,
-	sizeof(asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_533)
-		/sizeof(asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_533[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_533,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_533)
-		/sizeof(asn_DEF_Ngap_QosFlowNotifyItem_ExtIEs_tags_533[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_533,
+	sizeof(asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_533)
+		/sizeof(asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_533[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_533,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_533)
+		/sizeof(asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_533[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowNotifyItem_ExtIEs_533,
+	asn_MBR_Ngap_QosFlowSetupRequestItem_ExtIEs_533,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowNotifyItem_ExtIEs_specs_533	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowSetupRequestItem_ExtIEs_specs_533	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_540 = {
-	sizeof(struct Ngap_QosFlowPerTNLInformation_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowPerTNLInformation_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -28965,8 +27382,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_540 = {
 	&asn_SPC_Ngap_extensionValue_specs_540	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowPerTNLInformation_ExtIEs_537[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_537[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -28975,7 +27392,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowPerTNLInformation_ExtIEs_537[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -28984,7 +27401,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowPerTNLInformation_ExtIEs_537[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_540,
@@ -28994,42 +27411,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowPerTNLInformation_ExtIEs_537[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_537[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_tags_537[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowPerTNLInformation_ExtIEs_tag2el_537[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_tag2el_537[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowPerTNLInformation_ExtIEs_specs_537 = {
-	sizeof(struct Ngap_QosFlowPerTNLInformation_ExtIEs),
-	offsetof(struct Ngap_QosFlowPerTNLInformation_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowPerTNLInformation_ExtIEs_tag2el_537,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_specs_537 = {
+	sizeof(struct Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs),
+	offsetof(struct Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_tag2el_537,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs = {
-	"QosFlowPerTNLInformation-ExtIEs",
-	"QosFlowPerTNLInformation-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs = {
+	"QosFlowSetupResponseItemHOReqAck-ExtIEs",
+	"QosFlowSetupResponseItemHOReqAck-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_537,
-	sizeof(asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_537)
-		/sizeof(asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_537[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_537,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_537)
-		/sizeof(asn_DEF_Ngap_QosFlowPerTNLInformation_ExtIEs_tags_537[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_tags_537,
+	sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_tags_537)
+		/sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_tags_537[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_tags_537,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_tags_537)
+		/sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_tags_537[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowPerTNLInformation_ExtIEs_537,
+	asn_MBR_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_537,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowPerTNLInformation_ExtIEs_specs_537	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowSetupResponseItemHOReqAck_ExtIEs_specs_537	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_544 = {
-	sizeof(struct Ngap_QosFlowPerTNLInformationItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowPerTNLInformationItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowPerTNLInformationItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowPerTNLInformationItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29049,8 +27466,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_544 = {
 	&asn_SPC_Ngap_extensionValue_specs_544	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowPerTNLInformationItem_ExtIEs_541[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowPerTNLInformationItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_541[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29059,7 +27476,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowPerTNLInformationItem_ExtIEs_541[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowPerTNLInformationItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29068,7 +27485,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowPerTNLInformationItem_ExtIEs_541[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowPerTNLInformationItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_544,
@@ -29078,42 +27495,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowPerTNLInformationItem_ExtIEs_541[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowPerTNLInformationItem_ExtIEs_tags_541[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_541[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowPerTNLInformationItem_ExtIEs_tag2el_541[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tag2el_541[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowPerTNLInformationItem_ExtIEs_specs_541 = {
-	sizeof(struct Ngap_QosFlowPerTNLInformationItem_ExtIEs),
-	offsetof(struct Ngap_QosFlowPerTNLInformationItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowPerTNLInformationItem_ExtIEs_tag2el_541,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_specs_541 = {
+	sizeof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs),
+	offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tag2el_541,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowPerTNLInformationItem_ExtIEs = {
-	"QosFlowPerTNLInformationItem-ExtIEs",
-	"QosFlowPerTNLInformationItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs = {
+	"QosFlowSetupResponseItemSURes-ExtIEs",
+	"QosFlowSetupResponseItemSURes-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowPerTNLInformationItem_ExtIEs_tags_541,
-	sizeof(asn_DEF_Ngap_QosFlowPerTNLInformationItem_ExtIEs_tags_541)
-		/sizeof(asn_DEF_Ngap_QosFlowPerTNLInformationItem_ExtIEs_tags_541[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowPerTNLInformationItem_ExtIEs_tags_541,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowPerTNLInformationItem_ExtIEs_tags_541)
-		/sizeof(asn_DEF_Ngap_QosFlowPerTNLInformationItem_ExtIEs_tags_541[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_541,
+	sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_541)
+		/sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_541[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_541,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_541)
+		/sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_541[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowPerTNLInformationItem_ExtIEs_541,
+	asn_MBR_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_541,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowPerTNLInformationItem_ExtIEs_specs_541	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_specs_541	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_548 = {
-	sizeof(struct Ngap_QosFlowSetupRequestItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowSetupRequestItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_QosFlowToBeForwardedItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29133,8 +27550,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_548 = {
 	&asn_SPC_Ngap_extensionValue_specs_548	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupRequestItem_ExtIEs_545[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_QosFlowToBeForwardedItem_ExtIEs_545[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29143,7 +27560,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupRequestItem_ExtIEs_545[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29152,7 +27569,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupRequestItem_ExtIEs_545[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_548,
@@ -29162,42 +27579,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupRequestItem_ExtIEs_545[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_545[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_545[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowSetupRequestItem_ExtIEs_tag2el_545[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowToBeForwardedItem_ExtIEs_tag2el_545[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowSetupRequestItem_ExtIEs_specs_545 = {
-	sizeof(struct Ngap_QosFlowSetupRequestItem_ExtIEs),
-	offsetof(struct Ngap_QosFlowSetupRequestItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowSetupRequestItem_ExtIEs_tag2el_545,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowToBeForwardedItem_ExtIEs_specs_545 = {
+	sizeof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs),
+	offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_QosFlowToBeForwardedItem_ExtIEs_tag2el_545,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs = {
-	"QosFlowSetupRequestItem-ExtIEs",
-	"QosFlowSetupRequestItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs = {
+	"QosFlowToBeForwardedItem-ExtIEs",
+	"QosFlowToBeForwardedItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_545,
-	sizeof(asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_545)
-		/sizeof(asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_545[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_545,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_545)
-		/sizeof(asn_DEF_Ngap_QosFlowSetupRequestItem_ExtIEs_tags_545[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_545,
+	sizeof(asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_545)
+		/sizeof(asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_545[0]), /* 1 */
+	asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_545,	/* Same as above */
+	sizeof(asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_545)
+		/sizeof(asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_545[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowSetupRequestItem_ExtIEs_545,
+	asn_MBR_Ngap_QosFlowToBeForwardedItem_ExtIEs_545,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowSetupRequestItem_ExtIEs_specs_545	/* Additional specs */
+	&asn_SPC_Ngap_QosFlowToBeForwardedItem_ExtIEs_specs_545	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_552 = {
-	sizeof(struct Ngap_QosFlowItemWithDataForwarding_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowItemWithDataForwarding_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowItemWithDataForwarding_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowItemWithDataForwarding_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29217,8 +27634,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_552 = {
 	&asn_SPC_Ngap_extensionValue_specs_552	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowItemWithDataForwarding_ExtIEs_549[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowItemWithDataForwarding_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_549[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29227,7 +27644,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowItemWithDataForwarding_ExtIEs_549[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowItemWithDataForwarding_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29236,7 +27653,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowItemWithDataForwarding_ExtIEs_549[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowItemWithDataForwarding_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_552,
@@ -29246,42 +27663,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowItemWithDataForwarding_ExtIEs_549[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowItemWithDataForwarding_ExtIEs_tags_549[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_549[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowItemWithDataForwarding_ExtIEs_tag2el_549[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tag2el_549[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowItemWithDataForwarding_ExtIEs_specs_549 = {
-	sizeof(struct Ngap_QosFlowItemWithDataForwarding_ExtIEs),
-	offsetof(struct Ngap_QosFlowItemWithDataForwarding_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowItemWithDataForwarding_ExtIEs_tag2el_549,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_specs_549 = {
+	sizeof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs),
+	offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tag2el_549,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowItemWithDataForwarding_ExtIEs = {
-	"QosFlowItemWithDataForwarding-ExtIEs",
-	"QosFlowItemWithDataForwarding-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs = {
+	"RANStatusTransfer-TransparentContainer-ExtIEs",
+	"RANStatusTransfer-TransparentContainer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowItemWithDataForwarding_ExtIEs_tags_549,
-	sizeof(asn_DEF_Ngap_QosFlowItemWithDataForwarding_ExtIEs_tags_549)
-		/sizeof(asn_DEF_Ngap_QosFlowItemWithDataForwarding_ExtIEs_tags_549[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowItemWithDataForwarding_ExtIEs_tags_549,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowItemWithDataForwarding_ExtIEs_tags_549)
-		/sizeof(asn_DEF_Ngap_QosFlowItemWithDataForwarding_ExtIEs_tags_549[0]), /* 1 */
+	asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_549,
+	sizeof(asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_549)
+		/sizeof(asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_549[0]), /* 1 */
+	asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_549,	/* Same as above */
+	sizeof(asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_549)
+		/sizeof(asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_549[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowItemWithDataForwarding_ExtIEs_549,
+	asn_MBR_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_549,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowItemWithDataForwarding_ExtIEs_specs_549	/* Additional specs */
+	&asn_SPC_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_specs_549	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_556 = {
-	sizeof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_RATRestrictions_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_RATRestrictions_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_RATRestrictions_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_RATRestrictions_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29301,8 +27718,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_556 = {
 	&asn_SPC_Ngap_extensionValue_specs_556	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_553[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_RATRestrictions_Item_ExtIEs_553[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RATRestrictions_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29311,7 +27728,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_553[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RATRestrictions_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29320,7 +27737,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_553[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RATRestrictions_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_556,
@@ -29330,42 +27747,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_553[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_553[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_553[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tag2el_553[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_RATRestrictions_Item_ExtIEs_tag2el_553[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_specs_553 = {
-	sizeof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs),
-	offsetof(struct Ngap_QosFlowSetupResponseItemSURes_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tag2el_553,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_RATRestrictions_Item_ExtIEs_specs_553 = {
+	sizeof(struct Ngap_RATRestrictions_Item_ExtIEs),
+	offsetof(struct Ngap_RATRestrictions_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_RATRestrictions_Item_ExtIEs_tag2el_553,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs = {
-	"QosFlowSetupResponseItemSURes-ExtIEs",
-	"QosFlowSetupResponseItemSURes-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_RATRestrictions_Item_ExtIEs = {
+	"RATRestrictions-Item-ExtIEs",
+	"RATRestrictions-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_553,
-	sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_553)
-		/sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_553[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_553,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_553)
-		/sizeof(asn_DEF_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_tags_553[0]), /* 1 */
+	asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_553,
+	sizeof(asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_553)
+		/sizeof(asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_553[0]), /* 1 */
+	asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_553,	/* Same as above */
+	sizeof(asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_553)
+		/sizeof(asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_553[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_553,
+	asn_MBR_Ngap_RATRestrictions_Item_ExtIEs_553,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowSetupResponseItemSURes_ExtIEs_specs_553	/* Additional specs */
+	&asn_SPC_Ngap_RATRestrictions_Item_ExtIEs_specs_553	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_560 = {
-	sizeof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QosFlowToBeForwardedItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_RecommendedCellsForPaging_ExtIEs__extensionValue),
+	offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_RecommendedCellsForPaging_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29385,8 +27802,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_560 = {
 	&asn_SPC_Ngap_extensionValue_specs_560	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QosFlowToBeForwardedItem_ExtIEs_557[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_RecommendedCellsForPaging_ExtIEs_557[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29395,7 +27812,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowToBeForwardedItem_ExtIEs_557[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29404,7 +27821,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowToBeForwardedItem_ExtIEs_557[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_560,
@@ -29414,42 +27831,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowToBeForwardedItem_ExtIEs_557[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_557[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_557[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QosFlowToBeForwardedItem_ExtIEs_tag2el_557[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_RecommendedCellsForPaging_ExtIEs_tag2el_557[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QosFlowToBeForwardedItem_ExtIEs_specs_557 = {
-	sizeof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs),
-	offsetof(struct Ngap_QosFlowToBeForwardedItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QosFlowToBeForwardedItem_ExtIEs_tag2el_557,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_RecommendedCellsForPaging_ExtIEs_specs_557 = {
+	sizeof(struct Ngap_RecommendedCellsForPaging_ExtIEs),
+	offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_RecommendedCellsForPaging_ExtIEs_tag2el_557,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs = {
-	"QosFlowToBeForwardedItem-ExtIEs",
-	"QosFlowToBeForwardedItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs = {
+	"RecommendedCellsForPaging-ExtIEs",
+	"RecommendedCellsForPaging-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_557,
-	sizeof(asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_557)
-		/sizeof(asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_557[0]), /* 1 */
-	asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_557,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_557)
-		/sizeof(asn_DEF_Ngap_QosFlowToBeForwardedItem_ExtIEs_tags_557[0]), /* 1 */
+	asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_557,
+	sizeof(asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_557)
+		/sizeof(asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_557[0]), /* 1 */
+	asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_557,	/* Same as above */
+	sizeof(asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_557)
+		/sizeof(asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_557[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QosFlowToBeForwardedItem_ExtIEs_557,
+	asn_MBR_Ngap_RecommendedCellsForPaging_ExtIEs_557,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QosFlowToBeForwardedItem_ExtIEs_specs_557	/* Additional specs */
+	&asn_SPC_Ngap_RecommendedCellsForPaging_ExtIEs_specs_557	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_564 = {
-	sizeof(struct Ngap_QoSFlowsUsageReport_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_QoSFlowsUsageReport_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_QoSFlowsUsageReport_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_QoSFlowsUsageReport_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_RecommendedCellItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_RecommendedCellItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_RecommendedCellItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_RecommendedCellItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29469,8 +27886,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_564 = {
 	&asn_SPC_Ngap_extensionValue_specs_564	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_QoSFlowsUsageReport_Item_ExtIEs_561[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QoSFlowsUsageReport_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_RecommendedCellItem_ExtIEs_561[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29479,7 +27896,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QoSFlowsUsageReport_Item_ExtIEs_561[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_QoSFlowsUsageReport_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29488,7 +27905,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QoSFlowsUsageReport_Item_ExtIEs_561[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_QoSFlowsUsageReport_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_564,
@@ -29498,42 +27915,42 @@ asn_TYPE_member_t asn_MBR_Ngap_QoSFlowsUsageReport_Item_ExtIEs_561[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_QoSFlowsUsageReport_Item_ExtIEs_tags_561[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_561[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_QoSFlowsUsageReport_Item_ExtIEs_tag2el_561[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_RecommendedCellItem_ExtIEs_tag2el_561[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_QoSFlowsUsageReport_Item_ExtIEs_specs_561 = {
-	sizeof(struct Ngap_QoSFlowsUsageReport_Item_ExtIEs),
-	offsetof(struct Ngap_QoSFlowsUsageReport_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_QoSFlowsUsageReport_Item_ExtIEs_tag2el_561,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_RecommendedCellItem_ExtIEs_specs_561 = {
+	sizeof(struct Ngap_RecommendedCellItem_ExtIEs),
+	offsetof(struct Ngap_RecommendedCellItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_RecommendedCellItem_ExtIEs_tag2el_561,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_QoSFlowsUsageReport_Item_ExtIEs = {
-	"QoSFlowsUsageReport-Item-ExtIEs",
-	"QoSFlowsUsageReport-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_RecommendedCellItem_ExtIEs = {
+	"RecommendedCellItem-ExtIEs",
+	"RecommendedCellItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_QoSFlowsUsageReport_Item_ExtIEs_tags_561,
-	sizeof(asn_DEF_Ngap_QoSFlowsUsageReport_Item_ExtIEs_tags_561)
-		/sizeof(asn_DEF_Ngap_QoSFlowsUsageReport_Item_ExtIEs_tags_561[0]), /* 1 */
-	asn_DEF_Ngap_QoSFlowsUsageReport_Item_ExtIEs_tags_561,	/* Same as above */
-	sizeof(asn_DEF_Ngap_QoSFlowsUsageReport_Item_ExtIEs_tags_561)
-		/sizeof(asn_DEF_Ngap_QoSFlowsUsageReport_Item_ExtIEs_tags_561[0]), /* 1 */
+	asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_561,
+	sizeof(asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_561)
+		/sizeof(asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_561[0]), /* 1 */
+	asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_561,	/* Same as above */
+	sizeof(asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_561)
+		/sizeof(asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_561[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_QoSFlowsUsageReport_Item_ExtIEs_561,
+	asn_MBR_Ngap_RecommendedCellItem_ExtIEs_561,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_QoSFlowsUsageReport_Item_ExtIEs_specs_561	/* Additional specs */
+	&asn_SPC_Ngap_RecommendedCellItem_ExtIEs_specs_561	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_568 = {
-	sizeof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs__extensionValue),
+	offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_RecommendedRANNodesForPaging_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29553,8 +27970,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_568 = {
 	&asn_SPC_Ngap_extensionValue_specs_568	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_565[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_RecommendedRANNodesForPaging_ExtIEs_565[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29563,7 +27980,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_565
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29572,7 +27989,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_565
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_568,
@@ -29582,42 +27999,42 @@ asn_TYPE_member_t asn_MBR_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_565
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_565[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_565[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tag2el_565[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_RecommendedRANNodesForPaging_ExtIEs_tag2el_565[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_specs_565 = {
-	sizeof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs),
-	offsetof(struct Ngap_RANStatusTransfer_TransparentContainer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tag2el_565,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_RecommendedRANNodesForPaging_ExtIEs_specs_565 = {
+	sizeof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs),
+	offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_RecommendedRANNodesForPaging_ExtIEs_tag2el_565,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs = {
-	"RANStatusTransfer-TransparentContainer-ExtIEs",
-	"RANStatusTransfer-TransparentContainer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs = {
+	"RecommendedRANNodesForPaging-ExtIEs",
+	"RecommendedRANNodesForPaging-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_565,
-	sizeof(asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_565)
-		/sizeof(asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_565[0]), /* 1 */
-	asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_565,	/* Same as above */
-	sizeof(asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_565)
-		/sizeof(asn_DEF_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_tags_565[0]), /* 1 */
+	asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_565,
+	sizeof(asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_565)
+		/sizeof(asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_565[0]), /* 1 */
+	asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_565,	/* Same as above */
+	sizeof(asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_565)
+		/sizeof(asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_565[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_565,
+	asn_MBR_Ngap_RecommendedRANNodesForPaging_ExtIEs_565,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_RANStatusTransfer_TransparentContainer_ExtIEs_specs_565	/* Additional specs */
+	&asn_SPC_Ngap_RecommendedRANNodesForPaging_ExtIEs_specs_565	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_572 = {
-	sizeof(struct Ngap_RATRestrictions_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_RATRestrictions_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_RATRestrictions_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_RATRestrictions_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_RecommendedRANNodeItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_RecommendedRANNodeItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29637,8 +28054,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_572 = {
 	&asn_SPC_Ngap_extensionValue_specs_572	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_RATRestrictions_Item_ExtIEs_569[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RATRestrictions_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_RecommendedRANNodeItem_ExtIEs_569[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29647,7 +28064,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RATRestrictions_Item_ExtIEs_569[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RATRestrictions_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29656,7 +28073,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RATRestrictions_Item_ExtIEs_569[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RATRestrictions_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_572,
@@ -29666,42 +28083,42 @@ asn_TYPE_member_t asn_MBR_Ngap_RATRestrictions_Item_ExtIEs_569[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_569[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_569[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_RATRestrictions_Item_ExtIEs_tag2el_569[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_RecommendedRANNodeItem_ExtIEs_tag2el_569[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_RATRestrictions_Item_ExtIEs_specs_569 = {
-	sizeof(struct Ngap_RATRestrictions_Item_ExtIEs),
-	offsetof(struct Ngap_RATRestrictions_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_RATRestrictions_Item_ExtIEs_tag2el_569,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_RecommendedRANNodeItem_ExtIEs_specs_569 = {
+	sizeof(struct Ngap_RecommendedRANNodeItem_ExtIEs),
+	offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_RecommendedRANNodeItem_ExtIEs_tag2el_569,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_RATRestrictions_Item_ExtIEs = {
-	"RATRestrictions-Item-ExtIEs",
-	"RATRestrictions-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs = {
+	"RecommendedRANNodeItem-ExtIEs",
+	"RecommendedRANNodeItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_569,
-	sizeof(asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_569)
-		/sizeof(asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_569[0]), /* 1 */
-	asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_569,	/* Same as above */
-	sizeof(asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_569)
-		/sizeof(asn_DEF_Ngap_RATRestrictions_Item_ExtIEs_tags_569[0]), /* 1 */
+	asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_569,
+	sizeof(asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_569)
+		/sizeof(asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_569[0]), /* 1 */
+	asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_569,	/* Same as above */
+	sizeof(asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_569)
+		/sizeof(asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_569[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_RATRestrictions_Item_ExtIEs_569,
+	asn_MBR_Ngap_RecommendedRANNodeItem_ExtIEs_569,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_RATRestrictions_Item_ExtIEs_specs_569	/* Additional specs */
+	&asn_SPC_Ngap_RecommendedRANNodeItem_ExtIEs_specs_569	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_576 = {
-	sizeof(struct Ngap_RecommendedCellsForPaging_ExtIEs__extensionValue),
-	offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_RecommendedCellsForPaging_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_SecurityContext_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SecurityContext_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SecurityContext_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SecurityContext_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29721,8 +28138,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_576 = {
 	&asn_SPC_Ngap_extensionValue_specs_576	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_RecommendedCellsForPaging_ExtIEs_573[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SecurityContext_ExtIEs_573[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityContext_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29731,7 +28148,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedCellsForPaging_ExtIEs_573[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityContext_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29740,7 +28157,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedCellsForPaging_ExtIEs_573[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityContext_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_576,
@@ -29750,42 +28167,42 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedCellsForPaging_ExtIEs_573[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_573[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SecurityContext_ExtIEs_tags_573[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_RecommendedCellsForPaging_ExtIEs_tag2el_573[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SecurityContext_ExtIEs_tag2el_573[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_RecommendedCellsForPaging_ExtIEs_specs_573 = {
-	sizeof(struct Ngap_RecommendedCellsForPaging_ExtIEs),
-	offsetof(struct Ngap_RecommendedCellsForPaging_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_RecommendedCellsForPaging_ExtIEs_tag2el_573,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SecurityContext_ExtIEs_specs_573 = {
+	sizeof(struct Ngap_SecurityContext_ExtIEs),
+	offsetof(struct Ngap_SecurityContext_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SecurityContext_ExtIEs_tag2el_573,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs = {
-	"RecommendedCellsForPaging-ExtIEs",
-	"RecommendedCellsForPaging-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SecurityContext_ExtIEs = {
+	"SecurityContext-ExtIEs",
+	"SecurityContext-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_573,
-	sizeof(asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_573)
-		/sizeof(asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_573[0]), /* 1 */
-	asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_573,	/* Same as above */
-	sizeof(asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_573)
-		/sizeof(asn_DEF_Ngap_RecommendedCellsForPaging_ExtIEs_tags_573[0]), /* 1 */
+	asn_DEF_Ngap_SecurityContext_ExtIEs_tags_573,
+	sizeof(asn_DEF_Ngap_SecurityContext_ExtIEs_tags_573)
+		/sizeof(asn_DEF_Ngap_SecurityContext_ExtIEs_tags_573[0]), /* 1 */
+	asn_DEF_Ngap_SecurityContext_ExtIEs_tags_573,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SecurityContext_ExtIEs_tags_573)
+		/sizeof(asn_DEF_Ngap_SecurityContext_ExtIEs_tags_573[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_RecommendedCellsForPaging_ExtIEs_573,
+	asn_MBR_Ngap_SecurityContext_ExtIEs_573,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_RecommendedCellsForPaging_ExtIEs_specs_573	/* Additional specs */
+	&asn_SPC_Ngap_SecurityContext_ExtIEs_specs_573	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_580 = {
-	sizeof(struct Ngap_RecommendedCellItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_RecommendedCellItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_RecommendedCellItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_RecommendedCellItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_SecurityIndication_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SecurityIndication_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SecurityIndication_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SecurityIndication_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29805,8 +28222,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_580 = {
 	&asn_SPC_Ngap_extensionValue_specs_580	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_RecommendedCellItem_ExtIEs_577[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SecurityIndication_ExtIEs_577[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityIndication_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29815,7 +28232,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedCellItem_ExtIEs_577[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityIndication_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29824,7 +28241,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedCellItem_ExtIEs_577[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedCellItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityIndication_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_580,
@@ -29834,42 +28251,42 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedCellItem_ExtIEs_577[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_577[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_577[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_RecommendedCellItem_ExtIEs_tag2el_577[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SecurityIndication_ExtIEs_tag2el_577[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_RecommendedCellItem_ExtIEs_specs_577 = {
-	sizeof(struct Ngap_RecommendedCellItem_ExtIEs),
-	offsetof(struct Ngap_RecommendedCellItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_RecommendedCellItem_ExtIEs_tag2el_577,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SecurityIndication_ExtIEs_specs_577 = {
+	sizeof(struct Ngap_SecurityIndication_ExtIEs),
+	offsetof(struct Ngap_SecurityIndication_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SecurityIndication_ExtIEs_tag2el_577,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_RecommendedCellItem_ExtIEs = {
-	"RecommendedCellItem-ExtIEs",
-	"RecommendedCellItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SecurityIndication_ExtIEs = {
+	"SecurityIndication-ExtIEs",
+	"SecurityIndication-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_577,
-	sizeof(asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_577)
-		/sizeof(asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_577[0]), /* 1 */
-	asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_577,	/* Same as above */
-	sizeof(asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_577)
-		/sizeof(asn_DEF_Ngap_RecommendedCellItem_ExtIEs_tags_577[0]), /* 1 */
+	asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_577,
+	sizeof(asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_577)
+		/sizeof(asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_577[0]), /* 1 */
+	asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_577,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_577)
+		/sizeof(asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_577[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_RecommendedCellItem_ExtIEs_577,
+	asn_MBR_Ngap_SecurityIndication_ExtIEs_577,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_RecommendedCellItem_ExtIEs_specs_577	/* Additional specs */
+	&asn_SPC_Ngap_SecurityIndication_ExtIEs_specs_577	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_584 = {
-	sizeof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs__extensionValue),
-	offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_RecommendedRANNodesForPaging_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_SecurityResult_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SecurityResult_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SecurityResult_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SecurityResult_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29889,8 +28306,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_584 = {
 	&asn_SPC_Ngap_extensionValue_specs_584	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_RecommendedRANNodesForPaging_ExtIEs_581[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SecurityResult_ExtIEs_581[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityResult_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29899,7 +28316,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedRANNodesForPaging_ExtIEs_581[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityResult_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29908,7 +28325,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedRANNodesForPaging_ExtIEs_581[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityResult_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_584,
@@ -29918,42 +28335,42 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedRANNodesForPaging_ExtIEs_581[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_581[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SecurityResult_ExtIEs_tags_581[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_RecommendedRANNodesForPaging_ExtIEs_tag2el_581[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SecurityResult_ExtIEs_tag2el_581[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_RecommendedRANNodesForPaging_ExtIEs_specs_581 = {
-	sizeof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs),
-	offsetof(struct Ngap_RecommendedRANNodesForPaging_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_RecommendedRANNodesForPaging_ExtIEs_tag2el_581,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SecurityResult_ExtIEs_specs_581 = {
+	sizeof(struct Ngap_SecurityResult_ExtIEs),
+	offsetof(struct Ngap_SecurityResult_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SecurityResult_ExtIEs_tag2el_581,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs = {
-	"RecommendedRANNodesForPaging-ExtIEs",
-	"RecommendedRANNodesForPaging-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SecurityResult_ExtIEs = {
+	"SecurityResult-ExtIEs",
+	"SecurityResult-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_581,
-	sizeof(asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_581)
-		/sizeof(asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_581[0]), /* 1 */
-	asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_581,	/* Same as above */
-	sizeof(asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_581)
-		/sizeof(asn_DEF_Ngap_RecommendedRANNodesForPaging_ExtIEs_tags_581[0]), /* 1 */
+	asn_DEF_Ngap_SecurityResult_ExtIEs_tags_581,
+	sizeof(asn_DEF_Ngap_SecurityResult_ExtIEs_tags_581)
+		/sizeof(asn_DEF_Ngap_SecurityResult_ExtIEs_tags_581[0]), /* 1 */
+	asn_DEF_Ngap_SecurityResult_ExtIEs_tags_581,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SecurityResult_ExtIEs_tags_581)
+		/sizeof(asn_DEF_Ngap_SecurityResult_ExtIEs_tags_581[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_RecommendedRANNodesForPaging_ExtIEs_581,
+	asn_MBR_Ngap_SecurityResult_ExtIEs_581,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_RecommendedRANNodesForPaging_ExtIEs_specs_581	/* Additional specs */
+	&asn_SPC_Ngap_SecurityResult_ExtIEs_specs_581	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_588 = {
-	sizeof(struct Ngap_RecommendedRANNodeItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_RecommendedRANNodeItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_ServedGUAMIItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_ServedGUAMIItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_ServedGUAMIItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_ServedGUAMIItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -29973,8 +28390,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_588 = {
 	&asn_SPC_Ngap_extensionValue_specs_588	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_RecommendedRANNodeItem_ExtIEs_585[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_ServedGUAMIItem_ExtIEs_585[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ServedGUAMIItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -29983,7 +28400,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedRANNodeItem_ExtIEs_585[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ServedGUAMIItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -29992,7 +28409,7 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedRANNodeItem_ExtIEs_585[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ServedGUAMIItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_588,
@@ -30002,42 +28419,42 @@ asn_TYPE_member_t asn_MBR_Ngap_RecommendedRANNodeItem_ExtIEs_585[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_585[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_585[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_RecommendedRANNodeItem_ExtIEs_tag2el_585[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_ServedGUAMIItem_ExtIEs_tag2el_585[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_RecommendedRANNodeItem_ExtIEs_specs_585 = {
-	sizeof(struct Ngap_RecommendedRANNodeItem_ExtIEs),
-	offsetof(struct Ngap_RecommendedRANNodeItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_RecommendedRANNodeItem_ExtIEs_tag2el_585,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_ServedGUAMIItem_ExtIEs_specs_585 = {
+	sizeof(struct Ngap_ServedGUAMIItem_ExtIEs),
+	offsetof(struct Ngap_ServedGUAMIItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_ServedGUAMIItem_ExtIEs_tag2el_585,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs = {
-	"RecommendedRANNodeItem-ExtIEs",
-	"RecommendedRANNodeItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_ServedGUAMIItem_ExtIEs = {
+	"ServedGUAMIItem-ExtIEs",
+	"ServedGUAMIItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_585,
-	sizeof(asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_585)
-		/sizeof(asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_585[0]), /* 1 */
-	asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_585,	/* Same as above */
-	sizeof(asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_585)
-		/sizeof(asn_DEF_Ngap_RecommendedRANNodeItem_ExtIEs_tags_585[0]), /* 1 */
+	asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_585,
+	sizeof(asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_585)
+		/sizeof(asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_585[0]), /* 1 */
+	asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_585,	/* Same as above */
+	sizeof(asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_585)
+		/sizeof(asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_585[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_RecommendedRANNodeItem_ExtIEs_585,
+	asn_MBR_Ngap_ServedGUAMIItem_ExtIEs_585,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_RecommendedRANNodeItem_ExtIEs_specs_585	/* Additional specs */
+	&asn_SPC_Ngap_ServedGUAMIItem_ExtIEs_specs_585	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_592 = {
-	sizeof(struct Ngap_SecondaryRATUsageInformation_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SecondaryRATUsageInformation_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SecondaryRATUsageInformation_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SecondaryRATUsageInformation_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_ServiceAreaInformation_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_ServiceAreaInformation_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30057,8 +28474,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_592 = {
 	&asn_SPC_Ngap_extensionValue_specs_592	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SecondaryRATUsageInformation_ExtIEs_589[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecondaryRATUsageInformation_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_ServiceAreaInformation_Item_ExtIEs_589[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30067,7 +28484,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SecondaryRATUsageInformation_ExtIEs_589[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecondaryRATUsageInformation_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -30076,7 +28493,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SecondaryRATUsageInformation_ExtIEs_589[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SecondaryRATUsageInformation_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_592,
@@ -30086,42 +28503,42 @@ asn_TYPE_member_t asn_MBR_Ngap_SecondaryRATUsageInformation_ExtIEs_589[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SecondaryRATUsageInformation_ExtIEs_tags_589[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_589[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SecondaryRATUsageInformation_ExtIEs_tag2el_589[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_ServiceAreaInformation_Item_ExtIEs_tag2el_589[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SecondaryRATUsageInformation_ExtIEs_specs_589 = {
-	sizeof(struct Ngap_SecondaryRATUsageInformation_ExtIEs),
-	offsetof(struct Ngap_SecondaryRATUsageInformation_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SecondaryRATUsageInformation_ExtIEs_tag2el_589,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_ServiceAreaInformation_Item_ExtIEs_specs_589 = {
+	sizeof(struct Ngap_ServiceAreaInformation_Item_ExtIEs),
+	offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_ServiceAreaInformation_Item_ExtIEs_tag2el_589,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SecondaryRATUsageInformation_ExtIEs = {
-	"SecondaryRATUsageInformation-ExtIEs",
-	"SecondaryRATUsageInformation-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs = {
+	"ServiceAreaInformation-Item-ExtIEs",
+	"ServiceAreaInformation-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SecondaryRATUsageInformation_ExtIEs_tags_589,
-	sizeof(asn_DEF_Ngap_SecondaryRATUsageInformation_ExtIEs_tags_589)
-		/sizeof(asn_DEF_Ngap_SecondaryRATUsageInformation_ExtIEs_tags_589[0]), /* 1 */
-	asn_DEF_Ngap_SecondaryRATUsageInformation_ExtIEs_tags_589,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SecondaryRATUsageInformation_ExtIEs_tags_589)
-		/sizeof(asn_DEF_Ngap_SecondaryRATUsageInformation_ExtIEs_tags_589[0]), /* 1 */
+	asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_589,
+	sizeof(asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_589)
+		/sizeof(asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_589[0]), /* 1 */
+	asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_589,	/* Same as above */
+	sizeof(asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_589)
+		/sizeof(asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_589[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SecondaryRATUsageInformation_ExtIEs_589,
+	asn_MBR_Ngap_ServiceAreaInformation_Item_ExtIEs_589,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SecondaryRATUsageInformation_ExtIEs_specs_589	/* Additional specs */
+	&asn_SPC_Ngap_ServiceAreaInformation_Item_ExtIEs_specs_589	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_596 = {
-	sizeof(struct Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_SingleTNLInformation_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SingleTNLInformation_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SingleTNLInformation_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SingleTNLInformation_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30141,8 +28558,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_596 = {
 	&asn_SPC_Ngap_extensionValue_specs_596	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_593[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SingleTNLInformation_ExtIEs_593[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SingleTNLInformation_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30151,7 +28568,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_593[] 
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SingleTNLInformation_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -30160,7 +28577,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_593[] 
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SingleTNLInformation_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_596,
@@ -30170,42 +28587,42 @@ asn_TYPE_member_t asn_MBR_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_593[] 
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_tags_593[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SingleTNLInformation_ExtIEs_tags_593[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_tag2el_593[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SingleTNLInformation_ExtIEs_tag2el_593[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_specs_593 = {
-	sizeof(struct Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs),
-	offsetof(struct Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_tag2el_593,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SingleTNLInformation_ExtIEs_specs_593 = {
+	sizeof(struct Ngap_SingleTNLInformation_ExtIEs),
+	offsetof(struct Ngap_SingleTNLInformation_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SingleTNLInformation_ExtIEs_tag2el_593,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs = {
-	"SecondaryRATDataUsageReportTransfer-ExtIEs",
-	"SecondaryRATDataUsageReportTransfer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SingleTNLInformation_ExtIEs = {
+	"SingleTNLInformation-ExtIEs",
+	"SingleTNLInformation-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_tags_593,
-	sizeof(asn_DEF_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_tags_593)
-		/sizeof(asn_DEF_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_tags_593[0]), /* 1 */
-	asn_DEF_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_tags_593,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_tags_593)
-		/sizeof(asn_DEF_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_tags_593[0]), /* 1 */
+	asn_DEF_Ngap_SingleTNLInformation_ExtIEs_tags_593,
+	sizeof(asn_DEF_Ngap_SingleTNLInformation_ExtIEs_tags_593)
+		/sizeof(asn_DEF_Ngap_SingleTNLInformation_ExtIEs_tags_593[0]), /* 1 */
+	asn_DEF_Ngap_SingleTNLInformation_ExtIEs_tags_593,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SingleTNLInformation_ExtIEs_tags_593)
+		/sizeof(asn_DEF_Ngap_SingleTNLInformation_ExtIEs_tags_593[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_593,
+	asn_MBR_Ngap_SingleTNLInformation_ExtIEs_593,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SecondaryRATDataUsageReportTransfer_ExtIEs_specs_593	/* Additional specs */
+	&asn_SPC_Ngap_SingleTNLInformation_ExtIEs_specs_593	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_600 = {
-	sizeof(struct Ngap_SecurityContext_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SecurityContext_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SecurityContext_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SecurityContext_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_SliceOverloadItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SliceOverloadItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SliceOverloadItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SliceOverloadItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30225,8 +28642,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_600 = {
 	&asn_SPC_Ngap_extensionValue_specs_600	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SecurityContext_ExtIEs_597[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityContext_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SliceOverloadItem_ExtIEs_597[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceOverloadItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30235,7 +28652,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SecurityContext_ExtIEs_597[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityContext_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceOverloadItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -30244,7 +28661,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SecurityContext_ExtIEs_597[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityContext_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceOverloadItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_600,
@@ -30254,58 +28671,44 @@ asn_TYPE_member_t asn_MBR_Ngap_SecurityContext_ExtIEs_597[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SecurityContext_ExtIEs_tags_597[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_597[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SecurityContext_ExtIEs_tag2el_597[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SliceOverloadItem_ExtIEs_tag2el_597[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SecurityContext_ExtIEs_specs_597 = {
-	sizeof(struct Ngap_SecurityContext_ExtIEs),
-	offsetof(struct Ngap_SecurityContext_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SecurityContext_ExtIEs_tag2el_597,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SliceOverloadItem_ExtIEs_specs_597 = {
+	sizeof(struct Ngap_SliceOverloadItem_ExtIEs),
+	offsetof(struct Ngap_SliceOverloadItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SliceOverloadItem_ExtIEs_tag2el_597,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SecurityContext_ExtIEs = {
-	"SecurityContext-ExtIEs",
-	"SecurityContext-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SliceOverloadItem_ExtIEs = {
+	"SliceOverloadItem-ExtIEs",
+	"SliceOverloadItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SecurityContext_ExtIEs_tags_597,
-	sizeof(asn_DEF_Ngap_SecurityContext_ExtIEs_tags_597)
-		/sizeof(asn_DEF_Ngap_SecurityContext_ExtIEs_tags_597[0]), /* 1 */
-	asn_DEF_Ngap_SecurityContext_ExtIEs_tags_597,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SecurityContext_ExtIEs_tags_597)
-		/sizeof(asn_DEF_Ngap_SecurityContext_ExtIEs_tags_597[0]), /* 1 */
+	asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_597,
+	sizeof(asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_597)
+		/sizeof(asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_597[0]), /* 1 */
+	asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_597,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_597)
+		/sizeof(asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_597[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SecurityContext_ExtIEs_597,
+	asn_MBR_Ngap_SliceOverloadItem_ExtIEs_597,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SecurityContext_ExtIEs_specs_597	/* Additional specs */
+	&asn_SPC_Ngap_SliceOverloadItem_ExtIEs_specs_597	/* Additional specs */
 };
 
-static asn_TYPE_member_t asn_MBR_Ngap_extensionValue_604[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityIndication_ExtIEs__extensionValue, choice.MaximumIntegrityProtectedDataRate),
-		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
-		0,
-		&asn_DEF_Ngap_MaximumIntegrityProtectedDataRate,
-		0,
-		{ 0, 0, 0 },
-		0, 0, /* No default value */
-		"MaximumIntegrityProtectedDataRate"
-		},
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_extensionValue_tag2el_604[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 0, 0, 0 } /* MaximumIntegrityProtectedDataRate */
-};
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_604 = {
-	sizeof(struct Ngap_SecurityIndication_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SecurityIndication_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SecurityIndication_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SecurityIndication_ExtIEs__extensionValue *)0)->present),
-	asn_MAP_Ngap_extensionValue_tag2el_604,
-	1,	/* Count of tags in the map */
+	sizeof(struct Ngap_SliceSupportItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SliceSupportItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SliceSupportItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SliceSupportItem_ExtIEs__extensionValue *)0)->present),
+	0,	/* No top level tags */
+	0,	/* No tags in the map */
 	0, 0,
 	-1	/* Extensions start */
 };
@@ -30319,13 +28722,12 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_604 = {
 	0,	/* No tags (pointer) */
 	0,	/* No tags (count) */
 	{ 0, 0, OPEN_TYPE_constraint },
-	asn_MBR_Ngap_extensionValue_604,
-	1,	/* Elements count */
+	0, 0,	/* No members */
 	&asn_SPC_Ngap_extensionValue_specs_604	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SecurityIndication_ExtIEs_601[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityIndication_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SliceSupportItem_ExtIEs_601[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceSupportItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30334,61 +28736,61 @@ asn_TYPE_member_t asn_MBR_Ngap_SecurityIndication_ExtIEs_601[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityIndication_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceSupportItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
-		select_SecurityIndication_ExtIEs_Ngap_criticality_type,
+		0,
 		{ &asn_OER_memb_Ngap_criticality_constr_603, &asn_PER_memb_Ngap_criticality_constr_603,  memb_Ngap_criticality_constraint_601 },
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityIndication_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceSupportItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_604,
-		select_SecurityIndication_ExtIEs_Ngap_extensionValue_type,
+		0,
 		{ &asn_OER_memb_Ngap_extensionValue_constr_604, &asn_PER_memb_Ngap_extensionValue_constr_604,  memb_Ngap_extensionValue_constraint_601 },
 		0, 0, /* No default value */
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_601[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_601[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SecurityIndication_ExtIEs_tag2el_601[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SliceSupportItem_ExtIEs_tag2el_601[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SecurityIndication_ExtIEs_specs_601 = {
-	sizeof(struct Ngap_SecurityIndication_ExtIEs),
-	offsetof(struct Ngap_SecurityIndication_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SecurityIndication_ExtIEs_tag2el_601,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SliceSupportItem_ExtIEs_specs_601 = {
+	sizeof(struct Ngap_SliceSupportItem_ExtIEs),
+	offsetof(struct Ngap_SliceSupportItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SliceSupportItem_ExtIEs_tag2el_601,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SecurityIndication_ExtIEs = {
-	"SecurityIndication-ExtIEs",
-	"SecurityIndication-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SliceSupportItem_ExtIEs = {
+	"SliceSupportItem-ExtIEs",
+	"SliceSupportItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_601,
-	sizeof(asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_601)
-		/sizeof(asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_601[0]), /* 1 */
-	asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_601,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_601)
-		/sizeof(asn_DEF_Ngap_SecurityIndication_ExtIEs_tags_601[0]), /* 1 */
+	asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_601,
+	sizeof(asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_601)
+		/sizeof(asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_601[0]), /* 1 */
+	asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_601,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_601)
+		/sizeof(asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_601[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SecurityIndication_ExtIEs_601,
+	asn_MBR_Ngap_SliceSupportItem_ExtIEs_601,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SecurityIndication_ExtIEs_specs_601	/* Additional specs */
+	&asn_SPC_Ngap_SliceSupportItem_ExtIEs_specs_601	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_608 = {
-	sizeof(struct Ngap_SecurityResult_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SecurityResult_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SecurityResult_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SecurityResult_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_S_NSSAI_ExtIEs__extensionValue),
+	offsetof(struct Ngap_S_NSSAI_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_S_NSSAI_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_S_NSSAI_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30408,8 +28810,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_608 = {
 	&asn_SPC_Ngap_extensionValue_specs_608	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SecurityResult_ExtIEs_605[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityResult_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_S_NSSAI_ExtIEs_605[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_S_NSSAI_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30418,7 +28820,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SecurityResult_ExtIEs_605[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityResult_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_S_NSSAI_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -30427,7 +28829,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SecurityResult_ExtIEs_605[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SecurityResult_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_S_NSSAI_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_608,
@@ -30437,42 +28839,42 @@ asn_TYPE_member_t asn_MBR_Ngap_SecurityResult_ExtIEs_605[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SecurityResult_ExtIEs_tags_605[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_605[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SecurityResult_ExtIEs_tag2el_605[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_S_NSSAI_ExtIEs_tag2el_605[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SecurityResult_ExtIEs_specs_605 = {
-	sizeof(struct Ngap_SecurityResult_ExtIEs),
-	offsetof(struct Ngap_SecurityResult_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SecurityResult_ExtIEs_tag2el_605,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_S_NSSAI_ExtIEs_specs_605 = {
+	sizeof(struct Ngap_S_NSSAI_ExtIEs),
+	offsetof(struct Ngap_S_NSSAI_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_S_NSSAI_ExtIEs_tag2el_605,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SecurityResult_ExtIEs = {
-	"SecurityResult-ExtIEs",
-	"SecurityResult-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_S_NSSAI_ExtIEs = {
+	"S-NSSAI-ExtIEs",
+	"S-NSSAI-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SecurityResult_ExtIEs_tags_605,
-	sizeof(asn_DEF_Ngap_SecurityResult_ExtIEs_tags_605)
-		/sizeof(asn_DEF_Ngap_SecurityResult_ExtIEs_tags_605[0]), /* 1 */
-	asn_DEF_Ngap_SecurityResult_ExtIEs_tags_605,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SecurityResult_ExtIEs_tags_605)
-		/sizeof(asn_DEF_Ngap_SecurityResult_ExtIEs_tags_605[0]), /* 1 */
+	asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_605,
+	sizeof(asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_605)
+		/sizeof(asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_605[0]), /* 1 */
+	asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_605,	/* Same as above */
+	sizeof(asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_605)
+		/sizeof(asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_605[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SecurityResult_ExtIEs_605,
+	asn_MBR_Ngap_S_NSSAI_ExtIEs_605,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SecurityResult_ExtIEs_specs_605	/* Additional specs */
+	&asn_SPC_Ngap_S_NSSAI_ExtIEs_specs_605	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_612 = {
-	sizeof(struct Ngap_ServedGUAMIItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_ServedGUAMIItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_ServedGUAMIItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_ServedGUAMIItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_SONConfigurationTransfer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SONConfigurationTransfer_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30492,8 +28894,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_612 = {
 	&asn_SPC_Ngap_extensionValue_specs_612	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_ServedGUAMIItem_ExtIEs_609[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ServedGUAMIItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SONConfigurationTransfer_ExtIEs_609[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30502,7 +28904,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ServedGUAMIItem_ExtIEs_609[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ServedGUAMIItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -30511,7 +28913,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ServedGUAMIItem_ExtIEs_609[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ServedGUAMIItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_612,
@@ -30521,42 +28923,42 @@ asn_TYPE_member_t asn_MBR_Ngap_ServedGUAMIItem_ExtIEs_609[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_609[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_609[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_ServedGUAMIItem_ExtIEs_tag2el_609[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SONConfigurationTransfer_ExtIEs_tag2el_609[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_ServedGUAMIItem_ExtIEs_specs_609 = {
-	sizeof(struct Ngap_ServedGUAMIItem_ExtIEs),
-	offsetof(struct Ngap_ServedGUAMIItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_ServedGUAMIItem_ExtIEs_tag2el_609,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SONConfigurationTransfer_ExtIEs_specs_609 = {
+	sizeof(struct Ngap_SONConfigurationTransfer_ExtIEs),
+	offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SONConfigurationTransfer_ExtIEs_tag2el_609,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_ServedGUAMIItem_ExtIEs = {
-	"ServedGUAMIItem-ExtIEs",
-	"ServedGUAMIItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs = {
+	"SONConfigurationTransfer-ExtIEs",
+	"SONConfigurationTransfer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_609,
-	sizeof(asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_609)
-		/sizeof(asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_609[0]), /* 1 */
-	asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_609,	/* Same as above */
-	sizeof(asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_609)
-		/sizeof(asn_DEF_Ngap_ServedGUAMIItem_ExtIEs_tags_609[0]), /* 1 */
+	asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_609,
+	sizeof(asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_609)
+		/sizeof(asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_609[0]), /* 1 */
+	asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_609,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_609)
+		/sizeof(asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_609[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_ServedGUAMIItem_ExtIEs_609,
+	asn_MBR_Ngap_SONConfigurationTransfer_ExtIEs_609,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_ServedGUAMIItem_ExtIEs_specs_609	/* Additional specs */
+	&asn_SPC_Ngap_SONConfigurationTransfer_ExtIEs_specs_609	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_616 = {
-	sizeof(struct Ngap_ServiceAreaInformation_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_ServiceAreaInformation_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_SONInformationReply_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SONInformationReply_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SONInformationReply_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SONInformationReply_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30576,8 +28978,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_616 = {
 	&asn_SPC_Ngap_extensionValue_specs_616	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_ServiceAreaInformation_Item_ExtIEs_613[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SONInformationReply_ExtIEs_613[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SONInformationReply_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30586,7 +28988,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ServiceAreaInformation_Item_ExtIEs_613[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SONInformationReply_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -30595,7 +28997,7 @@ asn_TYPE_member_t asn_MBR_Ngap_ServiceAreaInformation_Item_ExtIEs_613[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SONInformationReply_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_616,
@@ -30605,42 +29007,42 @@ asn_TYPE_member_t asn_MBR_Ngap_ServiceAreaInformation_Item_ExtIEs_613[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_613[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_613[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_ServiceAreaInformation_Item_ExtIEs_tag2el_613[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SONInformationReply_ExtIEs_tag2el_613[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_ServiceAreaInformation_Item_ExtIEs_specs_613 = {
-	sizeof(struct Ngap_ServiceAreaInformation_Item_ExtIEs),
-	offsetof(struct Ngap_ServiceAreaInformation_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_ServiceAreaInformation_Item_ExtIEs_tag2el_613,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SONInformationReply_ExtIEs_specs_613 = {
+	sizeof(struct Ngap_SONInformationReply_ExtIEs),
+	offsetof(struct Ngap_SONInformationReply_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SONInformationReply_ExtIEs_tag2el_613,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs = {
-	"ServiceAreaInformation-Item-ExtIEs",
-	"ServiceAreaInformation-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SONInformationReply_ExtIEs = {
+	"SONInformationReply-ExtIEs",
+	"SONInformationReply-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_613,
-	sizeof(asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_613)
-		/sizeof(asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_613[0]), /* 1 */
-	asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_613,	/* Same as above */
-	sizeof(asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_613)
-		/sizeof(asn_DEF_Ngap_ServiceAreaInformation_Item_ExtIEs_tags_613[0]), /* 1 */
+	asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_613,
+	sizeof(asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_613)
+		/sizeof(asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_613[0]), /* 1 */
+	asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_613,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_613)
+		/sizeof(asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_613[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_ServiceAreaInformation_Item_ExtIEs_613,
+	asn_MBR_Ngap_SONInformationReply_ExtIEs_613,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_ServiceAreaInformation_Item_ExtIEs_specs_613	/* Additional specs */
+	&asn_SPC_Ngap_SONInformationReply_ExtIEs_specs_613	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_620 = {
-	sizeof(struct Ngap_SliceOverloadItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SliceOverloadItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SliceOverloadItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SliceOverloadItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30660,8 +29062,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_620 = {
 	&asn_SPC_Ngap_extensionValue_specs_620	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SliceOverloadItem_ExtIEs_617[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceOverloadItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_617[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30670,7 +29072,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SliceOverloadItem_ExtIEs_617[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceOverloadItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -30679,7 +29081,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SliceOverloadItem_ExtIEs_617[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceOverloadItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_620,
@@ -30689,42 +29091,42 @@ asn_TYPE_member_t asn_MBR_Ngap_SliceOverloadItem_ExtIEs_617[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_617[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_617[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SliceOverloadItem_ExtIEs_tag2el_617[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tag2el_617[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SliceOverloadItem_ExtIEs_specs_617 = {
-	sizeof(struct Ngap_SliceOverloadItem_ExtIEs),
-	offsetof(struct Ngap_SliceOverloadItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SliceOverloadItem_ExtIEs_tag2el_617,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_specs_617 = {
+	sizeof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs),
+	offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tag2el_617,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SliceOverloadItem_ExtIEs = {
-	"SliceOverloadItem-ExtIEs",
-	"SliceOverloadItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs = {
+	"SourceNGRANNode-ToTargetNGRANNode-TransparentContainer-ExtIEs",
+	"SourceNGRANNode-ToTargetNGRANNode-TransparentContainer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_617,
-	sizeof(asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_617)
-		/sizeof(asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_617[0]), /* 1 */
-	asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_617,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_617)
-		/sizeof(asn_DEF_Ngap_SliceOverloadItem_ExtIEs_tags_617[0]), /* 1 */
+	asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_617,
+	sizeof(asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_617)
+		/sizeof(asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_617[0]), /* 1 */
+	asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_617,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_617)
+		/sizeof(asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_617[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SliceOverloadItem_ExtIEs_617,
+	asn_MBR_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_617,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SliceOverloadItem_ExtIEs_specs_617	/* Additional specs */
+	&asn_SPC_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_specs_617	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_624 = {
-	sizeof(struct Ngap_SliceSupportItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SliceSupportItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SliceSupportItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SliceSupportItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_SourceRANNodeID_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SourceRANNodeID_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SourceRANNodeID_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SourceRANNodeID_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30744,8 +29146,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_624 = {
 	&asn_SPC_Ngap_extensionValue_specs_624	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SliceSupportItem_ExtIEs_621[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceSupportItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SourceRANNodeID_ExtIEs_621[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceRANNodeID_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30754,7 +29156,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SliceSupportItem_ExtIEs_621[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceSupportItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceRANNodeID_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -30763,7 +29165,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SliceSupportItem_ExtIEs_621[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SliceSupportItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceRANNodeID_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_624,
@@ -30773,42 +29175,42 @@ asn_TYPE_member_t asn_MBR_Ngap_SliceSupportItem_ExtIEs_621[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_621[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_621[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SliceSupportItem_ExtIEs_tag2el_621[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SourceRANNodeID_ExtIEs_tag2el_621[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SliceSupportItem_ExtIEs_specs_621 = {
-	sizeof(struct Ngap_SliceSupportItem_ExtIEs),
-	offsetof(struct Ngap_SliceSupportItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SliceSupportItem_ExtIEs_tag2el_621,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SourceRANNodeID_ExtIEs_specs_621 = {
+	sizeof(struct Ngap_SourceRANNodeID_ExtIEs),
+	offsetof(struct Ngap_SourceRANNodeID_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SourceRANNodeID_ExtIEs_tag2el_621,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SliceSupportItem_ExtIEs = {
-	"SliceSupportItem-ExtIEs",
-	"SliceSupportItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SourceRANNodeID_ExtIEs = {
+	"SourceRANNodeID-ExtIEs",
+	"SourceRANNodeID-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_621,
-	sizeof(asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_621)
-		/sizeof(asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_621[0]), /* 1 */
-	asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_621,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_621)
-		/sizeof(asn_DEF_Ngap_SliceSupportItem_ExtIEs_tags_621[0]), /* 1 */
+	asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_621,
+	sizeof(asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_621)
+		/sizeof(asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_621[0]), /* 1 */
+	asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_621,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_621)
+		/sizeof(asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_621[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SliceSupportItem_ExtIEs_621,
+	asn_MBR_Ngap_SourceRANNodeID_ExtIEs_621,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SliceSupportItem_ExtIEs_specs_621	/* Additional specs */
+	&asn_SPC_Ngap_SourceRANNodeID_ExtIEs_specs_621	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_628 = {
-	sizeof(struct Ngap_S_NSSAI_ExtIEs__extensionValue),
-	offsetof(struct Ngap_S_NSSAI_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_S_NSSAI_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_S_NSSAI_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_SupportedTAItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_SupportedTAItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_SupportedTAItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_SupportedTAItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30828,8 +29230,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_628 = {
 	&asn_SPC_Ngap_extensionValue_specs_628	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_S_NSSAI_ExtIEs_625[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_S_NSSAI_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_SupportedTAItem_ExtIEs_625[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SupportedTAItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30838,7 +29240,7 @@ asn_TYPE_member_t asn_MBR_Ngap_S_NSSAI_ExtIEs_625[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_S_NSSAI_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SupportedTAItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -30847,7 +29249,7 @@ asn_TYPE_member_t asn_MBR_Ngap_S_NSSAI_ExtIEs_625[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_S_NSSAI_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SupportedTAItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_628,
@@ -30857,42 +29259,42 @@ asn_TYPE_member_t asn_MBR_Ngap_S_NSSAI_ExtIEs_625[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_625[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_625[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_S_NSSAI_ExtIEs_tag2el_625[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_SupportedTAItem_ExtIEs_tag2el_625[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_S_NSSAI_ExtIEs_specs_625 = {
-	sizeof(struct Ngap_S_NSSAI_ExtIEs),
-	offsetof(struct Ngap_S_NSSAI_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_S_NSSAI_ExtIEs_tag2el_625,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_SupportedTAItem_ExtIEs_specs_625 = {
+	sizeof(struct Ngap_SupportedTAItem_ExtIEs),
+	offsetof(struct Ngap_SupportedTAItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_SupportedTAItem_ExtIEs_tag2el_625,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_S_NSSAI_ExtIEs = {
-	"S-NSSAI-ExtIEs",
-	"S-NSSAI-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_SupportedTAItem_ExtIEs = {
+	"SupportedTAItem-ExtIEs",
+	"SupportedTAItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_625,
-	sizeof(asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_625)
-		/sizeof(asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_625[0]), /* 1 */
-	asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_625,	/* Same as above */
-	sizeof(asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_625)
-		/sizeof(asn_DEF_Ngap_S_NSSAI_ExtIEs_tags_625[0]), /* 1 */
+	asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_625,
+	sizeof(asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_625)
+		/sizeof(asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_625[0]), /* 1 */
+	asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_625,	/* Same as above */
+	sizeof(asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_625)
+		/sizeof(asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_625[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_S_NSSAI_ExtIEs_625,
+	asn_MBR_Ngap_SupportedTAItem_ExtIEs_625,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_S_NSSAI_ExtIEs_specs_625	/* Additional specs */
+	&asn_SPC_Ngap_SupportedTAItem_ExtIEs_specs_625	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_632 = {
-	sizeof(struct Ngap_SONConfigurationTransfer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SONConfigurationTransfer_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TAI_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TAI_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TAI_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TAI_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30912,8 +29314,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_632 = {
 	&asn_SPC_Ngap_extensionValue_specs_632	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SONConfigurationTransfer_ExtIEs_629[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TAI_ExtIEs_629[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAI_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -30922,7 +29324,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SONConfigurationTransfer_ExtIEs_629[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAI_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -30931,7 +29333,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SONConfigurationTransfer_ExtIEs_629[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAI_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_632,
@@ -30941,42 +29343,42 @@ asn_TYPE_member_t asn_MBR_Ngap_SONConfigurationTransfer_ExtIEs_629[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_629[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TAI_ExtIEs_tags_629[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SONConfigurationTransfer_ExtIEs_tag2el_629[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAI_ExtIEs_tag2el_629[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SONConfigurationTransfer_ExtIEs_specs_629 = {
-	sizeof(struct Ngap_SONConfigurationTransfer_ExtIEs),
-	offsetof(struct Ngap_SONConfigurationTransfer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SONConfigurationTransfer_ExtIEs_tag2el_629,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAI_ExtIEs_specs_629 = {
+	sizeof(struct Ngap_TAI_ExtIEs),
+	offsetof(struct Ngap_TAI_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TAI_ExtIEs_tag2el_629,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs = {
-	"SONConfigurationTransfer-ExtIEs",
-	"SONConfigurationTransfer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TAI_ExtIEs = {
+	"TAI-ExtIEs",
+	"TAI-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_629,
-	sizeof(asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_629)
-		/sizeof(asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_629[0]), /* 1 */
-	asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_629,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_629)
-		/sizeof(asn_DEF_Ngap_SONConfigurationTransfer_ExtIEs_tags_629[0]), /* 1 */
+	asn_DEF_Ngap_TAI_ExtIEs_tags_629,
+	sizeof(asn_DEF_Ngap_TAI_ExtIEs_tags_629)
+		/sizeof(asn_DEF_Ngap_TAI_ExtIEs_tags_629[0]), /* 1 */
+	asn_DEF_Ngap_TAI_ExtIEs_tags_629,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TAI_ExtIEs_tags_629)
+		/sizeof(asn_DEF_Ngap_TAI_ExtIEs_tags_629[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SONConfigurationTransfer_ExtIEs_629,
+	asn_MBR_Ngap_TAI_ExtIEs_629,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SONConfigurationTransfer_ExtIEs_specs_629	/* Additional specs */
+	&asn_SPC_Ngap_TAI_ExtIEs_specs_629	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_636 = {
-	sizeof(struct Ngap_SONInformationReply_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SONInformationReply_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SONInformationReply_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SONInformationReply_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -30996,8 +29398,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_636 = {
 	&asn_SPC_Ngap_extensionValue_specs_636	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SONInformationReply_ExtIEs_633[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SONInformationReply_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_633[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31006,7 +29408,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SONInformationReply_ExtIEs_633[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SONInformationReply_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31015,7 +29417,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SONInformationReply_ExtIEs_633[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SONInformationReply_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_636,
@@ -31025,42 +29427,42 @@ asn_TYPE_member_t asn_MBR_Ngap_SONInformationReply_ExtIEs_633[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_633[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_633[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SONInformationReply_ExtIEs_tag2el_633[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tag2el_633[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SONInformationReply_ExtIEs_specs_633 = {
-	sizeof(struct Ngap_SONInformationReply_ExtIEs),
-	offsetof(struct Ngap_SONInformationReply_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SONInformationReply_ExtIEs_tag2el_633,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_specs_633 = {
+	sizeof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs),
+	offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tag2el_633,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SONInformationReply_ExtIEs = {
-	"SONInformationReply-ExtIEs",
-	"SONInformationReply-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs = {
+	"TAIBroadcastEUTRA-Item-ExtIEs",
+	"TAIBroadcastEUTRA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_633,
-	sizeof(asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_633)
-		/sizeof(asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_633[0]), /* 1 */
-	asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_633,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_633)
-		/sizeof(asn_DEF_Ngap_SONInformationReply_ExtIEs_tags_633[0]), /* 1 */
+	asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_633,
+	sizeof(asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_633)
+		/sizeof(asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_633[0]), /* 1 */
+	asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_633,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_633)
+		/sizeof(asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_633[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SONInformationReply_ExtIEs_633,
+	asn_MBR_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_633,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SONInformationReply_ExtIEs_specs_633	/* Additional specs */
+	&asn_SPC_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_specs_633	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_640 = {
-	sizeof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TAIBroadcastNR_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TAIBroadcastNR_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31080,8 +29482,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_640 = {
 	&asn_SPC_Ngap_extensionValue_specs_640	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_637[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TAIBroadcastNR_Item_ExtIEs_637[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31090,7 +29492,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentCont
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31099,7 +29501,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentCont
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_640,
@@ -31109,42 +29511,42 @@ asn_TYPE_member_t asn_MBR_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentCont
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_637[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_637[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tag2el_637[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAIBroadcastNR_Item_ExtIEs_tag2el_637[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_specs_637 = {
-	sizeof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs),
-	offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tag2el_637,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAIBroadcastNR_Item_ExtIEs_specs_637 = {
+	sizeof(struct Ngap_TAIBroadcastNR_Item_ExtIEs),
+	offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TAIBroadcastNR_Item_ExtIEs_tag2el_637,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs = {
-	"SourceNGRANNode-ToTargetNGRANNode-TransparentContainer-ExtIEs",
-	"SourceNGRANNode-ToTargetNGRANNode-TransparentContainer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs = {
+	"TAIBroadcastNR-Item-ExtIEs",
+	"TAIBroadcastNR-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_637,
-	sizeof(asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_637)
-		/sizeof(asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_637[0]), /* 1 */
-	asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_637,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_637)
-		/sizeof(asn_DEF_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_tags_637[0]), /* 1 */
+	asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_637,
+	sizeof(asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_637)
+		/sizeof(asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_637[0]), /* 1 */
+	asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_637,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_637)
+		/sizeof(asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_637[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_637,
+	asn_MBR_Ngap_TAIBroadcastNR_Item_ExtIEs_637,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs_specs_637	/* Additional specs */
+	&asn_SPC_Ngap_TAIBroadcastNR_Item_ExtIEs_specs_637	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_644 = {
-	sizeof(struct Ngap_SourceRANNodeID_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SourceRANNodeID_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SourceRANNodeID_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SourceRANNodeID_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TAICancelledEUTRA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31164,8 +29566,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_644 = {
 	&asn_SPC_Ngap_extensionValue_specs_644	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SourceRANNodeID_ExtIEs_641[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceRANNodeID_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TAICancelledEUTRA_Item_ExtIEs_641[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31174,7 +29576,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SourceRANNodeID_ExtIEs_641[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceRANNodeID_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31183,7 +29585,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SourceRANNodeID_ExtIEs_641[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SourceRANNodeID_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_644,
@@ -31193,42 +29595,42 @@ asn_TYPE_member_t asn_MBR_Ngap_SourceRANNodeID_ExtIEs_641[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_641[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_641[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SourceRANNodeID_ExtIEs_tag2el_641[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAICancelledEUTRA_Item_ExtIEs_tag2el_641[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SourceRANNodeID_ExtIEs_specs_641 = {
-	sizeof(struct Ngap_SourceRANNodeID_ExtIEs),
-	offsetof(struct Ngap_SourceRANNodeID_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SourceRANNodeID_ExtIEs_tag2el_641,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAICancelledEUTRA_Item_ExtIEs_specs_641 = {
+	sizeof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs),
+	offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TAICancelledEUTRA_Item_ExtIEs_tag2el_641,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SourceRANNodeID_ExtIEs = {
-	"SourceRANNodeID-ExtIEs",
-	"SourceRANNodeID-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs = {
+	"TAICancelledEUTRA-Item-ExtIEs",
+	"TAICancelledEUTRA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_641,
-	sizeof(asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_641)
-		/sizeof(asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_641[0]), /* 1 */
-	asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_641,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_641)
-		/sizeof(asn_DEF_Ngap_SourceRANNodeID_ExtIEs_tags_641[0]), /* 1 */
+	asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_641,
+	sizeof(asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_641)
+		/sizeof(asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_641[0]), /* 1 */
+	asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_641,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_641)
+		/sizeof(asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_641[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SourceRANNodeID_ExtIEs_641,
+	asn_MBR_Ngap_TAICancelledEUTRA_Item_ExtIEs_641,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SourceRANNodeID_ExtIEs_specs_641	/* Additional specs */
+	&asn_SPC_Ngap_TAICancelledEUTRA_Item_ExtIEs_specs_641	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_648 = {
-	sizeof(struct Ngap_SupportedTAItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_SupportedTAItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_SupportedTAItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_SupportedTAItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TAICancelledNR_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TAICancelledNR_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31248,8 +29650,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_648 = {
 	&asn_SPC_Ngap_extensionValue_specs_648	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_SupportedTAItem_ExtIEs_645[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SupportedTAItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TAICancelledNR_Item_ExtIEs_645[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31258,7 +29660,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SupportedTAItem_ExtIEs_645[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_SupportedTAItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31267,7 +29669,7 @@ asn_TYPE_member_t asn_MBR_Ngap_SupportedTAItem_ExtIEs_645[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_SupportedTAItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_648,
@@ -31277,42 +29679,42 @@ asn_TYPE_member_t asn_MBR_Ngap_SupportedTAItem_ExtIEs_645[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_645[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_645[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_SupportedTAItem_ExtIEs_tag2el_645[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAICancelledNR_Item_ExtIEs_tag2el_645[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_SupportedTAItem_ExtIEs_specs_645 = {
-	sizeof(struct Ngap_SupportedTAItem_ExtIEs),
-	offsetof(struct Ngap_SupportedTAItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_SupportedTAItem_ExtIEs_tag2el_645,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAICancelledNR_Item_ExtIEs_specs_645 = {
+	sizeof(struct Ngap_TAICancelledNR_Item_ExtIEs),
+	offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TAICancelledNR_Item_ExtIEs_tag2el_645,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_SupportedTAItem_ExtIEs = {
-	"SupportedTAItem-ExtIEs",
-	"SupportedTAItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs = {
+	"TAICancelledNR-Item-ExtIEs",
+	"TAICancelledNR-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_645,
-	sizeof(asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_645)
-		/sizeof(asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_645[0]), /* 1 */
-	asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_645,	/* Same as above */
-	sizeof(asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_645)
-		/sizeof(asn_DEF_Ngap_SupportedTAItem_ExtIEs_tags_645[0]), /* 1 */
+	asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_645,
+	sizeof(asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_645)
+		/sizeof(asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_645[0]), /* 1 */
+	asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_645,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_645)
+		/sizeof(asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_645[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_SupportedTAItem_ExtIEs_645,
+	asn_MBR_Ngap_TAICancelledNR_Item_ExtIEs_645,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_SupportedTAItem_ExtIEs_specs_645	/* Additional specs */
+	&asn_SPC_Ngap_TAICancelledNR_Item_ExtIEs_specs_645	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_652 = {
-	sizeof(struct Ngap_TAI_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TAI_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TAI_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TAI_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TAIListForInactiveItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TAIListForInactiveItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31332,8 +29734,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_652 = {
 	&asn_SPC_Ngap_extensionValue_specs_652	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TAI_ExtIEs_649[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAI_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TAIListForInactiveItem_ExtIEs_649[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31342,7 +29744,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAI_ExtIEs_649[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAI_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31351,7 +29753,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAI_ExtIEs_649[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAI_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_652,
@@ -31361,42 +29763,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TAI_ExtIEs_649[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TAI_ExtIEs_tags_649[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_649[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAI_ExtIEs_tag2el_649[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAIListForInactiveItem_ExtIEs_tag2el_649[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAI_ExtIEs_specs_649 = {
-	sizeof(struct Ngap_TAI_ExtIEs),
-	offsetof(struct Ngap_TAI_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TAI_ExtIEs_tag2el_649,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAIListForInactiveItem_ExtIEs_specs_649 = {
+	sizeof(struct Ngap_TAIListForInactiveItem_ExtIEs),
+	offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TAIListForInactiveItem_ExtIEs_tag2el_649,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TAI_ExtIEs = {
-	"TAI-ExtIEs",
-	"TAI-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs = {
+	"TAIListForInactiveItem-ExtIEs",
+	"TAIListForInactiveItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TAI_ExtIEs_tags_649,
-	sizeof(asn_DEF_Ngap_TAI_ExtIEs_tags_649)
-		/sizeof(asn_DEF_Ngap_TAI_ExtIEs_tags_649[0]), /* 1 */
-	asn_DEF_Ngap_TAI_ExtIEs_tags_649,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TAI_ExtIEs_tags_649)
-		/sizeof(asn_DEF_Ngap_TAI_ExtIEs_tags_649[0]), /* 1 */
+	asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_649,
+	sizeof(asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_649)
+		/sizeof(asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_649[0]), /* 1 */
+	asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_649,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_649)
+		/sizeof(asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_649[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TAI_ExtIEs_649,
+	asn_MBR_Ngap_TAIListForInactiveItem_ExtIEs_649,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TAI_ExtIEs_specs_649	/* Additional specs */
+	&asn_SPC_Ngap_TAIListForInactiveItem_ExtIEs_specs_649	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_656 = {
-	sizeof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TAIListForPagingItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TAIListForPagingItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TAIListForPagingItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TAIListForPagingItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31416,8 +29818,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_656 = {
 	&asn_SPC_Ngap_extensionValue_specs_656	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_653[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TAIListForPagingItem_ExtIEs_653[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForPagingItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31426,7 +29828,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_653[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForPagingItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31435,7 +29837,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_653[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForPagingItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_656,
@@ -31445,42 +29847,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_653[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_653[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_653[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tag2el_653[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAIListForPagingItem_ExtIEs_tag2el_653[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_specs_653 = {
-	sizeof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs),
-	offsetof(struct Ngap_TAIBroadcastEUTRA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tag2el_653,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAIListForPagingItem_ExtIEs_specs_653 = {
+	sizeof(struct Ngap_TAIListForPagingItem_ExtIEs),
+	offsetof(struct Ngap_TAIListForPagingItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TAIListForPagingItem_ExtIEs_tag2el_653,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs = {
-	"TAIBroadcastEUTRA-Item-ExtIEs",
-	"TAIBroadcastEUTRA-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TAIListForPagingItem_ExtIEs = {
+	"TAIListForPagingItem-ExtIEs",
+	"TAIListForPagingItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_653,
-	sizeof(asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_653)
-		/sizeof(asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_653[0]), /* 1 */
-	asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_653,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_653)
-		/sizeof(asn_DEF_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_tags_653[0]), /* 1 */
+	asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_653,
+	sizeof(asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_653)
+		/sizeof(asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_653[0]), /* 1 */
+	asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_653,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_653)
+		/sizeof(asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_653[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_653,
+	asn_MBR_Ngap_TAIListForPagingItem_ExtIEs_653,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TAIBroadcastEUTRA_Item_ExtIEs_specs_653	/* Additional specs */
+	&asn_SPC_Ngap_TAIListForPagingItem_ExtIEs_specs_653	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_660 = {
-	sizeof(struct Ngap_TAIBroadcastNR_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TAIBroadcastNR_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TargeteNB_ID_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TargeteNB_ID_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TargeteNB_ID_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TargeteNB_ID_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31500,8 +29902,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_660 = {
 	&asn_SPC_Ngap_extensionValue_specs_660	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TAIBroadcastNR_Item_ExtIEs_657[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TargeteNB_ID_ExtIEs_657[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargeteNB_ID_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31510,7 +29912,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIBroadcastNR_Item_ExtIEs_657[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargeteNB_ID_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31519,7 +29921,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIBroadcastNR_Item_ExtIEs_657[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TargeteNB_ID_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_660,
@@ -31529,42 +29931,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIBroadcastNR_Item_ExtIEs_657[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_657[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_657[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAIBroadcastNR_Item_ExtIEs_tag2el_657[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TargeteNB_ID_ExtIEs_tag2el_657[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAIBroadcastNR_Item_ExtIEs_specs_657 = {
-	sizeof(struct Ngap_TAIBroadcastNR_Item_ExtIEs),
-	offsetof(struct Ngap_TAIBroadcastNR_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TAIBroadcastNR_Item_ExtIEs_tag2el_657,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TargeteNB_ID_ExtIEs_specs_657 = {
+	sizeof(struct Ngap_TargeteNB_ID_ExtIEs),
+	offsetof(struct Ngap_TargeteNB_ID_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TargeteNB_ID_ExtIEs_tag2el_657,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs = {
-	"TAIBroadcastNR-Item-ExtIEs",
-	"TAIBroadcastNR-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TargeteNB_ID_ExtIEs = {
+	"TargeteNB-ID-ExtIEs",
+	"TargeteNB-ID-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_657,
-	sizeof(asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_657)
-		/sizeof(asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_657[0]), /* 1 */
-	asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_657,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_657)
-		/sizeof(asn_DEF_Ngap_TAIBroadcastNR_Item_ExtIEs_tags_657[0]), /* 1 */
+	asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_657,
+	sizeof(asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_657)
+		/sizeof(asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_657[0]), /* 1 */
+	asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_657,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_657)
+		/sizeof(asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_657[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TAIBroadcastNR_Item_ExtIEs_657,
+	asn_MBR_Ngap_TargeteNB_ID_ExtIEs_657,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TAIBroadcastNR_Item_ExtIEs_specs_657	/* Additional specs */
+	&asn_SPC_Ngap_TargeteNB_ID_ExtIEs_specs_657	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_664 = {
-	sizeof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TAICancelledEUTRA_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31584,8 +29986,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_664 = {
 	&asn_SPC_Ngap_extensionValue_specs_664	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TAICancelledEUTRA_Item_ExtIEs_661[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_661[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31594,7 +29996,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAICancelledEUTRA_Item_ExtIEs_661[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31603,7 +30005,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAICancelledEUTRA_Item_ExtIEs_661[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_664,
@@ -31613,42 +30015,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TAICancelledEUTRA_Item_ExtIEs_661[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_661[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_661[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAICancelledEUTRA_Item_ExtIEs_tag2el_661[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tag2el_661[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAICancelledEUTRA_Item_ExtIEs_specs_661 = {
-	sizeof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs),
-	offsetof(struct Ngap_TAICancelledEUTRA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TAICancelledEUTRA_Item_ExtIEs_tag2el_661,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_specs_661 = {
+	sizeof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs),
+	offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tag2el_661,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs = {
-	"TAICancelledEUTRA-Item-ExtIEs",
-	"TAICancelledEUTRA-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs = {
+	"TargetNGRANNode-ToSourceNGRANNode-TransparentContainer-ExtIEs",
+	"TargetNGRANNode-ToSourceNGRANNode-TransparentContainer-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_661,
-	sizeof(asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_661)
-		/sizeof(asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_661[0]), /* 1 */
-	asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_661,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_661)
-		/sizeof(asn_DEF_Ngap_TAICancelledEUTRA_Item_ExtIEs_tags_661[0]), /* 1 */
+	asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_661,
+	sizeof(asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_661)
+		/sizeof(asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_661[0]), /* 1 */
+	asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_661,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_661)
+		/sizeof(asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_661[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TAICancelledEUTRA_Item_ExtIEs_661,
+	asn_MBR_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_661,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TAICancelledEUTRA_Item_ExtIEs_specs_661	/* Additional specs */
+	&asn_SPC_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_specs_661	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_668 = {
-	sizeof(struct Ngap_TAICancelledNR_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TAICancelledNR_Item_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TargetRANNodeID_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TargetRANNodeID_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TargetRANNodeID_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TargetRANNodeID_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31668,8 +30070,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_668 = {
 	&asn_SPC_Ngap_extensionValue_specs_668	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TAICancelledNR_Item_ExtIEs_665[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TargetRANNodeID_ExtIEs_665[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetRANNodeID_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31678,7 +30080,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAICancelledNR_Item_ExtIEs_665[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetRANNodeID_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31687,7 +30089,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAICancelledNR_Item_ExtIEs_665[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetRANNodeID_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_668,
@@ -31697,42 +30099,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TAICancelledNR_Item_ExtIEs_665[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_665[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_665[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAICancelledNR_Item_ExtIEs_tag2el_665[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TargetRANNodeID_ExtIEs_tag2el_665[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAICancelledNR_Item_ExtIEs_specs_665 = {
-	sizeof(struct Ngap_TAICancelledNR_Item_ExtIEs),
-	offsetof(struct Ngap_TAICancelledNR_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TAICancelledNR_Item_ExtIEs_tag2el_665,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TargetRANNodeID_ExtIEs_specs_665 = {
+	sizeof(struct Ngap_TargetRANNodeID_ExtIEs),
+	offsetof(struct Ngap_TargetRANNodeID_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TargetRANNodeID_ExtIEs_tag2el_665,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs = {
-	"TAICancelledNR-Item-ExtIEs",
-	"TAICancelledNR-Item-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TargetRANNodeID_ExtIEs = {
+	"TargetRANNodeID-ExtIEs",
+	"TargetRANNodeID-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_665,
-	sizeof(asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_665)
-		/sizeof(asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_665[0]), /* 1 */
-	asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_665,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_665)
-		/sizeof(asn_DEF_Ngap_TAICancelledNR_Item_ExtIEs_tags_665[0]), /* 1 */
+	asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_665,
+	sizeof(asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_665)
+		/sizeof(asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_665[0]), /* 1 */
+	asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_665,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_665)
+		/sizeof(asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_665[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TAICancelledNR_Item_ExtIEs_665,
+	asn_MBR_Ngap_TargetRANNodeID_ExtIEs_665,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TAICancelledNR_Item_ExtIEs_specs_665	/* Additional specs */
+	&asn_SPC_Ngap_TargetRANNodeID_ExtIEs_specs_665	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_672 = {
-	sizeof(struct Ngap_TAIListForInactiveItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TAIListForInactiveItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TNLAssociationItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TNLAssociationItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TNLAssociationItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TNLAssociationItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31752,8 +30154,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_672 = {
 	&asn_SPC_Ngap_extensionValue_specs_672	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TAIListForInactiveItem_ExtIEs_669[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TNLAssociationItem_ExtIEs_669[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLAssociationItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31762,7 +30164,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIListForInactiveItem_ExtIEs_669[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLAssociationItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31771,7 +30173,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIListForInactiveItem_ExtIEs_669[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLAssociationItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_672,
@@ -31781,42 +30183,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIListForInactiveItem_ExtIEs_669[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_669[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_669[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAIListForInactiveItem_ExtIEs_tag2el_669[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TNLAssociationItem_ExtIEs_tag2el_669[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAIListForInactiveItem_ExtIEs_specs_669 = {
-	sizeof(struct Ngap_TAIListForInactiveItem_ExtIEs),
-	offsetof(struct Ngap_TAIListForInactiveItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TAIListForInactiveItem_ExtIEs_tag2el_669,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TNLAssociationItem_ExtIEs_specs_669 = {
+	sizeof(struct Ngap_TNLAssociationItem_ExtIEs),
+	offsetof(struct Ngap_TNLAssociationItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TNLAssociationItem_ExtIEs_tag2el_669,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs = {
-	"TAIListForInactiveItem-ExtIEs",
-	"TAIListForInactiveItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TNLAssociationItem_ExtIEs = {
+	"TNLAssociationItem-ExtIEs",
+	"TNLAssociationItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_669,
-	sizeof(asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_669)
-		/sizeof(asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_669[0]), /* 1 */
-	asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_669,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_669)
-		/sizeof(asn_DEF_Ngap_TAIListForInactiveItem_ExtIEs_tags_669[0]), /* 1 */
+	asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_669,
+	sizeof(asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_669)
+		/sizeof(asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_669[0]), /* 1 */
+	asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_669,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_669)
+		/sizeof(asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_669[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TAIListForInactiveItem_ExtIEs_669,
+	asn_MBR_Ngap_TNLAssociationItem_ExtIEs_669,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TAIListForInactiveItem_ExtIEs_specs_669	/* Additional specs */
+	&asn_SPC_Ngap_TNLAssociationItem_ExtIEs_specs_669	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_676 = {
-	sizeof(struct Ngap_TAIListForPagingItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TAIListForPagingItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TAIListForPagingItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TAIListForPagingItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TNLInformationItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TNLInformationItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TNLInformationItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TNLInformationItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31836,8 +30238,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_676 = {
 	&asn_SPC_Ngap_extensionValue_specs_676	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TAIListForPagingItem_ExtIEs_673[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForPagingItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TNLInformationItem_ExtIEs_673[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLInformationItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31846,7 +30248,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIListForPagingItem_ExtIEs_673[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForPagingItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLInformationItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31855,7 +30257,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIListForPagingItem_ExtIEs_673[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TAIListForPagingItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLInformationItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_676,
@@ -31865,42 +30267,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TAIListForPagingItem_ExtIEs_673[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_673[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TNLInformationItem_ExtIEs_tags_673[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TAIListForPagingItem_ExtIEs_tag2el_673[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TNLInformationItem_ExtIEs_tag2el_673[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TAIListForPagingItem_ExtIEs_specs_673 = {
-	sizeof(struct Ngap_TAIListForPagingItem_ExtIEs),
-	offsetof(struct Ngap_TAIListForPagingItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TAIListForPagingItem_ExtIEs_tag2el_673,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TNLInformationItem_ExtIEs_specs_673 = {
+	sizeof(struct Ngap_TNLInformationItem_ExtIEs),
+	offsetof(struct Ngap_TNLInformationItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TNLInformationItem_ExtIEs_tag2el_673,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TAIListForPagingItem_ExtIEs = {
-	"TAIListForPagingItem-ExtIEs",
-	"TAIListForPagingItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TNLInformationItem_ExtIEs = {
+	"TNLInformationItem-ExtIEs",
+	"TNLInformationItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_673,
-	sizeof(asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_673)
-		/sizeof(asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_673[0]), /* 1 */
-	asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_673,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_673)
-		/sizeof(asn_DEF_Ngap_TAIListForPagingItem_ExtIEs_tags_673[0]), /* 1 */
+	asn_DEF_Ngap_TNLInformationItem_ExtIEs_tags_673,
+	sizeof(asn_DEF_Ngap_TNLInformationItem_ExtIEs_tags_673)
+		/sizeof(asn_DEF_Ngap_TNLInformationItem_ExtIEs_tags_673[0]), /* 1 */
+	asn_DEF_Ngap_TNLInformationItem_ExtIEs_tags_673,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TNLInformationItem_ExtIEs_tags_673)
+		/sizeof(asn_DEF_Ngap_TNLInformationItem_ExtIEs_tags_673[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TAIListForPagingItem_ExtIEs_673,
+	asn_MBR_Ngap_TNLInformationItem_ExtIEs_673,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TAIListForPagingItem_ExtIEs_specs_673	/* Additional specs */
+	&asn_SPC_Ngap_TNLInformationItem_ExtIEs_specs_673	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_680 = {
-	sizeof(struct Ngap_TargeteNB_ID_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TargeteNB_ID_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TargeteNB_ID_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TargeteNB_ID_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TNLMappingItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TNLMappingItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TNLMappingItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TNLMappingItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -31920,8 +30322,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_680 = {
 	&asn_SPC_Ngap_extensionValue_specs_680	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TargeteNB_ID_ExtIEs_677[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargeteNB_ID_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TNLMappingItem_ExtIEs_677[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLMappingItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -31930,7 +30332,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TargeteNB_ID_ExtIEs_677[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargeteNB_ID_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLMappingItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -31939,7 +30341,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TargeteNB_ID_ExtIEs_677[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TargeteNB_ID_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLMappingItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_680,
@@ -31949,42 +30351,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TargeteNB_ID_ExtIEs_677[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_677[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TNLMappingItem_ExtIEs_tags_677[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TargeteNB_ID_ExtIEs_tag2el_677[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TNLMappingItem_ExtIEs_tag2el_677[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TargeteNB_ID_ExtIEs_specs_677 = {
-	sizeof(struct Ngap_TargeteNB_ID_ExtIEs),
-	offsetof(struct Ngap_TargeteNB_ID_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TargeteNB_ID_ExtIEs_tag2el_677,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TNLMappingItem_ExtIEs_specs_677 = {
+	sizeof(struct Ngap_TNLMappingItem_ExtIEs),
+	offsetof(struct Ngap_TNLMappingItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TNLMappingItem_ExtIEs_tag2el_677,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TargeteNB_ID_ExtIEs = {
-	"TargeteNB-ID-ExtIEs",
-	"TargeteNB-ID-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TNLMappingItem_ExtIEs = {
+	"TNLMappingItem-ExtIEs",
+	"TNLMappingItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_677,
-	sizeof(asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_677)
-		/sizeof(asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_677[0]), /* 1 */
-	asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_677,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_677)
-		/sizeof(asn_DEF_Ngap_TargeteNB_ID_ExtIEs_tags_677[0]), /* 1 */
+	asn_DEF_Ngap_TNLMappingItem_ExtIEs_tags_677,
+	sizeof(asn_DEF_Ngap_TNLMappingItem_ExtIEs_tags_677)
+		/sizeof(asn_DEF_Ngap_TNLMappingItem_ExtIEs_tags_677[0]), /* 1 */
+	asn_DEF_Ngap_TNLMappingItem_ExtIEs_tags_677,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TNLMappingItem_ExtIEs_tags_677)
+		/sizeof(asn_DEF_Ngap_TNLMappingItem_ExtIEs_tags_677[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TargeteNB_ID_ExtIEs_677,
+	asn_MBR_Ngap_TNLMappingItem_ExtIEs_677,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TargeteNB_ID_ExtIEs_specs_677	/* Additional specs */
+	&asn_SPC_Ngap_TNLMappingItem_ExtIEs_specs_677	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_684 = {
-	sizeof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_TraceActivation_ExtIEs__extensionValue),
+	offsetof(struct Ngap_TraceActivation_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_TraceActivation_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_TraceActivation_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32004,8 +30406,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_684 = {
 	&asn_SPC_Ngap_extensionValue_specs_684	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_681[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_TraceActivation_ExtIEs_681[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TraceActivation_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32014,7 +30416,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentCont
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TraceActivation_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32023,7 +30425,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentCont
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TraceActivation_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_684,
@@ -32033,42 +30435,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentCont
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_681[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_TraceActivation_ExtIEs_tags_681[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tag2el_681[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_TraceActivation_ExtIEs_tag2el_681[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_specs_681 = {
-	sizeof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs),
-	offsetof(struct Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tag2el_681,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_TraceActivation_ExtIEs_specs_681 = {
+	sizeof(struct Ngap_TraceActivation_ExtIEs),
+	offsetof(struct Ngap_TraceActivation_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_TraceActivation_ExtIEs_tag2el_681,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs = {
-	"TargetNGRANNode-ToSourceNGRANNode-TransparentContainer-ExtIEs",
-	"TargetNGRANNode-ToSourceNGRANNode-TransparentContainer-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_TraceActivation_ExtIEs = {
+	"TraceActivation-ExtIEs",
+	"TraceActivation-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_681,
-	sizeof(asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_681)
-		/sizeof(asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_681[0]), /* 1 */
-	asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_681,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_681)
-		/sizeof(asn_DEF_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_tags_681[0]), /* 1 */
+	asn_DEF_Ngap_TraceActivation_ExtIEs_tags_681,
+	sizeof(asn_DEF_Ngap_TraceActivation_ExtIEs_tags_681)
+		/sizeof(asn_DEF_Ngap_TraceActivation_ExtIEs_tags_681[0]), /* 1 */
+	asn_DEF_Ngap_TraceActivation_ExtIEs_tags_681,	/* Same as above */
+	sizeof(asn_DEF_Ngap_TraceActivation_ExtIEs_tags_681)
+		/sizeof(asn_DEF_Ngap_TraceActivation_ExtIEs_tags_681[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_681,
+	asn_MBR_Ngap_TraceActivation_ExtIEs_681,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs_specs_681	/* Additional specs */
+	&asn_SPC_Ngap_TraceActivation_ExtIEs_specs_681	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_688 = {
-	sizeof(struct Ngap_TargetRANNodeID_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TargetRANNodeID_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TargetRANNodeID_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TargetRANNodeID_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UEAggregateMaximumBitRate_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32088,8 +30490,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_688 = {
 	&asn_SPC_Ngap_extensionValue_specs_688	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TargetRANNodeID_ExtIEs_685[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetRANNodeID_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UEAggregateMaximumBitRate_ExtIEs_685[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32098,7 +30500,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TargetRANNodeID_ExtIEs_685[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetRANNodeID_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32107,7 +30509,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TargetRANNodeID_ExtIEs_685[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TargetRANNodeID_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_688,
@@ -32117,42 +30519,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TargetRANNodeID_ExtIEs_685[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_685[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_685[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TargetRANNodeID_ExtIEs_tag2el_685[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UEAggregateMaximumBitRate_ExtIEs_tag2el_685[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TargetRANNodeID_ExtIEs_specs_685 = {
-	sizeof(struct Ngap_TargetRANNodeID_ExtIEs),
-	offsetof(struct Ngap_TargetRANNodeID_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TargetRANNodeID_ExtIEs_tag2el_685,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UEAggregateMaximumBitRate_ExtIEs_specs_685 = {
+	sizeof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs),
+	offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UEAggregateMaximumBitRate_ExtIEs_tag2el_685,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TargetRANNodeID_ExtIEs = {
-	"TargetRANNodeID-ExtIEs",
-	"TargetRANNodeID-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs = {
+	"UEAggregateMaximumBitRate-ExtIEs",
+	"UEAggregateMaximumBitRate-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_685,
-	sizeof(asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_685)
-		/sizeof(asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_685[0]), /* 1 */
-	asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_685,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_685)
-		/sizeof(asn_DEF_Ngap_TargetRANNodeID_ExtIEs_tags_685[0]), /* 1 */
+	asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_685,
+	sizeof(asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_685)
+		/sizeof(asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_685[0]), /* 1 */
+	asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_685,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_685)
+		/sizeof(asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_685[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TargetRANNodeID_ExtIEs_685,
+	asn_MBR_Ngap_UEAggregateMaximumBitRate_ExtIEs_685,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TargetRANNodeID_ExtIEs_specs_685	/* Additional specs */
+	&asn_SPC_Ngap_UEAggregateMaximumBitRate_ExtIEs_specs_685	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_692 = {
-	sizeof(struct Ngap_TNLAssociationItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TNLAssociationItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TNLAssociationItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TNLAssociationItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32172,8 +30574,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_692 = {
 	&asn_SPC_Ngap_extensionValue_specs_692	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TNLAssociationItem_ExtIEs_689[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLAssociationItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_689[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32182,7 +30584,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TNLAssociationItem_ExtIEs_689[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLAssociationItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32191,7 +30593,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TNLAssociationItem_ExtIEs_689[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TNLAssociationItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_692,
@@ -32201,42 +30603,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TNLAssociationItem_ExtIEs_689[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_689[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_689[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TNLAssociationItem_ExtIEs_tag2el_689[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tag2el_689[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TNLAssociationItem_ExtIEs_specs_689 = {
-	sizeof(struct Ngap_TNLAssociationItem_ExtIEs),
-	offsetof(struct Ngap_TNLAssociationItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TNLAssociationItem_ExtIEs_tag2el_689,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_specs_689 = {
+	sizeof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs),
+	offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tag2el_689,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TNLAssociationItem_ExtIEs = {
-	"TNLAssociationItem-ExtIEs",
-	"TNLAssociationItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs = {
+	"UE-associatedLogicalNG-connectionItem-ExtIEs",
+	"UE-associatedLogicalNG-connectionItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_689,
-	sizeof(asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_689)
-		/sizeof(asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_689[0]), /* 1 */
-	asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_689,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_689)
-		/sizeof(asn_DEF_Ngap_TNLAssociationItem_ExtIEs_tags_689[0]), /* 1 */
+	asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_689,
+	sizeof(asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_689)
+		/sizeof(asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_689[0]), /* 1 */
+	asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_689,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_689)
+		/sizeof(asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_689[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TNLAssociationItem_ExtIEs_689,
+	asn_MBR_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_689,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TNLAssociationItem_ExtIEs_specs_689	/* Additional specs */
+	&asn_SPC_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_specs_689	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_696 = {
-	sizeof(struct Ngap_TraceActivation_ExtIEs__extensionValue),
-	offsetof(struct Ngap_TraceActivation_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_TraceActivation_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_TraceActivation_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UE_NGAP_ID_pair_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UE_NGAP_ID_pair_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32256,8 +30658,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_696 = {
 	&asn_SPC_Ngap_extensionValue_specs_696	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_TraceActivation_ExtIEs_693[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TraceActivation_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UE_NGAP_ID_pair_ExtIEs_693[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32266,7 +30668,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TraceActivation_ExtIEs_693[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_TraceActivation_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32275,7 +30677,7 @@ asn_TYPE_member_t asn_MBR_Ngap_TraceActivation_ExtIEs_693[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_TraceActivation_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_696,
@@ -32285,42 +30687,42 @@ asn_TYPE_member_t asn_MBR_Ngap_TraceActivation_ExtIEs_693[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_TraceActivation_ExtIEs_tags_693[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_693[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_TraceActivation_ExtIEs_tag2el_693[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UE_NGAP_ID_pair_ExtIEs_tag2el_693[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_TraceActivation_ExtIEs_specs_693 = {
-	sizeof(struct Ngap_TraceActivation_ExtIEs),
-	offsetof(struct Ngap_TraceActivation_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_TraceActivation_ExtIEs_tag2el_693,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UE_NGAP_ID_pair_ExtIEs_specs_693 = {
+	sizeof(struct Ngap_UE_NGAP_ID_pair_ExtIEs),
+	offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UE_NGAP_ID_pair_ExtIEs_tag2el_693,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_TraceActivation_ExtIEs = {
-	"TraceActivation-ExtIEs",
-	"TraceActivation-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs = {
+	"UE-NGAP-ID-pair-ExtIEs",
+	"UE-NGAP-ID-pair-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_TraceActivation_ExtIEs_tags_693,
-	sizeof(asn_DEF_Ngap_TraceActivation_ExtIEs_tags_693)
-		/sizeof(asn_DEF_Ngap_TraceActivation_ExtIEs_tags_693[0]), /* 1 */
-	asn_DEF_Ngap_TraceActivation_ExtIEs_tags_693,	/* Same as above */
-	sizeof(asn_DEF_Ngap_TraceActivation_ExtIEs_tags_693)
-		/sizeof(asn_DEF_Ngap_TraceActivation_ExtIEs_tags_693[0]), /* 1 */
+	asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_693,
+	sizeof(asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_693)
+		/sizeof(asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_693[0]), /* 1 */
+	asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_693,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_693)
+		/sizeof(asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_693[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_TraceActivation_ExtIEs_693,
+	asn_MBR_Ngap_UE_NGAP_ID_pair_ExtIEs_693,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_TraceActivation_ExtIEs_specs_693	/* Additional specs */
+	&asn_SPC_Ngap_UE_NGAP_ID_pair_ExtIEs_specs_693	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_700 = {
-	sizeof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UEAggregateMaximumBitRate_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32340,8 +30742,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_700 = {
 	&asn_SPC_Ngap_extensionValue_specs_700	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UEAggregateMaximumBitRate_ExtIEs_697[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_697[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32350,7 +30752,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UEAggregateMaximumBitRate_ExtIEs_697[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32359,7 +30761,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UEAggregateMaximumBitRate_ExtIEs_697[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_700,
@@ -32369,42 +30771,42 @@ asn_TYPE_member_t asn_MBR_Ngap_UEAggregateMaximumBitRate_ExtIEs_697[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_697[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_697[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UEAggregateMaximumBitRate_ExtIEs_tag2el_697[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tag2el_697[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UEAggregateMaximumBitRate_ExtIEs_specs_697 = {
-	sizeof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs),
-	offsetof(struct Ngap_UEAggregateMaximumBitRate_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UEAggregateMaximumBitRate_ExtIEs_tag2el_697,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_specs_697 = {
+	sizeof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs),
+	offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tag2el_697,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs = {
-	"UEAggregateMaximumBitRate-ExtIEs",
-	"UEAggregateMaximumBitRate-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs = {
+	"UEPresenceInAreaOfInterestItem-ExtIEs",
+	"UEPresenceInAreaOfInterestItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_697,
-	sizeof(asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_697)
-		/sizeof(asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_697[0]), /* 1 */
-	asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_697,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_697)
-		/sizeof(asn_DEF_Ngap_UEAggregateMaximumBitRate_ExtIEs_tags_697[0]), /* 1 */
+	asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_697,
+	sizeof(asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_697)
+		/sizeof(asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_697[0]), /* 1 */
+	asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_697,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_697)
+		/sizeof(asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_697[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UEAggregateMaximumBitRate_ExtIEs_697,
+	asn_MBR_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_697,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_UEAggregateMaximumBitRate_ExtIEs_specs_697	/* Additional specs */
+	&asn_SPC_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_specs_697	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_704 = {
-	sizeof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UERadioCapabilityForPaging_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UERadioCapabilityForPaging_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32424,8 +30826,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_704 = {
 	&asn_SPC_Ngap_extensionValue_specs_704	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_701[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UERadioCapabilityForPaging_ExtIEs_701[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32434,7 +30836,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_701[
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32443,7 +30845,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_701[
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_704,
@@ -32453,42 +30855,42 @@ asn_TYPE_member_t asn_MBR_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_701[
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_701[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_701[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tag2el_701[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UERadioCapabilityForPaging_ExtIEs_tag2el_701[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_specs_701 = {
-	sizeof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs),
-	offsetof(struct Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tag2el_701,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UERadioCapabilityForPaging_ExtIEs_specs_701 = {
+	sizeof(struct Ngap_UERadioCapabilityForPaging_ExtIEs),
+	offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UERadioCapabilityForPaging_ExtIEs_tag2el_701,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs = {
-	"UE-associatedLogicalNG-connectionItem-ExtIEs",
-	"UE-associatedLogicalNG-connectionItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs = {
+	"UERadioCapabilityForPaging-ExtIEs",
+	"UERadioCapabilityForPaging-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_701,
-	sizeof(asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_701)
-		/sizeof(asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_701[0]), /* 1 */
-	asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_701,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_701)
-		/sizeof(asn_DEF_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_tags_701[0]), /* 1 */
+	asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_701,
+	sizeof(asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_701)
+		/sizeof(asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_701[0]), /* 1 */
+	asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_701,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_701)
+		/sizeof(asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_701[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_701,
+	asn_MBR_Ngap_UERadioCapabilityForPaging_ExtIEs_701,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_UE_associatedLogicalNG_connectionItem_ExtIEs_specs_701	/* Additional specs */
+	&asn_SPC_Ngap_UERadioCapabilityForPaging_ExtIEs_specs_701	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_708 = {
-	sizeof(struct Ngap_UE_NGAP_ID_pair_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UE_NGAP_ID_pair_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UESecurityCapabilities_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UESecurityCapabilities_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UESecurityCapabilities_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UESecurityCapabilities_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32508,8 +30910,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_708 = {
 	&asn_SPC_Ngap_extensionValue_specs_708	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UE_NGAP_ID_pair_ExtIEs_705[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UESecurityCapabilities_ExtIEs_705[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UESecurityCapabilities_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32518,7 +30920,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UE_NGAP_ID_pair_ExtIEs_705[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UESecurityCapabilities_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32527,7 +30929,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UE_NGAP_ID_pair_ExtIEs_705[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UESecurityCapabilities_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_708,
@@ -32537,42 +30939,42 @@ asn_TYPE_member_t asn_MBR_Ngap_UE_NGAP_ID_pair_ExtIEs_705[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_705[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_705[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UE_NGAP_ID_pair_ExtIEs_tag2el_705[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UESecurityCapabilities_ExtIEs_tag2el_705[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UE_NGAP_ID_pair_ExtIEs_specs_705 = {
-	sizeof(struct Ngap_UE_NGAP_ID_pair_ExtIEs),
-	offsetof(struct Ngap_UE_NGAP_ID_pair_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UE_NGAP_ID_pair_ExtIEs_tag2el_705,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UESecurityCapabilities_ExtIEs_specs_705 = {
+	sizeof(struct Ngap_UESecurityCapabilities_ExtIEs),
+	offsetof(struct Ngap_UESecurityCapabilities_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UESecurityCapabilities_ExtIEs_tag2el_705,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs = {
-	"UE-NGAP-ID-pair-ExtIEs",
-	"UE-NGAP-ID-pair-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UESecurityCapabilities_ExtIEs = {
+	"UESecurityCapabilities-ExtIEs",
+	"UESecurityCapabilities-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_705,
-	sizeof(asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_705)
-		/sizeof(asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_705[0]), /* 1 */
-	asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_705,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_705)
-		/sizeof(asn_DEF_Ngap_UE_NGAP_ID_pair_ExtIEs_tags_705[0]), /* 1 */
+	asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_705,
+	sizeof(asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_705)
+		/sizeof(asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_705[0]), /* 1 */
+	asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_705,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_705)
+		/sizeof(asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_705[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UE_NGAP_ID_pair_ExtIEs_705,
+	asn_MBR_Ngap_UESecurityCapabilities_ExtIEs_705,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_UE_NGAP_ID_pair_ExtIEs_specs_705	/* Additional specs */
+	&asn_SPC_Ngap_UESecurityCapabilities_ExtIEs_specs_705	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_712 = {
-	sizeof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32592,8 +30994,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_712 = {
 	&asn_SPC_Ngap_extensionValue_specs_712	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_709[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_709[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32602,7 +31004,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_709[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32611,7 +31013,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_709[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_712,
@@ -32621,42 +31023,42 @@ asn_TYPE_member_t asn_MBR_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_709[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_709[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_709[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tag2el_709[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tag2el_709[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_specs_709 = {
-	sizeof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs),
-	offsetof(struct Ngap_UEPresenceInAreaOfInterestItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tag2el_709,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_specs_709 = {
+	sizeof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs),
+	offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tag2el_709,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs = {
-	"UEPresenceInAreaOfInterestItem-ExtIEs",
-	"UEPresenceInAreaOfInterestItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs = {
+	"UL-NGU-UP-TNLModifyItem-ExtIEs",
+	"UL-NGU-UP-TNLModifyItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_709,
-	sizeof(asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_709)
-		/sizeof(asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_709[0]), /* 1 */
-	asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_709,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_709)
-		/sizeof(asn_DEF_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_tags_709[0]), /* 1 */
+	asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_709,
+	sizeof(asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_709)
+		/sizeof(asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_709[0]), /* 1 */
+	asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_709,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_709)
+		/sizeof(asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_709[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_709,
+	asn_MBR_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_709,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_UEPresenceInAreaOfInterestItem_ExtIEs_specs_709	/* Additional specs */
+	&asn_SPC_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_specs_709	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_716 = {
-	sizeof(struct Ngap_UERadioCapabilityForPaging_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UERadioCapabilityForPaging_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UnavailableGUAMIItem_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UnavailableGUAMIItem_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32676,8 +31078,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_716 = {
 	&asn_SPC_Ngap_extensionValue_specs_716	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UERadioCapabilityForPaging_ExtIEs_713[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UnavailableGUAMIItem_ExtIEs_713[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32686,7 +31088,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UERadioCapabilityForPaging_ExtIEs_713[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32695,7 +31097,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UERadioCapabilityForPaging_ExtIEs_713[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_716,
@@ -32705,42 +31107,42 @@ asn_TYPE_member_t asn_MBR_Ngap_UERadioCapabilityForPaging_ExtIEs_713[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_713[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_713[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UERadioCapabilityForPaging_ExtIEs_tag2el_713[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UnavailableGUAMIItem_ExtIEs_tag2el_713[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UERadioCapabilityForPaging_ExtIEs_specs_713 = {
-	sizeof(struct Ngap_UERadioCapabilityForPaging_ExtIEs),
-	offsetof(struct Ngap_UERadioCapabilityForPaging_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UERadioCapabilityForPaging_ExtIEs_tag2el_713,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UnavailableGUAMIItem_ExtIEs_specs_713 = {
+	sizeof(struct Ngap_UnavailableGUAMIItem_ExtIEs),
+	offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UnavailableGUAMIItem_ExtIEs_tag2el_713,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs = {
-	"UERadioCapabilityForPaging-ExtIEs",
-	"UERadioCapabilityForPaging-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs = {
+	"UnavailableGUAMIItem-ExtIEs",
+	"UnavailableGUAMIItem-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_713,
-	sizeof(asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_713)
-		/sizeof(asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_713[0]), /* 1 */
-	asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_713,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_713)
-		/sizeof(asn_DEF_Ngap_UERadioCapabilityForPaging_ExtIEs_tags_713[0]), /* 1 */
+	asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_713,
+	sizeof(asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_713)
+		/sizeof(asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_713[0]), /* 1 */
+	asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_713,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_713)
+		/sizeof(asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_713[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UERadioCapabilityForPaging_ExtIEs_713,
+	asn_MBR_Ngap_UnavailableGUAMIItem_ExtIEs_713,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_UERadioCapabilityForPaging_ExtIEs_specs_713	/* Additional specs */
+	&asn_SPC_Ngap_UnavailableGUAMIItem_ExtIEs_specs_713	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_720 = {
-	sizeof(struct Ngap_UESecurityCapabilities_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UESecurityCapabilities_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UESecurityCapabilities_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UESecurityCapabilities_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UserLocationInformationEUTRA_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UserLocationInformationEUTRA_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32760,8 +31162,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_720 = {
 	&asn_SPC_Ngap_extensionValue_specs_720	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UESecurityCapabilities_ExtIEs_717[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UESecurityCapabilities_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UserLocationInformationEUTRA_ExtIEs_717[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32770,7 +31172,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UESecurityCapabilities_ExtIEs_717[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UESecurityCapabilities_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32779,7 +31181,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UESecurityCapabilities_ExtIEs_717[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UESecurityCapabilities_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_720,
@@ -32789,42 +31191,42 @@ asn_TYPE_member_t asn_MBR_Ngap_UESecurityCapabilities_ExtIEs_717[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_717[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_717[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UESecurityCapabilities_ExtIEs_tag2el_717[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UserLocationInformationEUTRA_ExtIEs_tag2el_717[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UESecurityCapabilities_ExtIEs_specs_717 = {
-	sizeof(struct Ngap_UESecurityCapabilities_ExtIEs),
-	offsetof(struct Ngap_UESecurityCapabilities_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UESecurityCapabilities_ExtIEs_tag2el_717,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UserLocationInformationEUTRA_ExtIEs_specs_717 = {
+	sizeof(struct Ngap_UserLocationInformationEUTRA_ExtIEs),
+	offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UserLocationInformationEUTRA_ExtIEs_tag2el_717,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_UESecurityCapabilities_ExtIEs = {
-	"UESecurityCapabilities-ExtIEs",
-	"UESecurityCapabilities-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs = {
+	"UserLocationInformationEUTRA-ExtIEs",
+	"UserLocationInformationEUTRA-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_717,
-	sizeof(asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_717)
-		/sizeof(asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_717[0]), /* 1 */
-	asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_717,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_717)
-		/sizeof(asn_DEF_Ngap_UESecurityCapabilities_ExtIEs_tags_717[0]), /* 1 */
+	asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_717,
+	sizeof(asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_717)
+		/sizeof(asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_717[0]), /* 1 */
+	asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_717,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_717)
+		/sizeof(asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_717[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UESecurityCapabilities_ExtIEs_717,
+	asn_MBR_Ngap_UserLocationInformationEUTRA_ExtIEs_717,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_UESecurityCapabilities_ExtIEs_specs_717	/* Additional specs */
+	&asn_SPC_Ngap_UserLocationInformationEUTRA_ExtIEs_specs_717	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_724 = {
-	sizeof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UserLocationInformationN3IWF_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UserLocationInformationN3IWF_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32844,8 +31246,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_724 = {
 	&asn_SPC_Ngap_extensionValue_specs_724	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_721[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UserLocationInformationN3IWF_ExtIEs_721[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32854,7 +31256,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_721[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32863,7 +31265,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_721[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_724,
@@ -32873,42 +31275,42 @@ asn_TYPE_member_t asn_MBR_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_721[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_721[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_721[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tag2el_721[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UserLocationInformationN3IWF_ExtIEs_tag2el_721[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_specs_721 = {
-	sizeof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs),
-	offsetof(struct Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tag2el_721,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UserLocationInformationN3IWF_ExtIEs_specs_721 = {
+	sizeof(struct Ngap_UserLocationInformationN3IWF_ExtIEs),
+	offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UserLocationInformationN3IWF_ExtIEs_tag2el_721,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs = {
-	"UL-NGU-UP-TNLModifyItem-ExtIEs",
-	"UL-NGU-UP-TNLModifyItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs = {
+	"UserLocationInformationN3IWF-ExtIEs",
+	"UserLocationInformationN3IWF-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_721,
-	sizeof(asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_721)
-		/sizeof(asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_721[0]), /* 1 */
-	asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_721,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_721)
-		/sizeof(asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_tags_721[0]), /* 1 */
+	asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_721,
+	sizeof(asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_721)
+		/sizeof(asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_721[0]), /* 1 */
+	asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_721,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_721)
+		/sizeof(asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_721[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_721,
+	asn_MBR_Ngap_UserLocationInformationN3IWF_ExtIEs_721,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_UL_NGU_UP_TNLModifyItem_ExtIEs_specs_721	/* Additional specs */
+	&asn_SPC_Ngap_UserLocationInformationN3IWF_ExtIEs_specs_721	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_728 = {
-	sizeof(struct Ngap_UnavailableGUAMIItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UnavailableGUAMIItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UserLocationInformationNR_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UserLocationInformationNR_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UserLocationInformationNR_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UserLocationInformationNR_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -32928,8 +31330,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_728 = {
 	&asn_SPC_Ngap_extensionValue_specs_728	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UnavailableGUAMIItem_ExtIEs_725[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UserLocationInformationNR_ExtIEs_725[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationNR_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -32938,7 +31340,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UnavailableGUAMIItem_ExtIEs_725[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationNR_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -32947,7 +31349,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UnavailableGUAMIItem_ExtIEs_725[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationNR_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_728,
@@ -32957,42 +31359,42 @@ asn_TYPE_member_t asn_MBR_Ngap_UnavailableGUAMIItem_ExtIEs_725[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_725[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_725[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UnavailableGUAMIItem_ExtIEs_tag2el_725[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UserLocationInformationNR_ExtIEs_tag2el_725[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UnavailableGUAMIItem_ExtIEs_specs_725 = {
-	sizeof(struct Ngap_UnavailableGUAMIItem_ExtIEs),
-	offsetof(struct Ngap_UnavailableGUAMIItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UnavailableGUAMIItem_ExtIEs_tag2el_725,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UserLocationInformationNR_ExtIEs_specs_725 = {
+	sizeof(struct Ngap_UserLocationInformationNR_ExtIEs),
+	offsetof(struct Ngap_UserLocationInformationNR_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UserLocationInformationNR_ExtIEs_tag2el_725,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs = {
-	"UnavailableGUAMIItem-ExtIEs",
-	"UnavailableGUAMIItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UserLocationInformationNR_ExtIEs = {
+	"UserLocationInformationNR-ExtIEs",
+	"UserLocationInformationNR-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_725,
-	sizeof(asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_725)
-		/sizeof(asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_725[0]), /* 1 */
-	asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_725,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_725)
-		/sizeof(asn_DEF_Ngap_UnavailableGUAMIItem_ExtIEs_tags_725[0]), /* 1 */
+	asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_725,
+	sizeof(asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_725)
+		/sizeof(asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_725[0]), /* 1 */
+	asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_725,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_725)
+		/sizeof(asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_725[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UnavailableGUAMIItem_ExtIEs_725,
+	asn_MBR_Ngap_UserLocationInformationNR_ExtIEs_725,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_UnavailableGUAMIItem_ExtIEs_specs_725	/* Additional specs */
+	&asn_SPC_Ngap_UserLocationInformationNR_ExtIEs_specs_725	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_732 = {
-	sizeof(struct Ngap_UPTransportLayerInformationItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UPTransportLayerInformationItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UPTransportLayerInformationItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UPTransportLayerInformationItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_UserPlaneSecurityInformation_ExtIEs__extensionValue),
+	offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_UserPlaneSecurityInformation_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -33012,8 +31414,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_732 = {
 	&asn_SPC_Ngap_extensionValue_specs_732	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UPTransportLayerInformationItem_ExtIEs_729[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UPTransportLayerInformationItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_UserPlaneSecurityInformation_ExtIEs_729[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -33022,7 +31424,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UPTransportLayerInformationItem_ExtIEs_729[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UPTransportLayerInformationItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -33031,7 +31433,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UPTransportLayerInformationItem_ExtIEs_729[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UPTransportLayerInformationItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_732,
@@ -33041,42 +31443,42 @@ asn_TYPE_member_t asn_MBR_Ngap_UPTransportLayerInformationItem_ExtIEs_729[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UPTransportLayerInformationItem_ExtIEs_tags_729[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_729[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UPTransportLayerInformationItem_ExtIEs_tag2el_729[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_UserPlaneSecurityInformation_ExtIEs_tag2el_729[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UPTransportLayerInformationItem_ExtIEs_specs_729 = {
-	sizeof(struct Ngap_UPTransportLayerInformationItem_ExtIEs),
-	offsetof(struct Ngap_UPTransportLayerInformationItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UPTransportLayerInformationItem_ExtIEs_tag2el_729,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_UserPlaneSecurityInformation_ExtIEs_specs_729 = {
+	sizeof(struct Ngap_UserPlaneSecurityInformation_ExtIEs),
+	offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_UserPlaneSecurityInformation_ExtIEs_tag2el_729,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_UPTransportLayerInformationItem_ExtIEs = {
-	"UPTransportLayerInformationItem-ExtIEs",
-	"UPTransportLayerInformationItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs = {
+	"UserPlaneSecurityInformation-ExtIEs",
+	"UserPlaneSecurityInformation-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UPTransportLayerInformationItem_ExtIEs_tags_729,
-	sizeof(asn_DEF_Ngap_UPTransportLayerInformationItem_ExtIEs_tags_729)
-		/sizeof(asn_DEF_Ngap_UPTransportLayerInformationItem_ExtIEs_tags_729[0]), /* 1 */
-	asn_DEF_Ngap_UPTransportLayerInformationItem_ExtIEs_tags_729,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UPTransportLayerInformationItem_ExtIEs_tags_729)
-		/sizeof(asn_DEF_Ngap_UPTransportLayerInformationItem_ExtIEs_tags_729[0]), /* 1 */
+	asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_729,
+	sizeof(asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_729)
+		/sizeof(asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_729[0]), /* 1 */
+	asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_729,	/* Same as above */
+	sizeof(asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_729)
+		/sizeof(asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_729[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UPTransportLayerInformationItem_ExtIEs_729,
+	asn_MBR_Ngap_UserPlaneSecurityInformation_ExtIEs_729,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_UPTransportLayerInformationItem_ExtIEs_specs_729	/* Additional specs */
+	&asn_SPC_Ngap_UserPlaneSecurityInformation_ExtIEs_specs_729	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_736 = {
-	sizeof(struct Ngap_UPTransportLayerInformationPairItem_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UPTransportLayerInformationPairItem_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UPTransportLayerInformationPairItem_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UPTransportLayerInformationPairItem_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_XnExtTLA_Item_ExtIEs__extensionValue),
+	offsetof(struct Ngap_XnExtTLA_Item_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_XnExtTLA_Item_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_XnExtTLA_Item_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -33096,8 +31498,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_736 = {
 	&asn_SPC_Ngap_extensionValue_specs_736	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UPTransportLayerInformationPairItem_ExtIEs_733[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UPTransportLayerInformationPairItem_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_XnExtTLA_Item_ExtIEs_733[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_XnExtTLA_Item_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -33106,7 +31508,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UPTransportLayerInformationPairItem_ExtIEs_733[] 
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UPTransportLayerInformationPairItem_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_XnExtTLA_Item_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -33115,7 +31517,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UPTransportLayerInformationPairItem_ExtIEs_733[] 
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UPTransportLayerInformationPairItem_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_XnExtTLA_Item_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_736,
@@ -33125,42 +31527,42 @@ asn_TYPE_member_t asn_MBR_Ngap_UPTransportLayerInformationPairItem_ExtIEs_733[] 
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UPTransportLayerInformationPairItem_ExtIEs_tags_733[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_733[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UPTransportLayerInformationPairItem_ExtIEs_tag2el_733[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_XnExtTLA_Item_ExtIEs_tag2el_733[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UPTransportLayerInformationPairItem_ExtIEs_specs_733 = {
-	sizeof(struct Ngap_UPTransportLayerInformationPairItem_ExtIEs),
-	offsetof(struct Ngap_UPTransportLayerInformationPairItem_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UPTransportLayerInformationPairItem_ExtIEs_tag2el_733,
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_XnExtTLA_Item_ExtIEs_specs_733 = {
+	sizeof(struct Ngap_XnExtTLA_Item_ExtIEs),
+	offsetof(struct Ngap_XnExtTLA_Item_ExtIEs, _asn_ctx),
+	asn_MAP_Ngap_XnExtTLA_Item_ExtIEs_tag2el_733,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
 };
-asn_TYPE_descriptor_t asn_DEF_Ngap_UPTransportLayerInformationPairItem_ExtIEs = {
-	"UPTransportLayerInformationPairItem-ExtIEs",
-	"UPTransportLayerInformationPairItem-ExtIEs",
+asn_TYPE_descriptor_t asn_DEF_Ngap_XnExtTLA_Item_ExtIEs = {
+	"XnExtTLA-Item-ExtIEs",
+	"XnExtTLA-Item-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UPTransportLayerInformationPairItem_ExtIEs_tags_733,
-	sizeof(asn_DEF_Ngap_UPTransportLayerInformationPairItem_ExtIEs_tags_733)
-		/sizeof(asn_DEF_Ngap_UPTransportLayerInformationPairItem_ExtIEs_tags_733[0]), /* 1 */
-	asn_DEF_Ngap_UPTransportLayerInformationPairItem_ExtIEs_tags_733,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UPTransportLayerInformationPairItem_ExtIEs_tags_733)
-		/sizeof(asn_DEF_Ngap_UPTransportLayerInformationPairItem_ExtIEs_tags_733[0]), /* 1 */
+	asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_733,
+	sizeof(asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_733)
+		/sizeof(asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_733[0]), /* 1 */
+	asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_733,	/* Same as above */
+	sizeof(asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_733)
+		/sizeof(asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_733[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UPTransportLayerInformationPairItem_ExtIEs_733,
+	asn_MBR_Ngap_XnExtTLA_Item_ExtIEs_733,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_UPTransportLayerInformationPairItem_ExtIEs_specs_733	/* Additional specs */
+	&asn_SPC_Ngap_XnExtTLA_Item_ExtIEs_specs_733	/* Additional specs */
 };
 
 static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_740 = {
-	sizeof(struct Ngap_UserLocationInformationEUTRA_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UserLocationInformationEUTRA_ExtIEs__extensionValue *)0)->present),
+	sizeof(struct Ngap_XnTNLConfigurationInfo_ExtIEs__extensionValue),
+	offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs__extensionValue, _asn_ctx),
+	offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs__extensionValue, present),
+	sizeof(((struct Ngap_XnTNLConfigurationInfo_ExtIEs__extensionValue *)0)->present),
 	0,	/* No top level tags */
 	0,	/* No tags in the map */
 	0, 0,
@@ -33180,8 +31582,8 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_740 = {
 	&asn_SPC_Ngap_extensionValue_specs_740	/* Additional specs */
 };
 
-asn_TYPE_member_t asn_MBR_Ngap_UserLocationInformationEUTRA_ExtIEs_737[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs, id),
+asn_TYPE_member_t asn_MBR_Ngap_XnTNLConfigurationInfo_ExtIEs_737[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs, id),
 		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
 		0,
 		&asn_DEF_Ngap_ProtocolExtensionID,
@@ -33190,7 +31592,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UserLocationInformationEUTRA_ExtIEs_737[] = {
 		0, 0, /* No default value */
 		"id"
 		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs, criticality),
+	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs, criticality),
 		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
 		0,
 		&asn_DEF_Ngap_Criticality,
@@ -33199,7 +31601,7 @@ asn_TYPE_member_t asn_MBR_Ngap_UserLocationInformationEUTRA_ExtIEs_737[] = {
 		0, 0, /* No default value */
 		"criticality"
 		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs, extensionValue),
+	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs, extensionValue),
 		-1 /* Ambiguous tag (ANY?) */,
 		0,
 		&asn_DEF_Ngap_extensionValue_740,
@@ -33209,521 +31611,17 @@ asn_TYPE_member_t asn_MBR_Ngap_UserLocationInformationEUTRA_ExtIEs_737[] = {
 		"extensionValue"
 		},
 };
-static const ber_tlv_tag_t asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_737[] = {
+static const ber_tlv_tag_t asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_737[] = {
 	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
 };
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UserLocationInformationEUTRA_ExtIEs_tag2el_737[] = {
+static const asn_TYPE_tag2member_t asn_MAP_Ngap_XnTNLConfigurationInfo_ExtIEs_tag2el_737[] = {
     { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
     { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
 };
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UserLocationInformationEUTRA_ExtIEs_specs_737 = {
-	sizeof(struct Ngap_UserLocationInformationEUTRA_ExtIEs),
-	offsetof(struct Ngap_UserLocationInformationEUTRA_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UserLocationInformationEUTRA_ExtIEs_tag2el_737,
-	2,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* First extension addition */
-};
-asn_TYPE_descriptor_t asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs = {
-	"UserLocationInformationEUTRA-ExtIEs",
-	"UserLocationInformationEUTRA-ExtIEs",
-	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_737,
-	sizeof(asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_737)
-		/sizeof(asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_737[0]), /* 1 */
-	asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_737,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_737)
-		/sizeof(asn_DEF_Ngap_UserLocationInformationEUTRA_ExtIEs_tags_737[0]), /* 1 */
-	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UserLocationInformationEUTRA_ExtIEs_737,
-	3,	/* Elements count */
-	&asn_SPC_Ngap_UserLocationInformationEUTRA_ExtIEs_specs_737	/* Additional specs */
-};
-
-static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_744 = {
-	sizeof(struct Ngap_UserLocationInformationN3IWF_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UserLocationInformationN3IWF_ExtIEs__extensionValue *)0)->present),
-	0,	/* No top level tags */
-	0,	/* No tags in the map */
-	0, 0,
-	-1	/* Extensions start */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_744 = {
-	"extensionValue",
-	"extensionValue",
-	&asn_OP_OPEN_TYPE,
-	0,	/* No effective tags (pointer) */
-	0,	/* No effective tags (count) */
-	0,	/* No tags (pointer) */
-	0,	/* No tags (count) */
-	{ 0, 0, OPEN_TYPE_constraint },
-	0, 0,	/* No members */
-	&asn_SPC_Ngap_extensionValue_specs_744	/* Additional specs */
-};
-
-asn_TYPE_member_t asn_MBR_Ngap_UserLocationInformationN3IWF_ExtIEs_741[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs, id),
-		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
-		0,
-		&asn_DEF_Ngap_ProtocolExtensionID,
-		0,
-		{ &asn_OER_memb_Ngap_id_constr_742, &asn_PER_memb_Ngap_id_constr_742,  memb_Ngap_id_constraint_741 },
-		0, 0, /* No default value */
-		"id"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs, criticality),
-		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
-		0,
-		&asn_DEF_Ngap_Criticality,
-		0,
-		{ &asn_OER_memb_Ngap_criticality_constr_743, &asn_PER_memb_Ngap_criticality_constr_743,  memb_Ngap_criticality_constraint_741 },
-		0, 0, /* No default value */
-		"criticality"
-		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs, extensionValue),
-		-1 /* Ambiguous tag (ANY?) */,
-		0,
-		&asn_DEF_Ngap_extensionValue_744,
-		0,
-		{ &asn_OER_memb_Ngap_extensionValue_constr_744, &asn_PER_memb_Ngap_extensionValue_constr_744,  memb_Ngap_extensionValue_constraint_741 },
-		0, 0, /* No default value */
-		"extensionValue"
-		},
-};
-static const ber_tlv_tag_t asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_741[] = {
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UserLocationInformationN3IWF_ExtIEs_tag2el_741[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
-    { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
-};
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UserLocationInformationN3IWF_ExtIEs_specs_741 = {
-	sizeof(struct Ngap_UserLocationInformationN3IWF_ExtIEs),
-	offsetof(struct Ngap_UserLocationInformationN3IWF_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UserLocationInformationN3IWF_ExtIEs_tag2el_741,
-	2,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* First extension addition */
-};
-asn_TYPE_descriptor_t asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs = {
-	"UserLocationInformationN3IWF-ExtIEs",
-	"UserLocationInformationN3IWF-ExtIEs",
-	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_741,
-	sizeof(asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_741)
-		/sizeof(asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_741[0]), /* 1 */
-	asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_741,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_741)
-		/sizeof(asn_DEF_Ngap_UserLocationInformationN3IWF_ExtIEs_tags_741[0]), /* 1 */
-	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UserLocationInformationN3IWF_ExtIEs_741,
-	3,	/* Elements count */
-	&asn_SPC_Ngap_UserLocationInformationN3IWF_ExtIEs_specs_741	/* Additional specs */
-};
-
-static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_748 = {
-	sizeof(struct Ngap_UserLocationInformationNR_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UserLocationInformationNR_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UserLocationInformationNR_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UserLocationInformationNR_ExtIEs__extensionValue *)0)->present),
-	0,	/* No top level tags */
-	0,	/* No tags in the map */
-	0, 0,
-	-1	/* Extensions start */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_748 = {
-	"extensionValue",
-	"extensionValue",
-	&asn_OP_OPEN_TYPE,
-	0,	/* No effective tags (pointer) */
-	0,	/* No effective tags (count) */
-	0,	/* No tags (pointer) */
-	0,	/* No tags (count) */
-	{ 0, 0, OPEN_TYPE_constraint },
-	0, 0,	/* No members */
-	&asn_SPC_Ngap_extensionValue_specs_748	/* Additional specs */
-};
-
-asn_TYPE_member_t asn_MBR_Ngap_UserLocationInformationNR_ExtIEs_745[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationNR_ExtIEs, id),
-		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
-		0,
-		&asn_DEF_Ngap_ProtocolExtensionID,
-		0,
-		{ &asn_OER_memb_Ngap_id_constr_746, &asn_PER_memb_Ngap_id_constr_746,  memb_Ngap_id_constraint_745 },
-		0, 0, /* No default value */
-		"id"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationNR_ExtIEs, criticality),
-		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
-		0,
-		&asn_DEF_Ngap_Criticality,
-		0,
-		{ &asn_OER_memb_Ngap_criticality_constr_747, &asn_PER_memb_Ngap_criticality_constr_747,  memb_Ngap_criticality_constraint_745 },
-		0, 0, /* No default value */
-		"criticality"
-		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UserLocationInformationNR_ExtIEs, extensionValue),
-		-1 /* Ambiguous tag (ANY?) */,
-		0,
-		&asn_DEF_Ngap_extensionValue_748,
-		0,
-		{ &asn_OER_memb_Ngap_extensionValue_constr_748, &asn_PER_memb_Ngap_extensionValue_constr_748,  memb_Ngap_extensionValue_constraint_745 },
-		0, 0, /* No default value */
-		"extensionValue"
-		},
-};
-static const ber_tlv_tag_t asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_745[] = {
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UserLocationInformationNR_ExtIEs_tag2el_745[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
-    { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
-};
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UserLocationInformationNR_ExtIEs_specs_745 = {
-	sizeof(struct Ngap_UserLocationInformationNR_ExtIEs),
-	offsetof(struct Ngap_UserLocationInformationNR_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UserLocationInformationNR_ExtIEs_tag2el_745,
-	2,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* First extension addition */
-};
-asn_TYPE_descriptor_t asn_DEF_Ngap_UserLocationInformationNR_ExtIEs = {
-	"UserLocationInformationNR-ExtIEs",
-	"UserLocationInformationNR-ExtIEs",
-	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_745,
-	sizeof(asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_745)
-		/sizeof(asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_745[0]), /* 1 */
-	asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_745,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_745)
-		/sizeof(asn_DEF_Ngap_UserLocationInformationNR_ExtIEs_tags_745[0]), /* 1 */
-	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UserLocationInformationNR_ExtIEs_745,
-	3,	/* Elements count */
-	&asn_SPC_Ngap_UserLocationInformationNR_ExtIEs_specs_745	/* Additional specs */
-};
-
-static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_752 = {
-	sizeof(struct Ngap_UserPlaneSecurityInformation_ExtIEs__extensionValue),
-	offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_UserPlaneSecurityInformation_ExtIEs__extensionValue *)0)->present),
-	0,	/* No top level tags */
-	0,	/* No tags in the map */
-	0, 0,
-	-1	/* Extensions start */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_752 = {
-	"extensionValue",
-	"extensionValue",
-	&asn_OP_OPEN_TYPE,
-	0,	/* No effective tags (pointer) */
-	0,	/* No effective tags (count) */
-	0,	/* No tags (pointer) */
-	0,	/* No tags (count) */
-	{ 0, 0, OPEN_TYPE_constraint },
-	0, 0,	/* No members */
-	&asn_SPC_Ngap_extensionValue_specs_752	/* Additional specs */
-};
-
-asn_TYPE_member_t asn_MBR_Ngap_UserPlaneSecurityInformation_ExtIEs_749[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs, id),
-		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
-		0,
-		&asn_DEF_Ngap_ProtocolExtensionID,
-		0,
-		{ &asn_OER_memb_Ngap_id_constr_750, &asn_PER_memb_Ngap_id_constr_750,  memb_Ngap_id_constraint_749 },
-		0, 0, /* No default value */
-		"id"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs, criticality),
-		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
-		0,
-		&asn_DEF_Ngap_Criticality,
-		0,
-		{ &asn_OER_memb_Ngap_criticality_constr_751, &asn_PER_memb_Ngap_criticality_constr_751,  memb_Ngap_criticality_constraint_749 },
-		0, 0, /* No default value */
-		"criticality"
-		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs, extensionValue),
-		-1 /* Ambiguous tag (ANY?) */,
-		0,
-		&asn_DEF_Ngap_extensionValue_752,
-		0,
-		{ &asn_OER_memb_Ngap_extensionValue_constr_752, &asn_PER_memb_Ngap_extensionValue_constr_752,  memb_Ngap_extensionValue_constraint_749 },
-		0, 0, /* No default value */
-		"extensionValue"
-		},
-};
-static const ber_tlv_tag_t asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_749[] = {
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_UserPlaneSecurityInformation_ExtIEs_tag2el_749[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
-    { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
-};
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_UserPlaneSecurityInformation_ExtIEs_specs_749 = {
-	sizeof(struct Ngap_UserPlaneSecurityInformation_ExtIEs),
-	offsetof(struct Ngap_UserPlaneSecurityInformation_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_UserPlaneSecurityInformation_ExtIEs_tag2el_749,
-	2,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* First extension addition */
-};
-asn_TYPE_descriptor_t asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs = {
-	"UserPlaneSecurityInformation-ExtIEs",
-	"UserPlaneSecurityInformation-ExtIEs",
-	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_749,
-	sizeof(asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_749)
-		/sizeof(asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_749[0]), /* 1 */
-	asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_749,	/* Same as above */
-	sizeof(asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_749)
-		/sizeof(asn_DEF_Ngap_UserPlaneSecurityInformation_ExtIEs_tags_749[0]), /* 1 */
-	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_UserPlaneSecurityInformation_ExtIEs_749,
-	3,	/* Elements count */
-	&asn_SPC_Ngap_UserPlaneSecurityInformation_ExtIEs_specs_749	/* Additional specs */
-};
-
-static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_756 = {
-	sizeof(struct Ngap_VolumeTimedReport_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_VolumeTimedReport_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_VolumeTimedReport_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_VolumeTimedReport_Item_ExtIEs__extensionValue *)0)->present),
-	0,	/* No top level tags */
-	0,	/* No tags in the map */
-	0, 0,
-	-1	/* Extensions start */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_756 = {
-	"extensionValue",
-	"extensionValue",
-	&asn_OP_OPEN_TYPE,
-	0,	/* No effective tags (pointer) */
-	0,	/* No effective tags (count) */
-	0,	/* No tags (pointer) */
-	0,	/* No tags (count) */
-	{ 0, 0, OPEN_TYPE_constraint },
-	0, 0,	/* No members */
-	&asn_SPC_Ngap_extensionValue_specs_756	/* Additional specs */
-};
-
-asn_TYPE_member_t asn_MBR_Ngap_VolumeTimedReport_Item_ExtIEs_753[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_VolumeTimedReport_Item_ExtIEs, id),
-		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
-		0,
-		&asn_DEF_Ngap_ProtocolExtensionID,
-		0,
-		{ &asn_OER_memb_Ngap_id_constr_754, &asn_PER_memb_Ngap_id_constr_754,  memb_Ngap_id_constraint_753 },
-		0, 0, /* No default value */
-		"id"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_VolumeTimedReport_Item_ExtIEs, criticality),
-		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
-		0,
-		&asn_DEF_Ngap_Criticality,
-		0,
-		{ &asn_OER_memb_Ngap_criticality_constr_755, &asn_PER_memb_Ngap_criticality_constr_755,  memb_Ngap_criticality_constraint_753 },
-		0, 0, /* No default value */
-		"criticality"
-		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_VolumeTimedReport_Item_ExtIEs, extensionValue),
-		-1 /* Ambiguous tag (ANY?) */,
-		0,
-		&asn_DEF_Ngap_extensionValue_756,
-		0,
-		{ &asn_OER_memb_Ngap_extensionValue_constr_756, &asn_PER_memb_Ngap_extensionValue_constr_756,  memb_Ngap_extensionValue_constraint_753 },
-		0, 0, /* No default value */
-		"extensionValue"
-		},
-};
-static const ber_tlv_tag_t asn_DEF_Ngap_VolumeTimedReport_Item_ExtIEs_tags_753[] = {
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_VolumeTimedReport_Item_ExtIEs_tag2el_753[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
-    { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
-};
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_VolumeTimedReport_Item_ExtIEs_specs_753 = {
-	sizeof(struct Ngap_VolumeTimedReport_Item_ExtIEs),
-	offsetof(struct Ngap_VolumeTimedReport_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_VolumeTimedReport_Item_ExtIEs_tag2el_753,
-	2,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* First extension addition */
-};
-asn_TYPE_descriptor_t asn_DEF_Ngap_VolumeTimedReport_Item_ExtIEs = {
-	"VolumeTimedReport-Item-ExtIEs",
-	"VolumeTimedReport-Item-ExtIEs",
-	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_VolumeTimedReport_Item_ExtIEs_tags_753,
-	sizeof(asn_DEF_Ngap_VolumeTimedReport_Item_ExtIEs_tags_753)
-		/sizeof(asn_DEF_Ngap_VolumeTimedReport_Item_ExtIEs_tags_753[0]), /* 1 */
-	asn_DEF_Ngap_VolumeTimedReport_Item_ExtIEs_tags_753,	/* Same as above */
-	sizeof(asn_DEF_Ngap_VolumeTimedReport_Item_ExtIEs_tags_753)
-		/sizeof(asn_DEF_Ngap_VolumeTimedReport_Item_ExtIEs_tags_753[0]), /* 1 */
-	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_VolumeTimedReport_Item_ExtIEs_753,
-	3,	/* Elements count */
-	&asn_SPC_Ngap_VolumeTimedReport_Item_ExtIEs_specs_753	/* Additional specs */
-};
-
-static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_760 = {
-	sizeof(struct Ngap_XnExtTLA_Item_ExtIEs__extensionValue),
-	offsetof(struct Ngap_XnExtTLA_Item_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_XnExtTLA_Item_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_XnExtTLA_Item_ExtIEs__extensionValue *)0)->present),
-	0,	/* No top level tags */
-	0,	/* No tags in the map */
-	0, 0,
-	-1	/* Extensions start */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_760 = {
-	"extensionValue",
-	"extensionValue",
-	&asn_OP_OPEN_TYPE,
-	0,	/* No effective tags (pointer) */
-	0,	/* No effective tags (count) */
-	0,	/* No tags (pointer) */
-	0,	/* No tags (count) */
-	{ 0, 0, OPEN_TYPE_constraint },
-	0, 0,	/* No members */
-	&asn_SPC_Ngap_extensionValue_specs_760	/* Additional specs */
-};
-
-asn_TYPE_member_t asn_MBR_Ngap_XnExtTLA_Item_ExtIEs_757[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_XnExtTLA_Item_ExtIEs, id),
-		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
-		0,
-		&asn_DEF_Ngap_ProtocolExtensionID,
-		0,
-		{ &asn_OER_memb_Ngap_id_constr_758, &asn_PER_memb_Ngap_id_constr_758,  memb_Ngap_id_constraint_757 },
-		0, 0, /* No default value */
-		"id"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_XnExtTLA_Item_ExtIEs, criticality),
-		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
-		0,
-		&asn_DEF_Ngap_Criticality,
-		0,
-		{ &asn_OER_memb_Ngap_criticality_constr_759, &asn_PER_memb_Ngap_criticality_constr_759,  memb_Ngap_criticality_constraint_757 },
-		0, 0, /* No default value */
-		"criticality"
-		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_XnExtTLA_Item_ExtIEs, extensionValue),
-		-1 /* Ambiguous tag (ANY?) */,
-		0,
-		&asn_DEF_Ngap_extensionValue_760,
-		0,
-		{ &asn_OER_memb_Ngap_extensionValue_constr_760, &asn_PER_memb_Ngap_extensionValue_constr_760,  memb_Ngap_extensionValue_constraint_757 },
-		0, 0, /* No default value */
-		"extensionValue"
-		},
-};
-static const ber_tlv_tag_t asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_757[] = {
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_XnExtTLA_Item_ExtIEs_tag2el_757[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
-    { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
-};
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_XnExtTLA_Item_ExtIEs_specs_757 = {
-	sizeof(struct Ngap_XnExtTLA_Item_ExtIEs),
-	offsetof(struct Ngap_XnExtTLA_Item_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_XnExtTLA_Item_ExtIEs_tag2el_757,
-	2,	/* Count of tags in the map */
-	0, 0, 0,	/* Optional elements (not needed) */
-	-1,	/* First extension addition */
-};
-asn_TYPE_descriptor_t asn_DEF_Ngap_XnExtTLA_Item_ExtIEs = {
-	"XnExtTLA-Item-ExtIEs",
-	"XnExtTLA-Item-ExtIEs",
-	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_757,
-	sizeof(asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_757)
-		/sizeof(asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_757[0]), /* 1 */
-	asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_757,	/* Same as above */
-	sizeof(asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_757)
-		/sizeof(asn_DEF_Ngap_XnExtTLA_Item_ExtIEs_tags_757[0]), /* 1 */
-	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_XnExtTLA_Item_ExtIEs_757,
-	3,	/* Elements count */
-	&asn_SPC_Ngap_XnExtTLA_Item_ExtIEs_specs_757	/* Additional specs */
-};
-
-static asn_CHOICE_specifics_t asn_SPC_Ngap_extensionValue_specs_764 = {
-	sizeof(struct Ngap_XnTNLConfigurationInfo_ExtIEs__extensionValue),
-	offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs__extensionValue, _asn_ctx),
-	offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs__extensionValue, present),
-	sizeof(((struct Ngap_XnTNLConfigurationInfo_ExtIEs__extensionValue *)0)->present),
-	0,	/* No top level tags */
-	0,	/* No tags in the map */
-	0, 0,
-	-1	/* Extensions start */
-};
-static /* Use -fall-defs-global to expose */
-asn_TYPE_descriptor_t asn_DEF_Ngap_extensionValue_764 = {
-	"extensionValue",
-	"extensionValue",
-	&asn_OP_OPEN_TYPE,
-	0,	/* No effective tags (pointer) */
-	0,	/* No effective tags (count) */
-	0,	/* No tags (pointer) */
-	0,	/* No tags (count) */
-	{ 0, 0, OPEN_TYPE_constraint },
-	0, 0,	/* No members */
-	&asn_SPC_Ngap_extensionValue_specs_764	/* Additional specs */
-};
-
-asn_TYPE_member_t asn_MBR_Ngap_XnTNLConfigurationInfo_ExtIEs_761[] = {
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs, id),
-		(ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
-		0,
-		&asn_DEF_Ngap_ProtocolExtensionID,
-		0,
-		{ &asn_OER_memb_Ngap_id_constr_762, &asn_PER_memb_Ngap_id_constr_762,  memb_Ngap_id_constraint_761 },
-		0, 0, /* No default value */
-		"id"
-		},
-	{ ATF_NOFLAGS, 0, offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs, criticality),
-		(ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
-		0,
-		&asn_DEF_Ngap_Criticality,
-		0,
-		{ &asn_OER_memb_Ngap_criticality_constr_763, &asn_PER_memb_Ngap_criticality_constr_763,  memb_Ngap_criticality_constraint_761 },
-		0, 0, /* No default value */
-		"criticality"
-		},
-	{ ATF_OPEN_TYPE | ATF_NOFLAGS, 0, offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs, extensionValue),
-		-1 /* Ambiguous tag (ANY?) */,
-		0,
-		&asn_DEF_Ngap_extensionValue_764,
-		0,
-		{ &asn_OER_memb_Ngap_extensionValue_constr_764, &asn_PER_memb_Ngap_extensionValue_constr_764,  memb_Ngap_extensionValue_constraint_761 },
-		0, 0, /* No default value */
-		"extensionValue"
-		},
-};
-static const ber_tlv_tag_t asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_761[] = {
-	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
-};
-static const asn_TYPE_tag2member_t asn_MAP_Ngap_XnTNLConfigurationInfo_ExtIEs_tag2el_761[] = {
-    { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 }, /* id */
-    { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 1, 0, 0 } /* criticality */
-};
-asn_SEQUENCE_specifics_t asn_SPC_Ngap_XnTNLConfigurationInfo_ExtIEs_specs_761 = {
+asn_SEQUENCE_specifics_t asn_SPC_Ngap_XnTNLConfigurationInfo_ExtIEs_specs_737 = {
 	sizeof(struct Ngap_XnTNLConfigurationInfo_ExtIEs),
 	offsetof(struct Ngap_XnTNLConfigurationInfo_ExtIEs, _asn_ctx),
-	asn_MAP_Ngap_XnTNLConfigurationInfo_ExtIEs_tag2el_761,
+	asn_MAP_Ngap_XnTNLConfigurationInfo_ExtIEs_tag2el_737,
 	2,	/* Count of tags in the map */
 	0, 0, 0,	/* Optional elements (not needed) */
 	-1,	/* First extension addition */
@@ -33732,15 +31630,15 @@ asn_TYPE_descriptor_t asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs = {
 	"XnTNLConfigurationInfo-ExtIEs",
 	"XnTNLConfigurationInfo-ExtIEs",
 	&asn_OP_SEQUENCE,
-	asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_761,
-	sizeof(asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_761)
-		/sizeof(asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_761[0]), /* 1 */
-	asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_761,	/* Same as above */
-	sizeof(asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_761)
-		/sizeof(asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_761[0]), /* 1 */
+	asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_737,
+	sizeof(asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_737)
+		/sizeof(asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_737[0]), /* 1 */
+	asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_737,	/* Same as above */
+	sizeof(asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_737)
+		/sizeof(asn_DEF_Ngap_XnTNLConfigurationInfo_ExtIEs_tags_737[0]), /* 1 */
 	{ 0, 0, SEQUENCE_constraint },
-	asn_MBR_Ngap_XnTNLConfigurationInfo_ExtIEs_761,
+	asn_MBR_Ngap_XnTNLConfigurationInfo_ExtIEs_737,
 	3,	/* Elements count */
-	&asn_SPC_Ngap_XnTNLConfigurationInfo_ExtIEs_specs_761	/* Additional specs */
+	&asn_SPC_Ngap_XnTNLConfigurationInfo_ExtIEs_specs_737	/* Additional specs */
 };
 

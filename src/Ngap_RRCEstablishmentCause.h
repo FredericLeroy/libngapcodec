@@ -29,11 +29,10 @@ typedef enum Ngap_RRCEstablishmentCause {
 	Ngap_RRCEstablishmentCause_mo_VideoCall	= 6,
 	Ngap_RRCEstablishmentCause_mo_SMS	= 7,
 	Ngap_RRCEstablishmentCause_mps_PriorityAccess	= 8,
-	Ngap_RRCEstablishmentCause_mcs_PriorityAccess	= 9,
+	Ngap_RRCEstablishmentCause_mcs_PriorityAccess	= 9
 	/*
 	 * Enumeration is extensible
 	 */
-	Ngap_RRCEstablishmentCause_notAvailable	= 10
 } e_Ngap_RRCEstablishmentCause;
 
 /* Ngap_RRCEstablishmentCause */

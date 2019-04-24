@@ -21,7 +21,7 @@ asn_TYPE_member_t asn_MBR_Ngap_QosFlowAddOrModifyResponseItem_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct Ngap_QosFlowAddOrModifyResponseItem, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (1 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_ProtocolExtensionContainer_175P128,
+		&asn_DEF_Ngap_ProtocolExtensionContainer_175P126,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

@@ -40,7 +40,7 @@ asn_TYPE_member_t asn_MBR_Ngap_DataForwardingResponseDRBItem_1[] = {
 	{ ATF_POINTER, 1, offsetof(struct Ngap_DataForwardingResponseDRBItem, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_ProtocolExtensionContainer_175P34,
+		&asn_DEF_Ngap_ProtocolExtensionContainer_175P33,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

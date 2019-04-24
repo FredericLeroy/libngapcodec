@@ -68,7 +68,7 @@ static asn_TYPE_member_t asn_MBR_Ngap_SourceNGRANNode_ToTargetNGRANNode_Transpar
 	{ ATF_POINTER, 1, offsetof(struct Ngap_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer, iE_Extensions),
 		(ASN_TAG_CLASS_CONTEXT | (6 << 2)),
 		-1,	/* IMPLICIT tag at current level */
-		&asn_DEF_Ngap_ProtocolExtensionContainer_175P159,
+		&asn_DEF_Ngap_ProtocolExtensionContainer_175P154,
 		0,
 		{ 0, 0, 0 },
 		0, 0, /* No default value */

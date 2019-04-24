@@ -15,8 +15,6 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_NGAP_PDU;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_InitiatingMessage;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SuccessfulOutcome;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UnsuccessfulOutcome;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOList;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_AdditionalQosFlowInformation;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_AllocationAndRetentionPriority;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_AllowedNSSAI;
@@ -134,7 +132,6 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_EmergencyAreaIDListForRestart;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_EmergencyFallbackIndicator;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_EmergencyFallbackRequestIndicator;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_EmergencyServiceTargetCN;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_EN_DCSONConfigurationTransfer;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_EquivalentPLMNs;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_EPS_TAC;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_EPS_TAI;
@@ -172,7 +169,6 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_GTP_TEID;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_GTPTunnel;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_GUAMI;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_HandoverCommandTransfer;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_HandoverFlag;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_HandoverRequiredTransfer;
@@ -199,6 +195,7 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_MessageIdentifier;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_MaximumIntegrityProtectedDataRate;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_MICOModeIndication;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_MobilityRestrictionList;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_MultipleTNLInformation;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_N3IWF_ID;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_NAS_PDU;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_NASSecurityParametersFromNGRAN;
@@ -294,8 +291,6 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceReleasedItemP
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceReleasedListRelRes;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceReleasedItemRelRes;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceReleaseResponseTransfer;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageList;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceSetupListCxtReq;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceSetupListCxtRes;
@@ -318,7 +313,6 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceToReleaseItem
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceToReleaseListRelCmd;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionType;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PDUSessionUsageReport;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PeriodicRegistrationUpdateTimer;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PLMNIdentity;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PLMNSupportList;
@@ -340,25 +334,21 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowIdentifier;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowInformationList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowInformationItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowLevelQosParameters;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowListWithCause;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowWithCauseItem;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowList;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowModifyConfirmList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowModifyConfirmItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowNotifyList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowNotifyItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowPerTNLInformation;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowPerTNLInformationList;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowPerTNLInformationItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowSetupRequestList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowSetupRequestItem;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowListWithDataForwarding;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowItemWithDataForwarding;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowSetupResponseListHOReqAck;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowSetupResponseItemHOReqAck;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowSetupResponseListSURes;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowSetupResponseItemSURes;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowToBeForwardedList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QosFlowToBeForwardedItem;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QoSFlowsUsageReportList;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_QoSFlowsUsageReport_Item;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RANNodeName;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RANPagingPriority;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RANStatusTransfer_TransparentContainer;
@@ -372,7 +362,6 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RecommendedCellItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RecommendedRANNodesForPaging;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RecommendedRANNodeList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RecommendedRANNodeItem;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RedirectionVoiceFallback;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_ReflectiveQosAttribute;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_ReferenceID;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RelativeAMFCapacity;
@@ -386,8 +375,6 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RRCEstablishmentCause;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RRCInactiveTransitionReportRequest;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_RRCState;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SD;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SecondaryRATUsageInformation;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SecondaryRATDataUsageReportTransfer;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SecurityContext;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SecurityIndication;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SecurityKey;
@@ -397,6 +384,7 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_ServedGUAMIList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_ServedGUAMIItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_ServiceAreaInformation;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_ServiceAreaInformation_Item;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SingleTNLInformation;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SliceOverloadList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SliceOverloadItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SliceSupportList;
@@ -443,6 +431,10 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TNLAddressWeightFactor;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TNLAssociationList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TNLAssociationItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TNLAssociationUsage;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TNLInformationList;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TNLInformationItem;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TNLMappingList;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TNLMappingItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TraceActivation;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TraceDepth;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_TrafficLoadReductionIndication;
@@ -464,24 +456,18 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UERadioCapability;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UERadioCapabilityForPaging;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UERadioCapabilityForPagingOfNR;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UERadioCapabilityForPagingOfEUTRA;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UERetentionInformation;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UESecurityCapabilities;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UL_NGU_UP_TNLModifyList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UnavailableGUAMIList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UnavailableGUAMIItem;
+extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UP_TNLInformation;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UPTransportLayerInformation;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UPTransportLayerInformationList;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UPTransportLayerInformationItem;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UPTransportLayerInformationPairList;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UPTransportLayerInformationPairItem;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UserLocationInformation;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UserLocationInformationEUTRA;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UserLocationInformationN3IWF;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UserLocationInformationNR;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UserPlaneSecurityInformation;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_VolumeTimedReportList;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_VolumeTimedReport_Item;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_WarningAreaCoordinates;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_WarningAreaList;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_WarningMessageContents;
@@ -570,7 +556,6 @@ extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UERadioCapabilityInfoIndication
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UERadioCapabilityCheckRequest;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_UERadioCapabilityCheckResponse;
 extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_PrivateMessage;
-extern struct asn_TYPE_descriptor_s asn_DEF_Ngap_SecondaryRATDataUsageReport;
 
 
 struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
@@ -588,8 +573,6 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_SuccessfulOutcome,	
 	&asn_DEF_Ngap_UnsuccessfulOutcome,	
 	/* From module NGAP-IEs in asn.1/Information Element Definitions.asn1 */
-	&asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOList,	
-	&asn_DEF_Ngap_AdditionalDLUPTNLInformationForHOItem,	
 	&asn_DEF_Ngap_AdditionalQosFlowInformation,	
 	&asn_DEF_Ngap_AllocationAndRetentionPriority,	
 	&asn_DEF_Ngap_AllowedNSSAI,	
@@ -707,7 +690,6 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_EmergencyFallbackIndicator,	
 	&asn_DEF_Ngap_EmergencyFallbackRequestIndicator,	
 	&asn_DEF_Ngap_EmergencyServiceTargetCN,	
-	&asn_DEF_Ngap_EN_DCSONConfigurationTransfer,	
 	&asn_DEF_Ngap_EquivalentPLMNs,	
 	&asn_DEF_Ngap_EPS_TAC,	
 	&asn_DEF_Ngap_EPS_TAI,	
@@ -745,7 +727,6 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_GTPTunnel,	
 	&asn_DEF_Ngap_GUAMI,	
 	&asn_DEF_Ngap_HandoverCommandTransfer,	
-	&asn_DEF_Ngap_HandoverFlag,	
 	&asn_DEF_Ngap_HandoverPreparationUnsuccessfulTransfer,	
 	&asn_DEF_Ngap_HandoverRequestAcknowledgeTransfer,	
 	&asn_DEF_Ngap_HandoverRequiredTransfer,	
@@ -772,6 +753,7 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_MaximumIntegrityProtectedDataRate,	
 	&asn_DEF_Ngap_MICOModeIndication,	
 	&asn_DEF_Ngap_MobilityRestrictionList,	
+	&asn_DEF_Ngap_MultipleTNLInformation,	
 	&asn_DEF_Ngap_N3IWF_ID,	
 	&asn_DEF_Ngap_NAS_PDU,	
 	&asn_DEF_Ngap_NASSecurityParametersFromNGRAN,	
@@ -867,8 +849,6 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_PDUSessionResourceReleasedListRelRes,	
 	&asn_DEF_Ngap_PDUSessionResourceReleasedItemRelRes,	
 	&asn_DEF_Ngap_PDUSessionResourceReleaseResponseTransfer,	
-	&asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageList,	
-	&asn_DEF_Ngap_PDUSessionResourceSecondaryRATUsageItem,	
 	&asn_DEF_Ngap_PDUSessionResourceSetupListCxtReq,	
 	&asn_DEF_Ngap_PDUSessionResourceSetupItemCxtReq,	
 	&asn_DEF_Ngap_PDUSessionResourceSetupListCxtRes,	
@@ -891,7 +871,6 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_PDUSessionResourceToReleaseListRelCmd,	
 	&asn_DEF_Ngap_PDUSessionResourceToReleaseItemRelCmd,	
 	&asn_DEF_Ngap_PDUSessionType,	
-	&asn_DEF_Ngap_PDUSessionUsageReport,	
 	&asn_DEF_Ngap_PeriodicRegistrationUpdateTimer,	
 	&asn_DEF_Ngap_PLMNIdentity,	
 	&asn_DEF_Ngap_PLMNSupportList,	
@@ -913,25 +892,21 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_QosFlowInformationList,	
 	&asn_DEF_Ngap_QosFlowInformationItem,	
 	&asn_DEF_Ngap_QosFlowLevelQosParameters,	
-	&asn_DEF_Ngap_QosFlowListWithCause,	
-	&asn_DEF_Ngap_QosFlowWithCauseItem,	
+	&asn_DEF_Ngap_QosFlowList,	
+	&asn_DEF_Ngap_QosFlowItem,	
 	&asn_DEF_Ngap_QosFlowModifyConfirmList,	
 	&asn_DEF_Ngap_QosFlowModifyConfirmItem,	
 	&asn_DEF_Ngap_QosFlowNotifyList,	
 	&asn_DEF_Ngap_QosFlowNotifyItem,	
 	&asn_DEF_Ngap_QosFlowPerTNLInformation,	
-	&asn_DEF_Ngap_QosFlowPerTNLInformationList,	
-	&asn_DEF_Ngap_QosFlowPerTNLInformationItem,	
 	&asn_DEF_Ngap_QosFlowSetupRequestList,	
 	&asn_DEF_Ngap_QosFlowSetupRequestItem,	
-	&asn_DEF_Ngap_QosFlowListWithDataForwarding,	
-	&asn_DEF_Ngap_QosFlowItemWithDataForwarding,	
+	&asn_DEF_Ngap_QosFlowSetupResponseListHOReqAck,	
+	&asn_DEF_Ngap_QosFlowSetupResponseItemHOReqAck,	
 	&asn_DEF_Ngap_QosFlowSetupResponseListSURes,	
 	&asn_DEF_Ngap_QosFlowSetupResponseItemSURes,	
 	&asn_DEF_Ngap_QosFlowToBeForwardedList,	
 	&asn_DEF_Ngap_QosFlowToBeForwardedItem,	
-	&asn_DEF_Ngap_QoSFlowsUsageReportList,	
-	&asn_DEF_Ngap_QoSFlowsUsageReport_Item,	
 	&asn_DEF_Ngap_RANNodeName,	
 	&asn_DEF_Ngap_RANPagingPriority,	
 	&asn_DEF_Ngap_RANStatusTransfer_TransparentContainer,	
@@ -945,7 +920,6 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_RecommendedRANNodesForPaging,	
 	&asn_DEF_Ngap_RecommendedRANNodeList,	
 	&asn_DEF_Ngap_RecommendedRANNodeItem,	
-	&asn_DEF_Ngap_RedirectionVoiceFallback,	
 	&asn_DEF_Ngap_ReflectiveQosAttribute,	
 	&asn_DEF_Ngap_ReferenceID,	
 	&asn_DEF_Ngap_RelativeAMFCapacity,	
@@ -959,8 +933,6 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_RRCInactiveTransitionReportRequest,	
 	&asn_DEF_Ngap_RRCState,	
 	&asn_DEF_Ngap_SD,	
-	&asn_DEF_Ngap_SecondaryRATUsageInformation,	
-	&asn_DEF_Ngap_SecondaryRATDataUsageReportTransfer,	
 	&asn_DEF_Ngap_SecurityContext,	
 	&asn_DEF_Ngap_SecurityIndication,	
 	&asn_DEF_Ngap_SecurityKey,	
@@ -970,6 +942,7 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_ServedGUAMIItem,	
 	&asn_DEF_Ngap_ServiceAreaInformation,	
 	&asn_DEF_Ngap_ServiceAreaInformation_Item,	
+	&asn_DEF_Ngap_SingleTNLInformation,	
 	&asn_DEF_Ngap_SliceOverloadList,	
 	&asn_DEF_Ngap_SliceOverloadItem,	
 	&asn_DEF_Ngap_SliceSupportList,	
@@ -1016,6 +989,10 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_TNLAssociationList,	
 	&asn_DEF_Ngap_TNLAssociationItem,	
 	&asn_DEF_Ngap_TNLAssociationUsage,	
+	&asn_DEF_Ngap_TNLInformationList,	
+	&asn_DEF_Ngap_TNLInformationItem,	
+	&asn_DEF_Ngap_TNLMappingList,	
+	&asn_DEF_Ngap_TNLMappingItem,	
 	&asn_DEF_Ngap_TraceActivation,	
 	&asn_DEF_Ngap_TraceDepth,	
 	&asn_DEF_Ngap_TrafficLoadReductionIndication,	
@@ -1037,24 +1014,18 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_UERadioCapabilityForPaging,	
 	&asn_DEF_Ngap_UERadioCapabilityForPagingOfNR,	
 	&asn_DEF_Ngap_UERadioCapabilityForPagingOfEUTRA,	
-	&asn_DEF_Ngap_UERetentionInformation,	
 	&asn_DEF_Ngap_UESecurityCapabilities,	
 	&asn_DEF_Ngap_UL_NGU_UP_TNLModifyList,	
 	&asn_DEF_Ngap_UL_NGU_UP_TNLModifyItem,	
 	&asn_DEF_Ngap_UnavailableGUAMIList,	
 	&asn_DEF_Ngap_UnavailableGUAMIItem,	
+	&asn_DEF_Ngap_UP_TNLInformation,	
 	&asn_DEF_Ngap_UPTransportLayerInformation,	
-	&asn_DEF_Ngap_UPTransportLayerInformationList,	
-	&asn_DEF_Ngap_UPTransportLayerInformationItem,	
-	&asn_DEF_Ngap_UPTransportLayerInformationPairList,	
-	&asn_DEF_Ngap_UPTransportLayerInformationPairItem,	
 	&asn_DEF_Ngap_UserLocationInformation,	
 	&asn_DEF_Ngap_UserLocationInformationEUTRA,	
 	&asn_DEF_Ngap_UserLocationInformationN3IWF,	
 	&asn_DEF_Ngap_UserLocationInformationNR,	
 	&asn_DEF_Ngap_UserPlaneSecurityInformation,	
-	&asn_DEF_Ngap_VolumeTimedReportList,	
-	&asn_DEF_Ngap_VolumeTimedReport_Item,	
 	&asn_DEF_Ngap_WarningAreaCoordinates,	
 	&asn_DEF_Ngap_WarningAreaList,	
 	&asn_DEF_Ngap_WarningMessageContents,	
@@ -1144,7 +1115,6 @@ struct asn_TYPE_descriptor_s *asn_pdu_collection[] = {
 	&asn_DEF_Ngap_UERadioCapabilityCheckRequest,	
 	&asn_DEF_Ngap_UERadioCapabilityCheckResponse,	
 	&asn_DEF_Ngap_PrivateMessage,	
-	&asn_DEF_Ngap_SecondaryRATDataUsageReport,	
 	0
 };
 
