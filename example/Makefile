@@ -1,4 +1,4 @@
-PKGCONFIGPACKAGE=ngapcodec-15.3.0
+PKGCONFIGPACKAGE=ngapcodec-15.2.0
 LIBS += -lm
 CFLAGS += -DASN_PDU_COLLECTION -I. `pkg-config --cflags $(PKGCONFIGPACKAGE)`
 LDFLAGS += `pkg-config --static --libs $(PKGCONFIGPACKAGE)`

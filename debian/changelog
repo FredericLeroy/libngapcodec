@@ -1,5 +1,5 @@
-libngapcodec (15.3.0-1) unstable; urgency=medium
+libngapcodec (15.2.0-1) unstable; urgency=medium
 
   * Initial release
 
- -- Frédéric Leroy <frederic.leroy@b-com.com>  Tue, 23 Apr 2019 13:05:52 +0000
+ -- Frédéric Leroy <frederic.leroy@b-com.com>  Tue, 24 Apr 2019 13:05:52 +0000
