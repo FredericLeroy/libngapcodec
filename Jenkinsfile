@@ -1,3 +1,3 @@
-node(master) {
+node("master") {
     echo "test"
 }
