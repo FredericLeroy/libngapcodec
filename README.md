@@ -114,8 +114,9 @@ Here are it's help usage:
 ### Decoding an aper pdu packet to xer format:
 
 Here is an example to decode a pdu packet to xer :
+./converter-example -pNGAP-PDU -iaper /media/sf_Downloads/NGSetupRequest_2.raw -oxer
 
-    $ ./converter-example -iaper -pInitialUEMessage ../test/aper/pdu-InitialUEMessage.aper
+    $ ./converter-example -iaper -pNGAP-PDU ../test/aper/pdu-InitialUEMessage.aper
     <InitialUEMessage>
         <protocolIEs>
             <InitialUEMessage-IEs>
@@ -131,6 +132,40 @@ Here is an example to decode a pdu packet to xer :
         </protocolIEs>
     </InitialUEMessage>
     $
+
+Note that this pdu have no NGAP-PDU header.
+
+Here is another one corresponding to what you can find in pcap files:
+
+    ./converter-example -iaper -pNGAP-PDU ../test/aper/NGSetupRequest_2.aper -oxer
+    <NGAP-PDU>
+        <initiatingMessage>
+            <procedureCode>21</procedureCode>
+            <criticality><ignore/></criticality>
+            <value>
+                <NGSetupRequest>
+                    <protocolIEs>
+                        <NGSetupRequestIEs>
+                            <id>27</id>
+                            <criticality><reject/></criticality>
+                            <value>
+                                <GlobalRANNodeID>
+                                    <globalNgENB-ID>
+                                        <pLMNIdentity>02 F8 98</pLMNIdentity>
+                                        <ngENB-ID>
+                                            <macroNgENB-ID>
+                                                00000000000000000000
+                                            </macroNgENB-ID>
+                                        </ngENB-ID>
+                                    </globalNgENB-ID>
+                                </GlobalRANNodeID>
+    [...]
+                        </NGSetupRequestIEs>
+                    </protocolIEs>
+                </NGSetupRequest>
+            </value>
+        </initiatingMessage>
+    </NGAP-PDU>
 
 ### Encoding a xer pdu packet to aper:
 
