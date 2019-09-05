@@ -1,4 +1,7 @@
+
 # libngapcodec
+
+OpenAirInterface 5G Core Network project
 
 A C library to encode/decode NGAP message defined by 3gpp TS 38413
 
